@@ -9,3 +9,5 @@ class Solution:
             seen[n] = i
         # problem says one solution always exists so we should not get here
         return []
+
+# optim: pass small inputs straight through above
