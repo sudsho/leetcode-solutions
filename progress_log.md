@@ -22,3 +22,7 @@ small note.
 
 started keeping notes per problem.
 
+## 2019-03-27
+
+learning about binary search bounds.
+
