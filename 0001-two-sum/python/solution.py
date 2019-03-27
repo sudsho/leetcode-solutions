@@ -1,3 +1,4 @@
+# revisited - cleaned up
 class Solution:
     def twoSum(self, nums, target):
         # walk once, store value -> index in a dict
