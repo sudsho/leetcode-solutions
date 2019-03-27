@@ -16,4 +16,5 @@ NNNN-problem-slug/
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
 | 1 | [Two Sum](0001-two-sum/) | Easy | Python |
+| 1 | [Two Sum](0001-two-sum/) | Easy | Python |
 
