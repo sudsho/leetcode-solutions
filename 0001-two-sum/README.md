@@ -11,6 +11,7 @@ Given a list of integers and a target value, return indices of two numbers that 
 
 Walk the array once and keep a dict mapping each value seen so far to its index. For every new number, check if target minus that number is already in the dict. If so, we have our pair.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(n).
