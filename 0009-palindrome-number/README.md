@@ -1,7 +1,7 @@
 # 9. Palindrome Number
 
 Difficulty: Easy
-Topics: math
+Topics  : math
 
 ## Problem
 
