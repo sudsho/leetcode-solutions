@@ -19,4 +19,6 @@ NNNN-problem-slug/
 | 1 | [Two Sum](0001-two-sum/) | Easy | Python |
 | 7 | [Reverse Integer](0007-reverse-integer/) | Easy | Python |
 | 9 | [Palindrome Number](0009-palindrome-number/) | Easy | Python |
+| 13 | [Roman to Integer](0013-roman-to-integer/) | Easy | Python |
+| 14 | [Longest Common Prefix](0014-longest-common-prefix/) | Easy | Python |
 
