@@ -50,3 +50,7 @@ started keeping notes per problem.
 
 small note.
 
+## 2019-04-20
+
+more practice this week. trying to be consistent.
+
