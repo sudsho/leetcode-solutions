@@ -1,7 +1,7 @@
 # 1. Two Sum
 
 Difficulty: Easy
-Topics: array, hash table
+Topics  : array, hash table
 
 ## Problem
 
