@@ -6,3 +6,5 @@ class Solution:
             return False
         s = str(x)
         return s == s[::-1]
+
+# optim: pass small inputs straight through above
