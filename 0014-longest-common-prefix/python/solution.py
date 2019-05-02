@@ -1,3 +1,4 @@
+# revisited - cleaned up
 class Solution:
     def longestCommonPrefix(self, strs):
         if not strs:
