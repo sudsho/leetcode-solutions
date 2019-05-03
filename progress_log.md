@@ -86,3 +86,7 @@ small note.
 
 busy with school work, only a couple of problems this week.
 
+## 2019-05-03
+
+more practice this week. trying to be consistent.
+
