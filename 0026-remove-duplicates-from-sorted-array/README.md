@@ -11,6 +11,7 @@ Modify a sorted array in place so that each element appears only once. Return th
 
 Two pointers. Slow pointer marks the next slot for a unique value. Fast pointer scans. When fast finds a value different from arr[slow], advance slow and copy.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(1).
