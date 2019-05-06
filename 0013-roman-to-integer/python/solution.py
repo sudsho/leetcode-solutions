@@ -11,3 +11,5 @@ class Solution:
             else:
                 total += value[s[i]]
         return total
+
+# optim: pass small inputs straight through above
