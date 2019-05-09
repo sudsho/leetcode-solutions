@@ -1,3 +1,4 @@
+# revisited - cleaned up
 class Solution:
     def removeElement(self, nums, val):
         slow = 0
