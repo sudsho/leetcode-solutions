@@ -94,3 +94,7 @@ more practice this week. trying to be consistent.
 
 small note.
 
+## 2019-05-09
+
+learning about binary search bounds.
+
