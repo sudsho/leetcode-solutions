@@ -1,3 +1,4 @@
+# revisited - cleaned up
 class Solution:
     def strStr(self, haystack, needle):
         if needle == '':
