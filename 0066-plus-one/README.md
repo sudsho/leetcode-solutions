@@ -11,6 +11,7 @@ Given a non-empty array of digits representing a non-negative integer, add 1 to 
 
 Walk from the right. Add carry. If digit becomes 10, set to 0 and carry on. If we walk off the front with carry, prepend a 1.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(1) (or O(n) if we prepend).
