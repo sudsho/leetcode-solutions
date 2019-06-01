@@ -126,3 +126,7 @@ small note.
 
 small note.
 
+## 2019-06-01
+
+short week. mostly cleanup and revisits.
+
