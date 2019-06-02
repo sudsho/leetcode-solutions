@@ -27,4 +27,7 @@ NNNN-problem-slug/
 | 27 | [Remove Element](0027-remove-element/) | Easy | Python |
 | 28 | [Implement strStr()](0028-implement-strstr/) | Easy | Python |
 | 35 | [Search Insert Position](0035-search-insert-position/) | Easy | Python |
+| 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
+| 66 | [Plus One](0066-plus-one/) | Easy | Python |
+| 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 
