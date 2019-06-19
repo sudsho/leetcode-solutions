@@ -11,6 +11,7 @@ Given a sorted array and a target, return the index of the target if found, else
 
 Classic binary search. Maintain lo, hi range. When the loop exits, lo is the insertion point.
 
+<!-- updated -->
 ## Complexity
 
 Time O(log n), space O(1).
