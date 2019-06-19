@@ -30,4 +30,5 @@ NNNN-problem-slug/
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
+| 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
 
