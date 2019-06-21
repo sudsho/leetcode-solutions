@@ -138,3 +138,7 @@ small note.
 
 small note.
 
+## 2019-06-21
+
+two-pointer pattern is showing up everywhere.
+
