@@ -146,3 +146,7 @@ two-pointer pattern is showing up everywhere.
 
 small note.
 
+## 2019-06-27
+
+short week. mostly cleanup and revisits.
+
