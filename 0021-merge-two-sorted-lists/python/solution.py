@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.next = next
 
+# revisited - cleaned up
 class Solution:
     def mergeTwoLists(self, l1, l2):
         dummy = ListNode()
