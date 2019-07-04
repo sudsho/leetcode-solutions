@@ -150,3 +150,7 @@ small note.
 
 short week. mostly cleanup and revisits.
 
+## 2019-07-04
+
+short week. mostly cleanup and revisits.
+
