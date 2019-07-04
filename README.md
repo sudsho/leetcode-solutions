@@ -31,4 +31,6 @@ NNNN-problem-slug/
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
+| 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
+| 100 | [Same Tree](0100-same-tree/) | Easy | Python |
 
