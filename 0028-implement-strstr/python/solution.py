@@ -8,3 +8,5 @@ class Solution:
             if haystack[i:i+m] == needle:
                 return i
         return -1
+
+# optim: pass small inputs straight through above
