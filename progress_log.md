@@ -154,3 +154,7 @@ short week. mostly cleanup and revisits.
 
 short week. mostly cleanup and revisits.
 
+## 2019-07-14
+
+small note.
+
