@@ -174,3 +174,7 @@ small note.
 
 small note.
 
+## 2019-08-05
+
+more practice this week. trying to be consistent.
+
