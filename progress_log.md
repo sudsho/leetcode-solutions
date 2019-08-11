@@ -182,3 +182,7 @@ more practice this week. trying to be consistent.
 
 small note.
 
+## 2019-08-11
+
+busy with school work, only a couple of problems this week.
+
