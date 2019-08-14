@@ -33,4 +33,6 @@ NNNN-problem-slug/
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
+| 101 | [Symmetric Tree](0101-symmetric-tree/) | Easy | Python |
+| 104 | [Maximum Depth of Binary Tree](0104-maximum-depth-of-binary-tree/) | Easy | Python |
 
