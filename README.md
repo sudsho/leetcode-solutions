@@ -35,4 +35,6 @@ NNNN-problem-slug/
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
 | 101 | [Symmetric Tree](0101-symmetric-tree/) | Easy | Python |
 | 104 | [Maximum Depth of Binary Tree](0104-maximum-depth-of-binary-tree/) | Easy | Python |
+| 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
+| 136 | [Single Number](0136-single-number/) | Easy | Python |
 
