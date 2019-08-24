@@ -206,3 +206,7 @@ small note.
 
 small note.
 
+## 2019-08-24
+
+busy with school work, only a couple of problems this week.
+
