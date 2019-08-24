@@ -11,3 +11,5 @@ class Solution:
                     return False
                 stack.pop()
         return len(stack) == 0
+
+# optim: pass small inputs straight through above
