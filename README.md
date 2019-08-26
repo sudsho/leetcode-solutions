@@ -38,4 +38,5 @@ NNNN-problem-slug/
 | 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
+| 155 | [Min Stack](0155-min-stack/) | Easy | Python |
 
