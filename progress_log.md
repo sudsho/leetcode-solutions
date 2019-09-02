@@ -226,3 +226,7 @@ small note.
 
 learning about binary search bounds.
 
+## 2019-09-02
+
+small note.
+
