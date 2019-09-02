@@ -222,3 +222,7 @@ small note.
 
 small note.
 
+## 2019-09-02
+
+learning about binary search bounds.
+
