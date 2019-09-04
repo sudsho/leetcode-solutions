@@ -1,7 +1,7 @@
 # 35. Search Insert Position
 
 Difficulty: Easy
-Topics: binary search, array
+Topics  : binary search, array
 
 ## Problem
 
