@@ -39,4 +39,6 @@ NNNN-problem-slug/
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
+| 169 | [Majority Element](0169-majority-element/) | Easy | Python |
+| 198 | [House Robber](0198-house-robber/) | Easy | Python |
 
