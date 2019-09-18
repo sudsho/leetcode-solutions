@@ -11,6 +11,7 @@ Given an integer array, find the contiguous subarray with the largest sum and re
 
 Kadane: at each index keep the best sum that ends here. Either extend the previous run or start over at the current value. Track global max along the way.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(1).
