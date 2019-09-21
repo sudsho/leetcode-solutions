@@ -1,3 +1,4 @@
+# revisited - cleaned up
 class Solution:
     def majorityElement(self, nums):
         # boyer-moore voting
