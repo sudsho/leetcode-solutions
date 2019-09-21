@@ -1,3 +1,4 @@
+# revisited - cleaned up
 class Solution:
     def maxProfit(self, prices):
         if not prices:
