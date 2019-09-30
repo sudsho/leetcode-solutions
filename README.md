@@ -41,4 +41,7 @@ NNNN-problem-slug/
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
+| 206 | [Reverse Linked List](0206-reverse-linked-list/) | Easy | Python |
+| 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
+| 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 
