@@ -12,3 +12,5 @@ class Solution:
             i -= 1
             j -= 1
         return ''.join(reversed(out))
+
+# optim: pass small inputs straight through above
