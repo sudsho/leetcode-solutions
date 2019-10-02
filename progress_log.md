@@ -250,3 +250,7 @@ small note.
 
 small note.
 
+## 2019-10-02
+
+looked into linked list problems. fast/slow pointer is neat.
+
