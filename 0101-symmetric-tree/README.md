@@ -11,6 +11,7 @@ Decide if a binary tree is a mirror of itself. Left subtree should be the mirror
 
 Helper that takes two nodes and compares them as mirror images: a.left vs b.right, a.right vs b.left.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(h).
