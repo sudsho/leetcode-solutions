@@ -45,4 +45,5 @@ NNNN-problem-slug/
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 | 234 | [Palindrome Linked List](0234-palindrome-linked-list/) | Easy | Python |
+| 242 | [Valid Anagram](0242-valid-anagram/) | Easy | Python |
 
