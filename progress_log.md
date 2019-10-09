@@ -258,3 +258,7 @@ looked into linked list problems. fast/slow pointer is neat.
 
 small note.
 
+## 2019-10-09
+
+small note.
+
