@@ -11,3 +11,5 @@ class Solution:
             else:
                 best = max(best, p - min_so_far)
         return best
+
+# optim: pass small inputs straight through above
