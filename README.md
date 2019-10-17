@@ -46,4 +46,9 @@ NNNN-problem-slug/
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 | 234 | [Palindrome Linked List](0234-palindrome-linked-list/) | Easy | Python |
 | 242 | [Valid Anagram](0242-valid-anagram/) | Easy | Python |
+| 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
+| 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
+| 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
+| 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
+| 448 | [Find All Numbers Disappeared in an Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
 
