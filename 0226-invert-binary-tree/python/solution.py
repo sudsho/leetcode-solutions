@@ -7,3 +7,5 @@ class Solution:
         self.invertTree(root.left)
         self.invertTree(root.right)
         return root
+
+# optim: pass small inputs straight through above
