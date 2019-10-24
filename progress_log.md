@@ -306,3 +306,7 @@ small note.
 
 small note.
 
+## 2019-10-24
+
+started keeping notes per problem.
+
