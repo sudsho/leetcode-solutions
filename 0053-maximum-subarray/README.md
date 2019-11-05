@@ -1,7 +1,7 @@
 # 53. Maximum Subarray
 
 Difficulty: Easy
-Topics: dynamic programming, array
+Topics  : dynamic programming, array
 
 ## Problem
 
