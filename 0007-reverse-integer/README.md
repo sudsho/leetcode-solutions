@@ -1,7 +1,7 @@
 # 7. Reverse Integer
 
 Difficulty: Easy
-Topics: math
+Topics  : math
 
 ## Problem
 
