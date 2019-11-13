@@ -330,3 +330,7 @@ small note.
 
 started keeping notes per problem.
 
+## 2019-11-13
+
+more practice this week. trying to be consistent.
+
