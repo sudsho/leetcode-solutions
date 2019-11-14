@@ -338,3 +338,7 @@ more practice this week. trying to be consistent.
 
 two-pointer pattern is showing up everywhere.
 
+## 2019-11-14
+
+short week. mostly cleanup and revisits.
+
