@@ -334,3 +334,7 @@ started keeping notes per problem.
 
 more practice this week. trying to be consistent.
 
+## 2019-11-14
+
+two-pointer pattern is showing up everywhere.
+
