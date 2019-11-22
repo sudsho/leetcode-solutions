@@ -52,4 +52,9 @@ NNNN-problem-slug/
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
 | 448 | [Find All Numbers Disappeared in an Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
+| 543 | [Diameter of Binary Tree](0543-diameter-of-binary-tree/) | Easy | Python |
+| 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
+| 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
+| 704 | [Binary Search](0704-binary-search/) | Easy | Python |
+| 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
 
