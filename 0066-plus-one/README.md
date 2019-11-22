@@ -1,7 +1,7 @@
 # 66. Plus One
 
 Difficulty: Easy
-Topics: array, math
+Topics  : array, math
 
 ## Problem
 
