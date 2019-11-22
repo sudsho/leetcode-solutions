@@ -346,3 +346,7 @@ short week. mostly cleanup and revisits.
 
 small note.
 
+## 2019-11-22
+
+two-pointer pattern is showing up everywhere.
+
