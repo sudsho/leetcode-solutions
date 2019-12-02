@@ -350,3 +350,7 @@ small note.
 
 two-pointer pattern is showing up everywhere.
 
+## 2019-12-02
+
+small note.
+
