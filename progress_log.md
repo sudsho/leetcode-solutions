@@ -354,3 +354,7 @@ two-pointer pattern is showing up everywhere.
 
 small note.
 
+## 2019-12-05
+
+learning about binary search bounds.
+
