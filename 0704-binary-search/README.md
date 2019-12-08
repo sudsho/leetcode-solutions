@@ -11,6 +11,7 @@ Search a sorted array for a target. Return its index, or -1 if missing.
 
 Standard binary search with lo and hi pointers.
 
+<!-- updated -->
 ## Complexity
 
 Time O(log n), space O(1).
