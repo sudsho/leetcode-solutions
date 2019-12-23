@@ -57,4 +57,10 @@ NNNN-problem-slug/
 | 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
+| 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
+| 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
+| 108 | [Convert Sorted Array to Binary Search Tree](0108-convert-sorted-array-to-bst/) | Easy | Python |
+| 231 | [Power of Two](0231-power-of-two/) | Easy | Python |
+| 268 | [Missing Number](0268-missing-number/) | Easy | Python |
+| 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 
