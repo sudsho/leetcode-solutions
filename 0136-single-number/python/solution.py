@@ -1,4 +1,4 @@
-# revisited - cleaned up
+# cleaned up
 class Solution:
     def singleNumber(self, nums):
         # x ^ x = 0, x ^ 0 = x, so all duplicates cancel
