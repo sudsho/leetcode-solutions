@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-LeetCode practice. Each folder = one problem (solution + writeup).
+My LeetCode practice. Per-problem folder with code and notes.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solutions index (49)
+## Index (52 problems)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -28,7 +28,9 @@ NNNN-problem-slug/
 | 27 | [Remove Element](0027-remove-element/) | Easy | Python |
 | 28 | [Implement strStr()](0028-implement-strstr/) | Easy | Python |
 | 35 | [Search Insert Position](0035-search-insert-position/) | Easy | Python |
+| 36 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Python |
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
+| 55 | [Jump Game](0055-jump-game/) | Medium | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
@@ -45,6 +47,7 @@ NNNN-problem-slug/
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
 | 206 | [Reverse Linked List](0206-reverse-linked-list/) | Easy | Python |
+| 215 | [Kth Largest Element in an Array](0215-kth-largest-element-in-an-array/) | Medium | Python |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 | 231 | [Power of Two](0231-power-of-two/) | Easy | Python |
