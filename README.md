@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-My LeetCode practice. Per-problem folder with code and notes.
+LeetCode practice. Each folder = one problem (solution + writeup).
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Index (52 problems)
+## Solutions index (55)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -39,6 +39,7 @@ NNNN-problem-slug/
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
 | 101 | [Symmetric Tree](0101-symmetric-tree/) | Easy | Python |
 | 104 | [Maximum Depth of Binary Tree](0104-maximum-depth-of-binary-tree/) | Easy | Python |
+| 105 | [Construct Binary Tree from Preorder and Inorder Traversal](0105-construct-binary-tree-from-preorder-and-inorder/) | Medium | Python |
 | 108 | [Convert Sorted Array to Binary Search Tree](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
@@ -55,6 +56,7 @@ NNNN-problem-slug/
 | 242 | [Valid Anagram](0242-valid-anagram/) | Easy | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
+| 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
@@ -66,4 +68,5 @@ NNNN-problem-slug/
 | 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
+| 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
