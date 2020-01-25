@@ -11,6 +11,7 @@ Given an array where one element appears more than n/2 times, return that majori
 
 Boyer-Moore voting. Track a candidate and a counter. Same as candidate -> count++, else count--. Reset candidate when count hits 0.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(1).
