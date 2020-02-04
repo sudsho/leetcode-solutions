@@ -394,3 +394,7 @@ small note.
 
 started keeping notes per problem.
 
+
+## 2020-02-04
+
+feeling more confident on trees.
