@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-LeetCode practice. Each folder = one problem (solution + writeup).
+LeetCode practice notebook. One folder per problem.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solutions index (55)
+## Solved (55)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
