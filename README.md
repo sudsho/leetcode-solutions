@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-LeetCode practice notebook. One folder per problem.
+My LeetCode practice. One folder per problem with the solution and a short writeup.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (55)
+## Solved problems (56)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -60,6 +60,7 @@ NNNN-problem-slug/
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
+| 416 | [Partition Equal Subset Sum](0416-partition-equal-subset-sum/) | Medium | Python |
 | 448 | [Find All Numbers Disappeared in an Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
