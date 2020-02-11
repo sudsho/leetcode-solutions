@@ -398,3 +398,7 @@ started keeping notes per problem.
 ## 2020-02-04
 
 feeling more confident on trees.
+
+## 2020-02-11
+
+kadane variant for max product.
