@@ -406,3 +406,7 @@ kadane variant for max product.
 ## 2020-02-22
 
 topo sort with kahn's algo.
+
+## 2020-02-22
+
+got OrderedDict trick for LRU.
