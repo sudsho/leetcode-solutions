@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-My LeetCode practice. One folder per problem with the solution and a short writeup.
+LeetCode practice notebook. One folder per problem.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved problems (56)
+## Solved (57)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -34,6 +34,7 @@ NNNN-problem-slug/
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
+| 74 | [Search a 2D Matrix](0074-search-a-2d-matrix/) | Medium | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
