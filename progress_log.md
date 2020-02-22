@@ -402,3 +402,7 @@ feeling more confident on trees.
 ## 2020-02-11
 
 kadane variant for max product.
+
+## 2020-02-22
+
+topo sort with kahn's algo.
