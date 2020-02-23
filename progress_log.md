@@ -410,3 +410,7 @@ topo sort with kahn's algo.
 ## 2020-02-22
 
 got OrderedDict trick for LRU.
+
+## 2020-02-23
+
+graph problems are clicking finally.
