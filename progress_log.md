@@ -414,3 +414,7 @@ got OrderedDict trick for LRU.
 ## 2020-02-23
 
 graph problems are clicking finally.
+
+## 2020-02-28
+
+wrote a slow brute force first then improved.
