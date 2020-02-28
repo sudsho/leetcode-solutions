@@ -418,3 +418,7 @@ graph problems are clicking finally.
 ## 2020-02-28
 
 wrote a slow brute force first then improved.
+
+## 2020-02-28
+
+first time using heapq seriously.
