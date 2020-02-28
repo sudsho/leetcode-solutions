@@ -11,6 +11,7 @@ Given a BST and a value, return the subtree rooted at the matching node, else No
 
 Walk down. At each node, go left or right based on comparison. Stop on match or null.
 
+<!-- updated -->
 ## Complexity
 
 Time O(h), space O(1) iterative.
