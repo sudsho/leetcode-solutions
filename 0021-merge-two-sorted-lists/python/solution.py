@@ -1,4 +1,4 @@
-# Definition for singly-linked list (LeetCode style)
+# revisited
 # class ListNode:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
