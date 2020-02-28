@@ -422,3 +422,7 @@ wrote a slow brute force first then improved.
 ## 2020-02-28
 
 first time using heapq seriously.
+
+## 2020-02-28
+
+binary search variants are tricky.
