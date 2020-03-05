@@ -1,4 +1,4 @@
-# revisited - cleaned up
+# cleaned up
 class Solution:
     def moveZeroes(self, nums):
         slow = 0
