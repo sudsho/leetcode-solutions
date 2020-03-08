@@ -426,3 +426,7 @@ first time using heapq seriously.
 ## 2020-02-28
 
 binary search variants are tricky.
+
+## 2020-03-08
+
+kadane variant for max product.
