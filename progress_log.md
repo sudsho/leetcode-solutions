@@ -430,3 +430,7 @@ binary search variants are tricky.
 ## 2020-03-08
 
 kadane variant for max product.
+
+## 2020-03-19
+
+monotonic stack is slick.
