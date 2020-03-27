@@ -434,3 +434,7 @@ kadane variant for max product.
 ## 2020-03-19
 
 monotonic stack is slick.
+
+## 2020-03-27
+
+deque is great for bfs.
