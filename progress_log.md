@@ -438,3 +438,7 @@ monotonic stack is slick.
 ## 2020-03-27
 
 deque is great for bfs.
+
+## 2020-03-30
+
+added a few alternate approaches.
