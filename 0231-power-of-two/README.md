@@ -11,6 +11,7 @@ Decide whether a positive integer n is a power of two.
 
 A power of two has exactly one set bit. n & (n - 1) clears the lowest set bit; if the result is 0 and n > 0 then n is a power of two.
 
+<!-- updated -->
 ## Complexity
 
 Time O(1), space O(1).
