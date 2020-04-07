@@ -442,3 +442,7 @@ deque is great for bfs.
 ## 2020-03-30
 
 added a few alternate approaches.
+
+## 2020-04-07
+
+type hints starting to feel natural.
