@@ -11,6 +11,7 @@ You climb a staircase with n steps and can take 1 or 2 steps at a time. Return t
 
 Same recurrence as Fibonacci. ways(n) = ways(n-1) + ways(n-2). Use two variables instead of an array.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(1).
