@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-My LeetCode practice. One folder per problem with the solution and a short writeup.
+LeetCode practice. Each folder = one problem (solution + writeup).
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved problems (59)
+## Solutions index (62)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -22,6 +22,7 @@ NNNN-problem-slug/
 | 13 | [Roman to Integer](0013-roman-to-integer/) | Easy | Python |
 | 14 | [Longest Common Prefix](0014-longest-common-prefix/) | Easy | Python |
 | 15 | [3Sum](0015-three-sum/) | Medium | Python |
+| 17 | [Letter Combinations of a Phone Number](0017-letter-combinations-of-a-phone-number/) | Medium | Python |
 | 20 | [Valid Parentheses](0020-valid-parentheses/) | Easy | Python |
 | 21 | [Merge Two Sorted Lists](0021-merge-two-sorted-lists/) | Easy | Python |
 | 26 | [Remove Duplicates from Sorted Array](0026-remove-duplicates-from-sorted-array/) | Easy | Python |
@@ -46,6 +47,8 @@ NNNN-problem-slug/
 | 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
+| 146 | [LRU Cache](0146-lru-cache/) | Medium | Python |
+| 152 | [Maximum Product Subarray](0152-maximum-product-subarray/) | Medium | Python |
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
