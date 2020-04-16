@@ -11,7 +11,7 @@ Decide if a string of (, ), {, }, [, ] is valid. Brackets must close in the corr
 
 Use a stack. Push openings. When we see a close, pop and check it matches. End valid only if stack is empty.
 
-<!-- updated -->
+<!-- revisited -->
 ## Complexity
 
 Time O(n), space O(n).
