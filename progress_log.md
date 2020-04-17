@@ -446,3 +446,7 @@ added a few alternate approaches.
 ## 2020-04-07
 
 type hints starting to feel natural.
+
+## 2020-04-17
+
+exam week coming up. light practice.
