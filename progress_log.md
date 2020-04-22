@@ -450,3 +450,7 @@ type hints starting to feel natural.
 ## 2020-04-17
 
 exam week coming up. light practice.
+
+## 2020-04-22
+
+back at it after a quiet week.
