@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved problems (62)
+## Solved problems (63)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -28,6 +28,7 @@ NNNN-problem-slug/
 | 26 | [Remove Duplicates from Sorted Array](0026-remove-duplicates-from-sorted-array/) | Easy | Python |
 | 27 | [Remove Element](0027-remove-element/) | Easy | Python |
 | 28 | [Implement strStr()](0028-implement-strstr/) | Easy | Python |
+| 33 | [Search in Rotated Sorted Array](0033-search-in-rotated-sorted-array/) | Medium | Python |
 | 35 | [Search Insert Position](0035-search-insert-position/) | Easy | Python |
 | 36 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Python |
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
