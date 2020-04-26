@@ -454,3 +454,7 @@ exam week coming up. light practice.
 ## 2020-04-22
 
 back at it after a quiet week.
+
+## 2020-04-26
+
+graph problems are clicking finally.
