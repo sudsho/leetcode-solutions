@@ -1,4 +1,4 @@
-# revisited
+# revisited - cleaned up
 class Solution:
     def maxDepth(self, root):
         if not root:
