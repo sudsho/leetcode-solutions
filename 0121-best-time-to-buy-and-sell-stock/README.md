@@ -11,7 +11,7 @@ Given prices[i] = price of a stock on day i, find the max profit from one buy an
 
 Track the minimum price seen so far. At each day, profit = today minus min so far. Update best profit.
 
-<!-- updated -->
+<!-- revisited -->
 ## Complexity
 
 Time O(n), space O(1).
