@@ -1,4 +1,4 @@
-# revisited - cleaned up
+# cleaned up
 class Solution:
     def reverse(self, x):
         # handle sign separately
