@@ -18,3 +18,4 @@ Time O(4^n * n), space O(n) recursion.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
