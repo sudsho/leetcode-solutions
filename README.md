@@ -11,11 +11,13 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved problems (63)
+## Solved problems (67)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
 | 1 | [Two Sum](0001-two-sum/) | Easy | Python |
+| 3 | [Longest Substring Without Repeating Characters](0003-longest-substring-without-repeating-characters/) | Medium | Python |
+| 5 | [Longest Palindromic Substring](0005-longest-palindromic-substring/) | Medium | Python |
 | 7 | [Reverse Integer](0007-reverse-integer/) | Easy | Python |
 | 9 | [Palindrome Number](0009-palindrome-number/) | Easy | Python |
 | 11 | [Container With Most Water](0011-container-with-most-water/) | Medium | Python |
@@ -33,6 +35,7 @@ NNNN-problem-slug/
 | 36 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Python |
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
 | 55 | [Jump Game](0055-jump-game/) | Medium | Python |
+| 56 | [Merge Intervals](0056-merge-intervals/) | Medium | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
@@ -72,6 +75,7 @@ NNNN-problem-slug/
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
 | 543 | [Diameter of Binary Tree](0543-diameter-of-binary-tree/) | Easy | Python |
+| 560 | [Subarray Sum Equals K](0560-subarray-sum-equals-k/) | Medium | Python |
 | 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
 | 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
