@@ -18,3 +18,4 @@ Time O(n), space O(min(n, alphabet)).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
