@@ -462,3 +462,7 @@ graph problems are clicking finally.
 ## 2020-04-27
 
 small note.
+
+## 2020-06-20
+
+back at it after a quiet week.
