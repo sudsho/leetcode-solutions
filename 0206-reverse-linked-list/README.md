@@ -11,6 +11,7 @@ Reverse a singly linked list and return its new head.
 
 Iterative: walk through, flip the next pointer of each node to point to its predecessor.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(1) iterative; O(n) recursive.
