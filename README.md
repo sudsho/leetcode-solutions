@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-My LeetCode practice. One folder per problem with the solution and a short writeup.
+My LeetCode practice. Per-problem folder with code and notes.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved problems (67)
+## Index (68 problems)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -45,6 +45,7 @@ NNNN-problem-slug/
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
 | 101 | [Symmetric Tree](0101-symmetric-tree/) | Easy | Python |
+| 102 | [Binary Tree Level Order Traversal](0102-binary-tree-level-order-traversal/) | Medium | Python |
 | 104 | [Maximum Depth of Binary Tree](0104-maximum-depth-of-binary-tree/) | Easy | Python |
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](0105-construct-binary-tree-from-preorder-and-inorder/) | Medium | Python |
 | 108 | [Convert Sorted Array to Binary Search Tree](0108-convert-sorted-array-to-bst/) | Easy | Python |
