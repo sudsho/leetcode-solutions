@@ -1,4 +1,4 @@
-# cleaned up
+# minor pass
 class Solution:
     def isPalindrome(self, x):
         # negative numbers cannot be palindromes (the - sign messes it up)
