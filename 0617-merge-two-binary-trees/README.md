@@ -11,6 +11,7 @@ Merge two binary trees by overlaying them. If two nodes overlap, the merged node
 
 Recurse. If either is null return the other. Else create a new node with sum and recurse on left/right pairs.
 
+<!-- updated -->
 ## Complexity
 
 Time O(min(n,m)), space O(h).
