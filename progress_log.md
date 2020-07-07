@@ -466,3 +466,7 @@ small note.
 ## 2020-06-20
 
 back at it after a quiet week.
+
+## 2020-07-07
+
+backtracking template helps a lot.
