@@ -1,4 +1,4 @@
-# cleaned up
+# minor pass
 class Solution:
     def searchInsert(self, nums, target):
         lo, hi = 0, len(nums) - 1
