@@ -470,3 +470,7 @@ back at it after a quiet week.
 ## 2020-07-07
 
 backtracking template helps a lot.
+
+## 2020-07-15
+
+back at it after a quiet week.
