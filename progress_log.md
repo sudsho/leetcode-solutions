@@ -474,3 +474,7 @@ backtracking template helps a lot.
 ## 2020-07-15
 
 back at it after a quiet week.
+
+## 2020-07-22
+
+added a few alternate approaches.
