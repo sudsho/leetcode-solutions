@@ -478,3 +478,7 @@ back at it after a quiet week.
 ## 2020-07-22
 
 added a few alternate approaches.
+
+## 2020-07-24
+
+walrus operator in Python 3.8 is fun.
