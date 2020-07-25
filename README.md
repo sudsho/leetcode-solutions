@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-My LeetCode practice. One folder per problem with the solution and a short writeup.
+My LeetCode practice. One folder per problem. Each folder has the solution and a short writeup.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved problems (68)
+## Solved (75 problems)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -25,6 +25,7 @@ NNNN-problem-slug/
 | 14 | [Longest Common Prefix](0014-longest-common-prefix/) | Easy | Python |
 | 15 | [3Sum](0015-three-sum/) | Medium | Python |
 | 17 | [Letter Combinations of a Phone Number](0017-letter-combinations-of-a-phone-number/) | Medium | Python |
+| 19 | [Remove Nth Node From End of List](0019-remove-nth-node-from-end-of-list/) | Medium | Python |
 | 20 | [Valid Parentheses](0020-valid-parentheses/) | Easy | Python |
 | 21 | [Merge Two Sorted Lists](0021-merge-two-sorted-lists/) | Easy | Python |
 | 26 | [Remove Duplicates from Sorted Array](0026-remove-duplicates-from-sorted-array/) | Easy | Python |
@@ -33,6 +34,7 @@ NNNN-problem-slug/
 | 33 | [Search in Rotated Sorted Array](0033-search-in-rotated-sorted-array/) | Medium | Python |
 | 35 | [Search Insert Position](0035-search-insert-position/) | Easy | Python |
 | 36 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Python |
+| 49 | [Group Anagrams](0049-group-anagrams/) | Medium | Python |
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
 | 55 | [Jump Game](0055-jump-game/) | Medium | Python |
 | 56 | [Merge Intervals](0056-merge-intervals/) | Medium | Python |
@@ -50,13 +52,16 @@ NNNN-problem-slug/
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](0105-construct-binary-tree-from-preorder-and-inorder/) | Medium | Python |
 | 108 | [Convert Sorted Array to Binary Search Tree](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
+| 133 | [Clone Graph](0133-clone-graph/) | Medium | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
+| 142 | [Linked List Cycle II](0142-linked-list-cycle-ii/) | Medium | Python |
 | 146 | [LRU Cache](0146-lru-cache/) | Medium | Python |
 | 152 | [Maximum Product Subarray](0152-maximum-product-subarray/) | Medium | Python |
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
+| 200 | [Number of Islands](0200-number-of-islands/) | Medium | Python |
 | 206 | [Reverse Linked List](0206-reverse-linked-list/) | Easy | Python |
 | 215 | [Kth Largest Element in an Array](0215-kth-largest-element-in-an-array/) | Medium | Python |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
@@ -78,8 +83,10 @@ NNNN-problem-slug/
 | 543 | [Diameter of Binary Tree](0543-diameter-of-binary-tree/) | Easy | Python |
 | 560 | [Subarray Sum Equals K](0560-subarray-sum-equals-k/) | Medium | Python |
 | 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
+| 647 | [Palindromic Substrings](0647-palindromic-substrings/) | Medium | Python |
 | 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
+| 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
