@@ -1,4 +1,4 @@
-# revisited - cleaned up
+# cleaned up
 class Solution:
     def reverseList(self, head):
         prev = None
