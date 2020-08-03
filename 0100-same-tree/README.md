@@ -11,7 +11,7 @@ Decide whether two binary trees are identical in both structure and values.
 
 Recurse. Both null = same. One null = different. Otherwise compare values and recurse on left and right children.
 
-<!-- updated -->
+<!-- revisited -->
 ## Complexity
 
 Time O(n), space O(h) where h is height.
