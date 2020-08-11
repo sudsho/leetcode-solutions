@@ -482,3 +482,7 @@ added a few alternate approaches.
 ## 2020-07-24
 
 walrus operator in Python 3.8 is fun.
+
+## 2020-08-11
+
+starting to see the medium difficulty problems.
