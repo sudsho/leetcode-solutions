@@ -18,3 +18,4 @@ Time O(n*k log k) sort version, space O(n*k).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
