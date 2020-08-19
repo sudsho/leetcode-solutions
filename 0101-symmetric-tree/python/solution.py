@@ -1,3 +1,4 @@
+# revisited
 class Solution:
     def isSymmetric(self, root):
         if not root:
