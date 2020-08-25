@@ -490,3 +490,7 @@ starting to see the medium difficulty problems.
 ## 2020-08-22
 
 feeling more confident on trees.
+
+## 2020-08-25
+
+small note.
