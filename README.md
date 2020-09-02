@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (75 problems)
+## Solved (81 problems)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -34,6 +34,8 @@ NNNN-problem-slug/
 | 33 | [Search in Rotated Sorted Array](0033-search-in-rotated-sorted-array/) | Medium | Python |
 | 35 | [Search Insert Position](0035-search-insert-position/) | Easy | Python |
 | 36 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Python |
+| 39 | [Combination Sum](0039-combination-sum/) | Medium | Python |
+| 48 | [Rotate Image](0048-rotate-image/) | Medium | Python |
 | 49 | [Group Anagrams](0049-group-anagrams/) | Medium | Python |
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
 | 55 | [Jump Game](0055-jump-game/) | Medium | Python |
@@ -43,6 +45,7 @@ NNNN-problem-slug/
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
 | 73 | [Set Matrix Zeroes](0073-set-matrix-zeroes/) | Medium | Python |
 | 74 | [Search a 2D Matrix](0074-search-a-2d-matrix/) | Medium | Python |
+| 78 | [Subsets](0078-subsets/) | Medium | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
@@ -52,6 +55,7 @@ NNNN-problem-slug/
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](0105-construct-binary-tree-from-preorder-and-inorder/) | Medium | Python |
 | 108 | [Convert Sorted Array to Binary Search Tree](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
+| 124 | [Binary Tree Maximum Path Sum](0124-binary-tree-maximum-path-sum/) | Hard | Python |
 | 133 | [Clone Graph](0133-clone-graph/) | Medium | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
@@ -66,9 +70,11 @@ NNNN-problem-slug/
 | 215 | [Kth Largest Element in an Array](0215-kth-largest-element-in-an-array/) | Medium | Python |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
+| 230 | [Kth Smallest Element in a BST](0230-kth-smallest-element-in-a-bst/) | Medium | Python |
 | 231 | [Power of Two](0231-power-of-two/) | Easy | Python |
 | 234 | [Palindrome Linked List](0234-palindrome-linked-list/) | Easy | Python |
 | 242 | [Valid Anagram](0242-valid-anagram/) | Easy | Python |
+| 253 | [Meeting Rooms II](0253-meeting-rooms-ii/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
 | 297 | [Serialize and Deserialize Binary Tree](0297-serialize-and-deserialize-binary-tree/) | Hard | Python |
