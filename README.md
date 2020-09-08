@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-My LeetCode practice. One folder per problem. Each folder has the solution and a short writeup.
+LeetCode practice notebook. One folder per problem.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (81 problems)
+## Solved (82)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -79,6 +79,7 @@ NNNN-problem-slug/
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
 | 297 | [Serialize and Deserialize Binary Tree](0297-serialize-and-deserialize-binary-tree/) | Hard | Python |
 | 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
+| 322 | [Coin Change](0322-coin-change/) | Medium | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
