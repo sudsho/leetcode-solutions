@@ -494,3 +494,7 @@ feeling more confident on trees.
 ## 2020-08-25
 
 small note.
+
+## 2020-09-09
+
+two pointer pattern came up again.
