@@ -1,3 +1,4 @@
+# revisited
 class Solution:
     def isValid(self, s):
         stack = []
