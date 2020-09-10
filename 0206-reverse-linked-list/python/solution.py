@@ -1,4 +1,4 @@
-# cleaned up
+# minor pass
 class Solution:
     def reverseList(self, head):
         prev = None
