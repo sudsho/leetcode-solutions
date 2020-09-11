@@ -11,6 +11,7 @@ Invert (mirror) a binary tree by swapping left and right children of every node.
 
 Recurse. Swap children, then recurse into them. Or do BFS/DFS and swap as you visit.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(h).
