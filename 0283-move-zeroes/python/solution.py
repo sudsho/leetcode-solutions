@@ -1,4 +1,4 @@
-# cleaned up
+# minor pass
 class Solution:
     def moveZeroes(self, nums):
         slow = 0
