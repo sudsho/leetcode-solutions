@@ -1,4 +1,4 @@
-# revisited - cleaned up
+# cleaned up
 class Solution:
     def mergeTrees(self, t1, t2):
         if not t1:
