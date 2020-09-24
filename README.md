@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-LeetCode practice. Each folder = one problem (solution + writeup).
+LeetCode practice notebook. One folder per problem.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solutions index (82)
+## Solved (83)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -40,6 +40,7 @@ NNNN-problem-slug/
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
 | 55 | [Jump Game](0055-jump-game/) | Medium | Python |
 | 56 | [Merge Intervals](0056-merge-intervals/) | Medium | Python |
+| 62 | [Unique Paths](0062-unique-paths/) | Medium | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
