@@ -11,6 +11,7 @@ Return the maximum depth (number of nodes along the longest root-to-leaf path) o
 
 Recurse. Depth of a node is 1 + max of depths of its children. Empty tree has depth 0.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(h).
