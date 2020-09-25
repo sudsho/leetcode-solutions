@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-LeetCode practice notebook. One folder per problem.
+My LeetCode practice. One folder per problem. Each folder has the solution and a short writeup.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (83)
+## Solved (85 problems)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -48,7 +48,9 @@ NNNN-problem-slug/
 | 74 | [Search a 2D Matrix](0074-search-a-2d-matrix/) | Medium | Python |
 | 78 | [Subsets](0078-subsets/) | Medium | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
+| 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
+| 98 | [Validate Binary Search Tree](0098-validate-binary-search-tree/) | Medium | Python |
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
 | 101 | [Symmetric Tree](0101-symmetric-tree/) | Easy | Python |
 | 102 | [Binary Tree Level Order Traversal](0102-binary-tree-level-order-traversal/) | Medium | Python |
