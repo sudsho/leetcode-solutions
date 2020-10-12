@@ -498,3 +498,7 @@ small note.
 ## 2020-09-09
 
 two pointer pattern came up again.
+
+## 2020-10-12
+
+interval merging via sort first.
