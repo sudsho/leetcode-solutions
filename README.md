@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-My LeetCode practice. Per-problem folder with code and notes.
+LeetCode practice. Each folder = one problem (solution + writeup).
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Index (85 problems)
+## Solutions index (88)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -70,6 +70,7 @@ NNNN-problem-slug/
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
 | 200 | [Number of Islands](0200-number-of-islands/) | Medium | Python |
 | 206 | [Reverse Linked List](0206-reverse-linked-list/) | Easy | Python |
+| 207 | [Course Schedule](0207-course-schedule/) | Medium | Python |
 | 215 | [Kth Largest Element in an Array](0215-kth-largest-element-in-an-array/) | Medium | Python |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
@@ -80,8 +81,10 @@ NNNN-problem-slug/
 | 253 | [Meeting Rooms II](0253-meeting-rooms-ii/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
+| 287 | [Find the Duplicate Number](0287-find-the-duplicate-number/) | Medium | Python |
 | 297 | [Serialize and Deserialize Binary Tree](0297-serialize-and-deserialize-binary-tree/) | Hard | Python |
 | 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
+| 309 | [Best Time to Buy and Sell Stock with Cooldown](0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | Python |
 | 322 | [Coin Change](0322-coin-change/) | Medium | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
