@@ -502,3 +502,7 @@ two pointer pattern came up again.
 ## 2020-10-12
 
 interval merging via sort first.
+
+## 2020-10-19
+
+more practice this week.
