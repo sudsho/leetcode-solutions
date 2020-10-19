@@ -506,3 +506,7 @@ interval merging via sort first.
 ## 2020-10-19
 
 more practice this week.
+
+## 2020-10-19
+
+backtracking template helps a lot.
