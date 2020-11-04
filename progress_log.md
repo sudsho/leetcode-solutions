@@ -510,3 +510,7 @@ more practice this week.
 ## 2020-10-19
 
 backtracking template helps a lot.
+
+## 2020-11-04
+
+two pointer pattern came up again.
