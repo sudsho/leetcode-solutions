@@ -1,4 +1,4 @@
-# revisited
+# revisited - cleaned up
 class Solution:
     def isAnagram(self, s, t):
         if len(s) != len(t):
