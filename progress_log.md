@@ -514,3 +514,7 @@ backtracking template helps a lot.
 ## 2020-11-04
 
 two pointer pattern came up again.
+
+## 2020-11-09
+
+kadane variant for max product.
