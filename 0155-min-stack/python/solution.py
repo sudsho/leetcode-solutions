@@ -1,4 +1,4 @@
-# revisited
+# revisited - cleaned up
 class MinStack:
     def __init__(self):
         self.stack = []
