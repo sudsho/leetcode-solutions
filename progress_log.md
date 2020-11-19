@@ -518,3 +518,7 @@ two pointer pattern came up again.
 ## 2020-11-09
 
 kadane variant for max product.
+
+## 2020-11-19
+
+sliding window starting to feel natural.
