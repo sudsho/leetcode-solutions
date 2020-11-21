@@ -11,6 +11,7 @@ Decide whether a singly linked list has a cycle.
 
 Floyd two-pointer (tortoise and hare). Slow moves one, fast moves two. If they ever meet there is a cycle. If fast hits None there is none.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(1).
