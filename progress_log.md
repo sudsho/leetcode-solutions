@@ -522,3 +522,7 @@ kadane variant for max product.
 ## 2020-11-19
 
 sliding window starting to feel natural.
+
+## 2020-11-24
+
+added a few alternate approaches.
