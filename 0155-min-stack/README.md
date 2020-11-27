@@ -11,7 +11,7 @@ Design a stack that also supports getMin in O(1). All operations push, pop, top,
 
 Keep a parallel min stack. Each push also pushes the current min onto it. Top of min stack is always the current minimum.
 
-<!-- updated -->
+<!-- revisited -->
 ## Complexity
 
 All ops O(1).
