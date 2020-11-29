@@ -11,6 +11,7 @@ Decide whether two strings are anagrams of each other (same letters, same counts
 
 Count letters of one string, decrement for the other. If all counts end at zero, anagram. Or just compare sorted strings.
 
+<!-- updated -->
 ## Complexity
 
 Time O(n), space O(1) (alphabet size).
