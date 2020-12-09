@@ -526,3 +526,7 @@ sliding window starting to feel natural.
 ## 2020-11-24
 
 added a few alternate approaches.
+
+## 2020-12-09
+
+interval merging via sort first.
