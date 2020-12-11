@@ -19,3 +19,4 @@ Time O(S) where S is sum of all chars. Space O(1).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
