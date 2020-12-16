@@ -1,4 +1,4 @@
-# cleaned up
+# minor pass
 class Solution:
     def isAnagram(self, s, t):
         if len(s) != len(t):
