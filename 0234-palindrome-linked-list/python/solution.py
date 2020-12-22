@@ -1,3 +1,4 @@
+# revisited
 class Solution:
     def isPalindrome(self, head):
         # easy version - copy values to a list
