@@ -11,7 +11,7 @@ Given two sorted linked lists, merge them into one sorted linked list and return
 
 Use a dummy head. Walk both lists, attach the smaller node to the tail, advance that list. When one runs out, attach the remainder of the other.
 
-<!-- revisited -->
+<!-- minor cleanup -->
 ## Complexity
 
 Time O(n + m), space O(1) extra (we reuse nodes).
