@@ -1,6 +1,6 @@
 # leetcode-solutions
 
-LeetCode practice. Each folder = one problem (solution + writeup).
+LeetCode practice notebook. One folder per problem.
 
 ## Structure
 
@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solutions index (101)
+## Solved (102)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -84,6 +84,7 @@ NNNN-problem-slug/
 | 230 | [Kth Smallest Element in a BST](0230-kth-smallest-element-in-a-bst/) | Medium | Python |
 | 231 | [Power of Two](0231-power-of-two/) | Easy | Python |
 | 234 | [Palindrome Linked List](0234-palindrome-linked-list/) | Easy | Python |
+| 235 | [Lowest Common Ancestor of a Binary Search Tree](0235-lowest-common-ancestor-of-a-bst/) | Medium | Python |
 | 238 | [Product of Array Except Self](0238-product-of-array-except-self/) | Medium | Python |
 | 240 | [Search a 2D Matrix II](0240-search-a-2d-matrix-ii/) | Medium | Python |
 | 242 | [Valid Anagram](0242-valid-anagram/) | Easy | Python |
