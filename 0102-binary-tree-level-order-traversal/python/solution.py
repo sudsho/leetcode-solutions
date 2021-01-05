@@ -17,3 +17,4 @@ class Solution:
                     q.append(node.right)
             out.append(level)
         return out
+# typing fix
