@@ -11,3 +11,4 @@ class Solution:
             count += seen[cur - k]
             seen[cur] += 1
         return count
+# notes: tightened naming
