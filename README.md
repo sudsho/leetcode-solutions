@@ -11,15 +11,17 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (102)
+## Solved (107)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
 | 1 | [Two Sum](0001-two-sum/) | Easy | Python |
 | 3 | [Longest Substring Without Repeating Characters](0003-longest-substring-without-repeating-characters/) | Medium | Python |
+| 4 | [Median Of Two Sorted Arrays](0004-median-of-two-sorted-arrays/) | Hard | Python |
 | 5 | [Longest Palindromic Substring](0005-longest-palindromic-substring/) | Medium | Python |
 | 7 | [Reverse Integer](0007-reverse-integer/) | Easy | Python |
 | 9 | [Palindrome Number](0009-palindrome-number/) | Easy | Python |
+| 10 | [Regular Expression Matching](0010-regular-expression-matching/) | Hard | Python |
 | 11 | [Container With Most Water](0011-container-with-most-water/) | Medium | Python |
 | 13 | [Roman to Integer](0013-roman-to-integer/) | Easy | Python |
 | 14 | [Longest Common Prefix](0014-longest-common-prefix/) | Easy | Python |
@@ -33,10 +35,13 @@ NNNN-problem-slug/
 | 26 | [Remove Duplicates from Sorted Array](0026-remove-duplicates-from-sorted-array/) | Easy | Python |
 | 27 | [Remove Element](0027-remove-element/) | Easy | Python |
 | 28 | [Implement strStr()](0028-implement-strstr/) | Easy | Python |
+| 32 | [Longest Valid Parentheses](0032-longest-valid-parentheses/) | Hard | Python |
 | 33 | [Search in Rotated Sorted Array](0033-search-in-rotated-sorted-array/) | Medium | Python |
 | 35 | [Search Insert Position](0035-search-insert-position/) | Easy | Python |
 | 36 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Python |
 | 39 | [Combination Sum](0039-combination-sum/) | Medium | Python |
+| 41 | [First Missing Positive](0041-first-missing-positive/) | Hard | Python |
+| 42 | [Trapping Rain Water](0042-trapping-rain-water/) | Hard | Python |
 | 46 | [Permutations](0046-permutations/) | Medium | Python |
 | 48 | [Rotate Image](0048-rotate-image/) | Medium | Python |
 | 49 | [Group Anagrams](0049-group-anagrams/) | Medium | Python |
