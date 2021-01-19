@@ -15,3 +15,4 @@ class Solution:
                 path.pop()
         backtrack(0, [])
         return out
+# notes: tightened naming
