@@ -530,3 +530,7 @@ added a few alternate approaches.
 ## 2020-12-09
 
 interval merging via sort first.
+
+## 2021-01-21
+
+lazy evaluation tricks.
