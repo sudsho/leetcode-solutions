@@ -1,3 +1,4 @@
+# minor refactor
 class Solution:
     def exist(self, board, word):
         rows, cols = len(board), len(board[0])
