@@ -1,4 +1,4 @@
-# revisited
+# revisit, tightened
 class Solution:
     def threeSum(self, nums):
         nums.sort()
