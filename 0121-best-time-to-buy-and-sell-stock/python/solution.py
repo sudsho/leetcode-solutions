@@ -13,3 +13,4 @@ class Solution:
         return best
 
 # optim: pass small inputs straight through above
+# notes: tightened naming
