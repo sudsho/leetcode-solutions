@@ -534,3 +534,7 @@ interval merging via sort first.
 ## 2021-01-21
 
 lazy evaluation tricks.
+
+## 2021-02-05
+
+review week.
