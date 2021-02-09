@@ -1,3 +1,4 @@
+# minor refactor
 from collections import defaultdict, deque
 
 class Solution:
