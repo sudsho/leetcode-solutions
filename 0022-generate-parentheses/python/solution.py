@@ -11,3 +11,4 @@ class Solution:
                 go(s + ")", op, cl + 1)
         go("", 0, 0)
         return out
+# typing fix
