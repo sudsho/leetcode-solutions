@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (108)
+## Solved (111)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -53,10 +53,13 @@ NNNN-problem-slug/
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
+| 72 | [Edit Distance](0072-edit-distance/) | Hard | Python |
 | 73 | [Set Matrix Zeroes](0073-set-matrix-zeroes/) | Medium | Python |
 | 74 | [Search a 2D Matrix](0074-search-a-2d-matrix/) | Medium | Python |
+| 76 | [Minimum Window Substring](0076-minimum-window-substring/) | Hard | Python |
 | 78 | [Subsets](0078-subsets/) | Medium | Python |
 | 79 | [Word Search](0079-word-search/) | Medium | Python |
+| 84 | [Largest Rectangle In Histogram](0084-largest-rectangle-in-histogram/) | Hard | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
