@@ -18,3 +18,4 @@ Time O(amount * n), space O(amount).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
