@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (111)
+## Solved (113)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -74,8 +74,10 @@ NNNN-problem-slug/
 | 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 124 | [Binary Tree Maximum Path Sum](0124-binary-tree-maximum-path-sum/) | Hard | Python |
 | 128 | [Longest Consecutive Sequence](0128-longest-consecutive-sequence/) | Medium | Python |
+| 131 | [Palindrome Partitioning](0131-palindrome-partitioning/) | Medium | Python |
 | 133 | [Clone Graph](0133-clone-graph/) | Medium | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
+| 138 | [Copy List With Random Pointer](0138-copy-list-with-random-pointer/) | Medium | Python |
 | 139 | [Word Break](0139-word-break/) | Medium | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
 | 142 | [Linked List Cycle II](0142-linked-list-cycle-ii/) | Medium | Python |
