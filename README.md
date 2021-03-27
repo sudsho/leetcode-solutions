@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (113)
+## Solved (114)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -82,6 +82,7 @@ NNNN-problem-slug/
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
 | 142 | [Linked List Cycle II](0142-linked-list-cycle-ii/) | Medium | Python |
 | 146 | [LRU Cache](0146-lru-cache/) | Medium | Python |
+| 148 | [Sort List](0148-sort-list/) | Medium | Python |
 | 152 | [Maximum Product Subarray](0152-maximum-product-subarray/) | Medium | Python |
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
