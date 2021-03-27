@@ -538,3 +538,7 @@ lazy evaluation tricks.
 ## 2021-02-05
 
 review week.
+
+## 2021-03-27
+
+type hints feel natural now.
