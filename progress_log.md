@@ -542,3 +542,7 @@ review week.
 ## 2021-03-27
 
 type hints feel natural now.
+
+## 2021-03-29
+
+weekend long session.
