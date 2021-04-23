@@ -546,3 +546,7 @@ type hints feel natural now.
 ## 2021-03-29
 
 weekend long session.
+
+## 2021-04-24
+
+more graph problems this week.
