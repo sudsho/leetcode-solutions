@@ -550,3 +550,7 @@ weekend long session.
 ## 2021-04-24
 
 more graph problems this week.
+
+## 2021-05-05
+
+felt slow today, just one easy.
