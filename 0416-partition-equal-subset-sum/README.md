@@ -18,3 +18,4 @@ Time O(n*sum), space O(sum).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
