@@ -558,3 +558,7 @@ felt slow today, just one easy.
 ## 2021-05-05
 
 small note.
+
+## 2021-05-07
+
+two heap trick for medians.
