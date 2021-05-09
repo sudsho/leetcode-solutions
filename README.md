@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (114)
+## Solved (121)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -84,14 +84,20 @@ NNNN-problem-slug/
 | 146 | [LRU Cache](0146-lru-cache/) | Medium | Python |
 | 148 | [Sort List](0148-sort-list/) | Medium | Python |
 | 152 | [Maximum Product Subarray](0152-maximum-product-subarray/) | Medium | Python |
+| 153 | [Find Minimum In Rotated Sorted Array](0153-find-minimum-in-rotated-sorted-array/) | Medium | Python |
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
+| 162 | [Find Peak Element](0162-find-peak-element/) | Medium | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
+| 189 | [Rotate Array](0189-rotate-array/) | Medium | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
 | 200 | [Number of Islands](0200-number-of-islands/) | Medium | Python |
 | 206 | [Reverse Linked List](0206-reverse-linked-list/) | Easy | Python |
 | 207 | [Course Schedule](0207-course-schedule/) | Medium | Python |
+| 208 | [Implement Trie](0208-implement-trie/) | Medium | Python |
+| 213 | [House Robber Ii](0213-house-robber-ii/) | Medium | Python |
 | 215 | [Kth Largest Element in an Array](0215-kth-largest-element-in-an-array/) | Medium | Python |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
+| 221 | [Maximal Square](0221-maximal-square/) | Medium | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 | 230 | [Kth Smallest Element in a BST](0230-kth-smallest-element-in-a-bst/) | Medium | Python |
 | 231 | [Power of Two](0231-power-of-two/) | Easy | Python |
@@ -101,6 +107,7 @@ NNNN-problem-slug/
 | 240 | [Search a 2D Matrix II](0240-search-a-2d-matrix-ii/) | Medium | Python |
 | 242 | [Valid Anagram](0242-valid-anagram/) | Easy | Python |
 | 253 | [Meeting Rooms II](0253-meeting-rooms-ii/) | Medium | Python |
+| 261 | [Graph Valid Tree](0261-graph-valid-tree/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
 | 287 | [Find the Duplicate Number](0287-find-the-duplicate-number/) | Medium | Python |
