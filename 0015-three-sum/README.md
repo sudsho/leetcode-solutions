@@ -18,3 +18,4 @@ Time O(n^2), space O(1) extra (output not counted).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
