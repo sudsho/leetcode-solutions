@@ -24,3 +24,4 @@ class Codec:
             return node
 
         return build()
+# typing fix
