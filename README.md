@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (121)
+## Solved (123)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -109,8 +109,10 @@ NNNN-problem-slug/
 | 253 | [Meeting Rooms II](0253-meeting-rooms-ii/) | Medium | Python |
 | 261 | [Graph Valid Tree](0261-graph-valid-tree/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
+| 273 | [Integer To English Words](0273-integer-to-english-words/) | Hard | Python |
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
 | 287 | [Find the Duplicate Number](0287-find-the-duplicate-number/) | Medium | Python |
+| 295 | [Find Median From Data Stream](0295-find-median-from-data-stream/) | Hard | Python |
 | 297 | [Serialize and Deserialize Binary Tree](0297-serialize-and-deserialize-binary-tree/) | Hard | Python |
 | 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | Python |
