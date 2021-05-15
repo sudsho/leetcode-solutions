@@ -1,3 +1,4 @@
+# minor refactor
 class Solution:
     def lengthOfLongestSubstring(self, s):
         last = {}
