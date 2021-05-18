@@ -23,3 +23,4 @@ class Solution:
             else:
                 lo = i + 1
         return 0.0
+# typing fix
