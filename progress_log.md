@@ -562,3 +562,7 @@ small note.
 ## 2021-05-07
 
 two heap trick for medians.
+
+## 2021-05-19
+
+got dataclass to play nice.
