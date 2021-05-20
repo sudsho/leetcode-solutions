@@ -9,3 +9,4 @@ class Solution:
             if cur_max > best:
                 best = cur_max
         return best
+# typing fix
