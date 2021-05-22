@@ -1,3 +1,4 @@
+# style tweak
 class Solution:
     def maxProfit(self, prices):
         hold = float("-inf")
