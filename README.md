@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (123)
+## Solved (127)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -116,9 +116,13 @@ NNNN-problem-slug/
 | 297 | [Serialize and Deserialize Binary Tree](0297-serialize-and-deserialize-binary-tree/) | Hard | Python |
 | 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | Python |
+| 312 | [Burst Balloons](0312-burst-balloons/) | Hard | Python |
 | 322 | [Coin Change](0322-coin-change/) | Medium | Python |
+| 329 | [Longest Increasing Path In Matrix](0329-longest-increasing-path-in-matrix/) | Hard | Python |
+| 332 | [Reconstruct Itinerary](0332-reconstruct-itinerary/) | Hard | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 347 | [Top K Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
+| 378 | [Kth Smallest Element In Sorted Matrix](0378-kth-smallest-element-in-sorted-matrix/) | Medium | Python |
 | 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
 | 416 | [Partition Equal Subset Sum](0416-partition-equal-subset-sum/) | Medium | Python |
