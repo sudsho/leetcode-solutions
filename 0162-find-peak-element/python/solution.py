@@ -10,3 +10,4 @@ class Solution:
             else:
                 hi = mid
         return lo
+# typing fix
