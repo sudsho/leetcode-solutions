@@ -1,4 +1,4 @@
-# small cleanup
+# minor refactor
 import heapq
 
 class Solution:
