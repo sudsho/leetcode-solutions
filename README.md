@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (127)
+## Solved (128)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -130,6 +130,7 @@ NNNN-problem-slug/
 | 437 | [Path Sum III](0437-path-sum-iii/) | Medium | Python |
 | 448 | [Find All Numbers Disappeared in an Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
+| 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
 | 543 | [Diameter of Binary Tree](0543-diameter-of-binary-tree/) | Easy | Python |
 | 560 | [Subarray Sum Equals K](0560-subarray-sum-equals-k/) | Medium | Python |
