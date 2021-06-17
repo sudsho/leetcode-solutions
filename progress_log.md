@@ -566,3 +566,7 @@ two heap trick for medians.
 ## 2021-05-19
 
 got dataclass to play nice.
+
+## 2021-06-17
+
+review week.
