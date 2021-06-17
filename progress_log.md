@@ -570,3 +570,7 @@ got dataclass to play nice.
 ## 2021-06-17
 
 review week.
+
+## 2021-06-18
+
+back at it after a quiet week.
