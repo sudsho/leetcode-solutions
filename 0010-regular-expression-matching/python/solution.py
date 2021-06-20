@@ -18,3 +18,4 @@ class Solution:
                     if p[j - 1] == "." or p[j - 1] == s[i - 1]:
                         dp[i][j] = dp[i - 1][j - 1]
         return dp[m][n]
+# notes: tightened naming
