@@ -578,3 +578,7 @@ back at it after a quiet week.
 ## 2021-06-21
 
 knapsack patterns are clicking.
+
+## 2021-06-22
+
+morning cleanup.
