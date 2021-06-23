@@ -586,3 +586,7 @@ morning cleanup.
 ## 2021-06-22
 
 small note.
+
+## 2021-06-23
+
+review week.
