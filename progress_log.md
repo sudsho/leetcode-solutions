@@ -590,3 +590,7 @@ small note.
 ## 2021-06-23
 
 review week.
+
+## 2021-06-28
+
+string dp gives me trouble.
