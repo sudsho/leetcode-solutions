@@ -12,3 +12,4 @@ class Solution:
                 best = max(best, heights[top] * width)
             st.append(i)
         return best
+# typing fix
