@@ -1,4 +1,4 @@
-# style tweak
+# small cleanup
 class Solution:
     def maxProfit(self, prices):
         hold = float("-inf")
