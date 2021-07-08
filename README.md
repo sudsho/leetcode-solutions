@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (129)
+## Solved (130)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -135,6 +135,7 @@ NNNN-problem-slug/
 | 518 | [Coin Change 2](0518-coin-change-2/) | Medium | Python |
 | 543 | [Diameter of Binary Tree](0543-diameter-of-binary-tree/) | Easy | Python |
 | 560 | [Subarray Sum Equals K](0560-subarray-sum-equals-k/) | Medium | Python |
+| 567 | [Permutation In String](0567-permutation-in-string/) | Medium | Python |
 | 572 | [Subtree of Another Tree](0572-subtree-of-another-tree/) | Easy | Python |
 | 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
 | 647 | [Palindromic Substrings](0647-palindromic-substrings/) | Medium | Python |
