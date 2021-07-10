@@ -594,3 +594,7 @@ review week.
 ## 2021-06-28
 
 string dp gives me trouble.
+
+## 2021-07-10
+
+type hints feel natural now.
