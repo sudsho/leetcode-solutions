@@ -18,3 +18,4 @@ class Solution:
                 return False
             parent[ra] = rb
         return True
+# notes: tightened naming
