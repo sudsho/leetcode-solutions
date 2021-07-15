@@ -598,3 +598,7 @@ string dp gives me trouble.
 ## 2021-07-10
 
 type hints feel natural now.
+
+## 2021-07-15
+
+two heap trick for medians.
