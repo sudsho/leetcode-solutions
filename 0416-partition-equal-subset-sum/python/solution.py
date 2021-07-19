@@ -1,3 +1,4 @@
+# small cleanup
 class Solution:
     def canPartition(self, nums):
         s = sum(nums)
