@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (130)
+## Solved (131)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -138,6 +138,7 @@ NNNN-problem-slug/
 | 567 | [Permutation In String](0567-permutation-in-string/) | Medium | Python |
 | 572 | [Subtree of Another Tree](0572-subtree-of-another-tree/) | Easy | Python |
 | 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
+| 621 | [Task Scheduler](0621-task-scheduler/) | Medium | Python |
 | 647 | [Palindromic Substrings](0647-palindromic-substrings/) | Medium | Python |
 | 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
