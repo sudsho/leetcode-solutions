@@ -1,3 +1,4 @@
+# minor refactor
 class Solution:
     def kthSmallest(self, root, k):
         stack = []
