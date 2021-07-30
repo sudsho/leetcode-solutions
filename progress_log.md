@@ -602,3 +602,7 @@ type hints feel natural now.
 ## 2021-07-15
 
 two heap trick for medians.
+
+## 2021-07-30
+
+comprehensions everywhere now.
