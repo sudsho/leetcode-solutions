@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (131)
+## Solved (133)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -140,6 +140,8 @@ NNNN-problem-slug/
 | 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
 | 621 | [Task Scheduler](0621-task-scheduler/) | Medium | Python |
 | 647 | [Palindromic Substrings](0647-palindromic-substrings/) | Medium | Python |
+| 692 | [Top K Frequent Words](0692-top-k-frequent-words/) | Medium | Python |
+| 695 | [Max Area Of Island](0695-max-area-of-island/) | Medium | Python |
 | 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
