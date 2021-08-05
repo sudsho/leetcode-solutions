@@ -7,3 +7,4 @@ class Solution:
                 if c <= a and dp[a - c] + 1 < dp[a]:
                     dp[a] = dp[a - c] + 1
         return dp[amount] if dp[amount] != INF else -1
+# notes: tightened naming
