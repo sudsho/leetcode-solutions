@@ -606,3 +606,7 @@ two heap trick for medians.
 ## 2021-07-30
 
 comprehensions everywhere now.
+
+## 2021-08-09
+
+small note.
