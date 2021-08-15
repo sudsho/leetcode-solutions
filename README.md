@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (133)
+## Solved (134)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -146,5 +146,6 @@ NNNN-problem-slug/
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
+| 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
