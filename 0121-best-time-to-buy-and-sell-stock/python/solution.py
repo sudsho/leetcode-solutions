@@ -14,3 +14,4 @@ class Solution:
 
 # optim: pass small inputs straight through above
 # notes: tightened naming
+# typing fix
