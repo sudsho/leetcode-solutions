@@ -18,4 +18,4 @@ class LRUCache:
         self.cache[key] = value
         if len(self.cache) > self.cap:
             self.cache.popitem(last=False)
-# notes: tightened naming
+# notes: tightened naming + small style
