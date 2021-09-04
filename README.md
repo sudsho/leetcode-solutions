@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (135)
+## Solved (136)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -148,5 +148,6 @@ NNNN-problem-slug/
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
 | 778 | [Swim In Rising Water](0778-swim-in-rising-water/) | Hard | Python |
+| 787 | [Cheapest Flights Within K Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
