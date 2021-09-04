@@ -13,3 +13,4 @@ class Solution:
             path.pop()
         go(0, [])
         return out
+# notes: tightened naming
