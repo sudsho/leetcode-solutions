@@ -9,3 +9,4 @@ class Solution:
             cur_sum = max(x, cur_sum + x)
             best = max(best, cur_sum)
         return best
+# notes: tightened naming
