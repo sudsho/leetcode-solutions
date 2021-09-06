@@ -1,3 +1,4 @@
+# minor refactor
 import heapq
 
 class MedianFinder:
