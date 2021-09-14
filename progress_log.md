@@ -610,3 +610,7 @@ comprehensions everywhere now.
 ## 2021-08-09
 
 small note.
+
+## 2021-09-14
+
+interview prep mode.
