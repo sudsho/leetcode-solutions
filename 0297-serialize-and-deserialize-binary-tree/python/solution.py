@@ -1,3 +1,4 @@
+# style tweak
 class Codec:
     def serialize(self, root):
         out = []
