@@ -1,4 +1,4 @@
-# cleaned up
+# minor refactor
 class Solution:
     def maxSubArray(self, nums):
         # kadane's algorithm
