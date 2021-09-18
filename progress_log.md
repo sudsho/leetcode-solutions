@@ -614,3 +614,7 @@ small note.
 ## 2021-09-14
 
 interview prep mode.
+
+## 2021-09-18
+
+got dataclass to play nice.
