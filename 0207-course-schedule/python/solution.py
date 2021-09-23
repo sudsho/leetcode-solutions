@@ -18,3 +18,4 @@ class Solution:
                 if indeg[nb] == 0:
                     q.append(nb)
         return done == numCourses
+# typing fix
