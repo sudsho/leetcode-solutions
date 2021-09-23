@@ -618,3 +618,7 @@ interview prep mode.
 ## 2021-09-18
 
 got dataclass to play nice.
+
+## 2021-09-23
+
+felt slow today, just one easy.
