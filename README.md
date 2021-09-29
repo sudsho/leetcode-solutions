@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (136)
+## Solved (142)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -149,5 +149,11 @@ NNNN-problem-slug/
 | 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
 | 778 | [Swim In Rising Water](0778-swim-in-rising-water/) | Hard | Python |
 | 787 | [Cheapest Flights Within K Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
+| 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
+| 952 | [Largest Component Size By Common Factor](0952-largest-component-size-by-common-factor/) | Hard | Python |
+| 968 | [Binary Tree Cameras](0968-binary-tree-cameras/) | Hard | Python |
+| 980 | [Unique Paths Iii](0980-unique-paths-iii/) | Hard | Python |
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
+| 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
+| 1293 | [Shortest Path With Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
