@@ -12,4 +12,4 @@ class Solution:
             seen[cur] += 1
         return count
 # notes: tightened naming + small style
-# typing fix
+# minor typing pass
