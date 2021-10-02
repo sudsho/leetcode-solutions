@@ -626,3 +626,7 @@ felt slow today, just one easy.
 ## 2021-09-28
 
 comprehensions everywhere now.
+
+## 2021-10-02
+
+knapsack patterns are clicking.
