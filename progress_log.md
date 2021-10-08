@@ -630,3 +630,7 @@ comprehensions everywhere now.
 ## 2021-10-02
 
 knapsack patterns are clicking.
+
+## 2021-10-08
+
+bfs with state for paths.
