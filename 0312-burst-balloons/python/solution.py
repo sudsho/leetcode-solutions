@@ -11,3 +11,4 @@ class Solution:
                 for k in range(l + 1, r):
                     dp[l][r] = max(dp[l][r], a[l] * a[k] * a[r] + dp[l][k] + dp[k][r])
         return dp[0][n - 1]
+# typing fix
