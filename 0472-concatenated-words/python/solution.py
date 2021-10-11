@@ -20,3 +20,4 @@ class Solution:
                 out.append(w)
             seen.add(w)
         return out
+# notes: tightened naming
