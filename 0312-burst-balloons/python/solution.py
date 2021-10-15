@@ -1,3 +1,4 @@
+# revisit, tightened
 from typing import List
 
 class Solution:
