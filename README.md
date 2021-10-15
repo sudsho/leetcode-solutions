@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (144)
+## Solved (146)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -57,6 +57,7 @@ NNNN-problem-slug/
 | 72 | [Edit Distance](0072-edit-distance/) | Hard | Python |
 | 73 | [Set Matrix Zeroes](0073-set-matrix-zeroes/) | Medium | Python |
 | 74 | [Search a 2D Matrix](0074-search-a-2d-matrix/) | Medium | Python |
+| 75 | [Sort Colors](0075-sort-colors/) | Medium | Python |
 | 76 | [Minimum Window Substring](0076-minimum-window-substring/) | Hard | Python |
 | 78 | [Subsets](0078-subsets/) | Medium | Python |
 | 79 | [Word Search](0079-word-search/) | Medium | Python |
@@ -72,6 +73,7 @@ NNNN-problem-slug/
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](0105-construct-binary-tree-from-preorder-and-inorder/) | Medium | Python |
 | 108 | [Convert Sorted Array to Binary Search Tree](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 114 | [Flatten Binary Tree to Linked List](0114-flatten-binary-tree-to-linked-list/) | Medium | Python |
+| 116 | [Populating Next Right Pointers](0116-populating-next-right-pointers/) | Medium | Python |
 | 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 124 | [Binary Tree Maximum Path Sum](0124-binary-tree-maximum-path-sum/) | Hard | Python |
 | 128 | [Longest Consecutive Sequence](0128-longest-consecutive-sequence/) | Medium | Python |
