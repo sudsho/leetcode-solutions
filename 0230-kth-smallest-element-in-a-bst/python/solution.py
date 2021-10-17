@@ -12,3 +12,4 @@ class Solution:
             if k == 0:
                 return cur.val
             cur = cur.right
+# notes: tightened naming
