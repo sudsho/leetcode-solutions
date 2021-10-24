@@ -16,3 +16,4 @@ class MedianFinder:
         if len(self.lo) > len(self.hi):
             return float(-self.lo[0])
         return (-self.lo[0] + self.hi[0]) / 2
+# typing fix
