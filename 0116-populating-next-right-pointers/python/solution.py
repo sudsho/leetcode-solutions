@@ -18,3 +18,4 @@ class Solution:
                 cur = cur.next
             head = head.left
         return root
+# notes: tightened naming
