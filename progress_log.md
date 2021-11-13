@@ -634,3 +634,7 @@ knapsack patterns are clicking.
 ## 2021-10-08
 
 bfs with state for paths.
+
+## 2021-11-13
+
+dijkstra showed up twice this week.
