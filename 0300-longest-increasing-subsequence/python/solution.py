@@ -1,3 +1,4 @@
+# style tweak
 from bisect import bisect_left
 
 class Solution:
