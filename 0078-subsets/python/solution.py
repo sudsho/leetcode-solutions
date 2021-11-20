@@ -14,3 +14,4 @@ class Solution:
         go(0, [])
         return out
 # notes: tightened naming
+# typing fix
