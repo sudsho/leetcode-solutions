@@ -1,3 +1,4 @@
+# revisit, tightened
 class Solution:
     def countSubstrings(self, s):
         count = 0
