@@ -638,3 +638,7 @@ bfs with state for paths.
 ## 2021-11-13
 
 dijkstra showed up twice this week.
+
+## 2021-11-26
+
+small note.
