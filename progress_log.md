@@ -646,3 +646,7 @@ small note.
 ## 2021-11-29
 
 bfs with state for paths.
+
+## 2021-11-30
+
+added a few alternates.
