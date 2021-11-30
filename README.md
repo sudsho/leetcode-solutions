@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (150)
+## Solved (151)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -117,6 +117,7 @@ NNNN-problem-slug/
 | 261 | [Graph Valid Tree](0261-graph-valid-tree/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
 | 273 | [Integer To English Words](0273-integer-to-english-words/) | Hard | Python |
+| 279 | [Perfect Squares](0279-perfect-squares/) | Medium | Python |
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
 | 287 | [Find the Duplicate Number](0287-find-the-duplicate-number/) | Medium | Python |
 | 295 | [Find Median From Data Stream](0295-find-median-from-data-stream/) | Hard | Python |
