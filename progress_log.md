@@ -650,3 +650,7 @@ bfs with state for paths.
 ## 2021-11-30
 
 added a few alternates.
+
+## 2021-12-05
+
+morning cleanup.
