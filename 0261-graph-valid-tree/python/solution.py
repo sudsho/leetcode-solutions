@@ -1,3 +1,4 @@
+# minor refactor
 from typing import List
 
 class Solution:
