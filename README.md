@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (151)
+## Solved (157)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -132,22 +132,27 @@ NNNN-problem-slug/
 | 347 | [Top K Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
 | 378 | [Kth Smallest Element In Sorted Matrix](0378-kth-smallest-element-in-sorted-matrix/) | Medium | Python |
 | 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
+| 394 | [Decode String](0394-decode-string/) | Medium | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
 | 416 | [Partition Equal Subset Sum](0416-partition-equal-subset-sum/) | Medium | Python |
 | 417 | [Pacific Atlantic Water Flow](0417-pacific-atlantic-water-flow/) | Medium | Python |
+| 435 | [Non Overlapping Intervals](0435-non-overlapping-intervals/) | Medium | Python |
 | 437 | [Path Sum III](0437-path-sum-iii/) | Medium | Python |
 | 448 | [Find All Numbers Disappeared in an Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
+| 494 | [Target Sum](0494-target-sum/) | Medium | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
 | 518 | [Coin Change 2](0518-coin-change-2/) | Medium | Python |
 | 543 | [Diameter of Binary Tree](0543-diameter-of-binary-tree/) | Easy | Python |
 | 560 | [Subarray Sum Equals K](0560-subarray-sum-equals-k/) | Medium | Python |
 | 567 | [Permutation In String](0567-permutation-in-string/) | Medium | Python |
 | 572 | [Subtree of Another Tree](0572-subtree-of-another-tree/) | Easy | Python |
+| 581 | [Shortest Unsorted Continuous Subarray](0581-shortest-unsorted-continuous-subarray/) | Medium | Python |
 | 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
 | 621 | [Task Scheduler](0621-task-scheduler/) | Medium | Python |
 | 647 | [Palindromic Substrings](0647-palindromic-substrings/) | Medium | Python |
+| 658 | [Find K Closest Elements](0658-find-k-closest-elements/) | Medium | Python |
 | 692 | [Top K Frequent Words](0692-top-k-frequent-words/) | Medium | Python |
 | 695 | [Max Area Of Island](0695-max-area-of-island/) | Medium | Python |
 | 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
@@ -155,6 +160,7 @@ NNNN-problem-slug/
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
+| 763 | [Partition Labels](0763-partition-labels/) | Medium | Python |
 | 778 | [Swim In Rising Water](0778-swim-in-rising-water/) | Hard | Python |
 | 787 | [Cheapest Flights Within K Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
