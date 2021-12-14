@@ -654,3 +654,7 @@ added a few alternates.
 ## 2021-12-05
 
 morning cleanup.
+
+## 2021-12-15
+
+morning cleanup.
