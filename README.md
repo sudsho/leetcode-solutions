@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (157)
+## Solved (158)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -164,6 +164,7 @@ NNNN-problem-slug/
 | 778 | [Swim In Rising Water](0778-swim-in-rising-water/) | Hard | Python |
 | 787 | [Cheapest Flights Within K Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
+| 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
 | 952 | [Largest Component Size By Common Factor](0952-largest-component-size-by-common-factor/) | Hard | Python |
 | 968 | [Binary Tree Cameras](0968-binary-tree-cameras/) | Hard | Python |
