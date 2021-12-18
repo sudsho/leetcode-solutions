@@ -658,3 +658,7 @@ morning cleanup.
 ## 2021-12-15
 
 morning cleanup.
+
+## 2021-12-18
+
+trie problems are fun.
