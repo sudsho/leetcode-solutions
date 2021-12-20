@@ -662,3 +662,7 @@ morning cleanup.
 ## 2021-12-18
 
 trie problems are fun.
+
+## 2021-12-20
+
+weekend long session.
