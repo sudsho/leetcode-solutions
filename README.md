@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (158)
+## Solved (160)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -170,6 +170,8 @@ NNNN-problem-slug/
 | 968 | [Binary Tree Cameras](0968-binary-tree-cameras/) | Hard | Python |
 | 980 | [Unique Paths Iii](0980-unique-paths-iii/) | Hard | Python |
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
+| 1011 | [Capacity To Ship Packages Within D Days](1011-capacity-to-ship-packages-within-d-days/) | Medium | Python |
+| 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
 | 1293 | [Shortest Path With Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
 | 1376 | [Time Needed To Inform All Employees](1376-time-needed-to-inform-all-employees/) | Medium | Python |
