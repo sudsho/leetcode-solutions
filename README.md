@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (162)
+## Solved (163)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -54,6 +54,7 @@ NNNN-problem-slug/
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
+| 71 | [Simplify Path](0071-simplify-path/) | Medium | Python |
 | 72 | [Edit Distance](0072-edit-distance/) | Hard | Python |
 | 73 | [Set Matrix Zeroes](0073-set-matrix-zeroes/) | Medium | Python |
 | 74 | [Search a 2d Matrix](0074-search-a-2d-matrix/) | Medium | Python |
