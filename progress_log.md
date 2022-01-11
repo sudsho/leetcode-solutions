@@ -666,3 +666,7 @@ trie problems are fun.
 ## 2021-12-20
 
 weekend long session.
+
+## 2022-01-11
+
+thought about 71 again.
