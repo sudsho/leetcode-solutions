@@ -670,3 +670,7 @@ weekend long session.
 ## 2022-01-11
 
 thought about 71 again.
+
+## 2022-01-17
+
+cleaned up 71 a bit.
