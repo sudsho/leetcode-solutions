@@ -674,3 +674,7 @@ thought about 71 again.
 ## 2022-01-17
 
 cleaned up 71 a bit.
+
+## 2022-01-17
+
+problem 71: think i finally got the cleaner version.
