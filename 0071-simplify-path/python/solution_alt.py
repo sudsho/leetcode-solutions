@@ -13,3 +13,4 @@ class Solution:
             else:
                 stack.append(part)
         return "/" + "/".join(stack)
+# follow up: revisit if profiling cares
