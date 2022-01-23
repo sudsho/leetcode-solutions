@@ -14,3 +14,4 @@ class Solution:
         return "/" + "/".join(stack)
 # follow up: revisit if profiling cares
 # notes: simpler version above
+# tightened
