@@ -678,3 +678,7 @@ cleaned up 71 a bit.
 ## 2022-01-17
 
 problem 71: think i finally got the cleaner version.
+
+## 2022-01-24
+
+need to revisit 71 edge cases.
