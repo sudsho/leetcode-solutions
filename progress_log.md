@@ -686,3 +686,7 @@ need to revisit 71 edge cases.
 ## 2022-01-26
 
 started thinking about 71.
+
+## 2022-01-30
+
+back to 1819 after a short break.
