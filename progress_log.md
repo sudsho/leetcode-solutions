@@ -690,3 +690,7 @@ started thinking about 71.
 ## 2022-01-30
 
 back to 1819 after a short break.
+
+## 2022-02-13
+
+compared two approaches for 233.
