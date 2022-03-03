@@ -18,3 +18,4 @@ Time O(LN), space O(LN).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
