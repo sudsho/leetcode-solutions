@@ -694,3 +694,7 @@ back to 1819 after a short break.
 ## 2022-02-13
 
 compared two approaches for 233.
+
+## 2022-03-05
+
+finished 71, will revisit.
