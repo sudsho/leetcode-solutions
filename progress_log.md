@@ -698,3 +698,7 @@ compared two approaches for 233.
 ## 2022-03-05
 
 finished 71, will revisit.
+
+## 2022-03-10
+
+redid 71 with smaller helper.
