@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (163)
+## Solved (175)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -32,6 +32,7 @@ NNNN-problem-slug/
 | 21 | [Merge Two Sorted Lists](0021-merge-two-sorted-lists/) | Easy | Python |
 | 22 | [Generate Parentheses](0022-generate-parentheses/) | Medium | Python |
 | 23 | [Merge k Sorted Lists](0023-merge-k-sorted-lists/) | Hard | Python |
+| 25 | [Reverse Nodes in k Group](0025-reverse-nodes-in-k-group/) | Hard | Python |
 | 26 | [Remove Duplicates from Sorted Array](0026-remove-duplicates-from-sorted-array/) | Easy | Python |
 | 27 | [Remove Element](0027-remove-element/) | Easy | Python |
 | 28 | [Implement Strstr](0028-implement-strstr/) | Easy | Python |
@@ -43,6 +44,7 @@ NNNN-problem-slug/
 | 39 | [Combination Sum](0039-combination-sum/) | Medium | Python |
 | 41 | [First Missing Positive](0041-first-missing-positive/) | Hard | Python |
 | 42 | [Trapping Rain Water](0042-trapping-rain-water/) | Hard | Python |
+| 44 | [Wildcard Matching](0044-wildcard-matching/) | Hard | Python |
 | 46 | [Permutations](0046-permutations/) | Medium | Python |
 | 48 | [Rotate Image](0048-rotate-image/) | Medium | Python |
 | 49 | [Group Anagrams](0049-group-anagrams/) | Medium | Python |
@@ -79,12 +81,14 @@ NNNN-problem-slug/
 | 124 | [Binary Tree Maximum Path Sum](0124-binary-tree-maximum-path-sum/) | Hard | Python |
 | 128 | [Longest Consecutive Sequence](0128-longest-consecutive-sequence/) | Medium | Python |
 | 131 | [Palindrome Partitioning](0131-palindrome-partitioning/) | Medium | Python |
+| 132 | [Palindrome Partitioning II](0132-palindrome-partitioning-ii/) | Hard | Python |
 | 133 | [Clone Graph](0133-clone-graph/) | Medium | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
 | 138 | [Copy List with Random Pointer](0138-copy-list-with-random-pointer/) | Medium | Python |
 | 139 | [Word Break](0139-word-break/) | Medium | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
 | 142 | [Linked List Cycle II](0142-linked-list-cycle-ii/) | Medium | Python |
+| 145 | [Binary Tree Postorder Traversal](0145-binary-tree-postorder-traversal/) | Easy | Python |
 | 146 | [Lru Cache](0146-lru-cache/) | Medium | Python |
 | 148 | [Sort List](0148-sort-list/) | Medium | Python |
 | 152 | [Maximum Product Subarray](0152-maximum-product-subarray/) | Medium | Python |
@@ -107,6 +111,7 @@ NNNN-problem-slug/
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 | 230 | [Kth Smallest Element in a Bst](0230-kth-smallest-element-in-a-bst/) | Medium | Python |
 | 231 | [Power of Two](0231-power-of-two/) | Easy | Python |
+| 233 | [Number of Digit One](0233-number-of-digit-one/) | Hard | Python |
 | 234 | [Palindrome Linked List](0234-palindrome-linked-list/) | Easy | Python |
 | 235 | [Lowest Common Ancestor of a Bst](0235-lowest-common-ancestor-of-a-bst/) | Medium | Python |
 | 236 | [Lowest Common Ancestor of Binary Tree](0236-lowest-common-ancestor-of-binary-tree/) | Medium | Python |
@@ -131,6 +136,8 @@ NNNN-problem-slug/
 | 332 | [Reconstruct Itinerary](0332-reconstruct-itinerary/) | Hard | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 347 | [Top k Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
+| 354 | [Russian Doll Envelopes](0354-russian-doll-envelopes/) | Hard | Python |
+| 363 | [Max Sum of Rectangle No Larger Than k](0363-max-sum-of-rectangle-no-larger-than-k/) | Hard | Python |
 | 378 | [Kth Smallest Element in Sorted Matrix](0378-kth-smallest-element-in-sorted-matrix/) | Medium | Python |
 | 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 394 | [Decode String](0394-decode-string/) | Medium | Python |
@@ -140,6 +147,7 @@ NNNN-problem-slug/
 | 435 | [Non Overlapping Intervals](0435-non-overlapping-intervals/) | Medium | Python |
 | 437 | [Path Sum III](0437-path-sum-iii/) | Medium | Python |
 | 448 | [Find All Numbers Disappeared in an Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
+| 460 | [Lfu Cache](0460-lfu-cache/) | Hard | Python |
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
 | 494 | [Target Sum](0494-target-sum/) | Medium | Python |
@@ -167,6 +175,7 @@ NNNN-problem-slug/
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
+| 920 | [Number of Music Playlists](0920-number-of-music-playlists/) | Hard | Python |
 | 952 | [Largest Component Size by Common Factor](0952-largest-component-size-by-common-factor/) | Hard | Python |
 | 968 | [Binary Tree Cameras](0968-binary-tree-cameras/) | Hard | Python |
 | 980 | [Unique Paths III](0980-unique-paths-iii/) | Hard | Python |
@@ -177,4 +186,7 @@ NNNN-problem-slug/
 | 1268 | [Search Suggestions System](1268-search-suggestions-system/) | Medium | Python |
 | 1293 | [Shortest Path with Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
 | 1376 | [Time Needed to Inform All Employees](1376-time-needed-to-inform-all-employees/) | Medium | Python |
+| 1463 | [Cherry Pickup II](1463-cherry-pickup-ii/) | Hard | Python |
 | 1492 | [Kth Factor of N](1492-kth-factor-of-n/) | Medium | Python |
+| 1591 | [Strange Printer II](1591-strange-printer-ii/) | Hard | Python |
+| 1819 | [Number of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
