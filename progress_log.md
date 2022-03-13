@@ -702,3 +702,7 @@ finished 71, will revisit.
 ## 2022-03-10
 
 redid 71 with smaller helper.
+
+## 2022-03-13
+
+thought about 920 again.
