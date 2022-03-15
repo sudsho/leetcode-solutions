@@ -706,3 +706,7 @@ redid 71 with smaller helper.
 ## 2022-03-13
 
 thought about 920 again.
+
+## 2022-03-15
+
+finished 920, will revisit.
