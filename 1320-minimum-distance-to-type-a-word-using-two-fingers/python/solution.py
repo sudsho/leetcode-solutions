@@ -22,3 +22,4 @@ class Solution:
             move2 = (0 if f2 == SENTINEL else cost(f2, ch)) + dp(i + 1, f1, ch)
             return min(move1, move2)
         return dp(0, SENTINEL, SENTINEL)
+# revised after retry
