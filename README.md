@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (175)
+## Solved (179)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -41,6 +41,7 @@ NNNN-problem-slug/
 | 33 | [Search in Rotated Sorted Array](0033-search-in-rotated-sorted-array/) | Medium | Python |
 | 35 | [Search Insert Position](0035-search-insert-position/) | Easy | Python |
 | 36 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Python |
+| 37 | [Sudoku Solver](0037-sudoku-solver/) | Hard | Python |
 | 39 | [Combination Sum](0039-combination-sum/) | Medium | Python |
 | 41 | [First Missing Positive](0041-first-missing-positive/) | Hard | Python |
 | 42 | [Trapping Rain Water](0042-trapping-rain-water/) | Hard | Python |
@@ -132,6 +133,7 @@ NNNN-problem-slug/
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | Python |
 | 312 | [Burst Balloons](0312-burst-balloons/) | Hard | Python |
 | 322 | [Coin Change](0322-coin-change/) | Medium | Python |
+| 327 | [Count of Range Sum](0327-count-of-range-sum/) | Hard | Python |
 | 329 | [Longest Increasing Path in Matrix](0329-longest-increasing-path-in-matrix/) | Hard | Python |
 | 332 | [Reconstruct Itinerary](0332-reconstruct-itinerary/) | Hard | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
@@ -185,8 +187,10 @@ NNNN-problem-slug/
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
 | 1268 | [Search Suggestions System](1268-search-suggestions-system/) | Medium | Python |
 | 1293 | [Shortest Path with Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
+| 1320 | [Minimum Distance to Type a Word Using Two Fingers](1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard | Python |
 | 1376 | [Time Needed to Inform All Employees](1376-time-needed-to-inform-all-employees/) | Medium | Python |
 | 1463 | [Cherry Pickup II](1463-cherry-pickup-ii/) | Hard | Python |
 | 1492 | [Kth Factor of N](1492-kth-factor-of-n/) | Medium | Python |
 | 1591 | [Strange Printer II](1591-strange-printer-ii/) | Hard | Python |
+| 1707 | [Maximum Xor with an Element from Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |
 | 1819 | [Number of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
