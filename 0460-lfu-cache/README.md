@@ -18,3 +18,4 @@ Time O(1) per op, space O(capacity).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
