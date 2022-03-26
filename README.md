@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (179)
+## Solved (180)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -36,6 +36,7 @@ NNNN-problem-slug/
 | 26 | [Remove Duplicates from Sorted Array](0026-remove-duplicates-from-sorted-array/) | Easy | Python |
 | 27 | [Remove Element](0027-remove-element/) | Easy | Python |
 | 28 | [Implement Strstr](0028-implement-strstr/) | Easy | Python |
+| 30 | [Substring with Concatenation of All Words](0030-substring-with-concatenation-of-all-words/) | Hard | Python |
 | 31 | [Next Permutation](0031-next-permutation/) | Medium | Python |
 | 32 | [Longest Valid Parentheses](0032-longest-valid-parentheses/) | Hard | Python |
 | 33 | [Search in Rotated Sorted Array](0033-search-in-rotated-sorted-array/) | Medium | Python |
