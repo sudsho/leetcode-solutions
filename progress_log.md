@@ -714,3 +714,7 @@ finished 920, will revisit.
 ## 2022-03-27
 
 back to 1591 after a short break.
+
+## 2022-04-01
+
+reviewed 44, dp version makes sense.
