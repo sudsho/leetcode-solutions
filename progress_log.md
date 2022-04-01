@@ -718,3 +718,7 @@ back to 1591 after a short break.
 ## 2022-04-01
 
 reviewed 44, dp version makes sense.
+
+## 2022-04-01
+
+compared two approaches for 1819.
