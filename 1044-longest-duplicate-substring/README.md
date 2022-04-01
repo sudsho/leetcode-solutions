@@ -18,3 +18,4 @@ Time O(N log N) avg, space O(N).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
