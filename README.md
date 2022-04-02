@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (180)
+## Solved (181)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -184,6 +184,7 @@ NNNN-problem-slug/
 | 980 | [Unique Paths III](0980-unique-paths-iii/) | Hard | Python |
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
 | 1011 | [Capacity to Ship Packages Within D Days](1011-capacity-to-ship-packages-within-d-days/) | Medium | Python |
+| 1044 | [Longest Duplicate Substring](1044-longest-duplicate-substring/) | Hard | Python |
 | 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
 | 1268 | [Search Suggestions System](1268-search-suggestions-system/) | Medium | Python |
