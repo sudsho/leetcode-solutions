@@ -722,3 +722,7 @@ reviewed 44, dp version makes sense.
 ## 2022-04-01
 
 compared two approaches for 1819.
+
+## 2022-04-05
+
+back to problems.
