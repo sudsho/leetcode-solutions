@@ -18,3 +18,4 @@ Time O(R * C^2 * 9), space O(R * C^2).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
