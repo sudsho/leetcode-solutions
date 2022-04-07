@@ -23,3 +23,4 @@ class Solution:
             return min(move1, move2)
         return dp(0, SENTINEL, SENTINEL)
 # revised after retry
+# tightened
