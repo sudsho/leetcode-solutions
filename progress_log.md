@@ -726,3 +726,7 @@ compared two approaches for 1819.
 ## 2022-04-05
 
 back to problems.
+
+## 2022-04-10
+
+started thinking about 1707.
