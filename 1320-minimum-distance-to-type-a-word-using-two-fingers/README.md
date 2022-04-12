@@ -18,3 +18,4 @@ Time O(N * 27 * 27), space O(N * 27 * 27) compressed.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
