@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (181)
+## Solved (182)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -71,6 +71,7 @@ NNNN-problem-slug/
 | 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
 | 98 | [Validate Binary Search Tree](0098-validate-binary-search-tree/) | Medium | Python |
+| 99 | [Recover Binary Search Tree](0099-recover-binary-search-tree/) | Medium | Python |
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
 | 101 | [Symmetric Tree](0101-symmetric-tree/) | Easy | Python |
 | 102 | [Binary Tree Level Order Traversal](0102-binary-tree-level-order-traversal/) | Medium | Python |
