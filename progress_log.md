@@ -730,3 +730,7 @@ back to problems.
 ## 2022-04-10
 
 started thinking about 1707.
+
+## 2022-04-13
+
+compared two approaches for 920.
