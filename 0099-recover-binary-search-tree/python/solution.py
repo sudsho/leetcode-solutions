@@ -24,3 +24,4 @@ class Solution:
             node = node.right
         if first and second:
             first.val, second.val = second.val, first.val
+# follow up: revisit if profiling cares
