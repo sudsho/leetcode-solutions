@@ -18,3 +18,4 @@ Time O(MN + K * inv-Ackermann), space O(MN).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
