@@ -35,3 +35,4 @@ class Solution:
                     new_dp[a] = v
             dp = new_dp
         return min(dp)
+# tightened
