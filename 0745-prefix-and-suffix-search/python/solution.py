@@ -25,3 +25,4 @@ class WordFilter:
                 return -1
             node = node.children[ch]
         return node.weight
+# small style pass
