@@ -20,3 +20,4 @@ class Solution:
             if node.right:
                 stack.append(node.right)
         return out[::-1]
+# small style pass
