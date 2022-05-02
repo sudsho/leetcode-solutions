@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (182)
+## Solved (187)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -89,6 +89,7 @@ NNNN-problem-slug/
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
 | 138 | [Copy List with Random Pointer](0138-copy-list-with-random-pointer/) | Medium | Python |
 | 139 | [Word Break](0139-word-break/) | Medium | Python |
+| 140 | [Word Break II](0140-word-break-ii/) | Hard | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
 | 142 | [Linked List Cycle II](0142-linked-list-cycle-ii/) | Medium | Python |
 | 145 | [Binary Tree Postorder Traversal](0145-binary-tree-postorder-traversal/) | Easy | Python |
@@ -173,9 +174,11 @@ NNNN-problem-slug/
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
+| 745 | [Prefix and Suffix Search](0745-prefix-and-suffix-search/) | Hard | Python |
 | 763 | [Partition Labels](0763-partition-labels/) | Medium | Python |
 | 778 | [Swim in Rising Water](0778-swim-in-rising-water/) | Hard | Python |
 | 787 | [Cheapest Flights Within k Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
+| 803 | [Bricks Falling When Hit](0803-bricks-falling-when-hit/) | Hard | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
@@ -186,6 +189,7 @@ NNNN-problem-slug/
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
 | 1011 | [Capacity to Ship Packages Within D Days](1011-capacity-to-ship-packages-within-d-days/) | Medium | Python |
 | 1044 | [Longest Duplicate Substring](1044-longest-duplicate-substring/) | Hard | Python |
+| 1106 | [Parsing a Boolean Expression](1106-parsing-a-boolean-expression/) | Hard | Python |
 | 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
 | 1268 | [Search Suggestions System](1268-search-suggestions-system/) | Medium | Python |
@@ -195,5 +199,6 @@ NNNN-problem-slug/
 | 1463 | [Cherry Pickup II](1463-cherry-pickup-ii/) | Hard | Python |
 | 1492 | [Kth Factor of N](1492-kth-factor-of-n/) | Medium | Python |
 | 1591 | [Strange Printer II](1591-strange-printer-ii/) | Hard | Python |
+| 1632 | [Rank Transform of a Matrix](1632-rank-transform-of-a-matrix/) | Hard | Python |
 | 1707 | [Maximum Xor with an Element from Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |
 | 1819 | [Number of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
