@@ -18,3 +18,4 @@ Time O(RC log RC), space O(RC).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
