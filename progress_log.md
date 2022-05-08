@@ -738,3 +738,7 @@ compared two approaches for 920.
 ## 2022-05-05
 
 back to problems.
+
+## 2022-05-08
+
+thought about 132 again.
