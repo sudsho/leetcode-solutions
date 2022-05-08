@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (187)
+## Solved (190)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -47,6 +47,7 @@ NNNN-problem-slug/
 | 41 | [First Missing Positive](0041-first-missing-positive/) | Hard | Python |
 | 42 | [Trapping Rain Water](0042-trapping-rain-water/) | Hard | Python |
 | 44 | [Wildcard Matching](0044-wildcard-matching/) | Hard | Python |
+| 45 | [Jump Game II](0045-jump-game-ii/) | Medium | Python |
 | 46 | [Permutations](0046-permutations/) | Medium | Python |
 | 48 | [Rotate Image](0048-rotate-image/) | Medium | Python |
 | 49 | [Group Anagrams](0049-group-anagrams/) | Medium | Python |
@@ -66,6 +67,7 @@ NNNN-problem-slug/
 | 76 | [Minimum Window Substring](0076-minimum-window-substring/) | Hard | Python |
 | 78 | [Subsets](0078-subsets/) | Medium | Python |
 | 79 | [Word Search](0079-word-search/) | Medium | Python |
+| 81 | [Search in Rotated Sorted Array II](0081-search-in-rotated-sorted-array-ii/) | Medium | Python |
 | 84 | [Largest Rectangle in Histogram](0084-largest-rectangle-in-histogram/) | Hard | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
@@ -198,6 +200,7 @@ NNNN-problem-slug/
 | 1376 | [Time Needed to Inform All Employees](1376-time-needed-to-inform-all-employees/) | Medium | Python |
 | 1463 | [Cherry Pickup II](1463-cherry-pickup-ii/) | Hard | Python |
 | 1492 | [Kth Factor of N](1492-kth-factor-of-n/) | Medium | Python |
+| 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |
 | 1591 | [Strange Printer II](1591-strange-printer-ii/) | Hard | Python |
 | 1632 | [Rank Transform of a Matrix](1632-rank-transform-of-a-matrix/) | Hard | Python |
 | 1707 | [Maximum Xor with an Element from Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |
