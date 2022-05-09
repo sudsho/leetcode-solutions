@@ -742,3 +742,7 @@ back to problems.
 ## 2022-05-08
 
 thought about 132 again.
+
+## 2022-05-09
+
+small note.
