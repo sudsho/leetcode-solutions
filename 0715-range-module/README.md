@@ -18,3 +18,4 @@ Time O(log N) per op amortized.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
