@@ -746,3 +746,7 @@ thought about 132 again.
 ## 2022-05-09
 
 small note.
+
+## 2022-05-10
+
+tried a couple of mediums.
