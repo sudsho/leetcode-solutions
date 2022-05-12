@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (190)
+## Solved (191)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -174,6 +174,7 @@ NNNN-problem-slug/
 | 700 | [Search in a Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
+| 715 | [Range Module](0715-range-module/) | Hard | Python |
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
 | 745 | [Prefix and Suffix Search](0745-prefix-and-suffix-search/) | Hard | Python |
