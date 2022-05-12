@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (191)
+## Solved (192)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -141,6 +141,7 @@ NNNN-problem-slug/
 | 327 | [Count of Range Sum](0327-count-of-range-sum/) | Hard | Python |
 | 329 | [Longest Increasing Path in Matrix](0329-longest-increasing-path-in-matrix/) | Hard | Python |
 | 332 | [Reconstruct Itinerary](0332-reconstruct-itinerary/) | Hard | Python |
+| 341 | [Flatten Nested List Iterator](0341-flatten-nested-list-iterator/) | Medium | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 347 | [Top k Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
 | 354 | [Russian Doll Envelopes](0354-russian-doll-envelopes/) | Hard | Python |
