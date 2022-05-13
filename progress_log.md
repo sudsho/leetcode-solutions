@@ -750,3 +750,7 @@ small note.
 ## 2022-05-10
 
 tried a couple of mediums.
+
+## 2022-05-13
+
+problem 745: think i finally got the cleaner version.
