@@ -18,3 +18,4 @@ Time O(L) total, O(D) per next.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
