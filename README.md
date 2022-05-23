@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (192)
+## Solved (195)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -58,6 +58,7 @@ NNNN-problem-slug/
 | 62 | [Unique Paths](0062-unique-paths/) | Medium | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
+| 68 | [Text Justification](0068-text-justification/) | Hard | Python |
 | 70 | [Climbing Stairs](0070-climbing-stairs/) | Easy | Python |
 | 71 | [Simplify Path](0071-simplify-path/) | Medium | Python |
 | 72 | [Edit Distance](0072-edit-distance/) | Hard | Python |
@@ -102,6 +103,7 @@ NNNN-problem-slug/
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
 | 162 | [Find Peak Element](0162-find-peak-element/) | Medium | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
+| 173 | [Binary Search Tree Iterator](0173-binary-search-tree-iterator/) | Medium | Python |
 | 189 | [Rotate Array](0189-rotate-array/) | Medium | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
 | 199 | [Binary Tree Right Side View](0199-binary-tree-right-side-view/) | Medium | Python |
@@ -137,6 +139,7 @@ NNNN-problem-slug/
 | 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | Python |
 | 312 | [Burst Balloons](0312-burst-balloons/) | Hard | Python |
+| 315 | [Count of Smaller Numbers After Self](0315-count-of-smaller-numbers-after-self/) | Hard | Python |
 | 322 | [Coin Change](0322-coin-change/) | Medium | Python |
 | 327 | [Count of Range Sum](0327-count-of-range-sum/) | Hard | Python |
 | 329 | [Longest Increasing Path in Matrix](0329-longest-increasing-path-in-matrix/) | Hard | Python |
