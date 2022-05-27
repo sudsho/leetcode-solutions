@@ -27,3 +27,4 @@ class Solution:
             result.append(line)
             i = j
         return result
+# tightened
