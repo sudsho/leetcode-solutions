@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (195)
+## Solved (196)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -51,6 +51,7 @@ NNNN-problem-slug/
 | 46 | [Permutations](0046-permutations/) | Medium | Python |
 | 48 | [Rotate Image](0048-rotate-image/) | Medium | Python |
 | 49 | [Group Anagrams](0049-group-anagrams/) | Medium | Python |
+| 50 | [Powx N](0050-powx-n/) | Medium | Python |
 | 51 | [N Queens](0051-n-queens/) | Hard | Python |
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
 | 55 | [Jump Game](0055-jump-game/) | Medium | Python |
