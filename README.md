@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (196)
+## Solved (199)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -86,6 +86,7 @@ NNNN-problem-slug/
 | 116 | [Populating Next Right Pointers](0116-populating-next-right-pointers/) | Medium | Python |
 | 121 | [Best Time to Buy and Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 124 | [Binary Tree Maximum Path Sum](0124-binary-tree-maximum-path-sum/) | Hard | Python |
+| 127 | [Word Ladder](0127-word-ladder/) | Hard | Python |
 | 128 | [Longest Consecutive Sequence](0128-longest-consecutive-sequence/) | Medium | Python |
 | 131 | [Palindrome Partitioning](0131-palindrome-partitioning/) | Medium | Python |
 | 132 | [Palindrome Partitioning II](0132-palindrome-partitioning-ii/) | Hard | Python |
@@ -103,6 +104,7 @@ NNNN-problem-slug/
 | 153 | [Find Minimum in Rotated Sorted Array](0153-find-minimum-in-rotated-sorted-array/) | Medium | Python |
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
 | 162 | [Find Peak Element](0162-find-peak-element/) | Medium | Python |
+| 165 | [Compare Version Numbers](0165-compare-version-numbers/) | Medium | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 173 | [Binary Search Tree Iterator](0173-binary-search-tree-iterator/) | Medium | Python |
 | 189 | [Rotate Array](0189-rotate-array/) | Medium | Python |
@@ -118,6 +120,7 @@ NNNN-problem-slug/
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
 | 221 | [Maximal Square](0221-maximal-square/) | Medium | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
+| 227 | [Basic Calculator II](0227-basic-calculator-ii/) | Medium | Python |
 | 230 | [Kth Smallest Element in a Bst](0230-kth-smallest-element-in-a-bst/) | Medium | Python |
 | 231 | [Power of Two](0231-power-of-two/) | Easy | Python |
 | 233 | [Number of Digit One](0233-number-of-digit-one/) | Hard | Python |
