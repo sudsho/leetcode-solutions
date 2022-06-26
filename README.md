@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (199)
+## Solved (202)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -57,6 +57,7 @@ NNNN-problem-slug/
 | 55 | [Jump Game](0055-jump-game/) | Medium | Python |
 | 56 | [Merge Intervals](0056-merge-intervals/) | Medium | Python |
 | 62 | [Unique Paths](0062-unique-paths/) | Medium | Python |
+| 65 | [Valid Number](0065-valid-number/) | Hard | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
 | 68 | [Text Justification](0068-text-justification/) | Hard | Python |
@@ -165,6 +166,7 @@ NNNN-problem-slug/
 | 460 | [Lfu Cache](0460-lfu-cache/) | Hard | Python |
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
+| 480 | [Sliding Window Median](0480-sliding-window-median/) | Hard | Python |
 | 494 | [Target Sum](0494-target-sum/) | Medium | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
 | 518 | [Coin Change 2](0518-coin-change-2/) | Medium | Python |
@@ -191,6 +193,7 @@ NNNN-problem-slug/
 | 787 | [Cheapest Flights Within k Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
 | 803 | [Bricks Falling When Hit](0803-bricks-falling-when-hit/) | Hard | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
+| 850 | [Rectangle Area II](0850-rectangle-area-ii/) | Hard | Python |
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
 | 920 | [Number of Music Playlists](0920-number-of-music-playlists/) | Hard | Python |
