@@ -18,3 +18,4 @@ Time O(N^2) with simple sweep; segment tree gives N log N.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
