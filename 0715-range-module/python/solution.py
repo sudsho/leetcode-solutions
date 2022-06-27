@@ -34,3 +34,4 @@ class RangeModule:
                 new_intervals.append((right, r))
         for nv in new_intervals:
             self.intervals.add(nv)
+# follow up: revisit if profiling cares
