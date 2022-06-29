@@ -754,3 +754,7 @@ tried a couple of mediums.
 ## 2022-05-13
 
 problem 745: think i finally got the cleaner version.
+
+## 2022-06-29
+
+finished 803, will revisit.
