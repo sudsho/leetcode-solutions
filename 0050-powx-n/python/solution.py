@@ -10,3 +10,4 @@ class Solution:
             x *= x
             n >>= 1
         return result
+# small style pass
