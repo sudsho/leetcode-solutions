@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (202)
+## Solved (204)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -104,6 +104,7 @@ NNNN-problem-slug/
 | 152 | [Maximum Product Subarray](0152-maximum-product-subarray/) | Medium | Python |
 | 153 | [Find Minimum in Rotated Sorted Array](0153-find-minimum-in-rotated-sorted-array/) | Medium | Python |
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
+| 160 | [Intersection of Two Linked Lists](0160-intersection-of-two-linked-lists/) | Easy | Python |
 | 162 | [Find Peak Element](0162-find-peak-element/) | Medium | Python |
 | 165 | [Compare Version Numbers](0165-compare-version-numbers/) | Medium | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
@@ -131,6 +132,7 @@ NNNN-problem-slug/
 | 238 | [Product of Array Except Self](0238-product-of-array-except-self/) | Medium | Python |
 | 239 | [Sliding Window Maximum](0239-sliding-window-maximum/) | Hard | Python |
 | 240 | [Search a 2d Matrix II](0240-search-a-2d-matrix-ii/) | Medium | Python |
+| 241 | [Different Ways to Add Parentheses](0241-different-ways-to-add-parentheses/) | Medium | Python |
 | 242 | [Valid Anagram](0242-valid-anagram/) | Easy | Python |
 | 253 | [Meeting Rooms II](0253-meeting-rooms-ii/) | Medium | Python |
 | 261 | [Graph Valid Tree](0261-graph-valid-tree/) | Medium | Python |
