@@ -758,3 +758,7 @@ problem 745: think i finally got the cleaner version.
 ## 2022-06-29
 
 finished 803, will revisit.
+
+## 2022-07-13
+
+compared two approaches for 173.
