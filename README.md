@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (204)
+## Solved (207)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -56,6 +56,7 @@ NNNN-problem-slug/
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
 | 55 | [Jump Game](0055-jump-game/) | Medium | Python |
 | 56 | [Merge Intervals](0056-merge-intervals/) | Medium | Python |
+| 60 | [Permutation Sequence](0060-permutation-sequence/) | Hard | Python |
 | 62 | [Unique Paths](0062-unique-paths/) | Medium | Python |
 | 65 | [Valid Number](0065-valid-number/) | Hard | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
@@ -137,12 +138,14 @@ NNNN-problem-slug/
 | 253 | [Meeting Rooms II](0253-meeting-rooms-ii/) | Medium | Python |
 | 261 | [Graph Valid Tree](0261-graph-valid-tree/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
+| 272 | [Closest Binary Search Tree Value II](0272-closest-binary-search-tree-value-ii/) | Hard | Python |
 | 273 | [Integer to English Words](0273-integer-to-english-words/) | Hard | Python |
 | 279 | [Perfect Squares](0279-perfect-squares/) | Medium | Python |
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
 | 287 | [Find the Duplicate Number](0287-find-the-duplicate-number/) | Medium | Python |
 | 295 | [Find Median from Data Stream](0295-find-median-from-data-stream/) | Hard | Python |
 | 297 | [Serialize and Deserialize Binary Tree](0297-serialize-and-deserialize-binary-tree/) | Hard | Python |
+| 299 | [Bulls and Cows](0299-bulls-and-cows/) | Medium | Python |
 | 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | Python |
 | 312 | [Burst Balloons](0312-burst-balloons/) | Hard | Python |
