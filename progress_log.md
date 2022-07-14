@@ -766,3 +766,7 @@ compared two approaches for 173.
 ## 2022-07-13
 
 reviewed 165, dp version makes sense.
+
+## 2022-07-14
+
+back to problems.
