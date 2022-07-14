@@ -19,3 +19,4 @@ class Solution:
                         words.discard(nw)
                         q.append((nw, d + 1))
         return 0
+# ok
