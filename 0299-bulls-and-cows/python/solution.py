@@ -7,3 +7,4 @@ class Solution:
         gc = Counter(guess)
         cows = sum((sc & gc).values()) - bulls
         return f"{bulls}A{cows}B"
+# revised after retry
