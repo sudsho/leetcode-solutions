@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (207)
+## Solved (211)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -138,11 +138,13 @@ NNNN-problem-slug/
 | 253 | [Meeting Rooms II](0253-meeting-rooms-ii/) | Medium | Python |
 | 261 | [Graph Valid Tree](0261-graph-valid-tree/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
+| 269 | [Alien Dictionary](0269-alien-dictionary/) | Hard | Python |
 | 272 | [Closest Binary Search Tree Value II](0272-closest-binary-search-tree-value-ii/) | Hard | Python |
 | 273 | [Integer to English Words](0273-integer-to-english-words/) | Hard | Python |
 | 279 | [Perfect Squares](0279-perfect-squares/) | Medium | Python |
 | 283 | [Move Zeroes](0283-move-zeroes/) | Easy | Python |
 | 287 | [Find the Duplicate Number](0287-find-the-duplicate-number/) | Medium | Python |
+| 290 | [Word Pattern](0290-word-pattern/) | Easy | Python |
 | 295 | [Find Median from Data Stream](0295-find-median-from-data-stream/) | Hard | Python |
 | 297 | [Serialize and Deserialize Binary Tree](0297-serialize-and-deserialize-binary-tree/) | Hard | Python |
 | 299 | [Bulls and Cows](0299-bulls-and-cows/) | Medium | Python |
@@ -172,6 +174,7 @@ NNNN-problem-slug/
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
 | 480 | [Sliding Window Median](0480-sliding-window-median/) | Hard | Python |
+| 488 | [Zuma Game](0488-zuma-game/) | Hard | Python |
 | 494 | [Target Sum](0494-target-sum/) | Medium | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
 | 518 | [Coin Change 2](0518-coin-change-2/) | Medium | Python |
@@ -193,6 +196,7 @@ NNNN-problem-slug/
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
 | 745 | [Prefix and Suffix Search](0745-prefix-and-suffix-search/) | Hard | Python |
+| 759 | [Employee Free Time](0759-employee-free-time/) | Hard | Python |
 | 763 | [Partition Labels](0763-partition-labels/) | Medium | Python |
 | 778 | [Swim in Rising Water](0778-swim-in-rising-water/) | Hard | Python |
 | 787 | [Cheapest Flights Within k Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
