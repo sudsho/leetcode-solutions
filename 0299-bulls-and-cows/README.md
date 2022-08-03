@@ -18,3 +18,4 @@ Time O(N), space O(10).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
