@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (211)
+## Solved (212)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -75,6 +75,7 @@ NNNN-problem-slug/
 | 84 | [Largest Rectangle in Histogram](0084-largest-rectangle-in-histogram/) | Hard | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
+| 92 | [Reverse Linked List II](0092-reverse-linked-list-ii/) | Medium | Python |
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
 | 98 | [Validate Binary Search Tree](0098-validate-binary-search-tree/) | Medium | Python |
 | 99 | [Recover Binary Search Tree](0099-recover-binary-search-tree/) | Medium | Python |
