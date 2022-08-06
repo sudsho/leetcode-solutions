@@ -44,3 +44,4 @@ class Solution:
             return best
         ans = dfs(board, h0)
         return ans
+# notes: simpler version above
