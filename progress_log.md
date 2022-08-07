@@ -770,3 +770,7 @@ reviewed 165, dp version makes sense.
 ## 2022-07-14
 
 back to problems.
+
+## 2022-08-07
+
+took notes on dp templates.
