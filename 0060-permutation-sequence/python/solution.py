@@ -11,3 +11,4 @@ class Solution:
             out.append(str(digits.pop(idx)))
             k %= f
         return "".join(out)
+# notes: simpler version above
