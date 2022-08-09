@@ -20,3 +20,4 @@ class Solution:
             nxt.next = prev.next
             prev.next = nxt
         return dummy.next
+# ok
