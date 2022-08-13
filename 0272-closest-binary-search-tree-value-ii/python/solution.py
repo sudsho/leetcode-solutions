@@ -27,3 +27,4 @@ class Solution:
                     break
             node = node.right
         return list(out)
+# follow up: revisit if profiling cares
