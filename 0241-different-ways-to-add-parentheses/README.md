@@ -18,3 +18,4 @@ Time exponential; cached to Catalan-ish.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
