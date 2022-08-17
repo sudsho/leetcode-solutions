@@ -774,3 +774,7 @@ back to problems.
 ## 2022-08-07
 
 took notes on dp templates.
+
+## 2022-08-17
+
+tried a couple of mediums.
