@@ -18,3 +18,4 @@ Time O(N^2) due to list pop, space O(N).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
