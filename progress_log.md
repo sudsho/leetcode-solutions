@@ -778,3 +778,7 @@ took notes on dp templates.
 ## 2022-08-17
 
 tried a couple of mediums.
+
+## 2022-08-27
+
+small note.
