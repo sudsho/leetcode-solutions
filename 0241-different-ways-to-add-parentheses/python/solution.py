@@ -25,3 +25,4 @@ class Solution:
             memo[expr] = out
             return out
         return helper(expression)
+# ok
