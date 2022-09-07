@@ -782,3 +782,7 @@ tried a couple of mediums.
 ## 2022-08-27
 
 small note.
+
+## 2022-09-07
+
+finished 1542, will revisit.
