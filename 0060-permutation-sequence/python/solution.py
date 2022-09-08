@@ -12,3 +12,4 @@ class Solution:
             k %= f
         return "".join(out)
 # notes: simpler version above
+# ok
