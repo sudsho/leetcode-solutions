@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (213)
+## Solved (218)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -112,6 +112,7 @@ NNNN-problem-slug/
 | 165 | [Compare Version Numbers](0165-compare-version-numbers/) | Medium | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 173 | [Binary Search Tree Iterator](0173-binary-search-tree-iterator/) | Medium | Python |
+| 188 | [Best Time to Buy and Sell Stock IV](0188-best-time-to-buy-and-sell-stock-iv/) | Hard | Python |
 | 189 | [Rotate Array](0189-rotate-array/) | Medium | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
 | 199 | [Binary Tree Right Side View](0199-binary-tree-right-side-view/) | Medium | Python |
@@ -123,7 +124,9 @@ NNNN-problem-slug/
 | 213 | [House Robber II](0213-house-robber-ii/) | Medium | Python |
 | 215 | [Kth Largest Element in an Array](0215-kth-largest-element-in-an-array/) | Medium | Python |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
+| 218 | [The Skyline Problem](0218-the-skyline-problem/) | Hard | Python |
 | 221 | [Maximal Square](0221-maximal-square/) | Medium | Python |
+| 224 | [Basic Calculator](0224-basic-calculator/) | Hard | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 | 227 | [Basic Calculator II](0227-basic-calculator-ii/) | Medium | Python |
 | 230 | [Kth Smallest Element in a Bst](0230-kth-smallest-element-in-a-bst/) | Medium | Python |
@@ -151,6 +154,8 @@ NNNN-problem-slug/
 | 297 | [Serialize and Deserialize Binary Tree](0297-serialize-and-deserialize-binary-tree/) | Hard | Python |
 | 299 | [Bulls and Cows](0299-bulls-and-cows/) | Medium | Python |
 | 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
+| 301 | [Remove Invalid Parentheses](0301-remove-invalid-parentheses/) | Hard | Python |
+| 305 | [Number of Islands II](0305-number-of-islands-ii/) | Hard | Python |
 | 309 | [Best Time to Buy and Sell Stock with Cooldown](0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | Python |
 | 312 | [Burst Balloons](0312-burst-balloons/) | Hard | Python |
 | 315 | [Count of Smaller Numbers After Self](0315-count-of-smaller-numbers-after-self/) | Hard | Python |
