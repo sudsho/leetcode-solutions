@@ -18,3 +18,4 @@ Time O(M log M), space O(M).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
