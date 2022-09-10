@@ -45,3 +45,4 @@ class Solution:
         ans = dfs(board, h0)
         return ans
 # notes: simpler version above
+# tightened
