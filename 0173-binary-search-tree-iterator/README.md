@@ -18,3 +18,4 @@ Time O(1) amortized per call, space O(H).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
