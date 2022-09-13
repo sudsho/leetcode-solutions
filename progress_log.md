@@ -786,3 +786,7 @@ small note.
 ## 2022-09-07
 
 finished 1542, will revisit.
+
+## 2022-09-13
+
+back to problems.
