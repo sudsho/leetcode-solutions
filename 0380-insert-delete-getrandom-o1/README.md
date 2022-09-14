@@ -18,3 +18,4 @@ Time O(1) average per op, space O(N).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
