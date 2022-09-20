@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (218)
+## Solved (221)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -77,6 +77,7 @@ NNNN-problem-slug/
 | 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
 | 92 | [Reverse Linked List II](0092-reverse-linked-list-ii/) | Medium | Python |
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
+| 95 | [Unique Binary Search Trees II](0095-unique-binary-search-trees-ii/) | Medium | Python |
 | 98 | [Validate Binary Search Tree](0098-validate-binary-search-tree/) | Medium | Python |
 | 99 | [Recover Binary Search Tree](0099-recover-binary-search-tree/) | Medium | Python |
 | 100 | [Same Tree](0100-same-tree/) | Easy | Python |
@@ -106,6 +107,7 @@ NNNN-problem-slug/
 | 148 | [Sort List](0148-sort-list/) | Medium | Python |
 | 152 | [Maximum Product Subarray](0152-maximum-product-subarray/) | Medium | Python |
 | 153 | [Find Minimum in Rotated Sorted Array](0153-find-minimum-in-rotated-sorted-array/) | Medium | Python |
+| 154 | [Find Minimum in Rotated Sorted Array II](0154-find-minimum-in-rotated-sorted-array-ii/) | Hard | Python |
 | 155 | [Min Stack](0155-min-stack/) | Easy | Python |
 | 160 | [Intersection of Two Linked Lists](0160-intersection-of-two-linked-lists/) | Easy | Python |
 | 162 | [Find Peak Element](0162-find-peak-element/) | Medium | Python |
@@ -169,6 +171,7 @@ NNNN-problem-slug/
 | 354 | [Russian Doll Envelopes](0354-russian-doll-envelopes/) | Hard | Python |
 | 363 | [Max Sum of Rectangle No Larger Than k](0363-max-sum-of-rectangle-no-larger-than-k/) | Hard | Python |
 | 378 | [Kth Smallest Element in Sorted Matrix](0378-kth-smallest-element-in-sorted-matrix/) | Medium | Python |
+| 380 | [Insert Delete Getrandom O1](0380-insert-delete-getrandom-o1/) | Medium | Python |
 | 387 | [First Unique Character in a String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 394 | [Decode String](0394-decode-string/) | Medium | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
