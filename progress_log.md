@@ -798,3 +798,7 @@ need to revisit 920 edge cases.
 ## 2022-09-24
 
 took notes on dp templates.
+
+## 2022-09-26
+
+cleaned up 380 a bit.
