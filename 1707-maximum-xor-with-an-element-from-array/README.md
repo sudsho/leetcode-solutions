@@ -18,3 +18,4 @@ Time O((N + Q) log MAX), space O(N * 32).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
