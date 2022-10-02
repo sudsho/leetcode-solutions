@@ -806,3 +806,7 @@ cleaned up 380 a bit.
 ## 2022-09-27
 
 problem 1632: think i finally got the cleaner version.
+
+## 2022-10-02
+
+reviewed 127, dp version makes sense.
