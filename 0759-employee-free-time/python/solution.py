@@ -21,3 +21,4 @@ class Solution:
             if j + 1 < len(schedule[ei]):
                 heapq.heappush(heap, (schedule[ei][j + 1].start, ei, j + 1))
         return result
+# follow up: revisit if profiling cares
