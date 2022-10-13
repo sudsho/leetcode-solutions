@@ -12,3 +12,4 @@ class Solution:
             else:
                 hi -= 1
         return nums[lo]
+# tightened
