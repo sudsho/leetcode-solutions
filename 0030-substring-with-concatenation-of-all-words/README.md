@@ -18,3 +18,4 @@ Time O(N * word_len), space O(M).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
