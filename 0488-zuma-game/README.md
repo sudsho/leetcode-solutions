@@ -18,3 +18,4 @@ Time exponential in worst case.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
