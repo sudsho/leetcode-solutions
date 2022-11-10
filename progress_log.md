@@ -814,3 +814,7 @@ reviewed 127, dp version makes sense.
 ## 2022-10-24
 
 compared two approaches for 30.
+
+## 2022-11-10
+
+small note.
