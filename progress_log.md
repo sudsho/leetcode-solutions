@@ -818,3 +818,7 @@ compared two approaches for 30.
 ## 2022-11-10
 
 small note.
+
+## 2022-11-18
+
+kept practicing today.
