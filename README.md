@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (225)
+## Solved (226)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -216,6 +216,7 @@ NNNN-problem-slug/
 | 803 | [Bricks Falling When Hit](0803-bricks-falling-when-hit/) | Hard | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
 | 850 | [Rectangle Area II](0850-rectangle-area-ii/) | Hard | Python |
+| 871 | [Minimum Number of Refueling Stops](0871-minimum-number-of-refueling-stops/) | Hard | Python |
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
 | 876 | [Middle of the Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
 | 920 | [Number of Music Playlists](0920-number-of-music-playlists/) | Hard | Python |
