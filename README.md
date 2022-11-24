@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (226)
+## Solved (227)
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -121,6 +121,7 @@ NNNN-problem-slug/
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
 | 199 | [Binary Tree Right Side View](0199-binary-tree-right-side-view/) | Medium | Python |
 | 200 | [Number of Islands](0200-number-of-islands/) | Medium | Python |
+| 201 | [Bitwise and of Numbers Range](0201-bitwise-and-of-numbers-range/) | Medium | Python |
 | 206 | [Reverse Linked List](0206-reverse-linked-list/) | Easy | Python |
 | 207 | [Course Schedule](0207-course-schedule/) | Medium | Python |
 | 208 | [Implement Trie](0208-implement-trie/) | Medium | Python |
