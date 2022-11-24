@@ -822,3 +822,7 @@ small note.
 ## 2022-11-18
 
 kept practicing today.
+
+## 2022-11-24
+
+problem 1106: think i finally got the cleaner version.
