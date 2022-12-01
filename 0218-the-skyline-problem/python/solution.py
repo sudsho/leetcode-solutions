@@ -19,3 +19,4 @@ class Solution:
             if not result or result[-1][1] != cur:
                 result.append([x, cur])
         return result
+# tightened
