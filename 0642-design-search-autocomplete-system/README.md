@@ -18,3 +18,4 @@ Time roughly O(L * S log S) per char.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
