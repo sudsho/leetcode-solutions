@@ -4,3 +4,4 @@
 - DSU rank by component size; path compression on find.
 - early return when source == target. cheap, easy to forget.
 - bisect_left vs bisect_right matters when there are dups.
+- bisect_left vs bisect_right matters when there are dups.
