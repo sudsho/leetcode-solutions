@@ -26,3 +26,4 @@ class RandomizedSet:
 
     def getRandom(self) -> int:
         return random.choice(self.vals)
+# notes: simpler version above
