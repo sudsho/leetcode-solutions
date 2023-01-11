@@ -10,3 +10,4 @@ Given a binary matrix, find the largest rectangle of 1s. Reduces to histogram pe
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
