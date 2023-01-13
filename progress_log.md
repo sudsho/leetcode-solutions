@@ -834,3 +834,7 @@ started thinking about 123.
 ## 2023-01-13
 
 morning cleanup.
+
+## 2023-01-13
+
+weekend long session.
