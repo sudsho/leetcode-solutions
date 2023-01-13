@@ -830,3 +830,7 @@ problem 1106: think i finally got the cleaner version.
 ## 2022-11-30
 
 started thinking about 123.
+
+## 2023-01-13
+
+morning cleanup.
