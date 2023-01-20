@@ -10,3 +10,4 @@ Count distinct subsequences of s equal to t. Classic 2D dp on (i, j).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
