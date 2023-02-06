@@ -1,3 +1,4 @@
+# 2023 nit (12)
 # alt: offset dp on next-event index, avoids separate ends array
 from typing import List
 
