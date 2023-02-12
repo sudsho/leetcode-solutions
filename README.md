@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (231)
+## Solved (236)
 
-<!-- last touched: 2023-01-02 (rev 1) -->
+<!-- last touched: 2023-02-12 (rev 2) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -75,6 +75,8 @@ NNNN-problem-slug/
 | 79 | [Word Search](0079-word-search/) | Medium | Python |
 | 81 | [Search In Rotated Sorted Array Ii](0081-search-in-rotated-sorted-array-ii/) | Medium | Python |
 | 84 | [Largest Rectangle In Histogram](0084-largest-rectangle-in-histogram/) | Hard | Python |
+| 85 | [Maximal Rectangle](0085-maximal-rectangle/) | Hard | Python |
+| 87 | [Scramble String](0087-scramble-string/) | Hard | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
 | 92 | [Reverse Linked List Ii](0092-reverse-linked-list-ii/) | Medium | Python |
@@ -90,16 +92,19 @@ NNNN-problem-slug/
 | 108 | [Convert Sorted Array To Bst](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 109 | [Convert Sorted List To Binary Search Tree](0109-convert-sorted-list-to-binary-search-tree/) | Medium | Python |
 | 114 | [Flatten Binary Tree To Linked List](0114-flatten-binary-tree-to-linked-list/) | Medium | Python |
+| 115 | [Distinct Subsequences](0115-distinct-subsequences/) | Hard | Python |
 | 116 | [Populating Next Right Pointers](0116-populating-next-right-pointers/) | Medium | Python |
 | 117 | [Populating Next Right Pointers Ii](0117-populating-next-right-pointers-ii/) | Medium | Python |
 | 121 | [Best Time To Buy And Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 123 | [Best Time To Buy And Sell Stock Iii](0123-best-time-to-buy-and-sell-stock-iii/) | Hard | Python |
 | 124 | [Binary Tree Maximum Path Sum](0124-binary-tree-maximum-path-sum/) | Hard | Python |
+| 126 | [Word Ladder Ii](0126-word-ladder-ii/) | Hard | Python |
 | 127 | [Word Ladder](0127-word-ladder/) | Hard | Python |
 | 128 | [Longest Consecutive Sequence](0128-longest-consecutive-sequence/) | Medium | Python |
 | 131 | [Palindrome Partitioning](0131-palindrome-partitioning/) | Medium | Python |
 | 132 | [Palindrome Partitioning Ii](0132-palindrome-partitioning-ii/) | Hard | Python |
 | 133 | [Clone Graph](0133-clone-graph/) | Medium | Python |
+| 135 | [Candy](0135-candy/) | Hard | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
 | 138 | [Copy List With Random Pointer](0138-copy-list-with-random-pointer/) | Medium | Python |
 | 139 | [Word Break](0139-word-break/) | Medium | Python |
