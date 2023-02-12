@@ -10,3 +10,4 @@ Each kid gets at least one candy; higher-rated kid gets more than neighbors. Two
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
