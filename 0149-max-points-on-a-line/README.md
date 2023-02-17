@@ -10,3 +10,4 @@ Group points by slope from each anchor.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
