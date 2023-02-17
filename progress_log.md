@@ -838,3 +838,7 @@ morning cleanup.
 ## 2023-01-13
 
 weekend long session.
+
+## 2023-02-17
+
+got dataclass to play nice.
