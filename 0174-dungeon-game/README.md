@@ -10,3 +10,4 @@ Min initial HP to traverse grid from top-left to bottom-right. DP from bottom-ri
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
