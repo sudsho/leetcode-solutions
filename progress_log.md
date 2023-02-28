@@ -842,3 +842,7 @@ weekend long session.
 ## 2023-02-17
 
 got dataclass to play nice.
+
+## 2023-02-28
+
+started thinking about a hard.
