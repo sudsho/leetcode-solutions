@@ -10,3 +10,4 @@ Find all words from list found in board. Build trie, dfs from each cell.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
