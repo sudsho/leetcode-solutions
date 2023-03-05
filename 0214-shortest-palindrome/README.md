@@ -10,3 +10,4 @@ Add minimum chars in front to make palindrome. KMP failure on s + '#' + reverse(
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
