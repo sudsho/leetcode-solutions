@@ -846,3 +846,7 @@ got dataclass to play nice.
 ## 2023-02-28
 
 started thinking about a hard.
+
+## 2023-03-10
+
+knapsack patterns are clicking.
