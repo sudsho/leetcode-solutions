@@ -10,3 +10,4 @@ True if there exist i,j such that |nums[i]-nums[j]| <= valueDiff and |i-j| <= in
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
