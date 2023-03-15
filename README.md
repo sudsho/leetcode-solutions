@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (237)
+## Solved (242)
 
-<!-- last touched: 2023-02-18 (rev 4) -->
+<!-- last touched: 2023-03-15 (rev 5) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -125,6 +125,7 @@ NNNN-problem-slug/
 | 165 | [Compare Version Numbers](0165-compare-version-numbers/) | Medium | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 173 | [Binary Search Tree Iterator](0173-binary-search-tree-iterator/) | Medium | Python |
+| 174 | [Dungeon Game](0174-dungeon-game/) | Hard | Python |
 | 188 | [Best Time To Buy And Sell Stock Iv](0188-best-time-to-buy-and-sell-stock-iv/) | Hard | Python |
 | 189 | [Rotate Array](0189-rotate-array/) | Medium | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
@@ -135,10 +136,13 @@ NNNN-problem-slug/
 | 207 | [Course Schedule](0207-course-schedule/) | Medium | Python |
 | 208 | [Implement Trie](0208-implement-trie/) | Medium | Python |
 | 210 | [Course Schedule Ii](0210-course-schedule-ii/) | Medium | Python |
+| 212 | [Word Search Ii](0212-word-search-ii/) | Hard | Python |
 | 213 | [House Robber Ii](0213-house-robber-ii/) | Medium | Python |
+| 214 | [Shortest Palindrome](0214-shortest-palindrome/) | Hard | Python |
 | 215 | [Kth Largest Element In An Array](0215-kth-largest-element-in-an-array/) | Medium | Python |
 | 217 | [Contains Duplicate](0217-contains-duplicate/) | Easy | Python |
 | 218 | [The Skyline Problem](0218-the-skyline-problem/) | Hard | Python |
+| 220 | [Contains Duplicate Iii](0220-contains-duplicate-iii/) | Hard | Python |
 | 221 | [Maximal Square](0221-maximal-square/) | Medium | Python |
 | 224 | [Basic Calculator](0224-basic-calculator/) | Hard | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
@@ -154,6 +158,7 @@ NNNN-problem-slug/
 | 240 | [Search A 2d Matrix Ii](0240-search-a-2d-matrix-ii/) | Medium | Python |
 | 241 | [Different Ways To Add Parentheses](0241-different-ways-to-add-parentheses/) | Medium | Python |
 | 242 | [Valid Anagram](0242-valid-anagram/) | Easy | Python |
+| 248 | [Strobogrammatic Iii](0248-strobogrammatic-iii/) | Hard | Python |
 | 253 | [Meeting Rooms Ii](0253-meeting-rooms-ii/) | Medium | Python |
 | 261 | [Graph Valid Tree](0261-graph-valid-tree/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
