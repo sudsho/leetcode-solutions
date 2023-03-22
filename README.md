@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (242)
+## Solved (243)
 
-<!-- last touched: 2023-03-15 (rev 5) -->
+<!-- last touched: 2023-03-22 (rev 6) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -193,6 +193,7 @@ NNNN-problem-slug/
 | 380 | [Insert Delete Getrandom O1](0380-insert-delete-getrandom-o1/) | Medium | Python |
 | 387 | [First Unique Character In A String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 394 | [Decode String](0394-decode-string/) | Medium | Python |
+| 410 | [Split Array Largest Sum](0410-split-array-largest-sum/) | Hard | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
 | 416 | [Partition Equal Subset Sum](0416-partition-equal-subset-sum/) | Medium | Python |
 | 417 | [Pacific Atlantic Water Flow](0417-pacific-atlantic-water-flow/) | Medium | Python |
