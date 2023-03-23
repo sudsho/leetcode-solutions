@@ -10,3 +10,4 @@ Min steps to spell key by rotating ring. DP over key position with current ring 
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
