@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (243)
+## Solved (245)
 
-<!-- last touched: 2023-03-22 (rev 7) -->
+<!-- last touched: 2023-03-26 (rev 8) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -207,8 +207,10 @@ NNNN-problem-slug/
 | 488 | [Zuma Game](0488-zuma-game/) | Hard | Python |
 | 494 | [Target Sum](0494-target-sum/) | Medium | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
+| 514 | [Freedom Trail](0514-freedom-trail/) | Hard | Python |
 | 518 | [Coin Change 2](0518-coin-change-2/) | Medium | Python |
 | 543 | [Diameter Of Binary Tree](0543-diameter-of-binary-tree/) | Easy | Python |
+| 546 | [Remove Boxes](0546-remove-boxes/) | Hard | Python |
 | 552 | [Student Attendance Record Ii](0552-student-attendance-record-ii/) | Hard | Python |
 | 560 | [Subarray Sum Equals K](0560-subarray-sum-equals-k/) | Medium | Python |
 | 567 | [Permutation In String](0567-permutation-in-string/) | Medium | Python |
