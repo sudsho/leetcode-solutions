@@ -850,3 +850,7 @@ started thinking about a hard.
 ## 2023-03-10
 
 knapsack patterns are clicking.
+
+## 2023-04-02
+
+got dataclass to play nice.
