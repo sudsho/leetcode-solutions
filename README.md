@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (245)
+## Solved (247)
 
-<!-- last touched: 2023-03-27 (rev 9) -->
+<!-- last touched: 2023-04-02 (rev 10) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -216,6 +216,8 @@ NNNN-problem-slug/
 | 567 | [Permutation In String](0567-permutation-in-string/) | Medium | Python |
 | 572 | [Subtree Of Another Tree](0572-subtree-of-another-tree/) | Easy | Python |
 | 581 | [Shortest Unsorted Continuous Subarray](0581-shortest-unsorted-continuous-subarray/) | Medium | Python |
+| 591 | [Tag Validator](0591-tag-validator/) | Hard | Python |
+| 600 | [Non Negative Integers Without Consecutive Ones](0600-non-negative-integers-without-consecutive-ones/) | Hard | Python |
 | 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
 | 621 | [Task Scheduler](0621-task-scheduler/) | Medium | Python |
 | 642 | [Design Search Autocomplete System](0642-design-search-autocomplete-system/) | Hard | Python |
