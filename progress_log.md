@@ -854,3 +854,7 @@ knapsack patterns are clicking.
 ## 2023-04-02
 
 got dataclass to play nice.
+
+## 2023-04-08
+
+comprehensions everywhere now.
