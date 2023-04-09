@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (247)
+## Solved (248)
 
-<!-- last touched: 2023-04-02 (rev 10) -->
+<!-- last touched: 2023-04-09 (rev 11) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -220,6 +220,7 @@ NNNN-problem-slug/
 | 600 | [Non Negative Integers Without Consecutive Ones](0600-non-negative-integers-without-consecutive-ones/) | Hard | Python |
 | 617 | [Merge Two Binary Trees](0617-merge-two-binary-trees/) | Easy | Python |
 | 621 | [Task Scheduler](0621-task-scheduler/) | Medium | Python |
+| 631 | [Design Excel Sum Formula](0631-design-excel-sum-formula/) | Hard | Python |
 | 642 | [Design Search Autocomplete System](0642-design-search-autocomplete-system/) | Hard | Python |
 | 647 | [Palindromic Substrings](0647-palindromic-substrings/) | Medium | Python |
 | 658 | [Find K Closest Elements](0658-find-k-closest-elements/) | Medium | Python |
