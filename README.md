@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (248)
+## Solved (249)
 
-<!-- last touched: 2023-04-09 (rev 11) -->
+<!-- last touched: 2023-04-12 (rev 12) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -224,6 +224,7 @@ NNNN-problem-slug/
 | 642 | [Design Search Autocomplete System](0642-design-search-autocomplete-system/) | Hard | Python |
 | 647 | [Palindromic Substrings](0647-palindromic-substrings/) | Medium | Python |
 | 658 | [Find K Closest Elements](0658-find-k-closest-elements/) | Medium | Python |
+| 691 | [Stickers To Spell Word](0691-stickers-to-spell-word/) | Hard | Python |
 | 692 | [Top K Frequent Words](0692-top-k-frequent-words/) | Medium | Python |
 | 695 | [Max Area Of Island](0695-max-area-of-island/) | Medium | Python |
 | 700 | [Search In A Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
