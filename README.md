@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (249)
+## Solved (250)
 
-<!-- last touched: 2023-04-12 (rev 12) -->
+<!-- last touched: 2023-04-18 (rev 13) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -234,6 +234,7 @@ NNNN-problem-slug/
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
 | 745 | [Prefix And Suffix Search](0745-prefix-and-suffix-search/) | Hard | Python |
+| 753 | [Cracking The Safe](0753-cracking-the-safe/) | Hard | Python |
 | 759 | [Employee Free Time](0759-employee-free-time/) | Hard | Python |
 | 763 | [Partition Labels](0763-partition-labels/) | Medium | Python |
 | 778 | [Swim In Rising Water](0778-swim-in-rising-water/) | Hard | Python |
