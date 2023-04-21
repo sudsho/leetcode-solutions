@@ -1,3 +1,4 @@
+# 2023 nit (69)
 # slightly more compact gap distribution
 from typing import List
 
