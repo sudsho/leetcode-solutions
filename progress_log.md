@@ -858,3 +858,7 @@ got dataclass to play nice.
 ## 2023-04-08
 
 comprehensions everywhere now.
+
+## 2023-04-23
+
+trie problems are fun.
