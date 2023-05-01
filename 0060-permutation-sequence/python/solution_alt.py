@@ -1,3 +1,4 @@
+# 2023 nit (73)
 # build factoradic digits up front
 from math import factorial
 
