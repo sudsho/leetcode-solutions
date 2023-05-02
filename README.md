@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (253)
+## Solved (254)
 
-<!-- last touched: 2023-05-02 (rev 14) -->
+<!-- last touched: 2023-05-02 (rev 15) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -244,6 +244,7 @@ NNNN-problem-slug/
 | 805 | [Split Array With Same Average](0805-split-array-with-same-average/) | Hard | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
 | 818 | [Race Car](0818-race-car/) | Hard | Python |
+| 828 | [Count Unique Characters Of All Substrings](0828-count-unique-characters-of-all-substrings/) | Hard | Python |
 | 850 | [Rectangle Area Ii](0850-rectangle-area-ii/) | Hard | Python |
 | 871 | [Minimum Number Of Refueling Stops](0871-minimum-number-of-refueling-stops/) | Hard | Python |
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
