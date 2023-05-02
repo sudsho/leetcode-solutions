@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (250)
+## Solved (253)
 
-<!-- last touched: 2023-04-18 (rev 13) -->
+<!-- last touched: 2023-05-02 (rev 14) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -239,8 +239,11 @@ NNNN-problem-slug/
 | 763 | [Partition Labels](0763-partition-labels/) | Medium | Python |
 | 778 | [Swim In Rising Water](0778-swim-in-rising-water/) | Hard | Python |
 | 787 | [Cheapest Flights Within K Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
+| 793 | [Preimage Size Of Factorial Zeroes](0793-preimage-size-of-factorial-zeroes/) | Hard | Python |
 | 803 | [Bricks Falling When Hit](0803-bricks-falling-when-hit/) | Hard | Python |
+| 805 | [Split Array With Same Average](0805-split-array-with-same-average/) | Hard | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
+| 818 | [Race Car](0818-race-car/) | Hard | Python |
 | 850 | [Rectangle Area Ii](0850-rectangle-area-ii/) | Hard | Python |
 | 871 | [Minimum Number Of Refueling Stops](0871-minimum-number-of-refueling-stops/) | Hard | Python |
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
