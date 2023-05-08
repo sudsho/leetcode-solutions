@@ -3,3 +3,4 @@
 - pattern note 49.
 - pattern note 76.
 - pattern note 82.
+- pattern note 88.
