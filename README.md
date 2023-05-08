@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (254)
+## Solved (256)
 
-<!-- last touched: 2023-05-02 (rev 15) -->
+<!-- last touched: 2023-05-08 (rev 16) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -249,7 +249,9 @@ NNNN-problem-slug/
 | 871 | [Minimum Number Of Refueling Stops](0871-minimum-number-of-refueling-stops/) | Hard | Python |
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
 | 876 | [Middle Of The Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
+| 891 | [Sum Of Subsequence Widths](0891-sum-of-subsequence-widths/) | Hard | Python |
 | 920 | [Number Of Music Playlists](0920-number-of-music-playlists/) | Hard | Python |
+| 940 | [Distinct Subsequences Ii](0940-distinct-subsequences-ii/) | Hard | Python |
 | 952 | [Largest Component Size By Common Factor](0952-largest-component-size-by-common-factor/) | Hard | Python |
 | 968 | [Binary Tree Cameras](0968-binary-tree-cameras/) | Hard | Python |
 | 980 | [Unique Paths Iii](0980-unique-paths-iii/) | Hard | Python |
