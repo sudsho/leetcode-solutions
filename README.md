@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (256)
+## Solved (257)
 
-<!-- last touched: 2023-05-12 (rev 17) -->
+<!-- last touched: 2023-05-18 (rev 18) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -255,6 +255,7 @@ NNNN-problem-slug/
 | 952 | [Largest Component Size By Common Factor](0952-largest-component-size-by-common-factor/) | Hard | Python |
 | 968 | [Binary Tree Cameras](0968-binary-tree-cameras/) | Hard | Python |
 | 980 | [Unique Paths Iii](0980-unique-paths-iii/) | Hard | Python |
+| 992 | [Subarrays With K Different Integers](0992-subarrays-with-k-different-integers/) | Hard | Python |
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
 | 1011 | [Capacity To Ship Packages Within D Days](1011-capacity-to-ship-packages-within-d-days/) | Medium | Python |
 | 1044 | [Longest Duplicate Substring](1044-longest-duplicate-substring/) | Hard | Python |
