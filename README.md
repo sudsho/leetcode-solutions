@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (257)
+## Solved (258)
 
-<!-- last touched: 2023-05-18 (rev 18) -->
+<!-- last touched: 2023-05-19 (rev 19) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -257,6 +257,7 @@ NNNN-problem-slug/
 | 980 | [Unique Paths Iii](0980-unique-paths-iii/) | Hard | Python |
 | 992 | [Subarrays With K Different Integers](0992-subarrays-with-k-different-integers/) | Hard | Python |
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
+| 1000 | [Minimum Cost To Merge Stones](1000-minimum-cost-to-merge-stones/) | Hard | Python |
 | 1011 | [Capacity To Ship Packages Within D Days](1011-capacity-to-ship-packages-within-d-days/) | Medium | Python |
 | 1044 | [Longest Duplicate Substring](1044-longest-duplicate-substring/) | Hard | Python |
 | 1106 | [Parsing A Boolean Expression](1106-parsing-a-boolean-expression/) | Hard | Python |
