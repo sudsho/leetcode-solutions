@@ -18,3 +18,4 @@ Time O(N * L^2), space O(N).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
