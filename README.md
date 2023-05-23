@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (258)
+## Solved (259)
 
-<!-- last touched: 2023-05-19 (rev 19) -->
+<!-- last touched: 2023-05-23 (rev 20) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -260,6 +260,7 @@ NNNN-problem-slug/
 | 1000 | [Minimum Cost To Merge Stones](1000-minimum-cost-to-merge-stones/) | Hard | Python |
 | 1011 | [Capacity To Ship Packages Within D Days](1011-capacity-to-ship-packages-within-d-days/) | Medium | Python |
 | 1044 | [Longest Duplicate Substring](1044-longest-duplicate-substring/) | Hard | Python |
+| 1095 | [Find In Mountain Array](1095-find-in-mountain-array/) | Hard | Python |
 | 1106 | [Parsing A Boolean Expression](1106-parsing-a-boolean-expression/) | Hard | Python |
 | 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
