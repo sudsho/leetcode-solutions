@@ -18,3 +18,4 @@ Time O(log n) per add, O(1) for median.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
