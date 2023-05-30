@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (259)
+## Solved (260)
 
-<!-- last touched: 2023-05-23 (rev 20) -->
+<!-- last touched: 2023-05-30 (rev 21) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -268,6 +268,7 @@ NNNN-problem-slug/
 | 1293 | [Shortest Path With Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
 | 1320 | [Minimum Distance To Type A Word Using Two Fingers](1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard | Python |
 | 1376 | [Time Needed To Inform All Employees](1376-time-needed-to-inform-all-employees/) | Medium | Python |
+| 1397 | [Find All Good Strings](1397-find-all-good-strings/) | Hard | Python |
 | 1463 | [Cherry Pickup Ii](1463-cherry-pickup-ii/) | Hard | Python |
 | 1492 | [Kth Factor Of N](1492-kth-factor-of-n/) | Medium | Python |
 | 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |
