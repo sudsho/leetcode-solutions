@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (260)
+## Solved (261)
 
-<!-- last touched: 2023-05-30 (rev 21) -->
+<!-- last touched: 2023-06-01 (rev 22) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -269,6 +269,7 @@ NNNN-problem-slug/
 | 1320 | [Minimum Distance To Type A Word Using Two Fingers](1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard | Python |
 | 1376 | [Time Needed To Inform All Employees](1376-time-needed-to-inform-all-employees/) | Medium | Python |
 | 1397 | [Find All Good Strings](1397-find-all-good-strings/) | Hard | Python |
+| 1411 | [Number Of Ways To Paint N X 3 Grid](1411-number-of-ways-to-paint-n-x-3-grid/) | Hard | Python |
 | 1463 | [Cherry Pickup Ii](1463-cherry-pickup-ii/) | Hard | Python |
 | 1492 | [Kth Factor Of N](1492-kth-factor-of-n/) | Medium | Python |
 | 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |
