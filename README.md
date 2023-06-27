@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (262)
+## Solved (263)
 
-<!-- last touched: 2023-06-14 (rev 24) -->
+<!-- last touched: 2023-06-27 (rev 25) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -272,6 +272,7 @@ NNNN-problem-slug/
 | 1411 | [Number Of Ways To Paint N X 3 Grid](1411-number-of-ways-to-paint-n-x-3-grid/) | Hard | Python |
 | 1463 | [Cherry Pickup Ii](1463-cherry-pickup-ii/) | Hard | Python |
 | 1473 | [Paint House Iii](1473-paint-house-iii/) | Hard | Python |
+| 1483 | [Kth Ancestor Of A Tree Node](1483-kth-ancestor-of-a-tree-node/) | Hard | Python |
 | 1492 | [Kth Factor Of N](1492-kth-factor-of-n/) | Medium | Python |
 | 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |
 | 1591 | [Strange Printer Ii](1591-strange-printer-ii/) | Hard | Python |
