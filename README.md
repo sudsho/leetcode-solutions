@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (263)
+## Solved (265)
 
-<!-- last touched: 2023-06-27 (rev 25) -->
+<!-- last touched: 2023-06-28 (rev 26) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -274,7 +274,9 @@ NNNN-problem-slug/
 | 1473 | [Paint House Iii](1473-paint-house-iii/) | Hard | Python |
 | 1483 | [Kth Ancestor Of A Tree Node](1483-kth-ancestor-of-a-tree-node/) | Hard | Python |
 | 1492 | [Kth Factor Of N](1492-kth-factor-of-n/) | Medium | Python |
+| 1531 | [String Compression Ii](1531-string-compression-ii/) | Hard | Python |
 | 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |
+| 1547 | [Minimum Cost To Cut A Stick](1547-minimum-cost-to-cut-a-stick/) | Hard | Python |
 | 1591 | [Strange Printer Ii](1591-strange-printer-ii/) | Hard | Python |
 | 1632 | [Rank Transform Of A Matrix](1632-rank-transform-of-a-matrix/) | Hard | Python |
 | 1707 | [Maximum Xor With An Element From Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |
