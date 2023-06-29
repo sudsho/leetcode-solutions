@@ -6,3 +6,4 @@
 - pattern note 88.
 - pattern note 109.
 - pattern note 112.
+- pattern note 118.
