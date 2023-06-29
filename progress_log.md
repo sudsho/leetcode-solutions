@@ -866,3 +866,7 @@ trie problems are fun.
 ## 2023-05-02
 
 deep into hard problems lately.
+
+## 2023-06-29
+
+started thinking about a hard.
