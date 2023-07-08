@@ -870,3 +870,7 @@ deep into hard problems lately.
 ## 2023-06-29
 
 started thinking about a hard.
+
+## 2023-07-08
+
+kmp showed up twice this week.
