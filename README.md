@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (266)
+## Solved (267)
 
-<!-- last touched: 2023-07-02 (rev 27) -->
+<!-- last touched: 2023-07-12 (rev 28) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -280,6 +280,7 @@ NNNN-problem-slug/
 | 1591 | [Strange Printer Ii](1591-strange-printer-ii/) | Hard | Python |
 | 1632 | [Rank Transform Of A Matrix](1632-rank-transform-of-a-matrix/) | Hard | Python |
 | 1639 | [Number Of Ways To Form A Target String](1639-number-of-ways-to-form-a-target-string/) | Hard | Python |
+| 1681 | [Minimum Incompatibility](1681-minimum-incompatibility/) | Hard | Python |
 | 1707 | [Maximum Xor With An Element From Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |
 | 1751 | [Maximum Number Of Events That Can Be Attended Ii](1751-maximum-number-of-events-that-can-be-attended-ii/) | Hard | Python |
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
