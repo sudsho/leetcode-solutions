@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (267)
+## Solved (269)
 
-<!-- last touched: 2023-07-12 (rev 28) -->
+<!-- last touched: 2023-07-19 (rev 29) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -283,4 +283,6 @@ NNNN-problem-slug/
 | 1681 | [Minimum Incompatibility](1681-minimum-incompatibility/) | Hard | Python |
 | 1707 | [Maximum Xor With An Element From Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |
 | 1751 | [Maximum Number Of Events That Can Be Attended Ii](1751-maximum-number-of-events-that-can-be-attended-ii/) | Hard | Python |
+| 1755 | [Closest Subsequence Sum](1755-closest-subsequence-sum/) | Hard | Python |
+| 1808 | [Maximize Number Of Nice Divisors](1808-maximize-number-of-nice-divisors/) | Hard | Python |
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
