@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (269)
+## Solved (270)
 
-<!-- last touched: 2023-07-19 (rev 29) -->
+<!-- last touched: 2023-07-24 (rev 30) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -286,3 +286,4 @@ NNNN-problem-slug/
 | 1755 | [Closest Subsequence Sum](1755-closest-subsequence-sum/) | Hard | Python |
 | 1808 | [Maximize Number Of Nice Divisors](1808-maximize-number-of-nice-divisors/) | Hard | Python |
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
+| 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
