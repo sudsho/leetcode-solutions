@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (270)
+## Solved (271)
 
-<!-- last touched: 2023-07-27 (rev 31) -->
+<!-- last touched: 2023-08-07 (rev 32) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -287,3 +287,4 @@ NNNN-problem-slug/
 | 1808 | [Maximize Number Of Nice Divisors](1808-maximize-number-of-nice-divisors/) | Hard | Python |
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
 | 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
+| 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
