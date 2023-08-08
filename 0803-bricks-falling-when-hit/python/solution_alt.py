@@ -1,3 +1,4 @@
+# 2023 nit (141)
 # brute force per-hit - too slow for large N, kept for reference
 from typing import List
 
