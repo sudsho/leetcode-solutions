@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (271)
+## Solved (272)
 
-<!-- last touched: 2023-08-08 (rev 34) -->
+<!-- last touched: 2023-08-09 (rev 35) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -288,3 +288,4 @@ NNNN-problem-slug/
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
 | 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
 | 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
+| 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
