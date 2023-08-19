@@ -1,3 +1,4 @@
+# 2023 nit (149)
 # treemap-style with manual insert (no sortedcontainers)
 class RangeModule:
     def __init__(self) -> None:
