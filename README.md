@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (272)
+## Solved (275)
 
-<!-- last touched: 2023-08-09 (rev 35) -->
+<!-- last touched: 2023-09-01 (rev 36) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -104,8 +104,10 @@ NNNN-problem-slug/
 | 131 | [Palindrome Partitioning](0131-palindrome-partitioning/) | Medium | Python |
 | 132 | [Palindrome Partitioning Ii](0132-palindrome-partitioning-ii/) | Hard | Python |
 | 133 | [Clone Graph](0133-clone-graph/) | Medium | Python |
+| 134 | [Gas Station](0134-gas-station/) | Medium | Python |
 | 135 | [Candy](0135-candy/) | Hard | Python |
 | 136 | [Single Number](0136-single-number/) | Easy | Python |
+| 137 | [Single Number Ii](0137-single-number-ii/) | Medium | Python |
 | 138 | [Copy List With Random Pointer](0138-copy-list-with-random-pointer/) | Medium | Python |
 | 139 | [Word Break](0139-word-break/) | Medium | Python |
 | 140 | [Word Break Ii](0140-word-break-ii/) | Hard | Python |
@@ -289,3 +291,4 @@ NNNN-problem-slug/
 | 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
 | 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
+| 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
