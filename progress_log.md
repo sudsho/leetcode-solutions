@@ -882,3 +882,7 @@ felt slow today, just one easy.
 ## 2023-08-26
 
 back at it after a quiet week.
+
+## 2023-09-02
+
+trying match statements where they help.
