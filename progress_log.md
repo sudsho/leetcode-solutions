@@ -886,3 +886,7 @@ back at it after a quiet week.
 ## 2023-09-02
 
 trying match statements where they help.
+
+## 2023-09-09
+
+comprehensions everywhere now.
