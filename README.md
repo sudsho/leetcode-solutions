@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (276)
+## Solved (277)
 
-<!-- last touched: 2023-09-08 (rev 37) -->
+<!-- last touched: 2023-09-11 (rev 38) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -164,6 +164,7 @@ NNNN-problem-slug/
 | 248 | [Strobogrammatic Iii](0248-strobogrammatic-iii/) | Hard | Python |
 | 253 | [Meeting Rooms Ii](0253-meeting-rooms-ii/) | Medium | Python |
 | 261 | [Graph Valid Tree](0261-graph-valid-tree/) | Medium | Python |
+| 264 | [Ugly Number Ii](0264-ugly-number-ii/) | Medium | Python |
 | 268 | [Missing Number](0268-missing-number/) | Easy | Python |
 | 269 | [Alien Dictionary](0269-alien-dictionary/) | Hard | Python |
 | 272 | [Closest Binary Search Tree Value Ii](0272-closest-binary-search-tree-value-ii/) | Hard | Python |
