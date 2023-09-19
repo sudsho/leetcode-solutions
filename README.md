@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (277)
+## Solved (278)
 
-<!-- last touched: 2023-09-11 (rev 38) -->
+<!-- last touched: 2023-09-19 (rev 39) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -179,6 +179,7 @@ NNNN-problem-slug/
 | 299 | [Bulls And Cows](0299-bulls-and-cows/) | Medium | Python |
 | 300 | [Longest Increasing Subsequence](0300-longest-increasing-subsequence/) | Medium | Python |
 | 301 | [Remove Invalid Parentheses](0301-remove-invalid-parentheses/) | Hard | Python |
+| 304 | [Range Sum Query 2d Immutable](0304-range-sum-query-2d-immutable/) | Medium | Python |
 | 305 | [Number Of Islands Ii](0305-number-of-islands-ii/) | Hard | Python |
 | 309 | [Best Time To Buy And Sell Stock With Cooldown](0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium | Python |
 | 312 | [Burst Balloons](0312-burst-balloons/) | Hard | Python |
