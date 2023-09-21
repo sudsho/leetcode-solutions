@@ -890,3 +890,7 @@ trying match statements where they help.
 ## 2023-09-09
 
 comprehensions everywhere now.
+
+## 2023-09-21
+
+knapsack patterns are clicking.
