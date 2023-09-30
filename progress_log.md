@@ -894,3 +894,7 @@ comprehensions everywhere now.
 ## 2023-09-21
 
 knapsack patterns are clicking.
+
+## 2023-09-30
+
+felt slow today, just one easy.
