@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (278)
+## Solved (280)
 
-<!-- last touched: 2023-09-19 (rev 39) -->
+<!-- last touched: 2023-10-04 (rev 40) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -194,8 +194,10 @@ NNNN-problem-slug/
 | 347 | [Top K Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
 | 354 | [Russian Doll Envelopes](0354-russian-doll-envelopes/) | Hard | Python |
 | 363 | [Max Sum Of Rectangle No Larger Than K](0363-max-sum-of-rectangle-no-larger-than-k/) | Hard | Python |
+| 365 | [Water And Jug Problem](0365-water-and-jug-problem/) | Medium | Python |
 | 378 | [Kth Smallest Element In Sorted Matrix](0378-kth-smallest-element-in-sorted-matrix/) | Medium | Python |
 | 380 | [Insert Delete Getrandom O1](0380-insert-delete-getrandom-o1/) | Medium | Python |
+| 386 | [Lexicographical Numbers](0386-lexicographical-numbers/) | Medium | Python |
 | 387 | [First Unique Character In A String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 394 | [Decode String](0394-decode-string/) | Medium | Python |
 | 410 | [Split Array Largest Sum](0410-split-array-largest-sum/) | Hard | Python |
