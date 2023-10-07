@@ -1,0 +1,19 @@
+# alt: revisited in 2023, slight cleanup
+from typing import List, Optional
+
+# original idea kept; this version uses match/dataclass-style refactor where it helps.
+
+class Solution:
+    def longestValidParentheses(self, s: str) -> int:
+        stack = [-1]
+        best = 0
+        for i, ch in enumerate(s):
+            if ch == "(":
+                stack.append(i)
+            else:
+                stack.pop()
+                if not stack:
+                    stack.append(i)
+                else:
+                    best = max(best, i - stack[-1])
+        return best
