@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (280)
+## Solved (281)
 
-<!-- last touched: 2023-10-05 (rev 41) -->
+<!-- last touched: 2023-10-08 (rev 42) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -200,6 +200,7 @@ NNNN-problem-slug/
 | 386 | [Lexicographical Numbers](0386-lexicographical-numbers/) | Medium | Python |
 | 387 | [First Unique Character In A String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 394 | [Decode String](0394-decode-string/) | Medium | Python |
+| 402 | [Remove K Digits](0402-remove-k-digits/) | Medium | Python |
 | 410 | [Split Array Largest Sum](0410-split-array-largest-sum/) | Hard | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
 | 416 | [Partition Equal Subset Sum](0416-partition-equal-subset-sum/) | Medium | Python |
