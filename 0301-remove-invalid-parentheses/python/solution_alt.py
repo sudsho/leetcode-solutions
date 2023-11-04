@@ -1,3 +1,4 @@
+# 2023 nit (180)
 # bfs version - guarantees minimum-removal level
 from typing import List
 from collections import deque
