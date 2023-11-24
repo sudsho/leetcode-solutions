@@ -9,3 +9,4 @@
 - pattern note 118.
 - pattern note 148.
 - pattern note 181.
+- pattern note 187.
