@@ -902,3 +902,7 @@ felt slow today, just one easy.
 ## 2023-11-04
 
 sweep line tricks again.
+
+## 2023-11-27
+
+interview prep mode.
