@@ -1,3 +1,4 @@
+# 2023 nit (193)
 # brute version: enumerate every starting index, count words
 from typing import List
 from collections import Counter
