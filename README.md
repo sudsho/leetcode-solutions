@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (283)
+## Solved (287)
 
-<!-- last touched: 2023-11-13 (rev 44) -->
+<!-- last touched: 2023-11-28 (rev 45) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -241,6 +241,7 @@ NNNN-problem-slug/
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
 | 715 | [Range Module](0715-range-module/) | Hard | Python |
 | 729 | [My Calendar I](0729-my-calendar-i/) | Medium | Python |
+| 731 | [My Calendar Ii](0731-my-calendar-ii/) | Medium | Python |
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
 | 743 | [Network Delay Time](0743-network-delay-time/) | Medium | Python |
 | 745 | [Prefix And Suffix Search](0745-prefix-and-suffix-search/) | Hard | Python |
@@ -275,6 +276,7 @@ NNNN-problem-slug/
 | 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
 | 1268 | [Search Suggestions System](1268-search-suggestions-system/) | Medium | Python |
+| 1278 | [Palindrome Partitioning Iii](1278-palindrome-partitioning-iii/) | Hard | Python |
 | 1293 | [Shortest Path With Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
 | 1320 | [Minimum Distance To Type A Word Using Two Fingers](1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard | Python |
 | 1376 | [Time Needed To Inform All Employees](1376-time-needed-to-inform-all-employees/) | Medium | Python |
@@ -288,8 +290,10 @@ NNNN-problem-slug/
 | 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |
 | 1547 | [Minimum Cost To Cut A Stick](1547-minimum-cost-to-cut-a-stick/) | Hard | Python |
 | 1591 | [Strange Printer Ii](1591-strange-printer-ii/) | Hard | Python |
+| 1622 | [Fancy Sequence](1622-fancy-sequence/) | Hard | Python |
 | 1632 | [Rank Transform Of A Matrix](1632-rank-transform-of-a-matrix/) | Hard | Python |
 | 1639 | [Number Of Ways To Form A Target String](1639-number-of-ways-to-form-a-target-string/) | Hard | Python |
+| 1671 | [Minimum Number Of Removals To Make Mountain Array](1671-minimum-number-of-removals-to-make-mountain-array/) | Hard | Python |
 | 1681 | [Minimum Incompatibility](1681-minimum-incompatibility/) | Hard | Python |
 | 1707 | [Maximum Xor With An Element From Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |
 | 1751 | [Maximum Number Of Events That Can Be Attended Ii](1751-maximum-number-of-events-that-can-be-attended-ii/) | Hard | Python |
