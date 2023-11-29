@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (287)
 
-<!-- last touched: 2023-11-28 (rev 45) -->
+<!-- last touched: 2023-11-29 (rev 46) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
