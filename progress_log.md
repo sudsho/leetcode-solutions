@@ -906,3 +906,7 @@ sweep line tricks again.
 ## 2023-11-27
 
 interview prep mode.
+
+## 2023-12-12
+
+got dataclass to play nice.
