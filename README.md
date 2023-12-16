@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (288)
+## Solved (290)
 
-<!-- last touched: 2023-12-04 (rev 48) -->
+<!-- last touched: 2023-12-16 (rev 49) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -275,6 +275,7 @@ NNNN-problem-slug/
 | 1106 | [Parsing A Boolean Expression](1106-parsing-a-boolean-expression/) | Hard | Python |
 | 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
+| 1240 | [Tiling A Rectangle With The Fewest Squares](1240-tiling-a-rectangle-with-the-fewest-squares/) | Hard | Python |
 | 1268 | [Search Suggestions System](1268-search-suggestions-system/) | Medium | Python |
 | 1278 | [Palindrome Partitioning Iii](1278-palindrome-partitioning-iii/) | Hard | Python |
 | 1293 | [Shortest Path With Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
@@ -290,6 +291,7 @@ NNNN-problem-slug/
 | 1531 | [String Compression Ii](1531-string-compression-ii/) | Hard | Python |
 | 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |
 | 1547 | [Minimum Cost To Cut A Stick](1547-minimum-cost-to-cut-a-stick/) | Hard | Python |
+| 1568 | [Minimum Number Of Days To Disconnect Island](1568-minimum-number-of-days-to-disconnect-island/) | Hard | Python |
 | 1591 | [Strange Printer Ii](1591-strange-printer-ii/) | Hard | Python |
 | 1622 | [Fancy Sequence](1622-fancy-sequence/) | Hard | Python |
 | 1632 | [Rank Transform Of A Matrix](1632-rank-transform-of-a-matrix/) | Hard | Python |
