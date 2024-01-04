@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (291)
+## Solved (292)
 
 <!-- last touched: 2023-12-20 (rev 50) -->
 
@@ -308,3 +308,4 @@ NNNN-problem-slug/
 | 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
+| 1147 | [Longest Chunked Palindrome Decomposition](1147-longest-chunked-palindrome-decomposition/) | Hard | Python |
