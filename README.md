@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (292)
+## Solved (293)
 
 <!-- last touched: 2024-01-05 (rev 79) -->
 
@@ -309,3 +309,4 @@ NNNN-problem-slug/
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
 | 1147 | [Longest Chunked Palindrome Decomposition](1147-longest-chunked-palindrome-decomposition/) | Hard | Python |
+| 2858 | [Minimum Edge Reversals So Every Node Is Reachable](2858-minimum-edge-reversals-so-every-node-is-reachable/) | Hard | Python |
