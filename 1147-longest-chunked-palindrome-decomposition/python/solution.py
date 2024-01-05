@@ -15,3 +15,4 @@ class Solution:
         if left:
             count += 1
         return count
+# corrected edge case
