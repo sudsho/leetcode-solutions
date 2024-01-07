@@ -26,3 +26,4 @@ class Solution:
                 reroot(v, u)
         reroot(0, -1)
         return ans
+# refactored helper
