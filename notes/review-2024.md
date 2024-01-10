@@ -2,3 +2,4 @@
 
 rolling notes
 - floyd cycle is the cleanest way for find duplicate variants.
+- tarjan low-link refresher.
