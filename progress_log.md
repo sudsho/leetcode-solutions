@@ -910,3 +910,8 @@ interview prep mode.
 ## 2023-12-12
 
 got dataclass to play nice.
+
+## 2024-01-10
+
+working on lc.
+<!-- slot 10 2024-01-10T20:47:31+05:30 -->
