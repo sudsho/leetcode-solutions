@@ -16,3 +16,4 @@ class Solution:
             count += 1
         return count
 # corrected edge case
+# tightened naming
