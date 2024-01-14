@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (294)
+## Solved (295)
 
 <!-- last touched: 2024-01-08 (rev 92) -->
 
@@ -311,3 +311,4 @@ NNNN-problem-slug/
 | 1147 | [Longest Chunked Palindrome Decomposition](1147-longest-chunked-palindrome-decomposition/) | Hard | Python |
 | 2858 | [Minimum Edge Reversals So Every Node Is Reachable](2858-minimum-edge-reversals-so-every-node-is-reachable/) | Hard | Python |
 | 3171 | [Find Subarray With Bitwise Or Closest To K](3171-find-subarray-with-bitwise-or-closest-to-k/) | Hard | Python |
+| 2030 | [Smallest K Length Subsequence With Occurrences Of A Letter](2030-smallest-k-length-subsequence-with-occurrences-of-a-letter/) | Hard | Python |
