@@ -17,3 +17,4 @@ class Solution:
                 if d < best:
                     best = d
         return best
+# small fix
