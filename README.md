@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (296)
+## Solved (297)
 
 <!-- last touched: 2024-01-08 (rev 92) -->
 
@@ -313,3 +313,4 @@ NNNN-problem-slug/
 | 3171 | [Find Subarray With Bitwise Or Closest To K](3171-find-subarray-with-bitwise-or-closest-to-k/) | Hard | Python |
 | 2030 | [Smallest K Length Subsequence With Occurrences Of A Letter](2030-smallest-k-length-subsequence-with-occurrences-of-a-letter/) | Hard | Python |
 | 3003 | [Maximize The Number Of Partitions After Operations](3003-maximize-the-number-of-partitions-after-operations/) | Hard | Python |
+| 1063 | [Number Of Valid Subarrays](1063-number-of-valid-subarrays/) | Hard | Python |
