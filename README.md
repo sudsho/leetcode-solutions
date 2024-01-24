@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (298)
+## Solved (299)
 
 <!-- last touched: 2024-01-08 (rev 92) -->
 
@@ -315,3 +315,4 @@ NNNN-problem-slug/
 | 3003 | [Maximize The Number Of Partitions After Operations](3003-maximize-the-number-of-partitions-after-operations/) | Hard | Python |
 | 1063 | [Number Of Valid Subarrays](1063-number-of-valid-subarrays/) | Hard | Python |
 | 943 | [Find The Shortest Superstring](0943-find-the-shortest-superstring/) | Hard | Python |
+| 2421 | [Number Of Good Paths](2421-number-of-good-paths/) | Hard | Python |
