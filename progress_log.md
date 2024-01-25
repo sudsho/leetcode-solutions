@@ -915,3 +915,8 @@ got dataclass to play nice.
 
 working on lc.
 <!-- slot 10 2024-01-10T20:47:31+05:30 -->
+
+## 2024-01-26
+
+working on lc.
+<!-- slot 28 2024-01-26T01:48:38+05:30 -->
