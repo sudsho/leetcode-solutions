@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (299)
+## Solved (300)
 
 <!-- last touched: 2024-01-25 (rev 199) -->
 
@@ -316,3 +316,4 @@ NNNN-problem-slug/
 | 1063 | [Number Of Valid Subarrays](1063-number-of-valid-subarrays/) | Hard | Python |
 | 943 | [Find The Shortest Superstring](0943-find-the-shortest-superstring/) | Hard | Python |
 | 2421 | [Number Of Good Paths](2421-number-of-good-paths/) | Hard | Python |
+| 913 | [Cat And Mouse](0913-cat-and-mouse/) | Hard | Python |
