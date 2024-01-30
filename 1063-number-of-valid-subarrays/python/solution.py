@@ -12,3 +12,4 @@ class Solution:
         while stack:
             ans += n - stack.pop()
         return ans
+# tightened naming
