@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (301)
+## Solved (302)
 
 <!-- last touched: 2024-01-25 (rev 199) -->
 
@@ -318,3 +318,4 @@ NNNN-problem-slug/
 | 2421 | [Number Of Good Paths](2421-number-of-good-paths/) | Hard | Python |
 | 913 | [Cat And Mouse](0913-cat-and-mouse/) | Hard | Python |
 | 765 | [Couples Holding Hands](0765-couples-holding-hands/) | Hard | Python |
+| 749 | [Contain Virus](0749-contain-virus/) | Hard | Python |
