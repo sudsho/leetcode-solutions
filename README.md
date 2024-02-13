@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (300)
+## Solved (301)
 
 <!-- last touched: 2024-01-25 (rev 199) -->
 
@@ -317,3 +317,4 @@ NNNN-problem-slug/
 | 943 | [Find The Shortest Superstring](0943-find-the-shortest-superstring/) | Hard | Python |
 | 2421 | [Number Of Good Paths](2421-number-of-good-paths/) | Hard | Python |
 | 913 | [Cat And Mouse](0913-cat-and-mouse/) | Hard | Python |
+| 765 | [Couples Holding Hands](0765-couples-holding-hands/) | Hard | Python |
