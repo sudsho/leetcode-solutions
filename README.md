@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (302)
+## Solved (303)
 
 <!-- last touched: 2024-01-25 (rev 199) -->
 
@@ -319,3 +319,4 @@ NNNN-problem-slug/
 | 913 | [Cat And Mouse](0913-cat-and-mouse/) | Hard | Python |
 | 765 | [Couples Holding Hands](0765-couples-holding-hands/) | Hard | Python |
 | 749 | [Contain Virus](0749-contain-virus/) | Hard | Python |
+| 879 | [Profitable Schemes](0879-profitable-schemes/) | Hard | Python |
