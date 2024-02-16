@@ -34,3 +34,4 @@ class Solution:
             for c in cnt.values():
                 ans += c * (c + 1) // 2
         return ans
+# tightened naming
