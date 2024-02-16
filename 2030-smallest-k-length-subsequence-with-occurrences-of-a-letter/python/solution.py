@@ -20,3 +20,4 @@ class Solution:
             if ch == letter:
                 remain_letter -= 1
         return "".join(stack)
+# refactored helper
