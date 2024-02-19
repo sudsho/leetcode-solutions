@@ -18,3 +18,4 @@ class Solution:
                     best = d
         return best
 # small fix
+# style tweak
