@@ -25,3 +25,4 @@ class Solution:
         for i in range(0, len(row), 2):
             dsu.union(row[i] // 2, row[i + 1] // 2)
         return n - dsu.count
+# corrected edge case
