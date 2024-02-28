@@ -20,3 +20,4 @@ class Solution:
                     best = max(best, go(i + 1, new_mask, use_change))
             return best
         return go(0, 0, 0)
+# minor cleanup
