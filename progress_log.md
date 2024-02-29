@@ -933,3 +933,7 @@ working on lc.
 ## 2024-02-29
 
 reread classical hards.
+
+## 2024-02-29
+
+lc grind.
