@@ -929,3 +929,7 @@ weekly contest debrief.
 
 working on lc.
 <!-- slot 44 2024-02-20T19:20:52+05:30 -->
+
+## 2024-02-29
+
+reread classical hards.
