@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (303)
+## Solved (304)
 
 <!-- last touched: 2024-02-20 (rev 88) -->
 
@@ -320,3 +320,4 @@ NNNN-problem-slug/
 | 765 | [Couples Holding Hands](0765-couples-holding-hands/) | Hard | Python |
 | 749 | [Contain Virus](0749-contain-virus/) | Hard | Python |
 | 879 | [Profitable Schemes](0879-profitable-schemes/) | Hard | Python |
+| 1012 | [Numbers With Repeated Digits](1012-numbers-with-repeated-digits/) | Hard | Python |
