@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (304)
+## Solved (305)
 
 <!-- last touched: 2024-02-20 (rev 88) -->
 
@@ -321,3 +321,4 @@ NNNN-problem-slug/
 | 749 | [Contain Virus](0749-contain-virus/) | Hard | Python |
 | 879 | [Profitable Schemes](0879-profitable-schemes/) | Hard | Python |
 | 1012 | [Numbers With Repeated Digits](1012-numbers-with-repeated-digits/) | Hard | Python |
+| 1340 | [Jump Game V](1340-jump-game-v/) | Hard | Python |
