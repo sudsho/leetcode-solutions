@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (305)
+## Solved (306)
 
 <!-- last touched: 2024-02-29 (rev 177) -->
 
@@ -322,3 +322,4 @@ NNNN-problem-slug/
 | 879 | [Profitable Schemes](0879-profitable-schemes/) | Hard | Python |
 | 1012 | [Numbers With Repeated Digits](1012-numbers-with-repeated-digits/) | Hard | Python |
 | 1340 | [Jump Game V](1340-jump-game-v/) | Hard | Python |
+| 964 | [Least Operators To Express Number](0964-least-operators-to-express-number/) | Hard | Python |
