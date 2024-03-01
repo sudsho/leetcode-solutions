@@ -5,3 +5,4 @@ rolling notes
 - tarjan low-link refresher.
 - offline + sort queries trick for max-XOR-with-threshold.
 - monotonic deque for sliding window minimum.
+- segment tree with coordinate compression for range count problems.
