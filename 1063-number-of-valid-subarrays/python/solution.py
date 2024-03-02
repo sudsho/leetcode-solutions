@@ -13,3 +13,4 @@ class Solution:
             ans += n - stack.pop()
         return ans
 # tightened naming
+# corrected edge case
