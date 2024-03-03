@@ -26,3 +26,4 @@ class Solution:
             dsu.union(row[i] // 2, row[i + 1] // 2)
         return n - dsu.count
 # corrected edge case
+# minor cleanup
