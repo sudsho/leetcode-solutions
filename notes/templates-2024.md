@@ -6,3 +6,4 @@ rolling notes
 - knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
 - segment tree with coordinate compression for range count problems.
 - count by contribution rather than directly enumerate.
+- lazy propagation for additive range updates.
