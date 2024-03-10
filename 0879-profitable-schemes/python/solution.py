@@ -14,3 +14,4 @@ class Solution:
                     ) % self.MOD
             dp = new
         return sum(dp[j][minProfit] for j in range(n + 1)) % self.MOD
+# tightened naming
