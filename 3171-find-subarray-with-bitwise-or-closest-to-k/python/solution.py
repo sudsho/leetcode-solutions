@@ -19,3 +19,4 @@ class Solution:
         return best
 # small fix
 # style tweak
+# tightened naming
