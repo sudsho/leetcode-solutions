@@ -26,3 +26,4 @@ class Solution:
                 break
             seen.add(d)
         return n - unique
+# tightened naming
