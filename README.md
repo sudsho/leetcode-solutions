@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (307)
+## Solved (308)
 
 <!-- last touched: 2024-02-29 (rev 177) -->
 
@@ -324,3 +324,4 @@ NNNN-problem-slug/
 | 1340 | [Jump Game V](1340-jump-game-v/) | Hard | Python |
 | 964 | [Least Operators To Express Number](0964-least-operators-to-express-number/) | Hard | Python |
 | 313 | [Super Ugly Number](0313-super-ugly-number/) | Medium | Python |
+| 887 | [Super Egg Drop](0887-super-egg-drop/) | Hard | Python |
