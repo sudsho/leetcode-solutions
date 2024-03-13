@@ -7,3 +7,4 @@ rolling notes
 - monotonic deque for sliding window minimum.
 - segment tree with coordinate compression for range count problems.
 - floyd cycle is the cleanest way for find duplicate variants.
+- knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
