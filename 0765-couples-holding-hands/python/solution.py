@@ -27,3 +27,4 @@ class Solution:
         return n - dsu.count
 # corrected edge case
 # minor cleanup
+# refactored helper
