@@ -6,3 +6,4 @@ rolling notes
 - offline + sort queries trick for max-XOR-with-threshold.
 - monotonic deque for sliding window minimum.
 - segment tree with coordinate compression for range count problems.
+- floyd cycle is the cleanest way for find duplicate variants.
