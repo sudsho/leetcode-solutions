@@ -35,3 +35,4 @@ class Solution:
                 ans += c * (c + 1) // 2
         return ans
 # tightened naming
+# style tweak
