@@ -8,3 +8,4 @@ class Solution:
             for j in range(1, k + 1):
                 f[m][j] = 1 + f[m - 1][j - 1] + f[m - 1][j]
         return m
+# refactored helper
