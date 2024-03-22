@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (308)
+## Solved (309)
 
 <!-- last touched: 2024-03-20 (rev 84) -->
 
@@ -325,3 +325,4 @@ NNNN-problem-slug/
 | 964 | [Least Operators To Express Number](0964-least-operators-to-express-number/) | Hard | Python |
 | 313 | [Super Ugly Number](0313-super-ugly-number/) | Medium | Python |
 | 887 | [Super Egg Drop](0887-super-egg-drop/) | Hard | Python |
+| 2402 | [Meeting Rooms Iii](2402-meeting-rooms-iii/) | Hard | Python |
