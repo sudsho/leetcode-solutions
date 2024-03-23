@@ -44,3 +44,4 @@ class Solution:
         for k in range(1, len(path)):
             result += words[path[k]][overlap[path[k - 1]][path[k]]:]
         return result
+# style tweak
