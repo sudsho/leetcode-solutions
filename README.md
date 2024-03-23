@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (310)
+## Solved (311)
 
 <!-- last touched: 2024-03-20 (rev 84) -->
 
@@ -327,3 +327,4 @@ NNNN-problem-slug/
 | 887 | [Super Egg Drop](0887-super-egg-drop/) | Hard | Python |
 | 2402 | [Meeting Rooms Iii](2402-meeting-rooms-iii/) | Hard | Python |
 | 862 | [Shortest Subarray With Sum At Least K](0862-shortest-subarray-with-sum-at-least-k/) | Hard | Python |
+| 975 | [Odd Even Jump](0975-odd-even-jump/) | Hard | Python |
