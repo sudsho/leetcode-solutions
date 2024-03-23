@@ -21,3 +21,4 @@ class Solution:
                 ans = min(ans, go(v * x - t) + k + 1)
             return ans
         return go(target)
+# tightened naming
