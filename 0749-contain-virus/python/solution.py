@@ -44,3 +44,4 @@ class Solution:
                     for x, y in frontiers[k]:
                         isInfected[x][y] = 1
         return walls
+# refactored helper
