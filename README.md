@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (311)
+## Solved (312)
 
 <!-- last touched: 2024-03-20 (rev 84) -->
 
@@ -328,3 +328,4 @@ NNNN-problem-slug/
 | 2402 | [Meeting Rooms Iii](2402-meeting-rooms-iii/) | Hard | Python |
 | 862 | [Shortest Subarray With Sum At Least K](0862-shortest-subarray-with-sum-at-least-k/) | Hard | Python |
 | 975 | [Odd Even Jump](0975-odd-even-jump/) | Hard | Python |
+| 1192 | [Critical Connections In A Network](1192-critical-connections-in-a-network/) | Hard | Python |
