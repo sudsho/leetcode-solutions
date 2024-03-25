@@ -7,3 +7,4 @@ rolling notes
 - segment tree with coordinate compression for range count problems.
 - count by contribution rather than directly enumerate.
 - lazy propagation for additive range updates.
+- lazy propagation for additive range updates.
