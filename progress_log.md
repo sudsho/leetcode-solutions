@@ -937,3 +937,8 @@ reread classical hards.
 ## 2024-02-29
 
 lc grind.
+
+## 2024-03-30
+
+working on lc.
+<!-- slot 86 2024-03-30T11:54:33+05:30 -->
