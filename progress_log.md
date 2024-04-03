@@ -942,3 +942,7 @@ lc grind.
 
 working on lc.
 <!-- slot 86 2024-03-30T11:54:33+05:30 -->
+
+## 2024-04-03
+
+tarjan notes.
