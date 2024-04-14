@@ -946,3 +946,8 @@ working on lc.
 ## 2024-04-03
 
 tarjan notes.
+
+## 2024-04-14
+
+working on lc.
+<!-- slot 93 2024-04-14T18:00:33+05:30 -->
