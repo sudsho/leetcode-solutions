@@ -48,3 +48,4 @@ class Solution:
         else:
             for pm in graph[m]:
                 yield pm, c, 0
+# style tweak
