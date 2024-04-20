@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (313)
+## Solved (314)
 
 <!-- last touched: 2024-03-20 (rev 84) -->
 
@@ -330,3 +330,4 @@ NNNN-problem-slug/
 | 975 | [Odd Even Jump](0975-odd-even-jump/) | Hard | Python |
 | 1192 | [Critical Connections In A Network](1192-critical-connections-in-a-network/) | Hard | Python |
 | 2925 | [Maximum Score After Applying Operations On A Tree](2925-maximum-score-after-applying-operations-on-a-tree/) | Medium | Python |
+| 1771 | [Maximize Palindrome Length From Subsequences](1771-maximize-palindrome-length-from-subsequences/) | Hard | Python |
