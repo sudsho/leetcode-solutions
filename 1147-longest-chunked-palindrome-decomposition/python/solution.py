@@ -21,3 +21,4 @@ class Solution:
 # style tweak
 # minor cleanup
 # small fix
+# tightened naming (more)
