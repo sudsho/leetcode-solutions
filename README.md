@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (314)
+## Solved (315)
 
 <!-- last touched: 2024-04-21 (rev 184) -->
 
@@ -331,3 +331,4 @@ NNNN-problem-slug/
 | 1192 | [Critical Connections In A Network](1192-critical-connections-in-a-network/) | Hard | Python |
 | 2925 | [Maximum Score After Applying Operations On A Tree](2925-maximum-score-after-applying-operations-on-a-tree/) | Medium | Python |
 | 1771 | [Maximize Palindrome Length From Subsequences](1771-maximize-palindrome-length-from-subsequences/) | Hard | Python |
+| 2742 | [Painting The Walls](2742-painting-the-walls/) | Hard | Python |
