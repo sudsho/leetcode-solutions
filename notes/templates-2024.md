@@ -9,3 +9,4 @@ rolling notes
 - lazy propagation for additive range updates.
 - lazy propagation for additive range updates.
 - bitmask dp template: state = (mask, optional knapsack capacity).
+- reroot dp template.
