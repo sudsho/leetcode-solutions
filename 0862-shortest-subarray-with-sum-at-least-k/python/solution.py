@@ -16,3 +16,4 @@ class Solution:
                 dq.pop()
             dq.append(i)
         return best if best <= n else -1
+# tightened naming
