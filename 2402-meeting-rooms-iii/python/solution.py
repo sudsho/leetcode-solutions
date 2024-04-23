@@ -24,3 +24,4 @@ class Solution:
                 best = i
         return best
 # small fix
+# refactored helper
