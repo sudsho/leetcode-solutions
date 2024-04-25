@@ -45,3 +45,4 @@ class Solution:
                         isInfected[x][y] = 1
         return walls
 # refactored helper
+# corrected edge case
