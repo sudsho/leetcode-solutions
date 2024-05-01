@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (316)
+## Solved (317)
 
 <!-- last touched: 2024-04-21 (rev 184) -->
 
@@ -333,3 +333,4 @@ NNNN-problem-slug/
 | 1771 | [Maximize Palindrome Length From Subsequences](1771-maximize-palindrome-length-from-subsequences/) | Hard | Python |
 | 2742 | [Painting The Walls](2742-painting-the-walls/) | Hard | Python |
 | 2050 | [Parallel Courses Iii](2050-parallel-courses-iii/) | Hard | Python |
+| 829 | [Consecutive Numbers Sum](0829-consecutive-numbers-sum/) | Hard | Python |
