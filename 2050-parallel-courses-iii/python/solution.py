@@ -22,3 +22,4 @@ class Solution:
                 if indeg[v] == 0:
                     q.append(v)
         return max(finish)
+# corrected edge case
