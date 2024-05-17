@@ -955,3 +955,7 @@ working on lc.
 ## 2024-04-20
 
 tarjan notes.
+
+## 2024-05-17
+
+monotonic stack template review.
