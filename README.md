@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (317)
+## Solved (318)
 
 <!-- last touched: 2024-05-17 (rev 131) -->
 
@@ -334,3 +334,4 @@ NNNN-problem-slug/
 | 2742 | [Painting The Walls](2742-painting-the-walls/) | Hard | Python |
 | 2050 | [Parallel Courses Iii](2050-parallel-courses-iii/) | Hard | Python |
 | 829 | [Consecutive Numbers Sum](0829-consecutive-numbers-sum/) | Hard | Python |
+| 2812 | [Find The Safest Path In A Grid](2812-find-the-safest-path-in-a-grid/) | Medium | Python |
