@@ -963,3 +963,7 @@ monotonic stack template review.
 ## 2024-05-19
 
 digit dp pattern.
+
+## 2024-05-19
+
+couples holding hands feels like cycle decomposition.
