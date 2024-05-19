@@ -959,3 +959,7 @@ tarjan notes.
 ## 2024-05-17
 
 monotonic stack template review.
+
+## 2024-05-19
+
+digit dp pattern.
