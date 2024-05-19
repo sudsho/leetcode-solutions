@@ -27,3 +27,4 @@ class Solution:
             seen.add(d)
         return n - unique
 # tightened naming
+# minor cleanup
