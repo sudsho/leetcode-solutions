@@ -9,3 +9,4 @@ class Solution:
                 ways += 1
             k += 1
         return ways
+# tightened naming
