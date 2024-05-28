@@ -16,3 +16,4 @@ class Solution:
         return sum(dp[j][minProfit] for j in range(n + 1)) % self.MOD
 # tightened naming
 # style tweak
+# refactored helper
