@@ -11,3 +11,4 @@ rolling notes
 - bitmask dp template: state = (mask, optional knapsack capacity).
 - reroot dp template.
 - prefix mod count for subarray-sum-divisible-by-k.
+- bitmask dp template: state = (mask, optional knapsack capacity).
