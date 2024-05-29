@@ -10,3 +10,4 @@ class Solution:
             k += 1
         return ways
 # tightened naming
+# style tweak
