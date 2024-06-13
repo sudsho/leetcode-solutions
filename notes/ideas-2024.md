@@ -9,3 +9,4 @@ rolling notes
 - prefix mod count for subarray-sum-divisible-by-k.
 - lazy propagation for additive range updates.
 - floyd cycle is the cleanest way for find duplicate variants.
+- KMP failure function for shortest period type problems.
