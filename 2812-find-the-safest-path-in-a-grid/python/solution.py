@@ -36,3 +36,4 @@ class Solution:
                 if 0 <= nx < n and 0 <= ny < n and not seen[nx][ny]:
                     heapq.heappush(heap, (-min(-neg_safe, dist[nx][ny]), nx, ny))
         return 0
+# tightened naming
