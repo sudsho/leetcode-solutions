@@ -13,3 +13,4 @@ rolling notes
 - prefix mod count for subarray-sum-divisible-by-k.
 - bitmask dp template: state = (mask, optional knapsack capacity).
 - tarjan low-link refresher.
+- prefix mod count for subarray-sum-divisible-by-k.
