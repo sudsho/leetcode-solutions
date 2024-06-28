@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (319)
+## Solved (320)
 
 <!-- last touched: 2024-06-18 (rev 67) -->
 
@@ -336,3 +336,4 @@ NNNN-problem-slug/
 | 829 | [Consecutive Numbers Sum](0829-consecutive-numbers-sum/) | Hard | Python |
 | 2812 | [Find The Safest Path In A Grid](2812-find-the-safest-path-in-a-grid/) | Medium | Python |
 | 854 | [K Similar Strings](0854-k-similar-strings/) | Hard | Python |
+| 1326 | [Minimum Number Of Taps To Open To Water A Garden](1326-minimum-number-of-taps-to-open-to-water-a-garden/) | Hard | Python |
