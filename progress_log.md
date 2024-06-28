@@ -967,3 +967,7 @@ digit dp pattern.
 ## 2024-05-19
 
 couples holding hands feels like cycle decomposition.
+
+## 2024-06-28
+
+thought about union find style.
