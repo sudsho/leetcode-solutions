@@ -17,3 +17,4 @@ class Solution:
                 best = max(best, 1 + go(j))
             return best
         return max(go(i) for i in range(n))
+# refactored helper
