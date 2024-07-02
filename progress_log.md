@@ -975,3 +975,7 @@ thought about union find style.
 ## 2024-07-02
 
 bitmask dp template note.
+
+## 2024-07-03
+
+small note.
