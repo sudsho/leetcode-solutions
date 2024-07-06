@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (321)
+## Solved (322)
 
 <!-- last touched: 2024-07-02 (rev 170) -->
 
@@ -338,3 +338,4 @@ NNNN-problem-slug/
 | 854 | [K Similar Strings](0854-k-similar-strings/) | Hard | Python |
 | 1326 | [Minimum Number Of Taps To Open To Water A Garden](1326-minimum-number-of-taps-to-open-to-water-a-garden/) | Hard | Python |
 | 982 | [Triples With Bitwise And Equal Zero](0982-triples-with-bitwise-and-equal-zero/) | Hard | Python |
+| 632 | [Smallest Range Covering Elements From K Lists](0632-smallest-range-covering-elements-from-k-lists/) | Hard | Python |
