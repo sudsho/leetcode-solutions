@@ -979,3 +979,7 @@ bitmask dp template note.
 ## 2024-07-03
 
 small note.
+
+## 2024-07-06
+
+looking back at older mediums.
