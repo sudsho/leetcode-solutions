@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (320)
+## Solved (321)
 
 <!-- last touched: 2024-07-02 (rev 170) -->
 
@@ -337,3 +337,4 @@ NNNN-problem-slug/
 | 2812 | [Find The Safest Path In A Grid](2812-find-the-safest-path-in-a-grid/) | Medium | Python |
 | 854 | [K Similar Strings](0854-k-similar-strings/) | Hard | Python |
 | 1326 | [Minimum Number Of Taps To Open To Water A Garden](1326-minimum-number-of-taps-to-open-to-water-a-garden/) | Hard | Python |
+| 982 | [Triples With Bitwise And Equal Zero](0982-triples-with-bitwise-and-equal-zero/) | Hard | Python |
