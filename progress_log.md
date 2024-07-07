@@ -987,3 +987,7 @@ looking back at older mediums.
 ## 2024-07-06
 
 looking back at older mediums.
+
+## 2024-07-07
+
+thought about union find style.
