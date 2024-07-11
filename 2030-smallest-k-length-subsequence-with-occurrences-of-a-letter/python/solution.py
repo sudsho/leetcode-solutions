@@ -21,3 +21,4 @@ class Solution:
                 remain_letter -= 1
         return "".join(stack)
 # refactored helper
+# tightened naming
