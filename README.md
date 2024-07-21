@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (323)
+## Solved (324)
 
 <!-- last touched: 2024-07-12 (rev 86) -->
 
@@ -340,3 +340,4 @@ NNNN-problem-slug/
 | 982 | [Triples With Bitwise And Equal Zero](0982-triples-with-bitwise-and-equal-zero/) | Hard | Python |
 | 632 | [Smallest Range Covering Elements From K Lists](0632-smallest-range-covering-elements-from-k-lists/) | Hard | Python |
 | 1494 | [Parallel Courses Ii](1494-parallel-courses-ii/) | Hard | Python |
+| 928 | [Minimize Malware Spread Ii](0928-minimize-malware-spread-ii/) | Hard | Python |
