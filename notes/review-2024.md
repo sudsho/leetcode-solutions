@@ -10,3 +10,4 @@ rolling notes
 - knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
 - lazy propagation for additive range updates.
 - knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
+- monotonic deque for sliding window minimum.
