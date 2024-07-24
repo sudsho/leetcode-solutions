@@ -22,3 +22,4 @@ class Solution:
         return "".join(stack)
 # refactored helper
 # tightened naming
+# style tweak
