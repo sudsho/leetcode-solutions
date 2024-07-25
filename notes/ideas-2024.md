@@ -11,3 +11,4 @@ rolling notes
 - floyd cycle is the cleanest way for find duplicate variants.
 - KMP failure function for shortest period type problems.
 - floyd cycle is the cleanest way for find duplicate variants.
+- knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
