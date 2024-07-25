@@ -17,3 +17,4 @@ rolling notes
 - prefix mod count for subarray-sum-divisible-by-k.
 - another way to think about kth smallest with two heaps.
 - segment tree with coordinate compression for range count problems.
+- floyd cycle is the cleanest way for find duplicate variants.
