@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (324)
+## Solved (325)
 
 <!-- last touched: 2024-07-12 (rev 86) -->
 
@@ -341,3 +341,4 @@ NNNN-problem-slug/
 | 632 | [Smallest Range Covering Elements From K Lists](0632-smallest-range-covering-elements-from-k-lists/) | Hard | Python |
 | 1494 | [Parallel Courses Ii](1494-parallel-courses-ii/) | Hard | Python |
 | 928 | [Minimize Malware Spread Ii](0928-minimize-malware-spread-ii/) | Hard | Python |
+| 3022 | [Minimize Or Of Remaining Elements Using Operations](3022-minimize-or-of-remaining-elements-using-operations/) | Hard | Python |
