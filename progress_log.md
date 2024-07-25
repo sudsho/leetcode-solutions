@@ -991,3 +991,7 @@ looking back at older mediums.
 ## 2024-07-07
 
 thought about union find style.
+
+## 2024-07-25
+
+reading editorial for a hard.
