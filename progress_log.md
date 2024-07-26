@@ -995,3 +995,7 @@ thought about union find style.
 ## 2024-07-25
 
 reading editorial for a hard.
+
+## 2024-07-26
+
+tarjan notes.
