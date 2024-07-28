@@ -18,3 +18,4 @@ class Solution:
             return best
         return max(go(i) for i in range(n))
 # refactored helper
+# tightened naming
