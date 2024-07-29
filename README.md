@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (325)
+## Solved (326)
 
 <!-- last touched: 2024-07-12 (rev 86) -->
 
@@ -342,3 +342,4 @@ NNNN-problem-slug/
 | 1494 | [Parallel Courses Ii](1494-parallel-courses-ii/) | Hard | Python |
 | 928 | [Minimize Malware Spread Ii](0928-minimize-malware-spread-ii/) | Hard | Python |
 | 3022 | [Minimize Or Of Remaining Elements Using Operations](3022-minimize-or-of-remaining-elements-using-operations/) | Hard | Python |
+| 1801 | [Number Of Orders In The Backlog](1801-number-of-orders-in-the-backlog/) | Medium | Python |
