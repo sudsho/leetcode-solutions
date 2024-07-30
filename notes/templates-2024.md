@@ -18,3 +18,4 @@ rolling notes
 - another way to think about kth smallest with two heaps.
 - segment tree with coordinate compression for range count problems.
 - floyd cycle is the cleanest way for find duplicate variants.
+- floyd cycle is the cleanest way for find duplicate variants.
