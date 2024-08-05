@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (327)
+## Solved (328)
 
 <!-- last touched: 2024-07-30 (rev 115) -->
 
@@ -344,3 +344,4 @@ NNNN-problem-slug/
 | 3022 | [Minimize Or Of Remaining Elements Using Operations](3022-minimize-or-of-remaining-elements-using-operations/) | Hard | Python |
 | 1801 | [Number Of Orders In The Backlog](1801-number-of-orders-in-the-backlog/) | Medium | Python |
 | 2538 | [Difference Between Maximum And Minimum Price Sum](2538-difference-between-maximum-and-minimum-price-sum/) | Hard | Python |
+| 3203 | [Find Minimum Diameter After Merging Two Trees](3203-find-minimum-diameter-after-merging-two-trees/) | Hard | Python |
