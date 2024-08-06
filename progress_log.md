@@ -999,3 +999,8 @@ reading editorial for a hard.
 ## 2024-07-26
 
 tarjan notes.
+
+## 2024-08-06
+
+working on lc.
+<!-- slot 181 2024-08-06T23:19:45+05:30 -->
