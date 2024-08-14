@@ -1004,3 +1004,7 @@ tarjan notes.
 
 working on lc.
 <!-- slot 181 2024-08-06T23:19:45+05:30 -->
+
+## 2024-08-14
+
+reading editorial for a hard.
