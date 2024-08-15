@@ -1013,3 +1013,7 @@ reading editorial for a hard.
 
 working on lc.
 <!-- slot 186 2024-08-14T22:21:18+05:30 -->
+
+## 2024-08-15
+
+biweekly contest debrief.
