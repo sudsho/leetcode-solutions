@@ -1022,3 +1022,8 @@ biweekly contest debrief.
 
 working on lc.
 <!-- slot 189 2024-08-16T11:19:01+05:30 -->
+
+## 2024-08-16
+
+working on lc.
+<!-- slot 190 2024-08-16T12:28:21+05:30 -->
