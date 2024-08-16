@@ -1017,3 +1017,8 @@ working on lc.
 ## 2024-08-15
 
 biweekly contest debrief.
+
+## 2024-08-16
+
+working on lc.
+<!-- slot 189 2024-08-16T11:19:01+05:30 -->
