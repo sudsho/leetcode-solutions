@@ -12,3 +12,4 @@ rolling notes
 - knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
 - monotonic deque for sliding window minimum.
 - segment tree with coordinate compression for range count problems.
+- offline + sort queries trick for max-XOR-with-threshold.
