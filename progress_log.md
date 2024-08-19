@@ -1032,3 +1032,7 @@ working on lc.
 
 working on lc.
 <!-- slot 192 2024-08-16T23:21:44+05:30 -->
+
+## 2024-08-19
+
+monotonic stack template review.
