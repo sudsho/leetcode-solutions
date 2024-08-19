@@ -13,3 +13,4 @@ class Solution:
                 ugly.append(val)
             heappush(heap, (p * ugly[idx + 1], p, idx + 1))
         return ugly[n - 1]
+# corrected edge case
