@@ -11,3 +11,4 @@ rolling notes
 - lazy propagation for additive range updates.
 - knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
 - monotonic deque for sliding window minimum.
+- segment tree with coordinate compression for range count problems.
