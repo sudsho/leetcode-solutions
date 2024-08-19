@@ -33,3 +33,4 @@ class Solution:
             else:
                 long_cycle = max(long_cycle, length)
         return max(long_cycle, two_cycles)
+# small fix
