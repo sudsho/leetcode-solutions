@@ -19,3 +19,4 @@ rolling notes
 - segment tree with coordinate compression for range count problems.
 - floyd cycle is the cleanest way for find duplicate variants.
 - floyd cycle is the cleanest way for find duplicate variants.
+- offline + sort queries trick for max-XOR-with-threshold.
