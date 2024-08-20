@@ -1036,3 +1036,8 @@ working on lc.
 ## 2024-08-19
 
 monotonic stack template review.
+
+## 2024-08-20
+
+working on lc.
+<!-- slot 204 2024-08-20T22:59:57+05:30 -->
