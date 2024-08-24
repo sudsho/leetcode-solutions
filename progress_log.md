@@ -1041,3 +1041,7 @@ monotonic stack template review.
 
 working on lc.
 <!-- slot 204 2024-08-20T22:59:57+05:30 -->
+
+## 2024-08-24
+
+tarjan notes.
