@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (330)
+## Solved (331)
 
 <!-- last touched: 2024-08-23 (rev 185) -->
 
@@ -347,3 +347,4 @@ NNNN-problem-slug/
 | 3203 | [Find Minimum Diameter After Merging Two Trees](3203-find-minimum-diameter-after-merging-two-trees/) | Hard | Python |
 | 2127 | [Maximum Employees To Be Invited To A Meeting](2127-maximum-employees-to-be-invited-to-a-meeting/) | Hard | Python |
 | 2360 | [Longest Cycle In A Graph](2360-longest-cycle-in-a-graph/) | Hard | Python |
+| 2188 | [Minimum Time To Finish The Race](2188-minimum-time-to-finish-the-race/) | Hard | Python |
