@@ -13,3 +13,4 @@ rolling notes
 - floyd cycle is the cleanest way for find duplicate variants.
 - knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
 - floyd cycle is the cleanest way for find duplicate variants.
+- monotonic deque for sliding window minimum.
