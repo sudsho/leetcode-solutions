@@ -23,3 +23,4 @@ class Solution:
                     q.append(v)
         return max(finish)
 # corrected edge case
+# tightened naming
