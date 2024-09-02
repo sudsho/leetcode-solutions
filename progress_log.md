@@ -1045,3 +1045,7 @@ working on lc.
 ## 2024-08-24
 
 tarjan notes.
+
+## 2024-09-02
+
+looking back at older mediums.
