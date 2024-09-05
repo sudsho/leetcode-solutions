@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (332)
+## Solved (333)
 
 <!-- last touched: 2024-08-23 (rev 185) -->
 
@@ -349,3 +349,4 @@ NNNN-problem-slug/
 | 2360 | [Longest Cycle In A Graph](2360-longest-cycle-in-a-graph/) | Hard | Python |
 | 2188 | [Minimum Time To Finish The Race](2188-minimum-time-to-finish-the-race/) | Hard | Python |
 | 730 | [Count Different Palindromic Subsequences](0730-count-different-palindromic-subsequences/) | Hard | Python |
+| 857 | [Minimum Cost To Hire K Workers](0857-minimum-cost-to-hire-k-workers/) | Hard | Python |
