@@ -13,3 +13,4 @@ rolling notes
 - monotonic deque for sliding window minimum.
 - segment tree with coordinate compression for range count problems.
 - offline + sort queries trick for max-XOR-with-threshold.
+- offline + sort queries trick for max-XOR-with-threshold.
