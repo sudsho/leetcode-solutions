@@ -17,3 +17,4 @@ class Solution:
             if ops > k:
                 ans |= 1 << bit
         return ans
+# corrected edge case
