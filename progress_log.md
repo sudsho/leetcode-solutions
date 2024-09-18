@@ -1053,3 +1053,7 @@ looking back at older mediums.
 ## 2024-09-18
 
 weekly contest 350-ish, partial finish.
+
+## 2024-09-18
+
+leet practice today.
