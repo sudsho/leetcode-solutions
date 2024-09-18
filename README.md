@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (333)
+## Solved (334)
 
 <!-- last touched: 2024-09-07 (rev 108) -->
 
@@ -350,3 +350,4 @@ NNNN-problem-slug/
 | 2188 | [Minimum Time To Finish The Race](2188-minimum-time-to-finish-the-race/) | Hard | Python |
 | 730 | [Count Different Palindromic Subsequences](0730-count-different-palindromic-subsequences/) | Hard | Python |
 | 857 | [Minimum Cost To Hire K Workers](0857-minimum-cost-to-hire-k-workers/) | Hard | Python |
+| 956 | [Tallest Billboard](0956-tallest-billboard/) | Hard | Python |
