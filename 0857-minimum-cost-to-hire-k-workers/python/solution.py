@@ -15,3 +15,4 @@ class Solution:
             if len(heap) == k:
                 best = min(best, sum_q * w / q)
         return best
+# small fix
