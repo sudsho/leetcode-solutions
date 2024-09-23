@@ -45,3 +45,4 @@ class Solution:
             result += words[path[k]][overlap[path[k - 1]][path[k]]:]
         return result
 # style tweak
+# minor cleanup
