@@ -21,3 +21,4 @@ rolling notes
 - floyd cycle is the cleanest way for find duplicate variants.
 - offline + sort queries trick for max-XOR-with-threshold.
 - KMP failure function for shortest period type problems.
+- another way to think about kth smallest with two heaps.
