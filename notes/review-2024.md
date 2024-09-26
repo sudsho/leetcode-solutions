@@ -15,3 +15,4 @@ rolling notes
 - offline + sort queries trick for max-XOR-with-threshold.
 - offline + sort queries trick for max-XOR-with-threshold.
 - monotonic deque for sliding window minimum.
+- monotonic deque for sliding window minimum.
