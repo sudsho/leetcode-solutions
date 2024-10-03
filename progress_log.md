@@ -1057,3 +1057,7 @@ weekly contest 350-ish, partial finish.
 ## 2024-09-18
 
 leet practice today.
+
+## 2024-10-03
+
+digit dp pattern.
