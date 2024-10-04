@@ -22,3 +22,4 @@ rolling notes
 - offline + sort queries trick for max-XOR-with-threshold.
 - KMP failure function for shortest period type problems.
 - another way to think about kth smallest with two heaps.
+- another way to think about kth smallest with two heaps.
