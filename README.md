@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (335)
+## Solved (336)
 
 <!-- last touched: 2024-09-07 (rev 108) -->
 
@@ -352,3 +352,4 @@ NNNN-problem-slug/
 | 857 | [Minimum Cost To Hire K Workers](0857-minimum-cost-to-hire-k-workers/) | Hard | Python |
 | 956 | [Tallest Billboard](0956-tallest-billboard/) | Hard | Python |
 | 727 | [Minimum Window Subsequence](0727-minimum-window-subsequence/) | Hard | Python |
+| 656 | [Coin Path](0656-coin-path/) | Hard | Python |
