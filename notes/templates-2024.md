@@ -23,3 +23,4 @@ rolling notes
 - KMP failure function for shortest period type problems.
 - another way to think about kth smallest with two heaps.
 - another way to think about kth smallest with two heaps.
+- monotonic deque for sliding window minimum.
