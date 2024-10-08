@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (336)
+## Solved (337)
 
 <!-- last touched: 2024-10-08 (rev 91) -->
 
@@ -353,3 +353,4 @@ NNNN-problem-slug/
 | 956 | [Tallest Billboard](0956-tallest-billboard/) | Hard | Python |
 | 727 | [Minimum Window Subsequence](0727-minimum-window-subsequence/) | Hard | Python |
 | 656 | [Coin Path](0656-coin-path/) | Hard | Python |
+| 732 | [My Calendar Iii](0732-my-calendar-iii/) | Hard | Python |
