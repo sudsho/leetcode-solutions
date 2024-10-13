@@ -24,3 +24,4 @@ rolling notes
 - another way to think about kth smallest with two heaps.
 - another way to think about kth smallest with two heaps.
 - monotonic deque for sliding window minimum.
+- lazy propagation for additive range updates.
