@@ -1061,3 +1061,7 @@ leet practice today.
 ## 2024-10-03
 
 digit dp pattern.
+
+## 2024-10-27
+
+monotonic stack template review.
