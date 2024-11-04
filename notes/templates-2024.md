@@ -25,3 +25,4 @@ rolling notes
 - another way to think about kth smallest with two heaps.
 - monotonic deque for sliding window minimum.
 - lazy propagation for additive range updates.
+- knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
