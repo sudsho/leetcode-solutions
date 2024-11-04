@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (337)
+## Solved (338)
 
 <!-- last touched: 2024-10-08 (rev 91) -->
 
@@ -354,3 +354,4 @@ NNNN-problem-slug/
 | 727 | [Minimum Window Subsequence](0727-minimum-window-subsequence/) | Hard | Python |
 | 656 | [Coin Path](0656-coin-path/) | Hard | Python |
 | 732 | [My Calendar Iii](0732-my-calendar-iii/) | Hard | Python |
+| 2867 | [Count Valid Paths In A Tree](2867-count-valid-paths-in-a-tree/) | Hard | Python |
