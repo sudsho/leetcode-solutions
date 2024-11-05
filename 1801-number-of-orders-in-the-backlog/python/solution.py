@@ -28,3 +28,4 @@ class Solution:
         total = sum(o[1] for o in buys) + sum(o[1] for o in sells)
         return total % self.MOD
 # small fix
+# tightened naming
