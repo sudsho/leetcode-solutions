@@ -15,3 +15,4 @@ rolling notes
 - floyd cycle is the cleanest way for find duplicate variants.
 - monotonic deque for sliding window minimum.
 - monotonic deque for sliding window minimum.
+- bitmask dp template: state = (mask, optional knapsack capacity).
