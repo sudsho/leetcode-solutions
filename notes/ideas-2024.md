@@ -16,3 +16,4 @@ rolling notes
 - monotonic deque for sliding window minimum.
 - monotonic deque for sliding window minimum.
 - bitmask dp template: state = (mask, optional knapsack capacity).
+- knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
