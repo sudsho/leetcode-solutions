@@ -1065,3 +1065,8 @@ digit dp pattern.
 ## 2024-10-27
 
 monotonic stack template review.
+
+## 2024-11-09
+
+working on lc.
+<!-- slot 249 2024-11-09T11:53:10+05:30 -->
