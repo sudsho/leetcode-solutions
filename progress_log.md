@@ -1074,3 +1074,7 @@ working on lc.
 ## 2024-11-15
 
 monotonic stack template review.
+
+## 2024-11-15
+
+bitmask dp template note.
