@@ -1070,3 +1070,7 @@ monotonic stack template review.
 
 working on lc.
 <!-- slot 249 2024-11-09T11:53:10+05:30 -->
+
+## 2024-11-15
+
+monotonic stack template review.
