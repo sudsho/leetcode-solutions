@@ -26,3 +26,4 @@ class Solution:
                 finished[v] = True
                 v = edges[v]
         return ans
+# corrected edge case
