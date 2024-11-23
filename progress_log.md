@@ -1078,3 +1078,8 @@ monotonic stack template review.
 ## 2024-11-15
 
 bitmask dp template note.
+
+## 2024-11-23
+
+working on lc.
+<!-- slot 260 2024-11-23T13:43:11+05:30 -->
