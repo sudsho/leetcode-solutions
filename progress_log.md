@@ -1083,3 +1083,7 @@ bitmask dp template note.
 
 working on lc.
 <!-- slot 260 2024-11-23T13:43:11+05:30 -->
+
+## 2024-11-24
+
+monotonic stack template review.
