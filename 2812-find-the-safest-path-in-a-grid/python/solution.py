@@ -37,3 +37,4 @@ class Solution:
                     heapq.heappush(heap, (-min(-neg_safe, dist[nx][ny]), nx, ny))
         return 0
 # tightened naming
+# minor cleanup
