@@ -14,3 +14,4 @@ class Solution:
                         new[j] = dp[j - t - 1] + s
             dp = new
         return dp[k]
+# style tweak
