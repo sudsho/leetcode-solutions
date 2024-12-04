@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (339)
+## Solved (340)
 
 <!-- last touched: 2024-12-01 (rev 182) -->
 
@@ -356,3 +356,4 @@ NNNN-problem-slug/
 | 732 | [My Calendar Iii](0732-my-calendar-iii/) | Hard | Python |
 | 2867 | [Count Valid Paths In A Tree](2867-count-valid-paths-in-a-tree/) | Hard | Python |
 | 2218 | [Maximum Value Of K Coins From Piles](2218-maximum-value-of-k-coins-from-piles/) | Hard | Python |
+| 736 | [Parse Lisp Expression](0736-parse-lisp-expression/) | Hard | Python |
