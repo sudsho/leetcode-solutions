@@ -29,3 +29,4 @@ class Solution:
         return total % self.MOD
 # small fix
 # tightened naming
+# refactored helper
