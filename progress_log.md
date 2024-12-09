@@ -1087,3 +1087,7 @@ working on lc.
 ## 2024-11-24
 
 monotonic stack template review.
+
+## 2024-12-10
+
+weekly contest debrief.
