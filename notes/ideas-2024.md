@@ -18,3 +18,4 @@ rolling notes
 - bitmask dp template: state = (mask, optional knapsack capacity).
 - knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
 - tarjan low-link refresher.
+- prefix mod count for subarray-sum-divisible-by-k.
