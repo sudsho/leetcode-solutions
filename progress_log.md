@@ -1091,3 +1091,7 @@ monotonic stack template review.
 ## 2024-12-10
 
 weekly contest debrief.
+
+## 2024-12-15
+
+graph reroot dp note.
