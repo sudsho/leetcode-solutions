@@ -28,3 +28,4 @@ class Solution:
                 best = min(best, best_one[k] + changeTime + go(remaining - k))
             return best
         return changeTime + go(numLaps)
+# small fix
