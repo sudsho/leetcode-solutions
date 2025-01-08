@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2024-12-15 (rev 188) -->
+<!-- last touched: 2025-01-08 (rev 201) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -358,3 +358,6 @@ NNNN-problem-slug/
 | 2218 | [Maximum Value Of K Coins From Piles](2218-maximum-value-of-k-coins-from-piles/) | Hard | Python |
 | 736 | [Parse Lisp Expression](0736-parse-lisp-expression/) | Hard | Python |
 | 924 | [Minimize Malware Spread](0924-minimize-malware-spread/) | Hard | Python |
+
+## Recent activity
+- 2025-01-08: added link to the alt file.
