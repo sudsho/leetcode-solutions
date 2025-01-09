@@ -10,3 +10,4 @@ Count numbers <= n built from given digits.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
