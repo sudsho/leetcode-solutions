@@ -1099,3 +1099,7 @@ graph reroot dp note.
 ## 2025-01-13
 
 monotonic stack patterns are clicking better now.
+
+## 2025-01-13
+
+closed off a couple of long-standing TODOs in notes/templates-2024.md.
