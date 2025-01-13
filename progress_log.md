@@ -1095,3 +1095,7 @@ weekly contest debrief.
 ## 2024-12-15
 
 graph reroot dp note.
+
+## 2025-01-13
+
+monotonic stack patterns are clicking better now.
