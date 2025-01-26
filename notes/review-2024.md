@@ -18,3 +18,4 @@ rolling notes
 - monotonic deque for sliding window minimum.
 - lazy propagation for additive range updates.
 - reroot dp template.
+- small to large merging on trees.
