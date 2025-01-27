@@ -1103,3 +1103,7 @@ monotonic stack patterns are clicking better now.
 ## 2025-01-13
 
 closed off a couple of long-standing TODOs in notes/templates-2024.md.
+
+## 2025-01-27
+
+segment tree with lazy push works after a couple bugs.
