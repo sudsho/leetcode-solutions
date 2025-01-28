@@ -1107,3 +1107,7 @@ closed off a couple of long-standing TODOs in notes/templates-2024.md.
 ## 2025-01-27
 
 segment tree with lazy push works after a couple bugs.
+
+## 2025-01-28
+
+sliding window mins via monotonic deque. classic.
