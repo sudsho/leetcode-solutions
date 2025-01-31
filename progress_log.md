@@ -1111,3 +1111,7 @@ segment tree with lazy push works after a couple bugs.
 ## 2025-01-28
 
 sliding window mins via monotonic deque. classic.
+
+## 2025-01-31
+
+revisited a tree dp; cleaner with reroot template.
