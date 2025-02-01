@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-01-26 (rev 212) -->
+<!-- last touched: 2025-02-01 (rev 220) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -364,3 +364,4 @@ NNNN-problem-slug/
 - 2025-01-16: moved a hard problem note inline.
 - 2025-01-19: moved a hard problem note inline.
 - 2025-01-26: fixed alphabetical order in the table.
+- 2025-02-01: small typo in topic column.
