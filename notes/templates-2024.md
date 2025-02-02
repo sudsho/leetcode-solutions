@@ -28,3 +28,4 @@ rolling notes
 - knuth optimization for matrix-chain-like O(n^3) -> O(n^2).
 - KMP failure function for shortest period type problems.
 - two pointers for "at most k distinct" then subtract.
+- another reminder: when in doubt, prefix sums.
