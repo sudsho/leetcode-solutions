@@ -1115,3 +1115,7 @@ sliding window mins via monotonic deque. classic.
 ## 2025-01-31
 
 revisited a tree dp; cleaner with reroot template.
+
+## 2025-02-21
+
+meet in the middle came in handy for closest sum.
