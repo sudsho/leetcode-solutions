@@ -10,3 +10,4 @@ Recurrence between two coloring patterns ABA and ABC.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
