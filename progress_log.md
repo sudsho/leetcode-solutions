@@ -1119,3 +1119,7 @@ revisited a tree dp; cleaner with reroot template.
 ## 2025-02-21
 
 meet in the middle came in handy for closest sum.
+
+## 2025-03-03
+
+BIT plus offline sort is a workhorse.
