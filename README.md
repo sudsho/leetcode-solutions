@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-02-26 (rev 239) -->
+<!-- last touched: 2025-03-03 (rev 244) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -372,3 +372,4 @@ NNNN-problem-slug/
 - 2025-02-14: added link to the alt file.
 - 2025-02-22: fixed alphabetical order in the table.
 - 2025-02-26: fixed alphabetical order in the table.
+- 2025-03-03: small typo in topic column.
