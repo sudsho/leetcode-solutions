@@ -1123,3 +1123,7 @@ meet in the middle came in handy for closest sum.
 ## 2025-03-03
 
 BIT plus offline sort is a workhorse.
+
+## 2025-03-23
+
+bitmask dp + small-to-large merge is a fun pairing.
