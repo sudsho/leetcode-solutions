@@ -1127,3 +1127,7 @@ BIT plus offline sort is a workhorse.
 ## 2025-03-23
 
 bitmask dp + small-to-large merge is a fun pairing.
+
+## 2025-03-27
+
+noting the contribution counting trick.
