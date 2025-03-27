@@ -10,3 +10,4 @@
 - small to large merging on trees.
 - small to large merging on trees.
 - aho-corasick dp for forbidden substrings.
+- knapsack with capacity dimension still trips me up.
