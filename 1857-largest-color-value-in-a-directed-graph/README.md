@@ -10,3 +10,4 @@ Topological dp; dp[v][c] = max count of color c on any path ending at v.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
