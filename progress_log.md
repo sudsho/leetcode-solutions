@@ -1135,3 +1135,7 @@ noting the contribution counting trick.
 ## 2025-04-04
 
 sliding window mins via monotonic deque. classic.
+
+## 2025-04-06
+
+segment tree with lazy push works after a couple bugs.
