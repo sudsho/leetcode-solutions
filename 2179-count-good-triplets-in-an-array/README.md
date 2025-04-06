@@ -10,3 +10,4 @@ Count common triplets in two permutations.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
