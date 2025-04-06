@@ -1139,3 +1139,7 @@ sliding window mins via monotonic deque. classic.
 ## 2025-04-06
 
 segment tree with lazy push works after a couple bugs.
+
+## 2025-04-06
+
+trying to write tighter binary-search predicates this month.
