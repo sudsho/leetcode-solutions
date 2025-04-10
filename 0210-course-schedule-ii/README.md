@@ -18,3 +18,4 @@ Time O(V + E), space O(V + E).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
