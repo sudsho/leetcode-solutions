@@ -1147,3 +1147,7 @@ trying to write tighter binary-search predicates this month.
 ## 2025-04-10
 
 BIT plus offline sort is a workhorse.
+
+## 2025-04-10
+
+cleaned up a sloppy alt I wrote last quarter.
