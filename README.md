@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-03-04 (rev 246) -->
+<!-- last touched: 2025-04-11 (rev 271) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -375,3 +375,4 @@ NNNN-problem-slug/
 - 2025-03-03: small typo in topic column.
 - 2025-03-04: updated count.
 - 2025-03-04: added link to the alt file.
+- 2025-04-11: cosmetic: trailing whitespace.
