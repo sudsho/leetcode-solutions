@@ -10,3 +10,4 @@ Sort desc; greedily include while current sum stays positive.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
