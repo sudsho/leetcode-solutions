@@ -1151,3 +1151,7 @@ BIT plus offline sort is a workhorse.
 ## 2025-04-10
 
 cleaned up a sloppy alt I wrote last quarter.
+
+## 2025-04-21
+
+segment tree with lazy push works after a couple bugs.
