@@ -8,3 +8,4 @@
 - nit 50.
 - entry 66: small reminder.
 - entry 114: small reminder.
+- another way to think about kth smallest with two heaps.
