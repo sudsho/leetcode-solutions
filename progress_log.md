@@ -1155,3 +1155,7 @@ cleaned up a sloppy alt I wrote last quarter.
 ## 2025-04-21
 
 segment tree with lazy push works after a couple bugs.
+
+## 2025-04-26
+
+BIT plus offline sort is a workhorse.
