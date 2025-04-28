@@ -18,3 +18,4 @@ Time O(sqrt(n)), space O(sqrt(n)).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
