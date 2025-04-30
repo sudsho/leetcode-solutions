@@ -9,3 +9,4 @@
 - entry 66: small reminder.
 - entry 114: small reminder.
 - another way to think about kth smallest with two heaps.
+- two pointers for "at most k distinct" then subtract.
