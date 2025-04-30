@@ -1159,3 +1159,7 @@ segment tree with lazy push works after a couple bugs.
 ## 2025-04-26
 
 BIT plus offline sort is a workhorse.
+
+## 2025-04-30
+
+trying to write tighter binary-search predicates this month.
