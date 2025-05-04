@@ -5,3 +5,4 @@
 - recurse on `n - n//2 - 1` for the right subtree count.
 - monotonic stack: keep indexes, not values, when you might need positions.
 - meet in the middle for subset closest sum.
+- monotonic deque for sliding window minimum.
