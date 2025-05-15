@@ -10,3 +10,4 @@ Split array, enumerate subset sums, two-pointer/binary-search closest pair.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
