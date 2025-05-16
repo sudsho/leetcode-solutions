@@ -20,3 +20,4 @@ rolling notes
 - reroot dp template.
 - small to large merging on trees.
 - sweep line with events sorted by x; ties by op kind.
+- sweep line with events sorted by x; ties by op kind.
