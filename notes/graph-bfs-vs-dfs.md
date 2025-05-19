@@ -7,3 +7,4 @@
 - bidirectional bfs: swap fronts when one outgrows the other.
 - recurse on `n - n//2 - 1` for the right subtree count.
 - entry 177: small reminder.
+- manacher for longest palindromic substring in linear time.
