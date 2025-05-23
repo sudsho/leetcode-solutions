@@ -10,3 +10,4 @@ Reroot DP, count reversed edges from each node viewed as root.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
