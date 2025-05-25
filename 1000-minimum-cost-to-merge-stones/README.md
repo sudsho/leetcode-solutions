@@ -10,3 +10,4 @@ Merge K consecutive piles into one each step. Interval dp on (l, r, piles).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
