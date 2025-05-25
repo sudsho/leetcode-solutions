@@ -10,3 +10,4 @@ Reach target with shortest A/R sequence. BFS on (position, speed).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
