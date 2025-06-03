@@ -10,3 +10,4 @@ Convert to minutes, sort, take min adjacent gap (cyclic).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
