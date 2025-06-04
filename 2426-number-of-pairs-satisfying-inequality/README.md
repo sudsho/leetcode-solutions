@@ -10,3 +10,4 @@ Pair-counting under transformed inequality.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
