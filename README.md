@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-06-08 (rev 324) -->
+<!-- last touched: 2025-06-11 (rev 325) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -394,3 +394,4 @@ NNNN-problem-slug/
 - 2025-05-29: fixed alphabetical order in the table.
 - 2025-06-03: normalized difficulty wording.
 - 2025-06-08: fixed alphabetical order in the table.
+- 2025-06-11: small typo in topic column.
