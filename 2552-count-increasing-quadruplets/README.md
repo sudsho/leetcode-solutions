@@ -10,3 +10,4 @@ Count quadruplets with given pattern.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
