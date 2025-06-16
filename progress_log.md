@@ -1163,3 +1163,7 @@ BIT plus offline sort is a workhorse.
 ## 2025-04-30
 
 trying to write tighter binary-search predicates this month.
+
+## 2025-06-16
+
+closed off a couple of long-standing TODOs in notes/templates-2024.md.
