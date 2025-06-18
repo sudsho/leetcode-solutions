@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-06-16 (rev 331) -->
+<!-- last touched: 2025-06-18 (rev 334) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -398,3 +398,4 @@ NNNN-problem-slug/
 - 2025-06-14: small typo in topic column.
 - 2025-06-14: updated count.
 - 2025-06-16: normalized difficulty wording.
+- 2025-06-18: added link to the alt file.
