@@ -1167,3 +1167,7 @@ trying to write tighter binary-search predicates this month.
 ## 2025-06-16
 
 closed off a couple of long-standing TODOs in notes/templates-2024.md.
+
+## 2025-06-20
+
+noting the contribution counting trick.
