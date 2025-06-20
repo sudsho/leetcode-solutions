@@ -10,3 +10,4 @@ Combinatorial walks on a number line.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
