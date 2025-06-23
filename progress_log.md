@@ -1171,3 +1171,7 @@ closed off a couple of long-standing TODOs in notes/templates-2024.md.
 ## 2025-06-20
 
 noting the contribution counting trick.
+
+## 2025-06-23
+
+bitmask dp + small-to-large merge is a fun pairing.
