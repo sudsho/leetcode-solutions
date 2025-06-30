@@ -10,3 +10,4 @@ Pair words with swappable initials.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
