@@ -1179,3 +1179,7 @@ bitmask dp + small-to-large merge is a fun pairing.
 ## 2025-07-03
 
 BIT plus offline sort is a workhorse.
+
+## 2025-07-08
+
+revisited a tree dp; cleaner with reroot template.
