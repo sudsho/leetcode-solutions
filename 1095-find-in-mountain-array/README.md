@@ -10,3 +10,4 @@ Find target in mountain array using API. Find peak, binary search both sides.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
