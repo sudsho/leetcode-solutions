@@ -1183,3 +1183,7 @@ BIT plus offline sort is a workhorse.
 ## 2025-07-08
 
 revisited a tree dp; cleaner with reroot template.
+
+## 2025-07-12
+
+noting the contribution counting trick.
