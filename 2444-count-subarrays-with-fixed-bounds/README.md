@@ -10,3 +10,4 @@ Subarrays with min=lo and max=hi.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
