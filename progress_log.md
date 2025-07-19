@@ -1187,3 +1187,7 @@ revisited a tree dp; cleaner with reroot template.
 ## 2025-07-12
 
 noting the contribution counting trick.
+
+## 2025-07-19
+
+mood board: combinatorics, modular inverse, and a strong cup of coffee.
