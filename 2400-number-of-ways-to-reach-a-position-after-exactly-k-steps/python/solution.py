@@ -6,3 +6,4 @@ class Solution:
         if d > k or (k - d) & 1:
             return 0
         return comb(k, (k + d) // 2) % (10 ** 9 + 7)
+# revisit
