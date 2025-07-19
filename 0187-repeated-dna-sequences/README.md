@@ -10,3 +10,4 @@ Find all 10-letter substrings that appear more than once.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
