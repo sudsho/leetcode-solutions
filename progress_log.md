@@ -1235,3 +1235,8 @@ practicing reading problem statements once and rephrasing.
 ## 2025-12-19
 
 manacher feels less scary after reusing it twice.
+
+## 2025-07-21
+
+short entry today.
+
