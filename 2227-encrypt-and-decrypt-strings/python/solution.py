@@ -18,3 +18,4 @@ class Encrypter:
 
     def decrypt(self, word2: str) -> int:
         return self.enc_counter.get(word2, 0)
+# revisit
