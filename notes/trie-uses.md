@@ -6,3 +6,4 @@
 - monotonic stack: keep indexes, not values, when you might need positions.
 - meet in the middle for subset closest sum.
 - monotonic deque for sliding window minimum.
+- segment tree with coordinate compression for range count problems.
