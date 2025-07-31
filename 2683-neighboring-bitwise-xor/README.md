@@ -10,3 +10,4 @@ Decode original from xor-derived array.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
