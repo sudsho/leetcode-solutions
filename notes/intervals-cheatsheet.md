@@ -4,3 +4,4 @@
 - monotonic stack: keep indexes, not values, when you might need positions.
 - entry 99: small reminder.
 - tarjan low-link refresher.
+- union find rollback for offline tasks.
