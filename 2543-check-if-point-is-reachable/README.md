@@ -10,3 +10,4 @@ Reachability problem reducing to gcd power-of-two test.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
