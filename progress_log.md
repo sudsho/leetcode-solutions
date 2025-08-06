@@ -1195,3 +1195,7 @@ mood board: combinatorics, modular inverse, and a strong cup of coffee.
 ## 2025-07-28
 
 closed off a couple of long-standing TODOs in notes/templates-2024.md.
+
+## 2025-08-06
+
+closed off a couple of long-standing TODOs in notes/templates-2024.md.
