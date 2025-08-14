@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-08-02 (rev 371) -->
+<!-- last touched: 2025-08-14 (rev 378) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -406,3 +406,4 @@ NNNN-problem-slug/
 - 2025-07-21: moved a hard problem note inline.
 - 2025-07-28: added link to the alt file.
 - 2025-08-02: moved a hard problem note inline.
+- 2025-08-14: updated count.
