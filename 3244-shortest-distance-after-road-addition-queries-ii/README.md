@@ -10,3 +10,4 @@ Maintain merged intervals as edges are added.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
