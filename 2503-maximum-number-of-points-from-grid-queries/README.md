@@ -10,3 +10,4 @@ Offline min-heap BFS over a grid.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
