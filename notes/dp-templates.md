@@ -8,3 +8,4 @@
 - entry 192: small reminder.
 - sweep line with events sorted by x; ties by op kind.
 - small to large merging on trees.
+- small to large merging on trees.
