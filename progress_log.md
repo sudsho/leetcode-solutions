@@ -1203,3 +1203,7 @@ closed off a couple of long-standing TODOs in notes/templates-2024.md.
 ## 2025-08-08
 
 noting the contribution counting trick.
+
+## 2025-09-01
+
+BIT plus offline sort is a workhorse.
