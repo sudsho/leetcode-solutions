@@ -1207,3 +1207,7 @@ noting the contribution counting trick.
 ## 2025-09-01
 
 BIT plus offline sort is a workhorse.
+
+## 2025-09-08
+
+BIT plus offline sort is a workhorse.
