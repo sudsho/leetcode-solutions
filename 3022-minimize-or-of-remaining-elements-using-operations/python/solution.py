@@ -18,3 +18,4 @@ class Solution:
                 ans |= 1 << bit
         return ans
 # corrected edge case
+# revisit
