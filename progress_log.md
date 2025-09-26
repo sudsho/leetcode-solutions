@@ -1211,3 +1211,7 @@ BIT plus offline sort is a workhorse.
 ## 2025-09-08
 
 BIT plus offline sort is a workhorse.
+
+## 2025-09-26
+
+some progress with z-array, still feels fragile.
