@@ -1215,3 +1215,7 @@ BIT plus offline sort is a workhorse.
 ## 2025-09-26
 
 some progress with z-array, still feels fragile.
+
+## 2025-09-29
+
+union find with size keeps appearing in the harder grid problems.
