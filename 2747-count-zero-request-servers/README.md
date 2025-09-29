@@ -10,3 +10,4 @@ Sort queries; maintain sliding window of recent logs.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
