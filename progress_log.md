@@ -1223,3 +1223,7 @@ union find with size keeps appearing in the harder grid problems.
 ## 2025-10-02
 
 some progress with z-array, still feels fragile.
+
+## 2025-10-05
+
+trying to write tighter binary-search predicates this month.
