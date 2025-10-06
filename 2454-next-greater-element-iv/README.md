@@ -10,3 +10,4 @@ Second next greater element for each index.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
