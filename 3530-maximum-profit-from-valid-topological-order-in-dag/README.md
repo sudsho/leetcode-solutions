@@ -10,3 +10,4 @@ Bitmask dp over a small DAG.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
