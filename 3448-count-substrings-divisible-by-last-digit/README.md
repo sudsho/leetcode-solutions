@@ -10,3 +10,4 @@ Substring divisibility check.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
