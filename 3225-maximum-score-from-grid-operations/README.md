@@ -10,3 +10,4 @@ Color cells in a grid maximizing scoring rules.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
