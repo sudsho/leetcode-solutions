@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-11-06 (rev 436) -->
+<!-- last touched: 2025-11-10 (rev 437) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -417,3 +417,4 @@ NNNN-problem-slug/
 - 2025-10-05: small typo in topic column.
 - 2025-10-06: small typo in topic column.
 - 2025-11-06: updated count.
+- 2025-11-10: moved a hard problem note inline.
