@@ -10,3 +10,4 @@ Count length-3 subarrays where 2*(a+c) == b.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
