@@ -9,3 +9,4 @@
 - sweep line with events sorted by x; ties by op kind.
 - small to large merging on trees.
 - small to large merging on trees.
+- aho-corasick dp for forbidden substrings.
