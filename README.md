@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-11-14 (rev 445) -->
+<!-- last touched: 2025-11-17 (rev 447) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -420,3 +420,4 @@ NNNN-problem-slug/
 - 2025-11-10: moved a hard problem note inline.
 - 2025-11-12: updated count.
 - 2025-11-14: small typo in topic column.
+- 2025-11-17: cosmetic: trailing whitespace.
