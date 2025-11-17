@@ -13,3 +13,4 @@ class Solution:
                 sl.pop(i)
             ans.append(len(sl) - 1)
         return ans
+# revisit
