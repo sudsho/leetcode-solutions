@@ -10,3 +10,4 @@ Map each group to first element divisible by it.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
