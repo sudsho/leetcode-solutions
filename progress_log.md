@@ -1227,3 +1227,7 @@ some progress with z-array, still feels fragile.
 ## 2025-10-05
 
 trying to write tighter binary-search predicates this month.
+
+## 2025-11-21
+
+practicing reading problem statements once and rephrasing.
