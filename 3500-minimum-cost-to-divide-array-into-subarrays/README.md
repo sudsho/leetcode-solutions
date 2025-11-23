@@ -10,3 +10,4 @@ Partition cost dp.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
