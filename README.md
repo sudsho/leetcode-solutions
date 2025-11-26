@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (341)
 
-<!-- last touched: 2025-11-17 (rev 447) -->
+<!-- last touched: 2025-11-26 (rev 454) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -421,3 +421,4 @@ NNNN-problem-slug/
 - 2025-11-12: updated count.
 - 2025-11-14: small typo in topic column.
 - 2025-11-17: cosmetic: trailing whitespace.
+- 2025-11-26: small typo in topic column.
