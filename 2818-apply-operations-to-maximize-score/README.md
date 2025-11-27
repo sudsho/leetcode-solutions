@@ -10,3 +10,4 @@ Use prime score per index; expand windows; pick best ops.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
