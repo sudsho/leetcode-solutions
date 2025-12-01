@@ -10,3 +10,4 @@ Min weight edge in component.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
