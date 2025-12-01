@@ -10,3 +10,4 @@ Tree dp choosing halve/full for each subtree.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
