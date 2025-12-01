@@ -13,3 +13,4 @@
 - pattern note 208.
 - pattern note 211.
 - floyd cycle is the cleanest way for find duplicate variants.
+- prefix mod count for subarray-sum-divisible-by-k.
