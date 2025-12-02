@@ -10,3 +10,4 @@ Pick two values to minimize maximum adjacent difference.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
