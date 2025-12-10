@@ -10,3 +10,4 @@ Count subarrays whose removal yields strictly increasing.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
