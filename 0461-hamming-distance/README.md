@@ -19,3 +19,4 @@ Time O(1) (32 bits), space O(1).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
