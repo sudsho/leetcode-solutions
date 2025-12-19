@@ -1231,3 +1231,7 @@ trying to write tighter binary-search predicates this month.
 ## 2025-11-21
 
 practicing reading problem statements once and rephrasing.
+
+## 2025-12-19
+
+manacher feels less scary after reusing it twice.
