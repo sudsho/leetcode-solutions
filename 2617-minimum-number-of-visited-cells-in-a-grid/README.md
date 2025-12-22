@@ -10,3 +10,4 @@ BFS variant with heap of available rows/cols.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
