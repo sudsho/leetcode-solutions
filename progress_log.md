@@ -1240,3 +1240,9 @@ manacher feels less scary after reusing it twice.
 
 short entry today.
 
+
+## 2026-01-11
+
+## progress note
+
+starting 2026 with vowel-window problems again.
