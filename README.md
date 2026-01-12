@@ -426,3 +426,4 @@ NNNN-problem-slug/
 - 2025-11-26: moved a hard problem note inline.
 - 2025-12-01: normalized difficulty wording.
 - 2025-12-15: added link to the alt file.
+- 2026-01-12: added link to the alt file.
