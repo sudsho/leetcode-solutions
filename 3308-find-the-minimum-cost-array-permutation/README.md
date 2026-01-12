@@ -10,3 +10,4 @@ Permutation problem with bitmask dp.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
