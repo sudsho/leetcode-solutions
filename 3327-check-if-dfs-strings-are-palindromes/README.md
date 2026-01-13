@@ -10,3 +10,4 @@ DFS strings palindrome check via flatten + manacher.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
