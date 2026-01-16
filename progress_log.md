@@ -1246,3 +1246,7 @@ short entry today.
 ## progress note
 
 starting 2026 with vowel-window problems again.
+
+## 2026-01-16
+
+tidy up notes/ folder structure (no content yet).
