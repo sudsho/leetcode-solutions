@@ -10,3 +10,4 @@ Count substrings with all 5 vowels and exactly k consonants.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
