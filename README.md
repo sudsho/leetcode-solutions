@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (344)
+## Solved (345)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -361,6 +361,7 @@ NNNN-problem-slug/
 | 3258 | [Count Substrings Containing Every Vowel And K Consonants I](3258-count-substrings-containing-every-vowel-and-k-consonants-i/) | Medium | Python |
 | 3306 | [Count Of Substrings Containing Every Vowel And K Consonants Ii](3306-count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | Medium | Python |
 | 3340 | [Check Balanced String](3340-check-balanced-string/) | Easy | Python |
+| 3381 | [Maximum Subarray Sum With Length Divisible By K](3381-maximum-subarray-sum-with-length-divisible-by-k/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
