@@ -432,3 +432,4 @@ NNNN-problem-slug/
 - 2026-01-12: added link to the alt file.
 - 2026-01-17: updated count.
 - 2026-01-17: small typo in topic column.
+- 2026-01-21: moved a hard problem note inline.
