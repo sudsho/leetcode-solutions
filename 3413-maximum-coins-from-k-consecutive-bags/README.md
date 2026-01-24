@@ -10,3 +10,4 @@ Choose k consecutive bags maximizing covered coins.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
