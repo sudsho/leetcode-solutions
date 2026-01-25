@@ -10,3 +10,4 @@ Median of sliding window.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
