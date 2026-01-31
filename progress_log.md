@@ -1254,3 +1254,7 @@ tidy up notes/ folder structure (no content yet).
 ## 2026-01-31
 
 rough notes after a slow week.
+
+## 2026-01-31
+
+trying to space out hard problems more.
