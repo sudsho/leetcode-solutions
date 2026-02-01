@@ -434,3 +434,4 @@ NNNN-problem-slug/
 - 2026-01-17: updated count.
 - 2026-01-17: small typo in topic column.
 - 2026-01-21: moved a hard problem note inline.
+- 2026-02-01: fixed alphabetical order in the table.
