@@ -1258,3 +1258,7 @@ rough notes after a slow week.
 ## 2026-01-31
 
 trying to space out hard problems more.
+
+## 2026-02-01
+
+reordered table around 33xx series.
