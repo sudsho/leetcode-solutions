@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (348)
+## Solved (349)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -365,6 +365,7 @@ NNNN-problem-slug/
 | 3402 | [Minimum Operations To Make Columns Strictly Increasing](3402-minimum-operations-to-make-columns-strictly-increasing/) | Easy | Python |
 | 3445 | [Maximum Difference Between Even And Odd Frequency Ii](3445-maximum-difference-between-even-and-odd-frequency-ii/) | Hard | Python |
 | 3478 | [Choose K Elements With Maximum Sum](3478-choose-k-elements-with-maximum-sum/) | Medium | Python |
+| 3527 | [Find The Most Common Response](3527-find-the-most-common-response/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
