@@ -10,3 +10,4 @@ Binary search the minimum chebyshev gap among k chosen points on perimeter.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
