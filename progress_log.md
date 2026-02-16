@@ -1262,3 +1262,7 @@ trying to space out hard problems more.
 ## 2026-02-01
 
 reordered table around 33xx series.
+
+## 2026-02-16
+
+rough draft, will refine binomial mod 10 derivation.
