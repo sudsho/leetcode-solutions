@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (350)
+## Solved (351)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -367,6 +367,7 @@ NNNN-problem-slug/
 | 3478 | [Choose K Elements With Maximum Sum](3478-choose-k-elements-with-maximum-sum/) | Medium | Python |
 | 3527 | [Find The Most Common Response](3527-find-the-most-common-response/) | Medium | Python |
 | 3287 | [Find The Maximum Sequence Value Of Array](3287-find-the-maximum-sequence-value-of-array/) | Hard | Python |
+| 3343 | [Count Number Of Balanced Permutations](3343-count-number-of-balanced-permutations/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
