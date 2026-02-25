@@ -46,3 +46,5 @@ class Solution:
             # keep[u]: keep up to k-1 of these (one slot reserved for edge to parent)
             keep[u] = base + sum(gains[:k - 1]) if k - 1 >= 0 else base
         return drop[0]
+
+# refactored: cleaned up 3367
