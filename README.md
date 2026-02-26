@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (352)
+## Solved (353)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -369,6 +369,7 @@ NNNN-problem-slug/
 | 3287 | [Find The Maximum Sequence Value Of Array](3287-find-the-maximum-sequence-value-of-array/) | Hard | Python |
 | 3343 | [Count Number Of Balanced Permutations](3343-count-number-of-balanced-permutations/) | Hard | Python |
 | 3367 | [Maximize Sum Of Weights After Edge Removals](3367-maximize-sum-of-weights-after-edge-removals/) | Hard | Python |
+| 3409 | [Longest Subsequence With Decreasing Adjacent Difference](3409-longest-subsequence-with-decreasing-adjacent-difference/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
