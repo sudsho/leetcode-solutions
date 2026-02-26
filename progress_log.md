@@ -1266,3 +1266,7 @@ reordered table around 33xx series.
 ## 2026-02-16
 
 rough draft, will refine binomial mod 10 derivation.
+
+## 2026-02-26
+
+minor.
