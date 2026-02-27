@@ -445,3 +445,4 @@ NNNN-problem-slug/
 - 2026-02-09: small typo in topic column.
 - 2026-02-26: updated count.
 - 2026-02-27: normalized difficulty wording.
+- 2026-02-27: moved a hard problem note inline.
