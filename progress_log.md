@@ -1270,3 +1270,7 @@ rough draft, will refine binomial mod 10 derivation.
 ## 2026-02-26
 
 minor.
+
+## 2026-02-27
+
+stash before next week.
