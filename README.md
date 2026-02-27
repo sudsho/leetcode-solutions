@@ -444,3 +444,4 @@ NNNN-problem-slug/
 - 2026-02-01: fixed alphabetical order in the table.
 - 2026-02-09: small typo in topic column.
 - 2026-02-26: updated count.
+- 2026-02-27: normalized difficulty wording.
