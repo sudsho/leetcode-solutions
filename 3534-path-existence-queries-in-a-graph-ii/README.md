@@ -10,3 +10,4 @@ Range queries with binary jumps.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
