@@ -10,3 +10,4 @@ k-th permutation alternating parities.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
