@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (353)
+## Solved (354)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -370,6 +370,7 @@ NNNN-problem-slug/
 | 3343 | [Count Number Of Balanced Permutations](3343-count-number-of-balanced-permutations/) | Hard | Python |
 | 3367 | [Maximize Sum Of Weights After Edge Removals](3367-maximize-sum-of-weights-after-edge-removals/) | Hard | Python |
 | 3409 | [Longest Subsequence With Decreasing Adjacent Difference](3409-longest-subsequence-with-decreasing-adjacent-difference/) | Hard | Python |
+| 3431 | [Minimum Pair Removal To Sort Array I](3431-minimum-pair-removal-to-sort-array-i/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
