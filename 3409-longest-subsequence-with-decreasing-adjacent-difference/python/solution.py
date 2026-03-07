@@ -36,3 +36,5 @@ class Solution:
             if g[x][0] > ans:
                 ans = g[x][0]
         return ans
+
+# refactored: cleaned up 3409
