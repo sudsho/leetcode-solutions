@@ -19,3 +19,5 @@ class Solution:
                     best_i = i
             arr = arr[:best_i] + [best_sum] + arr[best_i + 2:]
             ops += 1
+
+# refactored: cleaned up 3431
