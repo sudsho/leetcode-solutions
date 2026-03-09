@@ -69,3 +69,5 @@ class Solution:
                     # those l's were skipped above; but they will be admitted next iter when pb[r+1] > pb[l]. so okay.
                 # if no valid window at all, return 0 (problem usually guarantees existence; defensive)
         return ans if ans > -10**8 else 0
+
+# refactored: cleaned up 3445
