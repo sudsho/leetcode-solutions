@@ -10,3 +10,4 @@ Check sum of digits at even idx equals odd idx.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
