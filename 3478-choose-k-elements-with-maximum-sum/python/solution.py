@@ -31,3 +31,5 @@ class Solution:
                     running -= heapq.heappop(heap)
             i = j
         return ans
+
+# refactored: cleaned up 3478
