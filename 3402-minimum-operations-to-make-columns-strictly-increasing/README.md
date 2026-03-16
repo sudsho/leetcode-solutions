@@ -10,3 +10,4 @@ Per column, force strictly increasing by adding 1.
 ## Files
 
 - `python/solution.py`
+<!-- note: revisited on 3402 -->
