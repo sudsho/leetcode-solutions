@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (354)
+## Solved (355)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -371,6 +371,7 @@ NNNN-problem-slug/
 | 3367 | [Maximize Sum Of Weights After Edge Removals](3367-maximize-sum-of-weights-after-edge-removals/) | Hard | Python |
 | 3409 | [Longest Subsequence With Decreasing Adjacent Difference](3409-longest-subsequence-with-decreasing-adjacent-difference/) | Hard | Python |
 | 3431 | [Minimum Pair Removal To Sort Array I](3431-minimum-pair-removal-to-sort-array-i/) | Medium | Python |
+| 3463 | [Check If Digits Are Equal In String After Operations Ii](3463-check-if-digits-are-equal-in-string-after-operations-ii/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
