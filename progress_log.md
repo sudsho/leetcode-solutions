@@ -1274,3 +1274,7 @@ minor.
 ## 2026-02-27
 
 stash before next week.
+
+## 2026-03-18
+
+snapshot before reading editorial.
