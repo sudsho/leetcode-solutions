@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (356)
+## Solved (357)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -373,6 +373,7 @@ NNNN-problem-slug/
 | 3431 | [Minimum Pair Removal To Sort Array I](3431-minimum-pair-removal-to-sort-array-i/) | Medium | Python |
 | 3463 | [Check If Digits Are Equal In String After Operations Ii](3463-check-if-digits-are-equal-in-string-after-operations-ii/) | Hard | Python |
 | 3486 | [Longest Special Path Ii](3486-longest-special-path-ii/) | Hard | Python |
+| 3505 | [Minimum Operations To Make Elements Within K Subarrays Equal Variant](3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
