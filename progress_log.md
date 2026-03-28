@@ -1282,3 +1282,7 @@ snapshot before reading editorial.
 ## 2026-03-19
 
 minor.
+
+## 2026-03-28
+
+resorted recent-activity bullets.
