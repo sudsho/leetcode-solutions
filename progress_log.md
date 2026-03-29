@@ -1286,3 +1286,7 @@ minor.
 ## 2026-03-28
 
 resorted recent-activity bullets.
+
+## 2026-03-29
+
+removed stale TODO marker.
