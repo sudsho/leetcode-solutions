@@ -1,6 +1,12 @@
 {
-  "solved": [],
-  "total_easy": 0,
+  "solved": [
+    {
+      "number": 1,
+      "name": "Two Sum",
+      "difficulty": "easy"
+    }
+  ],
+  "total_easy": 1,
   "total_medium": 0,
   "total_hard": 0
 }
