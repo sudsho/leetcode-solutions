@@ -4,9 +4,14 @@
       "number": 1,
       "name": "Two Sum",
       "difficulty": "easy"
+    },
+    {
+      "number": 20,
+      "name": "Valid Parentheses",
+      "difficulty": "easy"
     }
   ],
-  "total_easy": 1,
+  "total_easy": 2,
   "total_medium": 0,
   "total_hard": 0
 }
