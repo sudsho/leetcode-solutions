@@ -1290,3 +1290,7 @@ resorted recent-activity bullets.
 ## 2026-03-29
 
 removed stale TODO marker.
+
+## 2026-04-03
+
+remove duplicate trailing newline.
