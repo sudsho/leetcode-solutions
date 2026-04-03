@@ -452,3 +452,4 @@ NNNN-problem-slug/
 - 2026-02-27: moved a hard problem note inline.
 - 2026-03-09: fixed alphabetical order in the table.
 - 2026-03-21: added link to the alt file.
+- 2026-04-03: added link to the alt file.
