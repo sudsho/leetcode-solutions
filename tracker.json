@@ -29,9 +29,14 @@
       "number": 42,
       "name": "Trapping Rain Water",
       "difficulty": "hard"
+    },
+    {
+      "number": 121,
+      "name": "Best Time to Buy and Sell Stock",
+      "difficulty": "easy"
     }
   ],
-  "total_easy": 2,
+  "total_easy": 3,
   "total_medium": 3,
   "total_hard": 1
 }
