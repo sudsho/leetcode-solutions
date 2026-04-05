@@ -10,3 +10,4 @@ Choose k disjoint windows of length x; minimise total cost.
 ## Files
 
 - `python/solution.py`
+<!-- note: revisited on 3505 -->
