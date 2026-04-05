@@ -1294,3 +1294,7 @@ removed stale TODO marker.
 ## 2026-04-03
 
 remove duplicate trailing newline.
+
+## 2026-04-05
+
+minor.
