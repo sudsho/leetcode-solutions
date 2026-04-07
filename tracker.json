@@ -39,9 +39,14 @@
       "number": 53,
       "name": "Maximum Subarray",
       "difficulty": "medium"
+    },
+    {
+      "number": 70,
+      "name": "Climbing Stairs",
+      "difficulty": "easy"
     }
   ],
-  "total_easy": 3,
+  "total_easy": 4,
   "total_medium": 4,
   "total_hard": 1
 }
