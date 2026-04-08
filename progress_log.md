@@ -1298,3 +1298,7 @@ remove duplicate trailing newline.
 ## 2026-04-05
 
 minor.
+
+## 2026-04-08
+
+trim whitespace in two places.
