@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (358)
+## Solved (359)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -375,6 +375,7 @@ NNNN-problem-slug/
 | 3486 | [Longest Special Path Ii](3486-longest-special-path-ii/) | Hard | Python |
 | 3505 | [Minimum Operations To Make Elements Within K Subarrays Equal Variant](3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard | Python |
 | 3517 | [Smallest Palindromic Rearrangement I](3517-smallest-palindromic-rearrangement-i/) | Medium | Python |
+| 3543 | [Maximum Weighted K Edge Path](3543-maximum-weighted-k-edge-path/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
