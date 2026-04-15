@@ -74,9 +74,14 @@
       "number": 21,
       "name": "Merge Two Sorted Lists",
       "difficulty": "easy"
+    },
+    {
+      "number": 84,
+      "name": "Largest Rectangle in Histogram",
+      "difficulty": "hard"
     }
   ],
   "total_easy": 6,
   "total_medium": 7,
-  "total_hard": 2
+  "total_hard": 3
 }
