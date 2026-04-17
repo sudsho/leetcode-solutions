@@ -15,7 +15,7 @@ My daily LeetCode practice in Python. Solving problems across all difficulty lev
 
 | Difficulty | Solved |
 |-----------|--------|
-| Easy      | 6      |
+| Easy      | 7      |
 | Medium    | 7      |
 | Hard      | 3      |
 

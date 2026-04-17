@@ -79,9 +79,14 @@
       "number": 84,
       "name": "Largest Rectangle in Histogram",
       "difficulty": "hard"
+    },
+    {
+      "number": 226,
+      "name": "Invert Binary Tree",
+      "difficulty": "easy"
     }
   ],
-  "total_easy": 6,
+  "total_easy": 7,
   "total_medium": 7,
   "total_hard": 3
 }
