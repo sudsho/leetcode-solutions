@@ -99,9 +99,14 @@
       "number": 104,
       "name": "Maximum Depth of Binary Tree",
       "difficulty": "easy"
+    },
+    {
+      "number": 124,
+      "name": "Binary Tree Maximum Path Sum",
+      "difficulty": "hard"
     }
   ],
   "total_easy": 8,
   "total_medium": 9,
-  "total_hard": 3
+  "total_hard": 4
 }
