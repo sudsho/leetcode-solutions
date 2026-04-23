@@ -114,9 +114,14 @@
       "number": 152,
       "name": "Maximum Product Subarray",
       "difficulty": "medium"
+    },
+    {
+      "number": 141,
+      "name": "Linked List Cycle",
+      "difficulty": "easy"
     }
   ],
-  "total_easy": 9,
+  "total_easy": 10,
   "total_medium": 10,
   "total_hard": 4
 }
