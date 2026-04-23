@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (360)
+## Solved (361)
 
 <!-- last touched: 2025-12-15 (rev 469) -->
 
@@ -377,6 +377,7 @@ NNNN-problem-slug/
 | 3517 | [Smallest Palindromic Rearrangement I](3517-smallest-palindromic-rearrangement-i/) | Medium | Python |
 | 3543 | [Maximum Weighted K Edge Path](3543-maximum-weighted-k-edge-path/) | Medium | Python |
 | 3559 | [Number Of Ways To Assign Edge Weights Ii](3559-number-of-ways-to-assign-edge-weights-ii/) | Hard | Python |
+| 3578 | [Count Partitions With Max Min Difference At Most K](3578-count-partitions-with-max-min-difference-at-most-k/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
