@@ -119,9 +119,14 @@
       "number": 141,
       "name": "Linked List Cycle",
       "difficulty": "easy"
+    },
+    {
+      "number": 239,
+      "name": "Sliding Window Maximum",
+      "difficulty": "hard"
     }
   ],
   "total_easy": 10,
   "total_medium": 10,
-  "total_hard": 4
+  "total_hard": 5
 }
