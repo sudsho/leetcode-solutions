@@ -463,3 +463,4 @@ NNNN-problem-slug/
 - 2026-04-18: small typo in topic column.
 - 2026-04-19: moved a hard problem note inline.
 - 2026-04-21: added link to the alt file.
+- 2026-04-26: normalized difficulty wording.
