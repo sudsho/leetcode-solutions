@@ -139,9 +139,14 @@
       "number": 72,
       "name": "Edit Distance",
       "difficulty": "hard"
+    },
+    {
+      "number": 347,
+      "name": "Top K Frequent Elements",
+      "difficulty": "medium"
     }
   ],
   "total_easy": 11,
-  "total_medium": 11,
+  "total_medium": 12,
   "total_hard": 6
 }
