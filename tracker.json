@@ -134,9 +134,14 @@
       "number": 125,
       "name": "Valid Palindrome",
       "difficulty": "easy"
+    },
+    {
+      "number": 72,
+      "name": "Edit Distance",
+      "difficulty": "hard"
     }
   ],
   "total_easy": 11,
   "total_medium": 11,
-  "total_hard": 5
+  "total_hard": 6
 }
