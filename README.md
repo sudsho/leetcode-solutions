@@ -91,6 +91,7 @@ NNNN-problem-slug/
 | 105 | [Construct Binary Tree From Preorder And Inorder](0105-construct-binary-tree-from-preorder-and-inorder/) | Medium | Python |
 | 108 | [Convert Sorted Array To Bst](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 109 | [Convert Sorted List To Binary Search Tree](0109-convert-sorted-list-to-binary-search-tree/) | Medium | Python |
+| 110 | [Balanced Binary Tree](0110-balanced-binary-tree/) | Easy | Python |
 | 114 | [Flatten Binary Tree To Linked List](0114-flatten-binary-tree-to-linked-list/) | Medium | Python |
 | 115 | [Distinct Subsequences](0115-distinct-subsequences/) | Hard | Python |
 | 116 | [Populating Next Right Pointers](0116-populating-next-right-pointers/) | Medium | Python |
