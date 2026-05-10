@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (361)
+## Solved (362)
 
-<!-- last touched: 2025-12-15 (rev 469) -->
+<!-- last touched: 2026-05-09 (rev 470) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -34,6 +34,7 @@ NNNN-problem-slug/
 | 21 | [Merge Two Sorted Lists](0021-merge-two-sorted-lists/) | Easy | Python |
 | 22 | [Generate Parentheses](0022-generate-parentheses/) | Medium | Python |
 | 23 | [Merge K Sorted Lists](0023-merge-k-sorted-lists/) | Hard | Python |
+| 24 | [Swap Nodes In Pairs](0024-swap-nodes-in-pairs/) | Medium | Python |
 | 25 | [Reverse Nodes In K Group](0025-reverse-nodes-in-k-group/) | Hard | Python |
 | 26 | [Remove Duplicates From Sorted Array](0026-remove-duplicates-from-sorted-array/) | Easy | Python |
 | 27 | [Remove Element](0027-remove-element/) | Easy | Python |

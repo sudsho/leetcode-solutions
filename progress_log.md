@@ -1318,3 +1318,7 @@ checkpoint.
 ## 2026-04-21
 
 wrapping up march and april work.
+
+## 2026-05-09
+
+swap nodes in pairs - linked list, did iterative + recursive.
