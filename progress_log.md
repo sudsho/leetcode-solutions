@@ -1322,3 +1322,7 @@ wrapping up march and april work.
 ## 2026-05-09
 
 swap nodes in pairs - linked list, did iterative + recursive.
+
+## 2026-05-10
+
+length of last word - scan from right, easy one for sunday evening.
