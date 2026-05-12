@@ -11,13 +11,14 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (363)
+## Solved (364)
 
-<!-- last touched: 2026-05-10 (rev 471) -->
+<!-- last touched: 2026-05-12 (rev 472) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
 | 1 | [Two Sum](0001-two-sum/) | Easy | Python |
+| 2 | [Add Two Numbers](0002-add-two-numbers/) | Medium | Python |
 | 3 | [Longest Substring Without Repeating Characters](0003-longest-substring-without-repeating-characters/) | Medium | Python |
 | 4 | [Median Of Two Sorted Arrays](0004-median-of-two-sorted-arrays/) | Hard | Python |
 | 5 | [Longest Palindromic Substring](0005-longest-palindromic-substring/) | Medium | Python |
