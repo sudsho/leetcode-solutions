@@ -1326,3 +1326,7 @@ swap nodes in pairs - linked list, did iterative + recursive.
 ## 2026-05-10
 
 length of last word - scan from right, easy one for sunday evening.
+
+## 2026-05-13
+
+spiral matrix - did the four-boundary walk. got tripped up on the one-row / one-column corner case until i added the top<=bottom and left<=right guards on the bottom and left passes. tests pass.
