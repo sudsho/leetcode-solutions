@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (364)
+## Solved (365)
 
-<!-- last touched: 2026-05-12 (rev 472) -->
+<!-- last touched: 2026-05-13 (rev 473) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -382,6 +382,7 @@ NNNN-problem-slug/
 | 3543 | [Maximum Weighted K Edge Path](3543-maximum-weighted-k-edge-path/) | Medium | Python |
 | 3559 | [Number Of Ways To Assign Edge Weights Ii](3559-number-of-ways-to-assign-edge-weights-ii/) | Hard | Python |
 | 3578 | [Count Partitions With Max Min Difference At Most K](3578-count-partitions-with-max-min-difference-at-most-k/) | Medium | Python |
+| 54 | [Spiral Matrix](0054-spiral-matrix/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
