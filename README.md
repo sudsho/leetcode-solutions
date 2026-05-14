@@ -130,6 +130,7 @@ NNNN-problem-slug/
 | 158 | [Read N Characters Given Read4 Ii](0158-read-n-characters-given-read4-ii/) | Hard | Python |
 | 160 | [Intersection Of Two Linked Lists](0160-intersection-of-two-linked-lists/) | Easy | Python |
 | 162 | [Find Peak Element](0162-find-peak-element/) | Medium | Python |
+| 164 | [Maximum Gap](0164-maximum-gap/) | Hard | Python |
 | 165 | [Compare Version Numbers](0165-compare-version-numbers/) | Medium | Python |
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 173 | [Binary Search Tree Iterator](0173-binary-search-tree-iterator/) | Medium | Python |
