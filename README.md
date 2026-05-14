@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (365)
+## Solved (368)
 
-<!-- last touched: 2026-05-13 (rev 473) -->
+<!-- last touched: 2026-05-14 (rev 474) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -102,6 +102,7 @@ NNNN-problem-slug/
 | 121 | [Best Time To Buy And Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 123 | [Best Time To Buy And Sell Stock Iii](0123-best-time-to-buy-and-sell-stock-iii/) | Hard | Python |
 | 124 | [Binary Tree Maximum Path Sum](0124-binary-tree-maximum-path-sum/) | Hard | Python |
+| 125 | [Valid Palindrome](0125-valid-palindrome/) | Easy | Python |
 | 126 | [Word Ladder Ii](0126-word-ladder-ii/) | Hard | Python |
 | 127 | [Word Ladder](0127-word-ladder/) | Hard | Python |
 | 128 | [Longest Consecutive Sequence](0128-longest-consecutive-sequence/) | Medium | Python |
