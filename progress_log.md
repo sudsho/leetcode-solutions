@@ -1330,3 +1330,7 @@ length of last word - scan from right, easy one for sunday evening.
 ## 2026-05-13
 
 spiral matrix - did the four-boundary walk. got tripped up on the one-row / one-column corner case until i added the top<=bottom and left<=right guards on the bottom and left passes. tests pass.
+
+## 2026-05-14
+
+bucket sort for maximum gap. the pigeonhole step took a minute to convince myself of - if there are n numbers and you set bucket width to ceil((max-min)/(n-1)), at least one bucket has to be empty, so the answer is across buckets. once that clicks the code is short. also knocked out valid palindrome and the at-most-twice variant of remove duplicates.
