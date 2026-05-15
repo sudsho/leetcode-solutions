@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (369)
+## Solved (370)
 
-<!-- last touched: 2026-05-15 (rev 475) -->
+<!-- last touched: 2026-05-15 (rev 476) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -387,6 +387,7 @@ NNNN-problem-slug/
 | 3578 | [Count Partitions With Max Min Difference At Most K](3578-count-partitions-with-max-min-difference-at-most-k/) | Medium | Python |
 | 54 | [Spiral Matrix](0054-spiral-matrix/) | Medium | Python |
 | 168 | [Excel Sheet Column Title](0168-excel-sheet-column-title/) | Easy | Python |
+| 34 | [Find First And Last Position Of Element In Sorted Array](0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
