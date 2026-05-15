@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (368)
+## Solved (369)
 
-<!-- last touched: 2026-05-14 (rev 474) -->
+<!-- last touched: 2026-05-15 (rev 475) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -386,6 +386,7 @@ NNNN-problem-slug/
 | 3559 | [Number Of Ways To Assign Edge Weights Ii](3559-number-of-ways-to-assign-edge-weights-ii/) | Hard | Python |
 | 3578 | [Count Partitions With Max Min Difference At Most K](3578-count-partitions-with-max-min-difference-at-most-k/) | Medium | Python |
 | 54 | [Spiral Matrix](0054-spiral-matrix/) | Medium | Python |
+| 168 | [Excel Sheet Column Title](0168-excel-sheet-column-title/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
