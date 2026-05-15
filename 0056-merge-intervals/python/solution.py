@@ -1,5 +1,10 @@
 class Solution:
     def merge(self, intervals):
+        """Merge overlapping intervals.
+
+        Sort by start, then sweep: if the current interval starts before the
+        last accepted one ends, extend; otherwise append a copy.
+        """
         intervals.sort(key=lambda x: x[0])
         out = []
         for iv in intervals:
