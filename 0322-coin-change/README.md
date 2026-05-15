@@ -1,7 +1,7 @@
 # 322. Coin Change
 
 Difficulty: Medium
-Topics  : array, dynamic programming, bfs
+Topics  : array, dynamic programming, BFS
 
 ## Problem
 
