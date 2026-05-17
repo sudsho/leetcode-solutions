@@ -1338,3 +1338,7 @@ bucket sort for maximum gap. the pigeonhole step took a minute to convince mysel
 ## 2026-05-16
 
 late saturday, just one problem. zigzag conversion - the simulation approach with a direction flip on each boundary. cleaner than the math version where you index by row formula. wrapped early on numRows == 1 because dividing by (numRows-1) blows up otherwise.
+
+## 2026-05-17
+
+integer to roman. used the trick of putting the six subtractive pairs (CM, CD, XC, XL, IX, IV) directly into the value table so the greedy loop never has to undo anything. way cleaner than special-casing them after the fact. always forget which letters are subtractive vs additive until i write it out.
