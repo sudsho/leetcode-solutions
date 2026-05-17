@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (371)
+## Solved (372)
 
-<!-- last touched: 2026-05-16 (rev 477) -->
+<!-- last touched: 2026-05-17 (rev 478) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -27,6 +27,7 @@ NNNN-problem-slug/
 | 9 | [Palindrome Number](0009-palindrome-number/) | Easy | Python |
 | 10 | [Regular Expression Matching](0010-regular-expression-matching/) | Hard | Python |
 | 11 | [Container With Most Water](0011-container-with-most-water/) | Medium | Python |
+| 12 | [Integer To Roman](0012-integer-to-roman/) | Medium | Python |
 | 13 | [Roman To Integer](0013-roman-to-integer/) | Easy | Python |
 | 14 | [Longest Common Prefix](0014-longest-common-prefix/) | Easy | Python |
 | 15 | [Three Sum](0015-three-sum/) | Medium | Python |
