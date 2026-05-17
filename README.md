@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (370)
+## Solved (371)
 
-<!-- last touched: 2026-05-15 (rev 476) -->
+<!-- last touched: 2026-05-16 (rev 477) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -22,6 +22,7 @@ NNNN-problem-slug/
 | 3 | [Longest Substring Without Repeating Characters](0003-longest-substring-without-repeating-characters/) | Medium | Python |
 | 4 | [Median Of Two Sorted Arrays](0004-median-of-two-sorted-arrays/) | Hard | Python |
 | 5 | [Longest Palindromic Substring](0005-longest-palindromic-substring/) | Medium | Python |
+| 6 | [Zigzag Conversion](0006-zigzag-conversion/) | Medium | Python |
 | 7 | [Reverse Integer](0007-reverse-integer/) | Easy | Python |
 | 9 | [Palindrome Number](0009-palindrome-number/) | Easy | Python |
 | 10 | [Regular Expression Matching](0010-regular-expression-matching/) | Hard | Python |
