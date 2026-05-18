@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (372)
+## Solved (373)
 
-<!-- last touched: 2026-05-17 (rev 478) -->
+<!-- last touched: 2026-05-18 (rev 479) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -390,6 +390,7 @@ NNNN-problem-slug/
 | 54 | [Spiral Matrix](0054-spiral-matrix/) | Medium | Python |
 | 168 | [Excel Sheet Column Title](0168-excel-sheet-column-title/) | Easy | Python |
 | 34 | [Find First And Last Position Of Element In Sorted Array](0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium | Python |
+| 38 | [Count And Say](0038-count-and-say/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
