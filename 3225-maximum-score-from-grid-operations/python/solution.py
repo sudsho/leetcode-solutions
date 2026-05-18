@@ -18,7 +18,7 @@ class Solution:
             dp_cur = [NEG] * (n + 1)
             # f[j] = best dp_prev[k] + (gain when prev col has k blacks and cur col has j blacks)
             # gain split into pieces depending on j vs k
-            # Brute O(n^3) per column total O(n^4) — only ok for small n; use prefix tricks
+            # Brute O(n^3) per column total O(n^4) - only ok for small n; use prefix tricks
             for j in range(n + 1):  # cur column blacks = top j rows
                 # cur column contributes to scoring its non-black neighbors in prev column
                 best = NEG
