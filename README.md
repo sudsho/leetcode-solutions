@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (373)
+## Solved (374)
 
-<!-- last touched: 2026-05-18 (rev 479) -->
+<!-- last touched: 2026-05-19 (rev 480) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -42,6 +42,7 @@ NNNN-problem-slug/
 | 26 | [Remove Duplicates From Sorted Array](0026-remove-duplicates-from-sorted-array/) | Easy | Python |
 | 27 | [Remove Element](0027-remove-element/) | Easy | Python |
 | 28 | [Implement Strstr](0028-implement-strstr/) | Easy | Python |
+| 29 | [Divide Two Integers](0029-divide-two-integers/) | Medium | Python |
 | 30 | [Substring With Concatenation Of All Words](0030-substring-with-concatenation-of-all-words/) | Hard | Python |
 | 31 | [Next Permutation](0031-next-permutation/) | Medium | Python |
 | 32 | [Longest Valid Parentheses](0032-longest-valid-parentheses/) | Hard | Python |

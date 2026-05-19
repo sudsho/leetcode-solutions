@@ -1342,3 +1342,7 @@ late saturday, just one problem. zigzag conversion - the simulation approach wit
 ## 2026-05-17
 
 integer to roman. used the trick of putting the six subtractive pairs (CM, CD, XC, XL, IX, IV) directly into the value table so the greedy loop never has to undo anything. way cleaner than special-casing them after the fact. always forget which letters are subtractive vs additive until i write it out.
+
+## 2026-05-19
+
+divide two integers without using mul/div/mod. doubled the divisor with left shifts and subtracted each time it fit - basically binary long division. the only annoying part is the INT_MIN / -1 overflow case, returns INT_MAX. didn't bother with negating INT_MIN in two's complement land since python ints are unbounded; just worked with abs values and tracked sign separately.
