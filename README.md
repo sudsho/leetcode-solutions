@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (374)
+## Solved (375)
 
-<!-- last touched: 2026-05-19 (rev 480) -->
+<!-- last touched: 2026-05-20 (rev 481) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -51,6 +51,7 @@ NNNN-problem-slug/
 | 36 | [Valid Sudoku](0036-valid-sudoku/) | Medium | Python |
 | 37 | [Sudoku Solver](0037-sudoku-solver/) | Hard | Python |
 | 39 | [Combination Sum](0039-combination-sum/) | Medium | Python |
+| 40 | [Combination Sum Ii](0040-combination-sum-ii/) | Medium | Python |
 | 41 | [First Missing Positive](0041-first-missing-positive/) | Hard | Python |
 | 42 | [Trapping Rain Water](0042-trapping-rain-water/) | Hard | Python |
 | 44 | [Wildcard Matching](0044-wildcard-matching/) | Hard | Python |

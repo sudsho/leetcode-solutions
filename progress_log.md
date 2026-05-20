@@ -1346,3 +1346,7 @@ integer to roman. used the trick of putting the six subtractive pairs (CM, CD, X
 ## 2026-05-19
 
 divide two integers without using mul/div/mod. doubled the divisor with left shifts and subtracted each time it fit - basically binary long division. the only annoying part is the INT_MIN / -1 overflow case, returns INT_MAX. didn't bother with negating INT_MIN in two's complement land since python ints are unbounded; just worked with abs values and tracked sign separately.
+
+## 2026-05-20
+
+combination sum ii. same shape as 39 but each candidate is single-use and the input can have dupes, so the combinations have to be deduped. sort the array, then in the loop skip when i > start and candidates[i] == candidates[i-1] - that drops duplicate values at the same recursion level but still lets the same value reappear deeper in the tree. also break when the current value exceeds the remaining target since we are sorted, saves a chunk of the recursion.
