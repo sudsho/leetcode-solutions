@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (375)
+## Solved (376)
 
-<!-- last touched: 2026-05-20 (rev 481) -->
+<!-- last touched: 2026-05-21 (rev 482) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -67,6 +67,7 @@ NNNN-problem-slug/
 | 58 | [Length Of Last Word](0058-length-of-last-word/) | Easy | Python |
 | 60 | [Permutation Sequence](0060-permutation-sequence/) | Hard | Python |
 | 62 | [Unique Paths](0062-unique-paths/) | Medium | Python |
+| 64 | [Minimum Path Sum](0064-minimum-path-sum/) | Medium | Python |
 | 65 | [Valid Number](0065-valid-number/) | Hard | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
 | 67 | [Add Binary](0067-add-binary/) | Easy | Python |
