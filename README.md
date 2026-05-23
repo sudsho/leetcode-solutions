@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (376)
+## Solved (377)
 
-<!-- last touched: 2026-05-21 (rev 482) -->
+<!-- last touched: 2026-05-22 (rev 483) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -83,6 +83,7 @@ NNNN-problem-slug/
 | 79 | [Word Search](0079-word-search/) | Medium | Python |
 | 80 | [Remove Duplicates From Sorted Array Ii](0080-remove-duplicates-from-sorted-array-ii/) | Medium | Python |
 | 81 | [Search In Rotated Sorted Array Ii](0081-search-in-rotated-sorted-array-ii/) | Medium | Python |
+| 83 | [Remove Duplicates From Sorted List](0083-remove-duplicates-from-sorted-list/) | Easy | Python |
 | 84 | [Largest Rectangle In Histogram](0084-largest-rectangle-in-histogram/) | Hard | Python |
 | 85 | [Maximal Rectangle](0085-maximal-rectangle/) | Hard | Python |
 | 87 | [Scramble String](0087-scramble-string/) | Hard | Python |
