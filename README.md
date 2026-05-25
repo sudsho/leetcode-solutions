@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (378)
+## Solved (379)
 
-<!-- last touched: 2026-05-24 (rev 484) -->
+<!-- last touched: 2026-05-25 (rev 485) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -24,6 +24,7 @@ NNNN-problem-slug/
 | 5 | [Longest Palindromic Substring](0005-longest-palindromic-substring/) | Medium | Python |
 | 6 | [Zigzag Conversion](0006-zigzag-conversion/) | Medium | Python |
 | 7 | [Reverse Integer](0007-reverse-integer/) | Easy | Python |
+| 8 | [String To Integer (Atoi)](0008-string-to-integer-atoi/) | Medium | Python |
 | 9 | [Palindrome Number](0009-palindrome-number/) | Easy | Python |
 | 10 | [Regular Expression Matching](0010-regular-expression-matching/) | Hard | Python |
 | 11 | [Container With Most Water](0011-container-with-most-water/) | Medium | Python |
