@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (380)
+## Solved (381)
 
-<!-- last touched: 2026-05-26 (rev 486) -->
+<!-- last touched: 2026-05-28 (rev 487) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -146,6 +146,7 @@ NNNN-problem-slug/
 | 187 | [Repeated Dna Sequences](0187-repeated-dna-sequences/) | Medium | Python |
 | 188 | [Best Time To Buy And Sell Stock Iv](0188-best-time-to-buy-and-sell-stock-iv/) | Hard | Python |
 | 189 | [Rotate Array](0189-rotate-array/) | Medium | Python |
+| 191 | [Number Of 1 Bits](0191-number-of-1-bits/) | Easy | Python |
 | 198 | [House Robber](0198-house-robber/) | Easy | Python |
 | 199 | [Binary Tree Right Side View](0199-binary-tree-right-side-view/) | Medium | Python |
 | 200 | [Number Of Islands](0200-number-of-islands/) | Medium | Python |
