@@ -1354,3 +1354,8 @@ combination sum ii. same shape as 39 but each candidate is single-use and the in
 ## 2026-05-28
 
 number of 1 bits. went with the brian kernighan trick - n &= n - 1 clears the lowest set bit, so the loop only runs once per 1-bit. the obvious 32-iteration shift-and-mask works too but felt lazy. light day, just one problem.
+
+## 2026-05-29
+
+insert interval, the natural follow-on to 56. since the input is already sorted you don't need to re-sort - just walk it in three phases: copy everything that ends before new starts, absorb the overlapping run into one merged interval (mutating newInterval in place is fine here), then copy the tail. cleaner than building a fresh sorted list and rerunning merge. one and done for friday.
+

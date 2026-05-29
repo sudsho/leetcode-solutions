@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (381)
+## Solved (382)
 
-<!-- last touched: 2026-05-28 (rev 487) -->
+<!-- last touched: 2026-05-29 (rev 488) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -65,6 +65,7 @@ NNNN-problem-slug/
 | 53 | [Maximum Subarray](0053-maximum-subarray/) | Easy | Python |
 | 55 | [Jump Game](0055-jump-game/) | Medium | Python |
 | 56 | [Merge Intervals](0056-merge-intervals/) | Medium | Python |
+| 57 | [Insert Interval](0057-insert-interval/) | Medium | Python |
 | 58 | [Length Of Last Word](0058-length-of-last-word/) | Easy | Python |
 | 60 | [Permutation Sequence](0060-permutation-sequence/) | Hard | Python |
 | 62 | [Unique Paths](0062-unique-paths/) | Medium | Python |
