@@ -400,6 +400,7 @@ NNNN-problem-slug/
 | 34 | [Find First And Last Position Of Element In Sorted Array](0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium | Python |
 | 38 | [Count And Say](0038-count-and-say/) | Medium | Python |
 | 167 | [Two Sum Ii Input Array Is Sorted](0167-two-sum-ii-input-array-is-sorted/) | Easy | Python |
+| 69 | [Sqrt(x)](0069-sqrtx/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
