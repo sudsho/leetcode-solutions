@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (383)
+## Solved (384)
 
 <!-- last touched: 2026-05-30 (rev 489) -->
 
@@ -401,6 +401,7 @@ NNNN-problem-slug/
 | 38 | [Count And Say](0038-count-and-say/) | Medium | Python |
 | 167 | [Two Sum Ii Input Array Is Sorted](0167-two-sum-ii-input-array-is-sorted/) | Easy | Python |
 | 69 | [Sqrt(x)](0069-sqrtx/) | Easy | Python |
+| 16 | [3Sum Closest](0016-3sum-closest/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
