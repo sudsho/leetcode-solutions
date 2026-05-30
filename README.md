@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (382)
+## Solved (383)
 
-<!-- last touched: 2026-05-29 (rev 488) -->
+<!-- last touched: 2026-05-30 (rev 489) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -488,3 +488,4 @@ NNNN-problem-slug/
 - 2026-04-21: added link to the alt file.
 - 2026-04-26: normalized difficulty wording.
 - 2026-04-30: added link to the alt file.
+- 2026-05-30: updated count.
