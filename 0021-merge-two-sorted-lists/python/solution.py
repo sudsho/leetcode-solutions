@@ -7,6 +7,7 @@
 # revisited - cleaned up
 class Solution:
     def mergeTwoLists(self, l1, l2):
+        """Merge two sorted linked lists into one, splicing nodes in place."""
         dummy = ListNode()
         tail = dummy
         while l1 and l2:
