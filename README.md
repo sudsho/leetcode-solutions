@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (386)
+## Solved (387)
 
-<!-- last touched: 2026-05-31 (rev 491) -->
+<!-- last touched: 2026-05-31 (rev 492) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -404,6 +404,7 @@ NNNN-problem-slug/
 | 16 | [3Sum Closest](0016-3sum-closest/) | Medium | Python |
 | 18 | [4Sum](0018-4sum/) | Medium | Python |
 | 77 | [Combinations](0077-combinations/) | Medium | Python |
+| 89 | [Gray Code](0089-gray-code/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
