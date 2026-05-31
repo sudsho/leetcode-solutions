@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (387)
+## Solved (388)
 
-<!-- last touched: 2026-05-31 (rev 492) -->
+<!-- last touched: 2026-05-31 (rev 493) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -405,6 +405,7 @@ NNNN-problem-slug/
 | 18 | [4Sum](0018-4sum/) | Medium | Python |
 | 77 | [Combinations](0077-combinations/) | Medium | Python |
 | 89 | [Gray Code](0089-gray-code/) | Medium | Python |
+| 122 | [Best Time To Buy And Sell Stock Ii](0122-best-time-to-buy-and-sell-stock-ii/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
