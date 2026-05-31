@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (384)
+## Solved (385)
 
-<!-- last touched: 2026-05-30 (rev 489) -->
+<!-- last touched: 2026-05-31 (rev 490) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -402,6 +402,7 @@ NNNN-problem-slug/
 | 167 | [Two Sum Ii Input Array Is Sorted](0167-two-sum-ii-input-array-is-sorted/) | Easy | Python |
 | 69 | [Sqrt(x)](0069-sqrtx/) | Easy | Python |
 | 16 | [3Sum Closest](0016-3sum-closest/) | Medium | Python |
+| 18 | [4Sum](0018-4sum/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
