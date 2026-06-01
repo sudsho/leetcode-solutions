@@ -7,5 +7,3 @@ class Solution:
         for _ in range(3, n + 1):
             a, b = b, a + b
         return b
-
-# optim: pass small inputs straight through above
