@@ -1,9 +1,10 @@
 # cleaned up
 class Solution:
     def removeElement(self, nums, val):
-        slow = 0
-        for fast in range(len(nums)):
-            if nums[fast] != val:
-                nums[slow] = nums[fast]
-                slow += 1
-        return slow
+        """In-place removal of val; returns the new length."""
+        write = 0
+        for read in range(len(nums)):
+            if nums[read] != val:
+                nums[write] = nums[read]
+                write += 1
+        return write
