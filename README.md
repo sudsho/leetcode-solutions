@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (389)
+## Solved (394)
 
-<!-- last touched: 2026-06-01 (rev 494) -->
+<!-- last touched: 2026-06-02 (rev 495) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -55,6 +55,7 @@ NNNN-problem-slug/
 | 40 | [Combination Sum Ii](0040-combination-sum-ii/) | Medium | Python |
 | 41 | [First Missing Positive](0041-first-missing-positive/) | Hard | Python |
 | 42 | [Trapping Rain Water](0042-trapping-rain-water/) | Hard | Python |
+| 43 | [Multiply Strings](0043-multiply-strings/) | Medium | Python |
 | 44 | [Wildcard Matching](0044-wildcard-matching/) | Hard | Python |
 | 45 | [Jump Game Ii](0045-jump-game-ii/) | Medium | Python |
 | 46 | [Permutations](0046-permutations/) | Medium | Python |
@@ -67,6 +68,7 @@ NNNN-problem-slug/
 | 56 | [Merge Intervals](0056-merge-intervals/) | Medium | Python |
 | 57 | [Insert Interval](0057-insert-interval/) | Medium | Python |
 | 58 | [Length Of Last Word](0058-length-of-last-word/) | Easy | Python |
+| 59 | [Spiral Matrix Ii](0059-spiral-matrix-ii/) | Medium | Python |
 | 60 | [Permutation Sequence](0060-permutation-sequence/) | Hard | Python |
 | 62 | [Unique Paths](0062-unique-paths/) | Medium | Python |
 | 64 | [Minimum Path Sum](0064-minimum-path-sum/) | Medium | Python |
@@ -88,6 +90,7 @@ NNNN-problem-slug/
 | 83 | [Remove Duplicates From Sorted List](0083-remove-duplicates-from-sorted-list/) | Easy | Python |
 | 84 | [Largest Rectangle In Histogram](0084-largest-rectangle-in-histogram/) | Hard | Python |
 | 85 | [Maximal Rectangle](0085-maximal-rectangle/) | Hard | Python |
+| 86 | [Partition List](0086-partition-list/) | Medium | Python |
 | 87 | [Scramble String](0087-scramble-string/) | Hard | Python |
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
@@ -109,6 +112,7 @@ NNNN-problem-slug/
 | 115 | [Distinct Subsequences](0115-distinct-subsequences/) | Hard | Python |
 | 116 | [Populating Next Right Pointers](0116-populating-next-right-pointers/) | Medium | Python |
 | 117 | [Populating Next Right Pointers Ii](0117-populating-next-right-pointers-ii/) | Medium | Python |
+| 118 | [Pascals Triangle](0118-pascals-triangle/) | Easy | Python |
 | 121 | [Best Time To Buy And Sell Stock](0121-best-time-to-buy-and-sell-stock/) | Easy | Python |
 | 123 | [Best Time To Buy And Sell Stock Iii](0123-best-time-to-buy-and-sell-stock-iii/) | Hard | Python |
 | 124 | [Binary Tree Maximum Path Sum](0124-binary-tree-maximum-path-sum/) | Hard | Python |
@@ -116,6 +120,7 @@ NNNN-problem-slug/
 | 126 | [Word Ladder Ii](0126-word-ladder-ii/) | Hard | Python |
 | 127 | [Word Ladder](0127-word-ladder/) | Hard | Python |
 | 128 | [Longest Consecutive Sequence](0128-longest-consecutive-sequence/) | Medium | Python |
+| 130 | [Surrounded Regions](0130-surrounded-regions/) | Medium | Python |
 | 131 | [Palindrome Partitioning](0131-palindrome-partitioning/) | Medium | Python |
 | 132 | [Palindrome Partitioning Ii](0132-palindrome-partitioning-ii/) | Hard | Python |
 | 133 | [Clone Graph](0133-clone-graph/) | Medium | Python |
