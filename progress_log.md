@@ -1359,3 +1359,7 @@ number of 1 bits. went with the brian kernighan trick - n &= n - 1 clears the lo
 
 insert interval, the natural follow-on to 56. since the input is already sorted you don't need to re-sort - just walk it in three phases: copy everything that ends before new starts, absorb the overlapping run into one merged interval (mutating newInterval in place is fine here), then copy the tail. cleaner than building a fresh sorted list and rerunning merge. one and done for friday.
 
+## 2026-06-02
+
+burst day. cleared a chunk of medium gaps - multiply strings, spiral matrix ii, partition list, surrounded regions, plus pascals triangle as a warmup. multiply strings was the most satisfying, that schoolbook layout into an n+m buffer with the carry going into i+j and units into i+j+1 is one of those tricks you forget until you redo it. surrounded regions i finally stopped doing it inward-out - flooding from the border with a sentinel character is so much less error prone than tracking which O groups touch the edge. partition list was nothing, two dummy heads stitched at the end. ran long enough that i also tidied the readme table and did a small refactor on an older one.
+
