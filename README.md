@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (395)
+## Solved (396)
 
-<!-- last touched: 2026-06-03 (rev 496) -->
+<!-- last touched: 2026-06-05 (rev 497) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -413,6 +413,7 @@ NNNN-problem-slug/
 | 89 | [Gray Code](0089-gray-code/) | Medium | Python |
 | 122 | [Best Time To Buy And Sell Stock Ii](0122-best-time-to-buy-and-sell-stock-ii/) | Easy | Python |
 | 47 | [Permutations Ii](0047-permutations-ii/) | Medium | Python |
+| 438 | [Find All Anagrams In A String](0438-find-all-anagrams-in-a-string/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
