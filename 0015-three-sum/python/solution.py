@@ -1,6 +1,7 @@
-# minor refactor
 class Solution:
     def threeSum(self, nums):
+        """Return all unique triplets summing to 0. Sort, then for each anchor
+        run a two-pointer scan over the suffix, skipping dups at every level."""
         nums.sort()
         out = []
         n = len(nums)
