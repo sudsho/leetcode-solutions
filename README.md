@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (397)
+## Solved (398)
 
-<!-- last touched: 2026-06-06 (rev 498) -->
+<!-- last touched: 2026-06-06 (rev 499) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -415,6 +415,7 @@ NNNN-problem-slug/
 | 47 | [Permutations Ii](0047-permutations-ii/) | Medium | Python |
 | 438 | [Find All Anagrams In A String](0438-find-all-anagrams-in-a-string/) | Medium | Python |
 | 202 | [Happy Number](0202-happy-number/) | Easy | Python |
+| 61 | [Rotate List](0061-rotate-list/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -505,3 +506,4 @@ NNNN-problem-slug/
 - 2026-05-30: updated count.
 - 2026-06-01: updated count.
 - 2026-06-06: added happy number, cycle detection writeup.
+- 2026-06-06: updated count.
