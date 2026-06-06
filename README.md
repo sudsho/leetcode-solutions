@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (396)
+## Solved (397)
 
-<!-- last touched: 2026-06-05 (rev 497) -->
+<!-- last touched: 2026-06-06 (rev 498) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -414,6 +414,7 @@ NNNN-problem-slug/
 | 122 | [Best Time To Buy And Sell Stock Ii](0122-best-time-to-buy-and-sell-stock-ii/) | Easy | Python |
 | 47 | [Permutations Ii](0047-permutations-ii/) | Medium | Python |
 | 438 | [Find All Anagrams In A String](0438-find-all-anagrams-in-a-string/) | Medium | Python |
+| 202 | [Happy Number](0202-happy-number/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -503,3 +504,4 @@ NNNN-problem-slug/
 - 2026-04-30: added link to the alt file.
 - 2026-05-30: updated count.
 - 2026-06-01: updated count.
+- 2026-06-06: added happy number, cycle detection writeup.
