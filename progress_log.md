@@ -1366,3 +1366,7 @@ burst day. cleared a chunk of medium gaps - multiply strings, spiral matrix ii, 
 ## 2026-06-05
 
 find all anagrams in a string. natural follow-on to the sliding window stuff from earlier in the week. the obvious way is to recompute the whole 26-letter window count and compare to p's count every step, but that comparison is O(26) per index. nicer trick: keep a running "matches" counter of how many of the 26 letters currently agree between window and target, and when the window slides only two letters change, so you fix up matches for just those two. window is an anagram exactly when matches == 26. kept a Counter-based variant in solution_alt for readability since the match-counting one reads a little dense.
+
+## 2026-06-07
+
+unique paths ii, the obstacle version of 62. lazy sunday so just one. the trick is realizing you don't need the full 2d table - one rolling row works because each cell only ever looks up (the value already sitting in dp[c] before you overwrite it) and left (dp[c-1]). obstacles just slam the cell to 0 so nothing routes through it. the one gotcha is the start cell: if the grid begins on an obstacle the whole thing is 0, so seed dp[0] conditionally instead of blindly setting it to 1.

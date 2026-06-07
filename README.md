@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (399)
+## Solved (400)
 
-<!-- last touched: 2026-06-06 (rev 500) -->
+<!-- last touched: 2026-06-07 (rev 501) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -71,6 +71,7 @@ NNNN-problem-slug/
 | 59 | [Spiral Matrix Ii](0059-spiral-matrix-ii/) | Medium | Python |
 | 60 | [Permutation Sequence](0060-permutation-sequence/) | Hard | Python |
 | 62 | [Unique Paths](0062-unique-paths/) | Medium | Python |
+| 63 | [Unique Paths Ii](0063-unique-paths-ii/) | Medium | Python |
 | 64 | [Minimum Path Sum](0064-minimum-path-sum/) | Medium | Python |
 | 65 | [Valid Number](0065-valid-number/) | Hard | Python |
 | 66 | [Plus One](0066-plus-one/) | Easy | Python |
