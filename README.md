@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (400)
+## Solved (401)
 
-<!-- last touched: 2026-06-07 (rev 501) -->
+<!-- last touched: 2026-06-08 (rev 502) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -418,6 +418,7 @@ NNNN-problem-slug/
 | 202 | [Happy Number](0202-happy-number/) | Easy | Python |
 | 61 | [Rotate List](0061-rotate-list/) | Medium | Python |
 | 52 | [N Queens Ii](0052-n-queens-ii/) | Hard | Python |
+| 150 | [Evaluate Reverse Polish Notation](0150-evaluate-reverse-polish-notation/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -510,3 +511,4 @@ NNNN-problem-slug/
 - 2026-06-06: added happy number, cycle detection writeup.
 - 2026-06-06: updated count.
 - 2026-06-06: n-queens ii via diagonal set pruning.
+- 2026-06-08: evaluate rpn with a stack, truncate-toward-zero note.
