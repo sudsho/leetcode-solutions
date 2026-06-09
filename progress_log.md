@@ -1370,3 +1370,7 @@ find all anagrams in a string. natural follow-on to the sliding window stuff fro
 ## 2026-06-07
 
 unique paths ii, the obstacle version of 62. lazy sunday so just one. the trick is realizing you don't need the full 2d table - one rolling row works because each cell only ever looks up (the value already sitting in dp[c] before you overwrite it) and left (dp[c-1]). obstacles just slam the cell to 0 so nothing routes through it. the one gotcha is the start cell: if the grid begins on an obstacle the whole thing is 0, so seed dp[0] conditionally instead of blindly setting it to 1.
+
+## 2026-06-09
+
+subsets ii. the dup-free version (78) is just append-current-then-recurse, but once the array has repeats you can produce the same subset down two different branches. sorting puts equal values adjacent, and then the one rule that fixes everything is: at a given recursion depth, only the first occurrence of a value may be chosen - any later sibling with the same value is skipped via the `i > start` check. tripped me up for a second because the guard is `i > start`, not `i > 0`; you DO want to pick the duplicate when it's the first element of a deeper branch (that's a genuinely new subset), you only skip it when it's a sibling at the same level. one and done for tuesday.

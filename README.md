@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (401)
+## Solved (402)
 
-<!-- last touched: 2026-06-08 (rev 502) -->
+<!-- last touched: 2026-06-09 (rev 503) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -419,6 +419,7 @@ NNNN-problem-slug/
 | 61 | [Rotate List](0061-rotate-list/) | Medium | Python |
 | 52 | [N Queens Ii](0052-n-queens-ii/) | Hard | Python |
 | 150 | [Evaluate Reverse Polish Notation](0150-evaluate-reverse-polish-notation/) | Medium | Python |
+| 90 | [Subsets Ii](0090-subsets-ii/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -512,3 +513,4 @@ NNNN-problem-slug/
 - 2026-06-06: updated count.
 - 2026-06-06: n-queens ii via diagonal set pruning.
 - 2026-06-08: evaluate rpn with a stack, truncate-toward-zero note.
+- 2026-06-09: subsets ii, dedup via sort + sibling skip.
