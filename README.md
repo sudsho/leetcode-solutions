@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (402)
+## Solved (403)
 
-<!-- last touched: 2026-06-09 (rev 503) -->
+<!-- last touched: 2026-06-10 (rev 504) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -420,6 +420,7 @@ NNNN-problem-slug/
 | 52 | [N Queens Ii](0052-n-queens-ii/) | Hard | Python |
 | 150 | [Evaluate Reverse Polish Notation](0150-evaluate-reverse-polish-notation/) | Medium | Python |
 | 90 | [Subsets Ii](0090-subsets-ii/) | Medium | Python |
+| 96 | [Unique Binary Search Trees](0096-unique-binary-search-trees/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -514,3 +515,4 @@ NNNN-problem-slug/
 - 2026-06-06: n-queens ii via diagonal set pruning.
 - 2026-06-08: evaluate rpn with a stack, truncate-toward-zero note.
 - 2026-06-09: subsets ii, dedup via sort + sibling skip.
+- 2026-06-10: unique bsts counted with the catalan dp.
