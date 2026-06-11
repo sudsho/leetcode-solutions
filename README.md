@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (403)
+## Solved (404)
 
-<!-- last touched: 2026-06-10 (rev 504) -->
+<!-- last touched: 2026-06-11 (rev 505) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -213,6 +213,7 @@ NNNN-problem-slug/
 | 329 | [Longest Increasing Path In Matrix](0329-longest-increasing-path-in-matrix/) | Hard | Python |
 | 332 | [Reconstruct Itinerary](0332-reconstruct-itinerary/) | Hard | Python |
 | 336 | [Palindrome Pairs](0336-palindrome-pairs/) | Hard | Python |
+| 338 | [Counting Bits](0338-counting-bits/) | Easy | Python |
 | 341 | [Flatten Nested List Iterator](0341-flatten-nested-list-iterator/) | Medium | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 347 | [Top K Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
@@ -516,3 +517,4 @@ NNNN-problem-slug/
 - 2026-06-08: evaluate rpn with a stack, truncate-toward-zero note.
 - 2026-06-09: subsets ii, dedup via sort + sibling skip.
 - 2026-06-10: unique bsts counted with the catalan dp.
+- 2026-06-11: counting bits via the i>>1 dp recurrence.
