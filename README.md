@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (404)
+## Solved (405)
 
-<!-- last touched: 2026-06-11 (rev 505) -->
+<!-- last touched: 2026-06-12 (rev 506) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -109,6 +109,7 @@ NNNN-problem-slug/
 | 108 | [Convert Sorted Array To Bst](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 109 | [Convert Sorted List To Binary Search Tree](0109-convert-sorted-list-to-binary-search-tree/) | Medium | Python |
 | 110 | [Balanced Binary Tree](0110-balanced-binary-tree/) | Easy | Python |
+| 112 | [Path Sum](0112-path-sum/) | Easy | Python |
 | 114 | [Flatten Binary Tree To Linked List](0114-flatten-binary-tree-to-linked-list/) | Medium | Python |
 | 115 | [Distinct Subsequences](0115-distinct-subsequences/) | Hard | Python |
 | 116 | [Populating Next Right Pointers](0116-populating-next-right-pointers/) | Medium | Python |
@@ -518,3 +519,4 @@ NNNN-problem-slug/
 - 2026-06-09: subsets ii, dedup via sort + sibling skip.
 - 2026-06-10: unique bsts counted with the catalan dp.
 - 2026-06-11: counting bits via the i>>1 dp recurrence.
+- 2026-06-12: path sum, recurse subtracting target to the leaf.
