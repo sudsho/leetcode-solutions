@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (405)
+## Solved (406)
 
-<!-- last touched: 2026-06-12 (rev 506) -->
+<!-- last touched: 2026-06-12 (rev 507) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -135,6 +135,7 @@ NNNN-problem-slug/
 | 140 | [Word Break Ii](0140-word-break-ii/) | Hard | Python |
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
 | 142 | [Linked List Cycle Ii](0142-linked-list-cycle-ii/) | Medium | Python |
+| 143 | [Reorder List](0143-reorder-list/) | Medium | Python |
 | 145 | [Binary Tree Postorder Traversal](0145-binary-tree-postorder-traversal/) | Easy | Python |
 | 146 | [Lru Cache](0146-lru-cache/) | Medium | Python |
 | 148 | [Sort List](0148-sort-list/) | Medium | Python |
@@ -520,3 +521,4 @@ NNNN-problem-slug/
 - 2026-06-10: unique bsts counted with the catalan dp.
 - 2026-06-11: counting bits via the i>>1 dp recurrence.
 - 2026-06-12: path sum, recurse subtracting target to the leaf.
+- 2026-06-12: reorder list via midpoint, reverse, weave.
