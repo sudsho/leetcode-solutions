@@ -22,3 +22,4 @@ Time O(n), space O(h) for the recursion stack where h is tree height.
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py` - iterative stack version carrying the running sum
