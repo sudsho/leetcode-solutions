@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (407)
+## Solved (408)
 
-<!-- last touched: 2026-06-12 (rev 508) -->
+<!-- last touched: 2026-06-13 (rev 509) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -425,6 +425,7 @@ NNNN-problem-slug/
 | 90 | [Subsets Ii](0090-subsets-ii/) | Medium | Python |
 | 96 | [Unique Binary Search Trees](0096-unique-binary-search-trees/) | Medium | Python |
 | 97 | [Interleaving String](0097-interleaving-string/) | Hard | Python |
+| 119 | [Pascals Triangle Ii](0119-pascals-triangle-ii/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -524,3 +525,4 @@ NNNN-problem-slug/
 - 2026-06-12: path sum, recurse subtracting target to the leaf.
 - 2026-06-12: reorder list via midpoint, reverse, weave.
 - 2026-06-12: interleaving string, 1-row dp over s2.
+- 2026-06-13: pascal's triangle ii, build one row in place right-to-left.
