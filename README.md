@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (408)
+## Solved (409)
 
-<!-- last touched: 2026-06-13 (rev 509) -->
+<!-- last touched: 2026-06-13 (rev 510) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -426,6 +426,7 @@ NNNN-problem-slug/
 | 96 | [Unique Binary Search Trees](0096-unique-binary-search-trees/) | Medium | Python |
 | 97 | [Interleaving String](0097-interleaving-string/) | Hard | Python |
 | 119 | [Pascals Triangle Ii](0119-pascals-triangle-ii/) | Easy | Python |
+| 120 | [Triangle](0120-triangle/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -526,3 +527,4 @@ NNNN-problem-slug/
 - 2026-06-12: reorder list via midpoint, reverse, weave.
 - 2026-06-12: interleaving string, 1-row dp over s2.
 - 2026-06-13: pascal's triangle ii, build one row in place right-to-left.
+- 2026-06-13: triangle min path, bottom-up dp folded into one row.
