@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (409)
+## Solved (410)
 
-<!-- last touched: 2026-06-13 (rev 510) -->
+<!-- last touched: 2026-06-13 (rev 511) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -427,6 +427,7 @@ NNNN-problem-slug/
 | 97 | [Interleaving String](0097-interleaving-string/) | Hard | Python |
 | 119 | [Pascals Triangle Ii](0119-pascals-triangle-ii/) | Easy | Python |
 | 120 | [Triangle](0120-triangle/) | Medium | Python |
+| 151 | [Reverse Words In A String](0151-reverse-words-in-a-string/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -528,3 +529,4 @@ NNNN-problem-slug/
 - 2026-06-12: interleaving string, 1-row dp over s2.
 - 2026-06-13: pascal's triangle ii, build one row in place right-to-left.
 - 2026-06-13: triangle min path, bottom-up dp folded into one row.
+- 2026-06-13: reverse words in a string, split on whitespace then join reversed.
