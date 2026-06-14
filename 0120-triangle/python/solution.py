@@ -10,5 +10,7 @@ class Solution:
         dp = list(triangle[-1])
         for i in range(len(triangle) - 2, -1, -1):
             for j in range(len(triangle[i])):
+                # from (i, j) the two legal steps land on (i+1, j) and (i+1, j+1),
+                # which are exactly dp[j] and dp[j+1] in the row below
                 dp[j] = triangle[i][j] + min(dp[j], dp[j + 1])
         return dp[0]
