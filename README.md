@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (411)
+## Solved (412)
 
-<!-- last touched: 2026-06-13 (rev 513) -->
+<!-- last touched: 2026-06-14 (rev 514) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -429,6 +429,7 @@ NNNN-problem-slug/
 | 120 | [Triangle](0120-triangle/) | Medium | Python |
 | 151 | [Reverse Words In A String](0151-reverse-words-in-a-string/) | Medium | Python |
 | 629 | [K Inverse Pairs Array](0629-k-inverse-pairs-array/) | Hard | Python |
+| 337 | [House Robber Iii](0337-house-robber-iii/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -532,3 +533,4 @@ NNNN-problem-slug/
 - 2026-06-13: triangle min path, bottom-up dp folded into one row.
 - 2026-06-13: reverse words in a string, split on whitespace then join reversed.
 - 2026-06-13: k inverse pairs, window-sum dp turned into a prefix difference.
+- 2026-06-14: house robber iii, tree dp returning rob/skip pairs per node.
