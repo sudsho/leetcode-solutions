@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (410)
+## Solved (411)
 
-<!-- last touched: 2026-06-13 (rev 512) -->
+<!-- last touched: 2026-06-13 (rev 513) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -428,6 +428,7 @@ NNNN-problem-slug/
 | 119 | [Pascals Triangle Ii](0119-pascals-triangle-ii/) | Easy | Python |
 | 120 | [Triangle](0120-triangle/) | Medium | Python |
 | 151 | [Reverse Words In A String](0151-reverse-words-in-a-string/) | Medium | Python |
+| 629 | [K Inverse Pairs Array](0629-k-inverse-pairs-array/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -530,3 +531,4 @@ NNNN-problem-slug/
 - 2026-06-13: pascal's triangle ii, build one row in place right-to-left.
 - 2026-06-13: triangle min path, bottom-up dp folded into one row.
 - 2026-06-13: reverse words in a string, split on whitespace then join reversed.
+- 2026-06-13: k inverse pairs, window-sum dp turned into a prefix difference.
