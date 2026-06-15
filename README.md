@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (412)
+## Solved (413)
 
-<!-- last touched: 2026-06-14 (rev 514) -->
+<!-- last touched: 2026-06-15 (rev 515) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -213,6 +213,7 @@ NNNN-problem-slug/
 | 322 | [Coin Change](0322-coin-change/) | Medium | Python |
 | 327 | [Count Of Range Sum](0327-count-of-range-sum/) | Hard | Python |
 | 329 | [Longest Increasing Path In Matrix](0329-longest-increasing-path-in-matrix/) | Hard | Python |
+| 330 | [Patching Array](0330-patching-array/) | Hard | Python |
 | 332 | [Reconstruct Itinerary](0332-reconstruct-itinerary/) | Hard | Python |
 | 336 | [Palindrome Pairs](0336-palindrome-pairs/) | Hard | Python |
 | 338 | [Counting Bits](0338-counting-bits/) | Easy | Python |
