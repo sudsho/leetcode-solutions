@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (413)
+## Solved (416)
 
-<!-- last touched: 2026-06-15 (rev 515) -->
+<!-- last touched: 2026-06-16 (rev 516) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -106,9 +106,11 @@ NNNN-problem-slug/
 | 103 | [Binary Tree Zigzag Level Order Traversal](0103-binary-tree-zigzag-level-order-traversal/) | Medium | Python |
 | 104 | [Maximum Depth Of Binary Tree](0104-maximum-depth-of-binary-tree/) | Easy | Python |
 | 105 | [Construct Binary Tree From Preorder And Inorder](0105-construct-binary-tree-from-preorder-and-inorder/) | Medium | Python |
+| 107 | [Binary Tree Level Order Traversal Ii](0107-binary-tree-level-order-traversal-ii/) | Medium | Python |
 | 108 | [Convert Sorted Array To Bst](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 109 | [Convert Sorted List To Binary Search Tree](0109-convert-sorted-list-to-binary-search-tree/) | Medium | Python |
 | 110 | [Balanced Binary Tree](0110-balanced-binary-tree/) | Easy | Python |
+| 111 | [Minimum Depth Of Binary Tree](0111-minimum-depth-of-binary-tree/) | Easy | Python |
 | 112 | [Path Sum](0112-path-sum/) | Easy | Python |
 | 114 | [Flatten Binary Tree To Linked List](0114-flatten-binary-tree-to-linked-list/) | Medium | Python |
 | 115 | [Distinct Subsequences](0115-distinct-subsequences/) | Hard | Python |
@@ -297,6 +299,7 @@ NNNN-problem-slug/
 | 980 | [Unique Paths Iii](0980-unique-paths-iii/) | Hard | Python |
 | 992 | [Subarrays With K Different Integers](0992-subarrays-with-k-different-integers/) | Hard | Python |
 | 994 | [Rotting Oranges](0994-rotting-oranges/) | Medium | Python |
+| 995 | [Minimum Number Of K Consecutive Bit Flips](0995-minimum-number-of-k-consecutive-bit-flips/) | Hard | Python |
 | 1000 | [Minimum Cost To Merge Stones](1000-minimum-cost-to-merge-stones/) | Hard | Python |
 | 1011 | [Capacity To Ship Packages Within D Days](1011-capacity-to-ship-packages-within-d-days/) | Medium | Python |
 | 1044 | [Longest Duplicate Substring](1044-longest-duplicate-substring/) | Hard | Python |
@@ -535,3 +538,6 @@ NNNN-problem-slug/
 - 2026-06-13: reverse words in a string, split on whitespace then join reversed.
 - 2026-06-13: k inverse pairs, window-sum dp turned into a prefix difference.
 - 2026-06-14: house robber iii, tree dp returning rob/skip pairs per node.
+- 2026-06-16: minimum depth of binary tree, bfs returns the first leaf's depth.
+- 2026-06-16: level order traversal ii, plain bfs by levels then reverse once.
+- 2026-06-16: k consecutive bit flips, greedy with a queue tracking live flip parity.
