@@ -1374,3 +1374,7 @@ unique paths ii, the obstacle version of 62. lazy sunday so just one. the trick 
 ## 2026-06-09
 
 subsets ii. the dup-free version (78) is just append-current-then-recurse, but once the array has repeats you can produce the same subset down two different branches. sorting puts equal values adjacent, and then the one rule that fixes everything is: at a given recursion depth, only the first occurrence of a value may be chosen - any later sibling with the same value is skipped via the `i > start` check. tripped me up for a second because the guard is `i > start`, not `i > 0`; you DO want to pick the duplicate when it's the first element of a deeper branch (that's a genuinely new subset), you only skip it when it's a sibling at the same level. one and done for tuesday.
+
+## 2026-06-18
+
+did a little tree + linked list batch today. preorder iterative was the warmup - the only thing to remember is pushing right before left so left pops first. the one that took a beat was remove-duplicates-from-sorted-list-ii (82): it's deceptively different from 83. 83 keeps one copy of each value so you just skip-forward; 82 deletes the value entirely if it ever repeats, so you can't advance prev into a run - you have to walk cur to the end of the run and splice prev.next past the whole thing. dummy head pays off here because runs can start at the head.
