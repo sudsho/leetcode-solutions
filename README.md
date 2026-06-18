@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (416)
+## Solved (417)
 
-<!-- last touched: 2026-06-16 (rev 516) -->
+<!-- last touched: 2026-06-18 (rev 517) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -138,6 +138,7 @@ NNNN-problem-slug/
 | 141 | [Linked List Cycle](0141-linked-list-cycle/) | Easy | Python |
 | 142 | [Linked List Cycle Ii](0142-linked-list-cycle-ii/) | Medium | Python |
 | 143 | [Reorder List](0143-reorder-list/) | Medium | Python |
+| 144 | [Binary Tree Preorder Traversal](0144-binary-tree-preorder-traversal/) | Easy | Python |
 | 145 | [Binary Tree Postorder Traversal](0145-binary-tree-postorder-traversal/) | Easy | Python |
 | 146 | [Lru Cache](0146-lru-cache/) | Medium | Python |
 | 148 | [Sort List](0148-sort-list/) | Medium | Python |
