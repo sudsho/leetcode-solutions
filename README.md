@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (419)
+## Solved (422)
 
-<!-- last touched: 2026-06-18 (rev 519) -->
+<!-- last touched: 2026-06-19 (rev 520) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -165,6 +165,7 @@ NNNN-problem-slug/
 | 199 | [Binary Tree Right Side View](0199-binary-tree-right-side-view/) | Medium | Python |
 | 200 | [Number Of Islands](0200-number-of-islands/) | Medium | Python |
 | 201 | [Bitwise And Of Numbers Range](0201-bitwise-and-of-numbers-range/) | Medium | Python |
+| 205 | [Isomorphic Strings](0205-isomorphic-strings/) | Easy | Python |
 | 206 | [Reverse Linked List](0206-reverse-linked-list/) | Easy | Python |
 | 207 | [Course Schedule](0207-course-schedule/) | Medium | Python |
 | 208 | [Implement Trie](0208-implement-trie/) | Medium | Python |
@@ -220,6 +221,8 @@ NNNN-problem-slug/
 | 329 | [Longest Increasing Path In Matrix](0329-longest-increasing-path-in-matrix/) | Hard | Python |
 | 330 | [Patching Array](0330-patching-array/) | Hard | Python |
 | 332 | [Reconstruct Itinerary](0332-reconstruct-itinerary/) | Hard | Python |
+| 334 | [Increasing Triplet Subsequence](0334-increasing-triplet-subsequence/) | Medium | Python |
+| 335 | [Self Crossing](0335-self-crossing/) | Hard | Python |
 | 336 | [Palindrome Pairs](0336-palindrome-pairs/) | Hard | Python |
 | 338 | [Counting Bits](0338-counting-bits/) | Easy | Python |
 | 341 | [Flatten Nested List Iterator](0341-flatten-nested-list-iterator/) | Medium | Python |
