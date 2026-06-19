@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (418)
+## Solved (419)
 
-<!-- last touched: 2026-06-18 (rev 518) -->
+<!-- last touched: 2026-06-18 (rev 519) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -97,6 +97,7 @@ NNNN-problem-slug/
 | 88 | [Merge Sorted Array](0088-merge-sorted-array/) | Easy | Python |
 | 91 | [Decode Ways](0091-decode-ways/) | Medium | Python |
 | 92 | [Reverse Linked List Ii](0092-reverse-linked-list-ii/) | Medium | Python |
+| 93 | [Restore Ip Addresses](0093-restore-ip-addresses/) | Medium | Python |
 | 94 | [Binary Tree Inorder Traversal](0094-binary-tree-inorder-traversal/) | Easy | Python |
 | 95 | [Unique Binary Search Trees Ii](0095-unique-binary-search-trees-ii/) | Medium | Python |
 | 98 | [Validate Binary Search Tree](0098-validate-binary-search-tree/) | Medium | Python |
