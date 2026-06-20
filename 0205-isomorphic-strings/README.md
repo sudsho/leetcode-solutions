@@ -21,3 +21,4 @@ Time O(n), space O(1) (alphabet bounded).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py`
