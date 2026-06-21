@@ -52,3 +52,18 @@ class Solution:
                 if 0 <= nr < rows and 0 <= nc < cols:
                     count += board[nr][nc] & 1
         return count
+
+
+if __name__ == "__main__":
+    # LeetCode example 1: blinker-like configuration.
+    grid = [[0, 1, 0],
+            [0, 0, 1],
+            [1, 1, 1],
+            [0, 0, 0]]
+    Solution().gameOfLife(grid)
+    expected = [[0, 0, 0],
+                [1, 0, 1],
+                [0, 1, 1],
+                [0, 1, 0]]
+    assert grid == expected, grid
+    print("ok:", grid)
