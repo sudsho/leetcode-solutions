@@ -1378,3 +1378,7 @@ subsets ii. the dup-free version (78) is just append-current-then-recurse, but o
 ## 2026-06-18
 
 did a little tree + linked list batch today. preorder iterative was the warmup - the only thing to remember is pushing right before left so left pops first. the one that took a beat was remove-duplicates-from-sorted-list-ii (82): it's deceptively different from 83. 83 keeps one copy of each value so you just skip-forward; 82 deletes the value entirely if it ever repeats, so you can't advance prev into a run - you have to walk cur to the end of the run and splice prev.next past the whole thing. dummy head pays off here because runs can start at the head.
+
+## 2026-06-21
+
+heavy sunday, felt like clearing a few. started easy with remove linked list elements (203) to warm up. classic case for a dummy head - the only thing that makes this annoying is when the nodes you want gone are right at the front, because then there's no prev to re-link. stick a sentinel before head and that whole branch disappears: prev sits on the last kept node, cur scans ahead, and you only advance prev when you actually keep something. return dummy.next at the end since the head itself may have been one of the deleted values.
