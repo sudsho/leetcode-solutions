@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (423)
+## Solved (424)
 
-<!-- last touched: 2026-06-21 (rev 521) -->
+<!-- last touched: 2026-06-21 (rev 522) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -441,6 +441,7 @@ NNNN-problem-slug/
 | 629 | [K Inverse Pairs Array](0629-k-inverse-pairs-array/) | Hard | Python |
 | 337 | [House Robber Iii](0337-house-robber-iii/) | Medium | Python |
 | 203 | [Remove Linked List Elements](0203-remove-linked-list-elements/) | Easy | Python |
+| 289 | [Game Of Life](0289-game-of-life/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -549,3 +550,4 @@ NNNN-problem-slug/
 - 2026-06-16: level order traversal ii, plain bfs by levels then reverse once.
 - 2026-06-16: k consecutive bit flips, greedy with a queue tracking live flip parity.
 - 2026-06-21: remove linked list elements, dummy head so head deletions need no special case.
+- 2026-06-21: game of life, in-place update by packing next state into the second bit.
