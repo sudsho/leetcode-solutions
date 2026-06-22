@@ -66,4 +66,15 @@ if __name__ == "__main__":
                 [0, 1, 1],
                 [0, 1, 0]]
     assert grid == expected, grid
+
+    # Edge case: a board with no live cells must stay all-dead.
+    dead = [[0, 0], [0, 0]]
+    Solution().gameOfLife(dead)
+    assert dead == [[0, 0], [0, 0]], dead
+
+    # Edge case: a lone live cell has zero neighbours and dies of underpopulation.
+    lonely = [[1]]
+    Solution().gameOfLife(lonely)
+    assert lonely == [[0]], lonely
+
     print("ok:", grid)
