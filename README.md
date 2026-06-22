@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (424)
+## Solved (425)
 
-<!-- last touched: 2026-06-21 (rev 522) -->
+<!-- last touched: 2026-06-22 (rev 523) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -182,6 +182,7 @@ NNNN-problem-slug/
 | 224 | [Basic Calculator](0224-basic-calculator/) | Hard | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 | 227 | [Basic Calculator Ii](0227-basic-calculator-ii/) | Medium | Python |
+| 229 | [Majority Element Ii](0229-majority-element-ii/) | Medium | Python |
 | 230 | [Kth Smallest Element In A Bst](0230-kth-smallest-element-in-a-bst/) | Medium | Python |
 | 231 | [Power Of Two](0231-power-of-two/) | Easy | Python |
 | 233 | [Number Of Digit One](0233-number-of-digit-one/) | Hard | Python |
