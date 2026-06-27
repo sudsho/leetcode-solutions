@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (425)
+## Solved (426)
 
-<!-- last touched: 2026-06-22 (rev 523) -->
+<!-- last touched: 2026-06-26 (rev 524) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -292,6 +292,7 @@ NNNN-problem-slug/
 | 805 | [Split Array With Same Average](0805-split-array-with-same-average/) | Hard | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |
 | 818 | [Race Car](0818-race-car/) | Hard | Python |
+| 827 | [Making A Large Island](0827-making-a-large-island/) | Hard | Python |
 | 828 | [Count Unique Characters Of All Substrings](0828-count-unique-characters-of-all-substrings/) | Hard | Python |
 | 850 | [Rectangle Area Ii](0850-rectangle-area-ii/) | Hard | Python |
 | 871 | [Minimum Number Of Refueling Stops](0871-minimum-number-of-refueling-stops/) | Hard | Python |
@@ -552,3 +553,4 @@ NNNN-problem-slug/
 - 2026-06-16: k consecutive bit flips, greedy with a queue tracking live flip parity.
 - 2026-06-21: remove linked list elements, dummy head so head deletions need no special case.
 - 2026-06-21: game of life, in-place update by packing next state into the second bit.
+- 2026-06-26: making a large island, id every island then sum distinct neighbours around each zero.
