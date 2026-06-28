@@ -1388,3 +1388,9 @@ then game of life (289), which i wanted to do without a second board. the rule y
 ## 2026-06-22
 
 majority element ii (229), the n/3 sequel to 169. the jump that makes it click is realizing there can be at most two values over n/3 - a third would push the total past n - so you run two boyer-moore counters side by side instead of one. the cancellation case is the bit i always have to slow down on: an element matching neither candidate doesn't just decrement one counter, it knocks a vote off *both*, same way the n/2 version pairs unequal elements. and unlike 169 the survivors aren't guaranteed, so you need the verify pass at the end counting actual occurrences before you trust them. monday warmup.
+
+## 2026-06-28
+
+quiet sunday, just wanted one. did construct binary tree from inorder and postorder (106), the mirror of the 105 i did a couple weeks back. same divide and conquer skeleton but two things flip. the root is now the *last* element of postorder instead of the first of preorder, and because i'm walking postorder backwards the roots come out as root, right, left - so when i recurse i have to build the right subtree before the left, otherwise the index pointer gets handed to the wrong side and the whole thing scrambles. inorder still does the same job: find the root's position and everything left of it is the left subtree, everything right is the right. hash the inorder indices once so each lookup is O(1) and it's linear overall.
+
+wrote the iterative stack version too just to keep it honest. that one walks postorder from the back and uses inorder as a guide for when to stop going down the right spine and switch to attaching a left child - you pop while the top of the stack matches the current inorder value, and the last node you popped is where the left child hangs. fiddlier than the recursion but no call stack and it made me actually understand why the right-before-left ordering falls out.

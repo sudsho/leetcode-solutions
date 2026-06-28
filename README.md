@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (426)
+## Solved (427)
 
-<!-- last touched: 2026-06-26 (rev 524) -->
+<!-- last touched: 2026-06-28 (rev 525) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -108,6 +108,7 @@ NNNN-problem-slug/
 | 103 | [Binary Tree Zigzag Level Order Traversal](0103-binary-tree-zigzag-level-order-traversal/) | Medium | Python |
 | 104 | [Maximum Depth Of Binary Tree](0104-maximum-depth-of-binary-tree/) | Easy | Python |
 | 105 | [Construct Binary Tree From Preorder And Inorder](0105-construct-binary-tree-from-preorder-and-inorder/) | Medium | Python |
+| 106 | [Construct Binary Tree From Inorder And Postorder](0106-construct-binary-tree-from-inorder-and-postorder/) | Medium | Python |
 | 107 | [Binary Tree Level Order Traversal Ii](0107-binary-tree-level-order-traversal-ii/) | Medium | Python |
 | 108 | [Convert Sorted Array To Bst](0108-convert-sorted-array-to-bst/) | Easy | Python |
 | 109 | [Convert Sorted List To Binary Search Tree](0109-convert-sorted-list-to-binary-search-tree/) | Medium | Python |
@@ -554,3 +555,4 @@ NNNN-problem-slug/
 - 2026-06-21: remove linked list elements, dummy head so head deletions need no special case.
 - 2026-06-21: game of life, in-place update by packing next state into the second bit.
 - 2026-06-26: making a large island, id every island then sum distinct neighbours around each zero.
+- 2026-06-28: construct tree from inorder + postorder, consume postorder from the back, right subtree first.
