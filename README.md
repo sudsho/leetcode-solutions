@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (427)
+## Solved (428)
 
-<!-- last touched: 2026-06-28 (rev 525) -->
+<!-- last touched: 2026-06-29 (rev 526) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -115,6 +115,7 @@ NNNN-problem-slug/
 | 110 | [Balanced Binary Tree](0110-balanced-binary-tree/) | Easy | Python |
 | 111 | [Minimum Depth Of Binary Tree](0111-minimum-depth-of-binary-tree/) | Easy | Python |
 | 112 | [Path Sum](0112-path-sum/) | Easy | Python |
+| 113 | [Path Sum Ii](0113-path-sum-ii/) | Medium | Python |
 | 114 | [Flatten Binary Tree To Linked List](0114-flatten-binary-tree-to-linked-list/) | Medium | Python |
 | 115 | [Distinct Subsequences](0115-distinct-subsequences/) | Hard | Python |
 | 116 | [Populating Next Right Pointers](0116-populating-next-right-pointers/) | Medium | Python |
@@ -556,3 +557,4 @@ NNNN-problem-slug/
 - 2026-06-21: game of life, in-place update by packing next state into the second bit.
 - 2026-06-26: making a large island, id every island then sum distinct neighbours around each zero.
 - 2026-06-28: construct tree from inorder + postorder, consume postorder from the back, right subtree first.
+- 2026-06-29: path sum ii, dfs carrying the running path then backtrack with a pop.
