@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (428)
+## Solved (431)
 
-<!-- last touched: 2026-06-29 (rev 526) -->
+<!-- last touched: 2026-06-30 (rev 527) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -446,6 +446,9 @@ NNNN-problem-slug/
 | 337 | [House Robber Iii](0337-house-robber-iii/) | Medium | Python |
 | 203 | [Remove Linked List Elements](0203-remove-linked-list-elements/) | Easy | Python |
 | 289 | [Game Of Life](0289-game-of-life/) | Medium | Python |
+| 228 | [Summary Ranges](0228-summary-ranges/) | Easy | Python |
+| 129 | [Sum Root To Leaf Numbers](0129-sum-root-to-leaf-numbers/) | Medium | Python |
+| 291 | [Word Pattern Ii](0291-word-pattern-ii/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -558,3 +561,6 @@ NNNN-problem-slug/
 - 2026-06-26: making a large island, id every island then sum distinct neighbours around each zero.
 - 2026-06-28: construct tree from inorder + postorder, consume postorder from the back, right subtree first.
 - 2026-06-29: path sum ii, dfs carrying the running path then backtrack with a pop.
+- 2026-06-30: summary ranges, one scan extending each run while values stay contiguous.
+- 2026-06-30: sum root to leaf numbers, dfs carrying prefix*10+val, add only at leaves.
+- 2026-06-30: word pattern ii, backtracking bijection with a used-words set to stay injective.
