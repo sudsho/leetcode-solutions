@@ -20,3 +20,4 @@ Time O(len(t)), space O(1).
 ## Files
 
 - `python/solution.py`
+- `python/solution_alt.py` - binary-search variant for the many-queries follow-up
