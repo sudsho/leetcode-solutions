@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (432)
+## Solved (436)
 
-<!-- last touched: 2026-07-01 (rev 528) -->
+<!-- last touched: 2026-07-02 (rev 529) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -238,15 +238,19 @@ NNNN-problem-slug/
 | 380 | [Insert Delete Getrandom O1](0380-insert-delete-getrandom-o1/) | Medium | Python |
 | 386 | [Lexicographical Numbers](0386-lexicographical-numbers/) | Medium | Python |
 | 387 | [First Unique Character In A String](0387-first-unique-character-in-a-string/) | Easy | Python |
+| 392 | [Is Subsequence](0392-is-subsequence/) | Easy | Python |
 | 394 | [Decode String](0394-decode-string/) | Medium | Python |
 | 402 | [Remove K Digits](0402-remove-k-digits/) | Medium | Python |
+| 407 | [Trapping Rain Water II](0407-trapping-rain-water-ii/) | Hard | Python |
 | 410 | [Split Array Largest Sum](0410-split-array-largest-sum/) | Hard | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
 | 416 | [Partition Equal Subset Sum](0416-partition-equal-subset-sum/) | Medium | Python |
 | 417 | [Pacific Atlantic Water Flow](0417-pacific-atlantic-water-flow/) | Medium | Python |
 | 435 | [Non Overlapping Intervals](0435-non-overlapping-intervals/) | Medium | Python |
 | 437 | [Path Sum Iii](0437-path-sum-iii/) | Medium | Python |
+| 442 | [Find All Duplicates In An Array](0442-find-all-duplicates-in-an-array/) | Medium | Python |
 | 448 | [Find All Numbers Disappeared In An Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
+| 451 | [Sort Characters By Frequency](0451-sort-characters-by-frequency/) | Medium | Python |
 | 460 | [Lfu Cache](0460-lfu-cache/) | Hard | Python |
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
