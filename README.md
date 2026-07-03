@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (437)
+## Solved (438)
 
-<!-- last touched: 2026-07-03 (rev 530) -->
+<!-- last touched: 2026-07-03 (rev 531) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -455,6 +455,7 @@ NNNN-problem-slug/
 | 291 | [Word Pattern Ii](0291-word-pattern-ii/) | Hard | Python |
 | 424 | [Longest Repeating Character Replacement](0424-longest-repeating-character-replacement/) | Medium | Python |
 | 219 | [Contains Duplicate Ii](0219-contains-duplicate-ii/) | Easy | Python |
+| 147 | [Insertion Sort List](0147-insertion-sort-list/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -572,3 +573,4 @@ NNNN-problem-slug/
 - 2026-06-30: word pattern ii, backtracking bijection with a used-words set to stay injective.
 - 2026-07-01: longest repeating character replacement, sliding window on window_size - max_freq.
 - 2026-07-03: contains duplicate ii, dict of value to last index, check the gap before overwriting.
+- 2026-07-03: insertion sort list, dummy-headed sorted list, rescan from front to splice each node.
