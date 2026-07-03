@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (438)
+## Solved (439)
 
-<!-- last touched: 2026-07-03 (rev 531) -->
+<!-- last touched: 2026-07-03 (rev 532) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -456,6 +456,7 @@ NNNN-problem-slug/
 | 424 | [Longest Repeating Character Replacement](0424-longest-repeating-character-replacement/) | Medium | Python |
 | 219 | [Contains Duplicate Ii](0219-contains-duplicate-ii/) | Easy | Python |
 | 147 | [Insertion Sort List](0147-insertion-sort-list/) | Medium | Python |
+| 316 | [Remove Duplicate Letters](0316-remove-duplicate-letters/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -574,3 +575,4 @@ NNNN-problem-slug/
 - 2026-07-01: longest repeating character replacement, sliding window on window_size - max_freq.
 - 2026-07-03: contains duplicate ii, dict of value to last index, check the gap before overwriting.
 - 2026-07-03: insertion sort list, dummy-headed sorted list, rescan from front to splice each node.
+- 2026-07-03: remove duplicate letters, greedy monotonic stack popping when the top recurs later.
