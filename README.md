@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (436)
+## Solved (437)
 
-<!-- last touched: 2026-07-02 (rev 529) -->
+<!-- last touched: 2026-07-03 (rev 530) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -454,6 +454,7 @@ NNNN-problem-slug/
 | 129 | [Sum Root To Leaf Numbers](0129-sum-root-to-leaf-numbers/) | Medium | Python |
 | 291 | [Word Pattern Ii](0291-word-pattern-ii/) | Hard | Python |
 | 424 | [Longest Repeating Character Replacement](0424-longest-repeating-character-replacement/) | Medium | Python |
+| 219 | [Contains Duplicate Ii](0219-contains-duplicate-ii/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -570,3 +571,4 @@ NNNN-problem-slug/
 - 2026-06-30: sum root to leaf numbers, dfs carrying prefix*10+val, add only at leaves.
 - 2026-06-30: word pattern ii, backtracking bijection with a used-words set to stay injective.
 - 2026-07-01: longest repeating character replacement, sliding window on window_size - max_freq.
+- 2026-07-03: contains duplicate ii, dict of value to last index, check the gap before overwriting.
