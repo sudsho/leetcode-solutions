@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (439)
+## Solved (440)
 
-<!-- last touched: 2026-07-03 (rev 532) -->
+<!-- last touched: 2026-07-04 (rev 533) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -159,6 +159,7 @@ NNNN-problem-slug/
 | 169 | [Majority Element](0169-majority-element/) | Easy | Python |
 | 173 | [Binary Search Tree Iterator](0173-binary-search-tree-iterator/) | Medium | Python |
 | 174 | [Dungeon Game](0174-dungeon-game/) | Hard | Python |
+| 179 | [Largest Number](0179-largest-number/) | Medium | Python |
 | 187 | [Repeated Dna Sequences](0187-repeated-dna-sequences/) | Medium | Python |
 | 188 | [Best Time To Buy And Sell Stock Iv](0188-best-time-to-buy-and-sell-stock-iv/) | Hard | Python |
 | 189 | [Rotate Array](0189-rotate-array/) | Medium | Python |
