@@ -15,6 +15,7 @@ env/
 .idea/
 *.swp
 .DS_Store
+Thumbs.db
 
 # Notebooks
 .ipynb_checkpoints/
