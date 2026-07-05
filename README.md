@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (440)
+## Solved (441)
 
-<!-- last touched: 2026-07-04 (rev 533) -->
+<!-- last touched: 2026-07-05 (rev 534) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -458,6 +458,7 @@ NNNN-problem-slug/
 | 219 | [Contains Duplicate Ii](0219-contains-duplicate-ii/) | Easy | Python |
 | 147 | [Insertion Sort List](0147-insertion-sort-list/) | Medium | Python |
 | 316 | [Remove Duplicate Letters](0316-remove-duplicate-letters/) | Medium | Python |
+| 171 | [Excel Sheet Column Number](0171-excel-sheet-column-number/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -577,3 +578,4 @@ NNNN-problem-slug/
 - 2026-07-03: contains duplicate ii, dict of value to last index, check the gap before overwriting.
 - 2026-07-03: insertion sort list, dummy-headed sorted list, rescan from front to splice each node.
 - 2026-07-03: remove duplicate letters, greedy monotonic stack popping when the top recurs later.
+- 2026-07-05: excel sheet column number, bijective base-26 with no zero, A..Z = 1..26.
