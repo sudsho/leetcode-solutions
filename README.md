@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (441)
+## Solved (442)
 
-<!-- last touched: 2026-07-05 (rev 534) -->
+<!-- last touched: 2026-07-05 (rev 535) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -459,6 +459,7 @@ NNNN-problem-slug/
 | 147 | [Insertion Sort List](0147-insertion-sort-list/) | Medium | Python |
 | 316 | [Remove Duplicate Letters](0316-remove-duplicate-letters/) | Medium | Python |
 | 171 | [Excel Sheet Column Number](0171-excel-sheet-column-number/) | Easy | Python |
+| 318 | [Maximum Product Of Word Lengths](0318-maximum-product-of-word-lengths/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -579,3 +580,4 @@ NNNN-problem-slug/
 - 2026-07-03: insertion sort list, dummy-headed sorted list, rescan from front to splice each node.
 - 2026-07-03: remove duplicate letters, greedy monotonic stack popping when the top recurs later.
 - 2026-07-05: excel sheet column number, bijective base-26 with no zero, A..Z = 1..26.
+- 2026-07-05: maximum product of word lengths, 26-bit letter masks, disjoint iff mask AND is zero.
