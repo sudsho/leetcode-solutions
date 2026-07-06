@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (445)
+## Solved (446)
 
-<!-- last touched: 2026-07-06 (rev 538) -->
+<!-- last touched: 2026-07-06 (rev 539) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -463,6 +463,7 @@ NNNN-problem-slug/
 | 321 | [Create Maximum Number](0321-create-maximum-number/) | Hard | Python |
 | 258 | [Add Digits](0258-add-digits/) | Easy | Python |
 | 204 | [Count Primes](0204-count-primes/) | Medium | Python |
+| 274 | [H Index](0274-h-index/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -587,3 +588,4 @@ NNNN-problem-slug/
 - 2026-07-05: create maximum number, per-split monotonic-stack pick then lexicographic-tiebreak merge.
 - 2026-07-06: add digits, iterative digit-fold plus the 1 + (n-1) % 9 digital-root shortcut.
 - 2026-07-06: count primes, sieve of eratosthenes crossing out from i*i up to sqrt(n).
+- 2026-07-06: h-index, counting-sort buckets clamped at n then sweep h downward.
