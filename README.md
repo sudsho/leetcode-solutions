@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (442)
+## Solved (443)
 
-<!-- last touched: 2026-07-05 (rev 535) -->
+<!-- last touched: 2026-07-05 (rev 536) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -460,6 +460,7 @@ NNNN-problem-slug/
 | 316 | [Remove Duplicate Letters](0316-remove-duplicate-letters/) | Medium | Python |
 | 171 | [Excel Sheet Column Number](0171-excel-sheet-column-number/) | Easy | Python |
 | 318 | [Maximum Product Of Word Lengths](0318-maximum-product-of-word-lengths/) | Medium | Python |
+| 321 | [Create Maximum Number](0321-create-maximum-number/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -581,3 +582,4 @@ NNNN-problem-slug/
 - 2026-07-03: remove duplicate letters, greedy monotonic stack popping when the top recurs later.
 - 2026-07-05: excel sheet column number, bijective base-26 with no zero, A..Z = 1..26.
 - 2026-07-05: maximum product of word lengths, 26-bit letter masks, disjoint iff mask AND is zero.
+- 2026-07-05: create maximum number, per-split monotonic-stack pick then lexicographic-tiebreak merge.
