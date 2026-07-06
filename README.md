@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (444)
+## Solved (445)
 
-<!-- last touched: 2026-07-06 (rev 537) -->
+<!-- last touched: 2026-07-06 (rev 538) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -462,6 +462,7 @@ NNNN-problem-slug/
 | 318 | [Maximum Product Of Word Lengths](0318-maximum-product-of-word-lengths/) | Medium | Python |
 | 321 | [Create Maximum Number](0321-create-maximum-number/) | Hard | Python |
 | 258 | [Add Digits](0258-add-digits/) | Easy | Python |
+| 204 | [Count Primes](0204-count-primes/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -585,3 +586,4 @@ NNNN-problem-slug/
 - 2026-07-05: maximum product of word lengths, 26-bit letter masks, disjoint iff mask AND is zero.
 - 2026-07-05: create maximum number, per-split monotonic-stack pick then lexicographic-tiebreak merge.
 - 2026-07-06: add digits, iterative digit-fold plus the 1 + (n-1) % 9 digital-root shortcut.
+- 2026-07-06: count primes, sieve of eratosthenes crossing out from i*i up to sqrt(n).
