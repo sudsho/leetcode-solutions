@@ -3,6 +3,12 @@ from typing import List
 
 class Solution:
     def summaryRanges(self, nums: List[int]) -> List[str]:
+        """Summarize a sorted, distinct int array as its consecutive ranges.
+
+        Each maximal run of consecutive integers becomes one entry: a lone value
+        renders as "a" and a run of two or more as "a->b". One linear pass over
+        the array is enough since it is already sorted with no duplicates.
+        """
         # Walk the sorted array once, extending the current run while each value
         # is exactly one more than the previous. When the run breaks, emit it as
         # either "a" (single value) or "a->b" (range), then start a fresh run.
