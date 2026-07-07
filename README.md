@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (446)
+## Solved (447)
 
-<!-- last touched: 2026-07-06 (rev 539) -->
+<!-- last touched: 2026-07-07 (rev 540) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -464,6 +464,7 @@ NNNN-problem-slug/
 | 258 | [Add Digits](0258-add-digits/) | Easy | Python |
 | 204 | [Count Primes](0204-count-primes/) | Medium | Python |
 | 274 | [H Index](0274-h-index/) | Medium | Python |
+| 973 | [K Closest Points To Origin](0973-k-closest-points-to-origin/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -589,3 +590,4 @@ NNNN-problem-slug/
 - 2026-07-06: add digits, iterative digit-fold plus the 1 + (n-1) % 9 digital-root shortcut.
 - 2026-07-06: count primes, sieve of eratosthenes crossing out from i*i up to sqrt(n).
 - 2026-07-06: h-index, counting-sort buckets clamped at n then sweep h downward.
+- 2026-07-07: k closest points to origin, size-k max-heap on squared distance, evict the farthest.
