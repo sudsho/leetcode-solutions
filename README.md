@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (447)
+## Solved (448)
 
-<!-- last touched: 2026-07-07 (rev 540) -->
+<!-- last touched: 2026-07-08 (rev 541) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -232,6 +232,7 @@ NNNN-problem-slug/
 | 341 | [Flatten Nested List Iterator](0341-flatten-nested-list-iterator/) | Medium | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 347 | [Top K Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
+| 349 | [Intersection Of Two Arrays](0349-intersection-of-two-arrays/) | Easy | Python |
 | 354 | [Russian Doll Envelopes](0354-russian-doll-envelopes/) | Hard | Python |
 | 363 | [Max Sum Of Rectangle No Larger Than K](0363-max-sum-of-rectangle-no-larger-than-k/) | Hard | Python |
 | 365 | [Water And Jug Problem](0365-water-and-jug-problem/) | Medium | Python |
@@ -591,3 +592,4 @@ NNNN-problem-slug/
 - 2026-07-06: count primes, sieve of eratosthenes crossing out from i*i up to sqrt(n).
 - 2026-07-06: h-index, counting-sort buckets clamped at n then sweep h downward.
 - 2026-07-07: k closest points to origin, size-k max-heap on squared distance, evict the farthest.
+- 2026-07-08: intersection of two arrays, set & for the distinct answer or a two-pointer sweep once sorted.
