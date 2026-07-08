@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (449)
+## Solved (450)
 
-<!-- last touched: 2026-07-08 (rev 542) -->
+<!-- last touched: 2026-07-08 (rev 543) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -254,6 +254,7 @@ NNNN-problem-slug/
 | 442 | [Find All Duplicates In An Array](0442-find-all-duplicates-in-an-array/) | Medium | Python |
 | 448 | [Find All Numbers Disappeared In An Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
 | 451 | [Sort Characters By Frequency](0451-sort-characters-by-frequency/) | Medium | Python |
+| 456 | [132 Pattern](0456-132-pattern/) | Medium | Python |
 | 460 | [Lfu Cache](0460-lfu-cache/) | Hard | Python |
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
@@ -595,3 +596,4 @@ NNNN-problem-slug/
 - 2026-07-07: k closest points to origin, size-k max-heap on squared distance, evict the farthest.
 - 2026-07-08: intersection of two arrays, set & for the distinct answer or a two-pointer sweep once sorted.
 - 2026-07-08: intersection of two arrays ii, counter to keep multiplicity, spend one count per match.
+- 2026-07-08: 132 pattern, scan from the right with a monotonic stack tracking the best middle value.
