@@ -13,7 +13,7 @@ NNNN-problem-slug/
 
 ## Solved (450)
 
-<!-- last touched: 2026-07-08 (rev 543) -->
+<!-- last touched: 2026-07-08 (rev 544) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -255,7 +255,7 @@ NNNN-problem-slug/
 | 448 | [Find All Numbers Disappeared In An Array](0448-find-all-numbers-disappeared-in-an-array/) | Easy | Python |
 | 451 | [Sort Characters By Frequency](0451-sort-characters-by-frequency/) | Medium | Python |
 | 456 | [132 Pattern](0456-132-pattern/) | Medium | Python |
-| 460 | [Lfu Cache](0460-lfu-cache/) | Hard | Python |
+| 460 | [LFU Cache](0460-lfu-cache/) | Hard | Python |
 | 461 | [Hamming Distance](0461-hamming-distance/) | Easy | Python |
 | 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
 | 480 | [Sliding Window Median](0480-sliding-window-median/) | Hard | Python |
