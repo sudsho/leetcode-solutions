@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (448)
+## Solved (449)
 
-<!-- last touched: 2026-07-08 (rev 541) -->
+<!-- last touched: 2026-07-08 (rev 542) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -233,6 +233,7 @@ NNNN-problem-slug/
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 347 | [Top K Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
 | 349 | [Intersection Of Two Arrays](0349-intersection-of-two-arrays/) | Easy | Python |
+| 350 | [Intersection Of Two Arrays II](0350-intersection-of-two-arrays-ii/) | Easy | Python |
 | 354 | [Russian Doll Envelopes](0354-russian-doll-envelopes/) | Hard | Python |
 | 363 | [Max Sum Of Rectangle No Larger Than K](0363-max-sum-of-rectangle-no-larger-than-k/) | Hard | Python |
 | 365 | [Water And Jug Problem](0365-water-and-jug-problem/) | Medium | Python |
@@ -593,3 +594,4 @@ NNNN-problem-slug/
 - 2026-07-06: h-index, counting-sort buckets clamped at n then sweep h downward.
 - 2026-07-07: k closest points to origin, size-k max-heap on squared distance, evict the farthest.
 - 2026-07-08: intersection of two arrays, set & for the distinct answer or a two-pointer sweep once sorted.
+- 2026-07-08: intersection of two arrays ii, counter to keep multiplicity, spend one count per match.
