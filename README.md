@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (450)
+## Solved (451)
 
-<!-- last touched: 2026-07-08 (rev 544) -->
+<!-- last touched: 2026-07-09 (rev 545) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -468,6 +468,7 @@ NNNN-problem-slug/
 | 204 | [Count Primes](0204-count-primes/) | Medium | Python |
 | 274 | [H Index](0274-h-index/) | Medium | Python |
 | 973 | [K Closest Points To Origin](0973-k-closest-points-to-origin/) | Medium | Python |
+| 190 | [Reverse Bits](0190-reverse-bits/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -597,3 +598,4 @@ NNNN-problem-slug/
 - 2026-07-08: intersection of two arrays, set & for the distinct answer or a two-pointer sweep once sorted.
 - 2026-07-08: intersection of two arrays ii, counter to keep multiplicity, spend one count per match.
 - 2026-07-08: 132 pattern, scan from the right with a monotonic stack tracking the best middle value.
+- 2026-07-09: reverse bits, shift the low bit onto the result from the left 32 times.
