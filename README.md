@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (451)
+## Solved (452)
 
-<!-- last touched: 2026-07-09 (rev 545) -->
+<!-- last touched: 2026-07-09 (rev 546) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -469,6 +469,7 @@ NNNN-problem-slug/
 | 274 | [H Index](0274-h-index/) | Medium | Python |
 | 973 | [K Closest Points To Origin](0973-k-closest-points-to-origin/) | Medium | Python |
 | 190 | [Reverse Bits](0190-reverse-bits/) | Easy | Python |
+| 216 | [Combination Sum Iii](0216-combination-sum-iii/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -599,3 +600,4 @@ NNNN-problem-slug/
 - 2026-07-08: intersection of two arrays ii, counter to keep multiplicity, spend one count per match.
 - 2026-07-08: 132 pattern, scan from the right with a monotonic stack tracking the best middle value.
 - 2026-07-09: reverse bits, shift the low bit onto the result from the left 32 times.
+- 2026-07-09: combination sum iii, backtracking over increasing digits with an overshoot prune.
