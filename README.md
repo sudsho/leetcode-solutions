@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (452)
+## Solved (453)
 
-<!-- last touched: 2026-07-09 (rev 546) -->
+<!-- last touched: 2026-07-09 (rev 547) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -470,6 +470,7 @@ NNNN-problem-slug/
 | 973 | [K Closest Points To Origin](0973-k-closest-points-to-origin/) | Medium | Python |
 | 190 | [Reverse Bits](0190-reverse-bits/) | Easy | Python |
 | 216 | [Combination Sum Iii](0216-combination-sum-iii/) | Medium | Python |
+| 308 | [Range Sum Query 2D Mutable](0308-range-sum-query-2d-mutable/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -601,3 +602,4 @@ NNNN-problem-slug/
 - 2026-07-08: 132 pattern, scan from the right with a monotonic stack tracking the best middle value.
 - 2026-07-09: reverse bits, shift the low bit onto the result from the left 32 times.
 - 2026-07-09: combination sum iii, backtracking over increasing digits with an overshoot prune.
+- 2026-07-09: range sum query 2d mutable, 2d fenwick tree with four-corner inclusion-exclusion.
