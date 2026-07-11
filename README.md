@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (453)
+## Solved (454)
 
-<!-- last touched: 2026-07-09 (rev 547) -->
+<!-- last touched: 2026-07-10 (rev 548) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -239,6 +239,7 @@ NNNN-problem-slug/
 | 365 | [Water And Jug Problem](0365-water-and-jug-problem/) | Medium | Python |
 | 378 | [Kth Smallest Element In Sorted Matrix](0378-kth-smallest-element-in-sorted-matrix/) | Medium | Python |
 | 380 | [Insert Delete Getrandom O1](0380-insert-delete-getrandom-o1/) | Medium | Python |
+| 384 | [Shuffle An Array](0384-shuffle-an-array/) | Medium | Python |
 | 386 | [Lexicographical Numbers](0386-lexicographical-numbers/) | Medium | Python |
 | 387 | [First Unique Character In A String](0387-first-unique-character-in-a-string/) | Easy | Python |
 | 392 | [Is Subsequence](0392-is-subsequence/) | Easy | Python |
@@ -603,3 +604,4 @@ NNNN-problem-slug/
 - 2026-07-09: reverse bits, shift the low bit onto the result from the left 32 times.
 - 2026-07-09: combination sum iii, backtracking over increasing digits with an overshoot prune.
 - 2026-07-09: range sum query 2d mutable, 2d fenwick tree with four-corner inclusion-exclusion.
+- 2026-07-10: shuffle an array, fisher-yates swapping each slot with a random earlier index for uniform permutations.
