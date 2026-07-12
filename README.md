@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (454)
+## Solved (455)
 
-<!-- last touched: 2026-07-10 (rev 548) -->
+<!-- last touched: 2026-07-12 (rev 549) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -310,6 +310,7 @@ NNNN-problem-slug/
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
 | 876 | [Middle Of The Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
 | 891 | [Sum Of Subsequence Widths](0891-sum-of-subsequence-widths/) | Hard | Python |
+| 895 | [Maximum Frequency Stack](0895-maximum-frequency-stack/) | Hard | Python |
 | 902 | [Numbers At Most N Given Digit Set](0902-numbers-at-most-n-given-digit-set/) | Hard | Python |
 | 920 | [Number Of Music Playlists](0920-number-of-music-playlists/) | Hard | Python |
 | 940 | [Distinct Subsequences Ii](0940-distinct-subsequences-ii/) | Hard | Python |
