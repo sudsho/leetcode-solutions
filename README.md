@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (455)
+## Solved (456)
 
-<!-- last touched: 2026-07-12 (rev 549) -->
+<!-- last touched: 2026-07-13 (rev 550) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -261,6 +261,7 @@ NNNN-problem-slug/
 | 472 | [Concatenated Words](0472-concatenated-words/) | Hard | Python |
 | 480 | [Sliding Window Median](0480-sliding-window-median/) | Hard | Python |
 | 488 | [Zuma Game](0488-zuma-game/) | Hard | Python |
+| 493 | [Reverse Pairs](0493-reverse-pairs/) | Hard | Python |
 | 494 | [Target Sum](0494-target-sum/) | Medium | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
 | 514 | [Freedom Trail](0514-freedom-trail/) | Hard | Python |
@@ -606,3 +607,4 @@ NNNN-problem-slug/
 - 2026-07-09: combination sum iii, backtracking over increasing digits with an overshoot prune.
 - 2026-07-09: range sum query 2d mutable, 2d fenwick tree with four-corner inclusion-exclusion.
 - 2026-07-10: shuffle an array, fisher-yates swapping each slot with a random earlier index for uniform permutations.
+- 2026-07-13: reverse pairs, merge sort counting each level with a forward-only two-pointer sweep over the sorted halves.
