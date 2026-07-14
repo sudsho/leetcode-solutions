@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (458)
+## Solved (459)
 
-<!-- last touched: 2026-07-14 (rev 552) -->
+<!-- last touched: 2026-07-14 (rev 553) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -247,6 +247,7 @@ NNNN-problem-slug/
 | 392 | [Is Subsequence](0392-is-subsequence/) | Easy | Python |
 | 394 | [Decode String](0394-decode-string/) | Medium | Python |
 | 402 | [Remove K Digits](0402-remove-k-digits/) | Medium | Python |
+| 403 | [Frog Jump](0403-frog-jump/) | Hard | Python |
 | 407 | [Trapping Rain Water II](0407-trapping-rain-water-ii/) | Hard | Python |
 | 410 | [Split Array Largest Sum](0410-split-array-largest-sum/) | Hard | Python |
 | 412 | [Fizz Buzz](0412-fizz-buzz/) | Easy | Python |
