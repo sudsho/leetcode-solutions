@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (456)
+## Solved (457)
 
-<!-- last touched: 2026-07-13 (rev 550) -->
+<!-- last touched: 2026-07-14 (rev 551) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -183,6 +183,7 @@ NNNN-problem-slug/
 | 220 | [Contains Duplicate Iii](0220-contains-duplicate-iii/) | Hard | Python |
 | 221 | [Maximal Square](0221-maximal-square/) | Medium | Python |
 | 224 | [Basic Calculator](0224-basic-calculator/) | Hard | Python |
+| 225 | [Implement Stack Using Queues](0225-implement-stack-using-queues/) | Easy | Python |
 | 226 | [Invert Binary Tree](0226-invert-binary-tree/) | Easy | Python |
 | 227 | [Basic Calculator Ii](0227-basic-calculator-ii/) | Medium | Python |
 | 229 | [Majority Element Ii](0229-majority-element-ii/) | Medium | Python |
