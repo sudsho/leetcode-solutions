@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (457)
+## Solved (458)
 
-<!-- last touched: 2026-07-14 (rev 551) -->
+<!-- last touched: 2026-07-14 (rev 552) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -174,6 +174,7 @@ NNNN-problem-slug/
 | 208 | [Implement Trie](0208-implement-trie/) | Medium | Python |
 | 209 | [Minimum Size Subarray Sum](0209-minimum-size-subarray-sum/) | Medium | Python |
 | 210 | [Course Schedule Ii](0210-course-schedule-ii/) | Medium | Python |
+| 211 | [Design Add And Search Words Data Structure](0211-design-add-and-search-words-data-structure/) | Medium | Python |
 | 212 | [Word Search Ii](0212-word-search-ii/) | Hard | Python |
 | 213 | [House Robber Ii](0213-house-robber-ii/) | Medium | Python |
 | 214 | [Shortest Palindrome](0214-shortest-palindrome/) | Hard | Python |
