@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (459)
+## Solved (460)
 
-<!-- last touched: 2026-07-14 (rev 553) -->
+<!-- last touched: 2026-07-15 (rev 554) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -224,6 +224,7 @@ NNNN-problem-slug/
 | 315 | [Count Of Smaller Numbers After Self](0315-count-of-smaller-numbers-after-self/) | Hard | Python |
 | 322 | [Coin Change](0322-coin-change/) | Medium | Python |
 | 327 | [Count Of Range Sum](0327-count-of-range-sum/) | Hard | Python |
+| 328 | [Odd Even Linked List](0328-odd-even-linked-list/) | Medium | Python |
 | 329 | [Longest Increasing Path In Matrix](0329-longest-increasing-path-in-matrix/) | Hard | Python |
 | 330 | [Patching Array](0330-patching-array/) | Hard | Python |
 | 332 | [Reconstruct Itinerary](0332-reconstruct-itinerary/) | Hard | Python |
