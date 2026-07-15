@@ -1,6 +1,12 @@
 # revisited - cleaned up
 class Solution:
     def maxProfit(self, prices):
+        """Best single buy/sell profit in one pass.
+
+        Track the lowest price seen so far; at each later day the best profit
+        ending there is price - min_so_far. Keep the running maximum. O(n) time,
+        O(1) space.
+        """
         if not prices:
             return 0
         min_so_far = prices[0]
