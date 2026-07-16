@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (461)
+## Solved (462)
 
-<!-- last touched: 2026-07-16 (rev 555) -->
+<!-- last touched: 2026-07-16 (rev 556) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -479,6 +479,7 @@ NNNN-problem-slug/
 | 216 | [Combination Sum Iii](0216-combination-sum-iii/) | Medium | Python |
 | 308 | [Range Sum Query 2D Mutable](0308-range-sum-query-2d-mutable/) | Hard | Python |
 | 166 | [Fraction To Recurring Decimal](0166-fraction-to-recurring-decimal/) | Medium | Python |
+| 263 | [Ugly Number](0263-ugly-number/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -614,3 +615,4 @@ NNNN-problem-slug/
 - 2026-07-10: shuffle an array, fisher-yates swapping each slot with a random earlier index for uniform permutations.
 - 2026-07-13: reverse pairs, merge sort counting each level with a forward-only two-pointer sweep over the sorted halves.
 - 2026-07-16: fraction to recurring decimal, long division remembering remainder positions to wrap the repeating block.
+- 2026-07-16: ugly number, strip out all factors of 2/3/5 and check the leftover is 1.
