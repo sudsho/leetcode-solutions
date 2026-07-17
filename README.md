@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (462)
+## Solved (463)
 
-<!-- last touched: 2026-07-16 (rev 556) -->
+<!-- last touched: 2026-07-17 (rev 557) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -480,6 +480,7 @@ NNNN-problem-slug/
 | 308 | [Range Sum Query 2D Mutable](0308-range-sum-query-2d-mutable/) | Hard | Python |
 | 166 | [Fraction To Recurring Decimal](0166-fraction-to-recurring-decimal/) | Medium | Python |
 | 263 | [Ugly Number](0263-ugly-number/) | Easy | Python |
+| 454 | [4Sum II](0454-4sum-ii/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
