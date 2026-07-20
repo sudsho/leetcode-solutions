@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (463)
+## Solved (464)
 
-<!-- last touched: 2026-07-17 (rev 557) -->
+<!-- last touched: 2026-07-20 (rev 558) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -481,6 +481,7 @@ NNNN-problem-slug/
 | 166 | [Fraction To Recurring Decimal](0166-fraction-to-recurring-decimal/) | Medium | Python |
 | 263 | [Ugly Number](0263-ugly-number/) | Easy | Python |
 | 454 | [4Sum II](0454-4sum-ii/) | Medium | Python |
+| 376 | [Wiggle Subsequence](0376-wiggle-subsequence/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
