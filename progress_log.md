@@ -1436,3 +1436,9 @@ wednesday, did odd even linked list (328) as a warmup after the heavier merge-so
 ## 2026-07-17
 
 friday, knocked out 4sum ii (454). the naive read is four nested loops over the arrays, O(n^4), which is hopeless once n gets past a few hundred. the fix is meet in the middle: it's really a two-sum in disguise once you group the four arrays into two pairs. count every a+b from the first two arrays into a Counter, then for each c+d from the last two ask how many stored sums equal -(c+d). both passes are O(n^2) so the whole thing lands at O(n^2) time and space. worth noting this is 4sum ii, not 4sum - because we're returning a *count* of index tuples and the arrays are separate, duplicates aren't a headache the way they are in the classic 4sum, so no sorting or dedup dance here, just the two counters meeting in the middle.
+
+## 2026-07-21
+
+monday, did integer break (343). started with the DP because it's the obvious safe answer - dp[i] is the best product for i, and for each i you try every first cut j and pair it with either the whole remainder or its own best break, max(i-j, dp[i-j]). that inner max is the whole trick: it lets a "part" quietly be a further-broken chunk instead of a literal number. O(n^2) and done.
+
+but the pattern in the dp table nagged at me - the splits kept landing on 3s. worked out why: for any part k >= 5 you're better off peeling a 3 off it because 3*(k-3) > k there, and 4 just ties with 2+2, so an optimal split never keeps a part bigger than 4 and prefers 3 over 2. so the closed form is just: cram in as many 3s as fit, then patch the remainder - remainder 2 leaves a plain 2, remainder 1 is the sneaky one because 3+1 wants to become 2+2, so you trade one 3 for a 4. n=2 and n=3 stay special since "at least two parts" forces a 1 into the split and caps them at 1 and 2. dropped it to O(log n) for the power. kept the dp as the alt since it's the one i'd actually write first in an interview before reaching for the math.

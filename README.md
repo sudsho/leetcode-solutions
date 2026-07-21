@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (464)
+## Solved (465)
 
-<!-- last touched: 2026-07-20 (rev 558) -->
+<!-- last touched: 2026-07-21 (rev 559) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -233,6 +233,7 @@ NNNN-problem-slug/
 | 336 | [Palindrome Pairs](0336-palindrome-pairs/) | Hard | Python |
 | 338 | [Counting Bits](0338-counting-bits/) | Easy | Python |
 | 341 | [Flatten Nested List Iterator](0341-flatten-nested-list-iterator/) | Medium | Python |
+| 343 | [Integer Break](0343-integer-break/) | Medium | Python |
 | 344 | [Reverse String](0344-reverse-string/) | Easy | Python |
 | 347 | [Top K Frequent Elements](0347-top-k-frequent-elements/) | Medium | Python |
 | 349 | [Intersection Of Two Arrays](0349-intersection-of-two-arrays/) | Easy | Python |
@@ -618,3 +619,4 @@ NNNN-problem-slug/
 - 2026-07-13: reverse pairs, merge sort counting each level with a forward-only two-pointer sweep over the sorted halves.
 - 2026-07-16: fraction to recurring decimal, long division remembering remainder positions to wrap the repeating block.
 - 2026-07-16: ugly number, strip out all factors of 2/3/5 and check the leftover is 1.
+- 2026-07-21: integer break, greedily split into 3s with the 3^(k-1)*4 patch when the remainder is 1.
