@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (466)
+## Solved (467)
 
-<!-- last touched: 2026-07-23 (rev 560) -->
+<!-- last touched: 2026-07-23 (rev 561) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -484,6 +484,7 @@ NNNN-problem-slug/
 | 454 | [4Sum II](0454-4sum-ii/) | Medium | Python |
 | 376 | [Wiggle Subsequence](0376-wiggle-subsequence/) | Medium | Python |
 | 374 | [Guess Number Higher Or Lower](0374-guess-number-higher-or-lower/) | Easy | Python |
+| 455 | [Assign Cookies](0455-assign-cookies/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -622,3 +623,4 @@ NNNN-problem-slug/
 - 2026-07-16: ugly number, strip out all factors of 2/3/5 and check the leftover is 1.
 - 2026-07-21: integer break, greedily split into 3s with the 3^(k-1)*4 patch when the remainder is 1.
 - 2026-07-23: guess number higher or lower, binary search halving the range on each guess() sign.
+- 2026-07-23: assign cookies, greedy two-pointer over sorted greed factors and cookie sizes.
