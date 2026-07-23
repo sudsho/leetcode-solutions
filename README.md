@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (467)
+## Solved (468)
 
-<!-- last touched: 2026-07-23 (rev 561) -->
+<!-- last touched: 2026-07-23 (rev 562) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -485,6 +485,7 @@ NNNN-problem-slug/
 | 376 | [Wiggle Subsequence](0376-wiggle-subsequence/) | Medium | Python |
 | 374 | [Guess Number Higher Or Lower](0374-guess-number-higher-or-lower/) | Easy | Python |
 | 455 | [Assign Cookies](0455-assign-cookies/) | Easy | Python |
+| 701 | [Insert Into A Binary Search Tree](0701-insert-into-a-binary-search-tree/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -624,3 +625,4 @@ NNNN-problem-slug/
 - 2026-07-21: integer break, greedily split into 3s with the 3^(k-1)*4 patch when the remainder is 1.
 - 2026-07-23: guess number higher or lower, binary search halving the range on each guess() sign.
 - 2026-07-23: assign cookies, greedy two-pointer over sorted greed factors and cookie sizes.
+- 2026-07-23: insert into a bst, ride the invariant to the empty leaf slot (recursive + iterative).
