@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (470)
+## Solved (471)
 
-<!-- last touched: 2026-07-23 (rev 564) -->
+<!-- last touched: 2026-07-23 (rev 565) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -488,6 +488,7 @@ NNNN-problem-slug/
 | 701 | [Insert Into A Binary Search Tree](0701-insert-into-a-binary-search-tree/) | Medium | Python |
 | 538 | [Convert BST To Greater Tree](0538-convert-bst-to-greater-tree/) | Medium | Python |
 | 450 | [Delete Node In A BST](0450-delete-node-in-a-bst/) | Medium | Python |
+| 987 | [Vertical Order Traversal Of A Binary Tree](0987-vertical-order-traversal-of-a-binary-tree/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -630,3 +631,4 @@ NNNN-problem-slug/
 - 2026-07-23: insert into a bst, ride the invariant to the empty leaf slot (recursive + iterative).
 - 2026-07-23: convert bst to greater tree, reverse in-order with a running suffix sum.
 - 2026-07-23: delete node in a bst, swap in the in-order successor for the two-child case.
+- 2026-07-23: vertical order traversal, bucket by column then sort each by (row, value) for the tie-break.
