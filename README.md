@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (469)
+## Solved (470)
 
-<!-- last touched: 2026-07-23 (rev 563) -->
+<!-- last touched: 2026-07-23 (rev 564) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -487,6 +487,7 @@ NNNN-problem-slug/
 | 455 | [Assign Cookies](0455-assign-cookies/) | Easy | Python |
 | 701 | [Insert Into A Binary Search Tree](0701-insert-into-a-binary-search-tree/) | Medium | Python |
 | 538 | [Convert BST To Greater Tree](0538-convert-bst-to-greater-tree/) | Medium | Python |
+| 450 | [Delete Node In A BST](0450-delete-node-in-a-bst/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -628,3 +629,4 @@ NNNN-problem-slug/
 - 2026-07-23: assign cookies, greedy two-pointer over sorted greed factors and cookie sizes.
 - 2026-07-23: insert into a bst, ride the invariant to the empty leaf slot (recursive + iterative).
 - 2026-07-23: convert bst to greater tree, reverse in-order with a running suffix sum.
+- 2026-07-23: delete node in a bst, swap in the in-order successor for the two-child case.
