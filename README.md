@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (468)
+## Solved (469)
 
-<!-- last touched: 2026-07-23 (rev 562) -->
+<!-- last touched: 2026-07-23 (rev 563) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -486,6 +486,7 @@ NNNN-problem-slug/
 | 374 | [Guess Number Higher Or Lower](0374-guess-number-higher-or-lower/) | Easy | Python |
 | 455 | [Assign Cookies](0455-assign-cookies/) | Easy | Python |
 | 701 | [Insert Into A Binary Search Tree](0701-insert-into-a-binary-search-tree/) | Medium | Python |
+| 538 | [Convert BST To Greater Tree](0538-convert-bst-to-greater-tree/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -626,3 +627,4 @@ NNNN-problem-slug/
 - 2026-07-23: guess number higher or lower, binary search halving the range on each guess() sign.
 - 2026-07-23: assign cookies, greedy two-pointer over sorted greed factors and cookie sizes.
 - 2026-07-23: insert into a bst, ride the invariant to the empty leaf slot (recursive + iterative).
+- 2026-07-23: convert bst to greater tree, reverse in-order with a running suffix sum.
