@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (473)
+## Solved (474)
 
 <!-- last touched: 2026-07-24 (rev 566) -->
 
@@ -491,6 +491,7 @@ NNNN-problem-slug/
 | 987 | [Vertical Order Traversal Of A Binary Tree](0987-vertical-order-traversal-of-a-binary-tree/) | Hard | Python |
 | 252 | [Meeting Rooms](0252-meeting-rooms/) | Easy | Python |
 | 259 | [3Sum Smaller](0259-3sum-smaller/) | Medium | Python |
+| 296 | [Best Meeting Point](0296-best-meeting-point/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
