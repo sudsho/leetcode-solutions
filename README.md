@@ -477,7 +477,7 @@ NNNN-problem-slug/
 | 274 | [H Index](0274-h-index/) | Medium | Python |
 | 973 | [K Closest Points To Origin](0973-k-closest-points-to-origin/) | Medium | Python |
 | 190 | [Reverse Bits](0190-reverse-bits/) | Easy | Python |
-| 216 | [Combination Sum Iii](0216-combination-sum-iii/) | Medium | Python |
+| 216 | [Combination Sum III](0216-combination-sum-iii/) | Medium | Python |
 | 308 | [Range Sum Query 2D Mutable](0308-range-sum-query-2d-mutable/) | Hard | Python |
 | 166 | [Fraction To Recurring Decimal](0166-fraction-to-recurring-decimal/) | Medium | Python |
 | 263 | [Ugly Number](0263-ugly-number/) | Easy | Python |
