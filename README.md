@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (472)
+## Solved (473)
 
 <!-- last touched: 2026-07-24 (rev 566) -->
 
@@ -490,6 +490,7 @@ NNNN-problem-slug/
 | 450 | [Delete Node In A BST](0450-delete-node-in-a-bst/) | Medium | Python |
 | 987 | [Vertical Order Traversal Of A Binary Tree](0987-vertical-order-traversal-of-a-binary-tree/) | Hard | Python |
 | 252 | [Meeting Rooms](0252-meeting-rooms/) | Easy | Python |
+| 259 | [3Sum Smaller](0259-3sum-smaller/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
