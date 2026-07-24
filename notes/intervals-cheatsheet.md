@@ -5,3 +5,4 @@
 - entry 99: small reminder.
 - tarjan low-link refresher.
 - union find rollback for offline tasks.
+- meeting rooms: sort by start, overlap iff cur.start < prev.end (touching ends ok). rooms-ii needs a min-heap of end times for concurrency count.
