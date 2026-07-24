@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (471)
+## Solved (472)
 
-<!-- last touched: 2026-07-23 (rev 565) -->
+<!-- last touched: 2026-07-24 (rev 566) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -489,6 +489,7 @@ NNNN-problem-slug/
 | 538 | [Convert BST To Greater Tree](0538-convert-bst-to-greater-tree/) | Medium | Python |
 | 450 | [Delete Node In A BST](0450-delete-node-in-a-bst/) | Medium | Python |
 | 987 | [Vertical Order Traversal Of A Binary Tree](0987-vertical-order-traversal-of-a-binary-tree/) | Hard | Python |
+| 252 | [Meeting Rooms](0252-meeting-rooms/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
