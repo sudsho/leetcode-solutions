@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (476)
+## Solved (477)
 
-<!-- last touched: 2026-07-25 (rev 568) -->
+<!-- last touched: 2026-07-25 (rev 569) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -494,6 +494,7 @@ NNNN-problem-slug/
 | 296 | [Best Meeting Point](0296-best-meeting-point/) | Hard | Python |
 | 303 | [Range Sum Query Immutable](0303-range-sum-query-immutable/) | Easy | Python |
 | 525 | [Contiguous Array](0525-contiguous-array/) | Medium | Python |
+| 1074 | [Number Of Submatrices That Sum To Target](1074-number-of-submatrices-that-sum-to-target/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -639,3 +640,4 @@ NNNN-problem-slug/
 - 2026-07-23: vertical order traversal, bucket by column then sort each by (row, value) for the tie-break.
 - 2026-07-25: range sum query immutable, prefix array with a padding zero so index 0 needs no special case.
 - 2026-07-25: contiguous array, map 0 to -1 so equal counts become a repeated prefix sum.
+- 2026-07-25: submatrices summing to target, fix a column band and collapse to the 1d 560 sweep.
