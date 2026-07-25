@@ -430,7 +430,7 @@ NNNN-problem-slug/
 | 3431 | [Minimum Pair Removal To Sort Array I](3431-minimum-pair-removal-to-sort-array-i/) | Medium | Python |
 | 3463 | [Check If Digits Are Equal In String After Operations Ii](3463-check-if-digits-are-equal-in-string-after-operations-ii/) | Hard | Python |
 | 3486 | [Longest Special Path Ii](3486-longest-special-path-ii/) | Hard | Python |
-| 3505 | [Minimum Operations To Make Elements Within K Subarrays Equal Variant](3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard | Python |
+| 3505 | [Minimum Operations To Make Elements Within K Subarrays Equal](3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard | Python |
 | 3517 | [Smallest Palindromic Rearrangement I](3517-smallest-palindromic-rearrangement-i/) | Medium | Python |
 | 3543 | [Maximum Weighted K Edge Path](3543-maximum-weighted-k-edge-path/) | Medium | Python |
 | 3559 | [Number Of Ways To Assign Edge Weights Ii](3559-number-of-ways-to-assign-edge-weights-ii/) | Hard | Python |
