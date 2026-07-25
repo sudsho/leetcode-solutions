@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (475)
+## Solved (476)
 
-<!-- last touched: 2026-07-25 (rev 567) -->
+<!-- last touched: 2026-07-25 (rev 568) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -493,6 +493,7 @@ NNNN-problem-slug/
 | 259 | [3Sum Smaller](0259-3sum-smaller/) | Medium | Python |
 | 296 | [Best Meeting Point](0296-best-meeting-point/) | Hard | Python |
 | 303 | [Range Sum Query Immutable](0303-range-sum-query-immutable/) | Easy | Python |
+| 525 | [Contiguous Array](0525-contiguous-array/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -637,3 +638,4 @@ NNNN-problem-slug/
 - 2026-07-23: delete node in a bst, swap in the in-order successor for the two-child case.
 - 2026-07-23: vertical order traversal, bucket by column then sort each by (row, value) for the tie-break.
 - 2026-07-25: range sum query immutable, prefix array with a padding zero so index 0 needs no special case.
+- 2026-07-25: contiguous array, map 0 to -1 so equal counts become a repeated prefix sum.
