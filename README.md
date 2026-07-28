@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (477)
+## Solved (478)
 
-<!-- last touched: 2026-07-25 (rev 569) -->
+<!-- last touched: 2026-07-28 (rev 570) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -495,6 +495,7 @@ NNNN-problem-slug/
 | 303 | [Range Sum Query Immutable](0303-range-sum-query-immutable/) | Easy | Python |
 | 525 | [Contiguous Array](0525-contiguous-array/) | Medium | Python |
 | 1074 | [Number Of Submatrices That Sum To Target](1074-number-of-submatrices-that-sum-to-target/) | Hard | Python |
+| 523 | [Continuous Subarray Sum](0523-continuous-subarray-sum/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -641,3 +642,4 @@ NNNN-problem-slug/
 - 2026-07-25: range sum query immutable, prefix array with a padding zero so index 0 needs no special case.
 - 2026-07-25: contiguous array, map 0 to -1 so equal counts become a repeated prefix sum.
 - 2026-07-25: submatrices summing to target, fix a column band and collapse to the 1d 560 sweep.
+- 2026-07-28: continuous subarray sum, match prefix remainders mod k with the length-2 guard.
