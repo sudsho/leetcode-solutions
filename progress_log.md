@@ -1478,3 +1478,11 @@ that's the fourth time this month i've written this map and the value type is th
 negatives are the trap everyone warns about and python just handles it - -3 % 5 is 2, so a positive modulus already gives a non-negative remainder. worth noting for when i write this in java or c++ though, because there the same line splits one remainder class in two and quietly undercounts, and you need ((x % k) + k) % k.
 
 also wrote the pairwise version as an alt: since any two prefixes sharing a remainder define a divisible slice, the answer is just sum of C(c,2) over the buckets. same number, and it makes it obvious the result depends only on bucket sizes and not on the order of the array, which is a nice sanity check on the incremental one.
+
+capped it with make sum divisible by p (1590), which is where the family stops being a copy-paste. the move is to stop thinking about what's left and think about what gets removed: if target = total % p, the slice you delete has to carry exactly that excess, and you want the shortest one. target == 0 short-circuits to 0.
+
+so it's still a remainder lookup, just displaced. prefix[i] - prefix[j] == target (mod p) rearranges to prefix[j] == prefix[i] - target (mod p), meaning at each right end there is exactly one earlier remainder worth asking about. 974 is the degenerate case where the shift is zero and you look up your own remainder.
+
+the part i got wrong on the first pass was the map direction. i wrote last_seen but kept the first index out of muscle memory from 523/525 and got answers that were valid but too long. those two want the widest window so they keep the earliest index; this one wants the narrowest so it overwrites every time, because a later index with the same remainder is strictly better for every future right end. same dictionary, opposite update rule, and the thing that decides it is just whether the objective is a max or a min. that's the actual lesson from the last two weeks of these.
+
+two guards: (running - target) % p needs the modulus or a negative intermediate misses the bucket, and best == n has to return -1 since deleting the whole array is banned even though the arithmetic is fine. three problems today all on the same map and i think i finally have the taxonomy straight.

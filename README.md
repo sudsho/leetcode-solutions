@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (480)
+## Solved (481)
 
-<!-- last touched: 2026-07-29 (rev 572) -->
+<!-- last touched: 2026-07-29 (rev 573) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -498,6 +498,7 @@ NNNN-problem-slug/
 | 523 | [Continuous Subarray Sum](0523-continuous-subarray-sum/) | Medium | Python |
 | 724 | [Find Pivot Index](0724-find-pivot-index/) | Easy | Python |
 | 974 | [Subarray Sums Divisible By K](0974-subarray-sums-divisible-by-k/) | Medium | Python |
+| 1590 | [Make Sum Divisible By P](1590-make-sum-divisible-by-p/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -647,3 +648,4 @@ NNNN-problem-slug/
 - 2026-07-28: continuous subarray sum, match prefix remainders mod k with the length-2 guard.
 - 2026-07-29: find pivot index, one running left sum with right = total - left - nums[i].
 - 2026-07-29: subarray sums divisible by k, remainder buckets counting frequencies not first indices.
+- 2026-07-29: make sum divisible by p, shifted remainder lookup keeping the latest index.
