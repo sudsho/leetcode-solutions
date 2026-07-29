@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (478)
+## Solved (479)
 
-<!-- last touched: 2026-07-28 (rev 570) -->
+<!-- last touched: 2026-07-29 (rev 571) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -496,6 +496,7 @@ NNNN-problem-slug/
 | 525 | [Contiguous Array](0525-contiguous-array/) | Medium | Python |
 | 1074 | [Number Of Submatrices That Sum To Target](1074-number-of-submatrices-that-sum-to-target/) | Hard | Python |
 | 523 | [Continuous Subarray Sum](0523-continuous-subarray-sum/) | Medium | Python |
+| 724 | [Find Pivot Index](0724-find-pivot-index/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -643,3 +644,4 @@ NNNN-problem-slug/
 - 2026-07-25: contiguous array, map 0 to -1 so equal counts become a repeated prefix sum.
 - 2026-07-25: submatrices summing to target, fix a column band and collapse to the 1d 560 sweep.
 - 2026-07-28: continuous subarray sum, match prefix remainders mod k with the length-2 guard.
+- 2026-07-29: find pivot index, one running left sum with right = total - left - nums[i].
