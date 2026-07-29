@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (479)
+## Solved (480)
 
-<!-- last touched: 2026-07-29 (rev 571) -->
+<!-- last touched: 2026-07-29 (rev 572) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -497,6 +497,7 @@ NNNN-problem-slug/
 | 1074 | [Number Of Submatrices That Sum To Target](1074-number-of-submatrices-that-sum-to-target/) | Hard | Python |
 | 523 | [Continuous Subarray Sum](0523-continuous-subarray-sum/) | Medium | Python |
 | 724 | [Find Pivot Index](0724-find-pivot-index/) | Easy | Python |
+| 974 | [Subarray Sums Divisible By K](0974-subarray-sums-divisible-by-k/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -645,3 +646,4 @@ NNNN-problem-slug/
 - 2026-07-25: submatrices summing to target, fix a column band and collapse to the 1d 560 sweep.
 - 2026-07-28: continuous subarray sum, match prefix remainders mod k with the length-2 guard.
 - 2026-07-29: find pivot index, one running left sum with right = total - left - nums[i].
+- 2026-07-29: subarray sums divisible by k, remainder buckets counting frequencies not first indices.
