@@ -8,7 +8,9 @@ rolling notes
 - count by contribution rather than directly enumerate.
 - lazy propagation for additive range updates.
 - reroot dp template.
-- prefix mod count for subarray-sum-divisible-by-k.
+- prefix mod count for subarray-sum-divisible-by-k. the map value is the whole
+  decision: first index to maximize a window (525, 523), frequency to count
+  (560, 974, 1074), latest index to minimize a window (1590).
 - tarjan low-link refresher.
 - another way to think about kth smallest with two heaps.
 - offline + sort queries trick for max-XOR-with-threshold.
