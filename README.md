@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (481)
+## Solved (482)
 
-<!-- last touched: 2026-07-29 (rev 573) -->
+<!-- last touched: 2026-07-30 (rev 574) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -331,6 +331,7 @@ NNNN-problem-slug/
 | 1044 | [Longest Duplicate Substring](1044-longest-duplicate-substring/) | Hard | Python |
 | 1095 | [Find In Mountain Array](1095-find-in-mountain-array/) | Hard | Python |
 | 1106 | [Parsing A Boolean Expression](1106-parsing-a-boolean-expression/) | Hard | Python |
+| 1109 | [Corporate Flight Bookings](1109-corporate-flight-bookings/) | Medium | Python |
 | 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
 | 1240 | [Tiling A Rectangle With The Fewest Squares](1240-tiling-a-rectangle-with-the-fewest-squares/) | Hard | Python |
@@ -649,3 +650,4 @@ NNNN-problem-slug/
 - 2026-07-29: find pivot index, one running left sum with right = total - left - nums[i].
 - 2026-07-29: subarray sums divisible by k, remainder buckets counting frequencies not first indices.
 - 2026-07-29: make sum divisible by p, shifted remainder lookup keeping the latest index.
+- 2026-07-30: corporate flight bookings, difference array so each range update is two writes.
