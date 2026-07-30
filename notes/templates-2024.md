@@ -11,6 +11,10 @@ rolling notes
 - prefix mod count for subarray-sum-divisible-by-k. the map value is the whole
   decision: first index to maximize a window (525, 523), frequency to count
   (560, 974, 1074), latest index to minimize a window (1590).
+- difference array is the prefix sum run backwards - range add becomes two
+  writes (+v at l, -v at r+1), one accumulate at the end rebuilds the values
+  (1109). pick by which op is hot: hot queries -> prefix sums, hot range
+  updates -> diff array, both hot -> fenwick (307, 308).
 - tarjan low-link refresher.
 - another way to think about kth smallest with two heaps.
 - offline + sort queries trick for max-XOR-with-threshold.
