@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (482)
+## Solved (483)
 
-<!-- last touched: 2026-07-30 (rev 574) -->
+<!-- last touched: 2026-07-31 (rev 575) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -500,6 +500,7 @@ NNNN-problem-slug/
 | 724 | [Find Pivot Index](0724-find-pivot-index/) | Easy | Python |
 | 974 | [Subarray Sums Divisible By K](0974-subarray-sums-divisible-by-k/) | Medium | Python |
 | 1590 | [Make Sum Divisible By P](1590-make-sum-divisible-by-p/) | Medium | Python |
+| 2848 | [Points That Intersect With Cars](2848-points-that-intersect-with-cars/) | Easy | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -651,3 +652,4 @@ NNNN-problem-slug/
 - 2026-07-29: subarray sums divisible by k, remainder buckets counting frequencies not first indices.
 - 2026-07-29: make sum divisible by p, shifted remainder lookup keeping the latest index.
 - 2026-07-30: corporate flight bookings, difference array so each range update is two writes.
+- 2026-07-31: points that intersect with cars, same diff array read as a predicate instead of a total.
