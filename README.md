@@ -11,7 +11,7 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (483)
+## Solved (484)
 
 <!-- last touched: 2026-07-31 (rev 575) -->
 
@@ -501,6 +501,7 @@ NNNN-problem-slug/
 | 974 | [Subarray Sums Divisible By K](0974-subarray-sums-divisible-by-k/) | Medium | Python |
 | 1590 | [Make Sum Divisible By P](1590-make-sum-divisible-by-p/) | Medium | Python |
 | 2848 | [Points That Intersect With Cars](2848-points-that-intersect-with-cars/) | Easy | Python |
+| 1094 | [Car Pooling](1094-car-pooling/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -653,3 +654,4 @@ NNNN-problem-slug/
 - 2026-07-29: make sum divisible by p, shifted remainder lookup keeping the latest index.
 - 2026-07-30: corporate flight bookings, difference array so each range update is two writes.
 - 2026-07-31: points that intersect with cars, same diff array read as a predicate instead of a total.
+- 2026-07-31: car pooling, occupancy checked inside the sweep with the drop-off cancel at end not end+1.
