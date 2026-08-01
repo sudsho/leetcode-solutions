@@ -15,6 +15,15 @@ rolling notes
   writes (+v at l, -v at r+1), one accumulate at the end rebuilds the values
   (1109). pick by which op is hot: hot queries -> prefix sums, hot range
   updates -> diff array, both hot -> fenwick (307, 308).
+  precondition is that the update composes additively and order-independently,
+  not just that it's a range update - 2381 works because letter shifts add.
+  the two writes are fixed, three things vary:
+  - where the close goes: inclusive range -> r+1 (1109, 2848, 2381), half-open
+    -> r (1094, drop-offs happen AT end). read it per problem, don't reuse.
+  - what the accumulator means: the answer (1109), a covered flag (2848), a
+    live constraint checked inside the loop (1094), an offset mod 26 (2381).
+  - whether the coordinate space is indexable. small fixed bound -> array;
+    otherwise merge intervals (2848) or a min-heap of open ranges (1094).
 - tarjan low-link refresher.
 - another way to think about kth smallest with two heaps.
 - offline + sort queries trick for max-XOR-with-threshold.
