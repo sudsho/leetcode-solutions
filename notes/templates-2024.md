@@ -24,6 +24,11 @@ rolling notes
     live constraint checked inside the loop (1094), an offset mod 26 (2381).
   - whether the coordinate space is indexable. small fixed bound -> array;
     otherwise merge intervals (2848) or a min-heap of open ranges (1094).
+    if it's genuinely unbounded (10^9) don't build the array at all - the
+    value at t is just (starts <= t) - (ends already closed), so sort the two
+    endpoint lists and binary search per query (2251). the inclusive/half-open
+    call reappears as bisect_right on starts vs bisect_left on ends. pick the
+    counting version for "how many", the heap sweep for "which".
 - tarjan low-link refresher.
 - another way to think about kth smallest with two heaps.
 - offline + sort queries trick for max-XOR-with-threshold.
