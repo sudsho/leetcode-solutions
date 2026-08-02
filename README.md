@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (485)
+## Solved (486)
 
-<!-- last touched: 2026-07-31 (rev 575) -->
+<!-- last touched: 2026-08-02 (rev 576) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -503,6 +503,7 @@ NNNN-problem-slug/
 | 2848 | [Points That Intersect With Cars](2848-points-that-intersect-with-cars/) | Easy | Python |
 | 1094 | [Car Pooling](1094-car-pooling/) | Medium | Python |
 | 2381 | [Shifting Letters Ii](2381-shifting-letters-ii/) | Medium | Python |
+| 2251 | [Number Of Flowers In Full Bloom](2251-number-of-flowers-in-full-bloom/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -657,3 +658,4 @@ NNNN-problem-slug/
 - 2026-07-31: points that intersect with cars, same diff array read as a predicate instead of a total.
 - 2026-07-31: car pooling, occupancy checked inside the sweep with the drop-off cancel at end not end+1.
 - 2026-07-31: shifting letters ii, diff array over a string since letter shifts compose additively.
+- 2026-08-02: number of flowers in full bloom, coordinates too wide for an array so the prefix gets binary searched instead.
