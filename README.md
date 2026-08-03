@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (486)
+## Solved (487)
 
-<!-- last touched: 2026-08-02 (rev 576) -->
+<!-- last touched: 2026-08-03 (rev 577) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -504,6 +504,7 @@ NNNN-problem-slug/
 | 1094 | [Car Pooling](1094-car-pooling/) | Medium | Python |
 | 2381 | [Shifting Letters Ii](2381-shifting-letters-ii/) | Medium | Python |
 | 2251 | [Number Of Flowers In Full Bloom](2251-number-of-flowers-in-full-bloom/) | Medium | Python |
+| 2406 | [Divide Intervals Into Minimum Number Of Groups](2406-divide-intervals-into-minimum-number-of-groups/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -659,3 +660,4 @@ NNNN-problem-slug/
 - 2026-07-31: car pooling, occupancy checked inside the sweep with the drop-off cancel at end not end+1.
 - 2026-07-31: shifting letters ii, diff array over a string since letter shifts compose additively.
 - 2026-08-02: number of flowers in full bloom, coordinates too wide for an array so the prefix gets binary searched instead.
+- 2026-08-03: divide intervals into minimum groups, the accumulator read as a running maximum for the first time.
