@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (487)
+## Solved (488)
 
-<!-- last touched: 2026-08-03 (rev 577) -->
+<!-- last touched: 2026-08-04 (rev 578) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -290,6 +290,7 @@ NNNN-problem-slug/
 | 691 | [Stickers To Spell Word](0691-stickers-to-spell-word/) | Hard | Python |
 | 692 | [Top K Frequent Words](0692-top-k-frequent-words/) | Medium | Python |
 | 695 | [Max Area Of Island](0695-max-area-of-island/) | Medium | Python |
+| 699 | [Falling Squares](0699-falling-squares/) | Hard | Python |
 | 700 | [Search In A Binary Search Tree](0700-search-in-a-binary-search-tree/) | Easy | Python |
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
@@ -661,3 +662,4 @@ NNNN-problem-slug/
 - 2026-07-31: shifting letters ii, diff array over a string since letter shifts compose additively.
 - 2026-08-02: number of flowers in full bloom, coordinates too wide for an array so the prefix gets binary searched instead.
 - 2026-08-03: divide intervals into minimum groups, the accumulator read as a running maximum for the first time.
+- 2026-08-04: falling squares, the update reads the state it writes so the accumulator stops working and it needs a tree.
