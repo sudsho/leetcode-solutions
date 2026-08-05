@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (488)
+## Solved (489)
 
-<!-- last touched: 2026-08-04 (rev 578) -->
+<!-- last touched: 2026-08-05 (rev 579) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -367,6 +367,7 @@ NNNN-problem-slug/
 | 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
+| 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
 | 1147 | [Longest Chunked Palindrome Decomposition](1147-longest-chunked-palindrome-decomposition/) | Hard | Python |
 | 2858 | [Minimum Edge Reversals So Every Node Is Reachable](2858-minimum-edge-reversals-so-every-node-is-reachable/) | Hard | Python |
 | 3171 | [Find Subarray With Bitwise Or Closest To K](3171-find-subarray-with-bitwise-or-closest-to-k/) | Hard | Python |
@@ -663,3 +664,4 @@ NNNN-problem-slug/
 - 2026-08-02: number of flowers in full bloom, coordinates too wide for an array so the prefix gets binary searched instead.
 - 2026-08-03: divide intervals into minimum groups, the accumulator read as a running maximum for the first time.
 - 2026-08-04: falling squares, the update reads the state it writes so the accumulator stops working and it needs a tree.
+- 2026-08-05: amount of new area painted each day, the count is computable and useless because the question is about attribution.
