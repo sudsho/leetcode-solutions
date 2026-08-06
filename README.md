@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (489)
+## Solved (490)
 
-<!-- last touched: 2026-08-05 (rev 579) -->
+<!-- last touched: 2026-08-06 (rev 580) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -403,6 +403,7 @@ NNNN-problem-slug/
 | 928 | [Minimize Malware Spread Ii](0928-minimize-malware-spread-ii/) | Hard | Python |
 | 3022 | [Minimize Or Of Remaining Elements Using Operations](3022-minimize-or-of-remaining-elements-using-operations/) | Hard | Python |
 | 1801 | [Number Of Orders In The Backlog](1801-number-of-orders-in-the-backlog/) | Medium | Python |
+| 2536 | [Increment Submatrices By One](2536-increment-submatrices-by-one/) | Medium | Python |
 | 2538 | [Difference Between Maximum And Minimum Price Sum](2538-difference-between-maximum-and-minimum-price-sum/) | Hard | Python |
 | 3203 | [Find Minimum Diameter After Merging Two Trees](3203-find-minimum-diameter-after-merging-two-trees/) | Hard | Python |
 | 2127 | [Maximum Employees To Be Invited To A Meeting](2127-maximum-employees-to-be-invited-to-a-meeting/) | Hard | Python |
@@ -665,3 +666,4 @@ NNNN-problem-slug/
 - 2026-08-03: divide intervals into minimum groups, the accumulator read as a running maximum for the first time.
 - 2026-08-04: falling squares, the update reads the state it writes so the accumulator stops working and it needs a tree.
 - 2026-08-05: amount of new area painted each day, the count is computable and useless because the question is about attribution.
+- 2026-08-06: increment submatrices by one, the 2d diff array is the 1d one run per axis and the corner writes are inclusion-exclusion.
