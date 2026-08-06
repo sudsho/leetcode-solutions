@@ -1588,3 +1588,19 @@ the row-wise alt is the useful one for a different reason. run a plain 1d diff a
 closing writes at r2+1 and c2+1, inclusive bounds. seventh syntax for that and the first time it's appeared twice inside one function. two independent copies of the same call in the same place is actually reassuring - it means the decision belongs to the range semantics, not to the dimension count, which is what i've been claiming all week without a clean example of it.
 
 dropped the fourth corner write on the first attempt and the examples still passed. worth remembering why: it doesn't corrupt the rectangle, it corrupts everything south-east of it, and a small hand-checked grid usually has nothing there.
+
+afternoon, second one: 1526, minimum number of increments on subarrays to form a target array. picked it because after this morning i wanted to know whether i actually understand the map or just the direction i keep running it in.
+
+every problem in the family so far has gone forward - here's a pile of range updates, tell me what array they accumulate to. this one hands you the array and asks for the cheapest pile of updates that makes it. and the reason that's even answerable is a fact i've been leaning on all week without once saying out loud: the difference array is a bijection. array with an implied zero boundary determines its deltas, deltas determine it back. that's the actual license for two writes standing in for a whole range, and here it stops being background and becomes the whole problem.
+
+so an op on [l,r] writes +1 to d[l] and -1 to d[r+1] and nothing else, d is pinned by the target, and d[i] = (ops starting at i) - (ops ending at i-1). second term is never negative so at least d[i] ops start at i. every op starts exactly once. total >= sum of the positive deltas, and that's the answer.
+
+what struck me is that nothing gets simulated to get there. no sweep, no state, no accumulator running along the array. the bound is forced by what a single update is *allowed to write*, and it exists before any construction does. that's a different kind of argument than anything else this week and it's the first one where the technique gave me a lower bound rather than a computation.
+
+the negative deltas being free took a minute to see and it's the same nesting fact as always - a close can always pair with something already open, so only opens are ever paid for.
+
+wrote the divide and conquer version first, the flatten-to-the-min-then-split one. it's O(n^2) as i wrote it, O(n log n) with a sparse table, and the three line answer beats both. kept it for the usual reason and this is the fifth day running that same reason has picked the alt: it knows why each operation exists, and the linear version has collapsed that into a number. difference this time is that in 2251/2406/699/2158 the summary-vs-set call was justifying a slower *structure* against some hypothetical follow-up. here the fast version has no structure at all, it's three lines, so the alt is the only thing between the answer and a number i can't explain.
+
+third version builds the ops so the bound is achievable rather than just asserted. stack of open starts, positive delta pushes, negative delta pops most-recent-first. LIFO isn't convenience - two ops over one delta sequence are nested or disjoint, never crossing, so the stack never has a choice to make. it's O(answer) not O(n), which is worth flagging since the target can be 10^5 everywhere.
+
+target[0] as the leading term is d[0] = target[0] - 0. same implied zero boundary that's been putting the closing write one past the end since 1109. two problems today that both turned out to be about that boundary from different sides.

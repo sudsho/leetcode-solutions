@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (490)
+## Solved (491)
 
-<!-- last touched: 2026-08-06 (rev 580) -->
+<!-- last touched: 2026-08-06 (rev 581) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -348,6 +348,7 @@ NNNN-problem-slug/
 | 1473 | [Paint House Iii](1473-paint-house-iii/) | Hard | Python |
 | 1483 | [Kth Ancestor Of A Tree Node](1483-kth-ancestor-of-a-tree-node/) | Hard | Python |
 | 1492 | [Kth Factor Of N](1492-kth-factor-of-n/) | Medium | Python |
+| 1526 | [Minimum Number Of Increments On Subarrays To Form A Target Array](1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard | Python |
 | 1531 | [String Compression Ii](1531-string-compression-ii/) | Hard | Python |
 | 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |
 | 1547 | [Minimum Cost To Cut A Stick](1547-minimum-cost-to-cut-a-stick/) | Hard | Python |
@@ -667,3 +668,4 @@ NNNN-problem-slug/
 - 2026-08-04: falling squares, the update reads the state it writes so the accumulator stops working and it needs a tree.
 - 2026-08-05: amount of new area painted each day, the count is computable and useless because the question is about attribution.
 - 2026-08-06: increment submatrices by one, the 2d diff array is the 1d one run per axis and the corner writes are inclusion-exclusion.
+- 2026-08-06: minimum number of increments to form a target array, the same map read backwards since the diff array is a bijection.
