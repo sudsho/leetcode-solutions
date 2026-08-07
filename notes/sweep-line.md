@@ -50,3 +50,26 @@ d[i] = (ops starting at i) - (ops ending at i-1)
 second term is never negative, every op starts exactly once, so the count is at least the sum of the positive deltas - and that is achievable, closes always pair against something already open (1526).
 
 worth separating from everything above: this is the only one so far that gives a **lower bound** rather than a computation. nothing is swept and no state exists, the count is forced by what a single update is permitted to write. and the negative deltas being free is the same nesting fact that makes a LIFO stack the right way to reconstruct the actual ops.
+
+## the inverse direction, with the width fixed
+
+1526 leaves the operation width free and asks for the cheapest multiset. fix the width at `k` and the question changes kind entirely (2772).
+
+index 0 is reachable only by an operation starting at 0, so that count is pinned. that settles what index 1 still owes, and only an operation starting at 1 can reach it, so that count is pinned too. induction runs the array. **there is exactly one candidate multiset**, so there is nothing to minimize and the problem can only ask whether the candidate is legal.
+
+worth being careful with the word greedy here. i have been using it all week for these sweeps and it is wrong for this one - greedy means choosing well at each step, and there is never a second option to pass over. the sweep does not construct the multiset, it checks the forced one.
+
+two illegal outcomes:
+
+- `remaining < 0` - operations in flight overshot, and nothing recovers it because every operation only subtracts.
+- `i + k > n` - the position still owes something and no window covering it fits.
+
+the second is the one that connects back. "negative deltas are free, a close pairs against anything already open" is a claim about having freedom in where the close goes. fixing the width removes that freedom - the close is at `i + k` and nowhere else. so the same fact that made 1526's lower bound *achievable* is the fact that lets this one fail outright. first time the half-open boundary is a source of infeasibility rather than an off-by-one to get right.
+
+## what the state has to be, versus what the argument is
+
+2772 and 995 are the same forcing argument with different state. 995: a bit still reading 0 at `i` can only be fixed by opening a window at `i`. 2772: a position still owing at `i` can only be served by opening a window at `i`.
+
+flips compose mod 2, so 995 carries a **parity** (deque length & 1). decrements compose over the integers, so 2772 carries a **count**. the argument does not notice the difference.
+
+so the reusable half is: *if the leftmost unsatisfied position has only one operation that can still reach it, the multiset is forced and no search is needed.* what the accumulator holds is decided afterwards by the group the updates live in. that is the same split as the taxonomy above - two writes and an accumulate is the technique, what the accumulated value means is the problem's business.
