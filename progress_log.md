@@ -1604,3 +1604,23 @@ wrote the divide and conquer version first, the flatten-to-the-min-then-split on
 third version builds the ops so the bound is achievable rather than just asserted. stack of open starts, positive delta pushes, negative delta pops most-recent-first. LIFO isn't convenience - two ops over one delta sequence are nested or disjoint, never crossing, so the stack never has a choice to make. it's O(answer) not O(n), which is worth flagging since the target can be 10^5 everywhere.
 
 target[0] as the leading term is d[0] = target[0] - 0. same implied zero boundary that's been putting the closing write one past the end since 1109. two problems today that both turned out to be about that boundary from different sides.
+
+## 2026-08-07
+
+friday. wanted the same backwards question as yesterday with one thing taken away, so 2772, apply operations to make all array elements equal to zero. every operation is a k-wide decrement, k fixed, and the question is just whether the array can be cleared.
+
+taking the width away is the whole thing. in 1526 an op could be any width, which is why there were many multisets producing the target and why "which is smallest" was a sensible question. fix the width and index 0 can only be reached by an op starting at 0, so that count is pinned to nums[0]. that settles what index 1 still owes, and only an op starting at 1 can reach it, so that's pinned too. induction runs the length of the array and there is exactly one candidate multiset.
+
+so there's nothing to minimize and that's why it returns a bool. i've been calling these sweeps greedy all week and here that word is actually wrong - greedy means choosing well at each step and there is never a second option to pass over. the algorithm doesn't pick the forced multiset, it just checks whether the forced multiset is legal.
+
+two ways it isn't. remaining goes negative, meaning the ops already in flight overshot and nothing lifts it back since every op only subtracts. or the position still owes something and i + k runs past the end.
+
+the second one is the interesting failure. yesterday i wrote down that negative deltas are free because a close can always be paired against something already open. that's a statement about having freedom in where the close goes, and fixing the width destroys it - the close lands at i+k and nowhere else. so the same fact that made 1526's bound achievable is the fact that makes this one able to fail outright. eighth syntax for the half-open boundary in about a week and the first time it's a source of infeasibility rather than an off-by-one to get right.
+
+it's 995 with the state changed and the argument untouched. there the only way to fix a bit still reading 0 at i was to open a window at i, same forcing. flips compose mod 2 so that one carried a parity, decrements compose over the integers so this carries a count. nice to see which half of an argument is load-bearing.
+
+alt returns the ops instead of the bool. wrote it because determinism is easier to see than to argue - what comes back isn't a solution, it's the solution, two callers can't disagree. and it flips the summary-vs-set call that's picked the alt six days running now. the previous five the summary was enough and the set was kept for some hypothetical follow-up. here the set is what the computation actually produces and the bool is the lossy thing on top of it.
+
+kept the O(n*k) subtract-across-a-working-copy version too. too slow for the constraints, but the primary's counter is literally that inner subtraction deferred, and it makes the tail condition obvious - the loop stops at n-k so the last k-1 positions never get an op of their own and have to reach zero as a side effect. i + k > n is that same statement made one index at a time.
+
+got the test harness wrong before the solution, which was mildly annoying. replayed the returned op counts to check they clear the array and indexed past the end on the trailing zero-count entries. the solution never writes there because a nonzero count already implies the window fits; the replay didn't know that.
