@@ -27,10 +27,24 @@ class _RangeAssignMaxTree:
         self.lazy = [None] * (4 * size)
 
     def _apply(self, node, value):
+        """Stamp `value` over this node's whole span.
+
+        The tag *replaces* whatever tag is already here rather than combining
+        with it. That is the one line where an assign tree differs from an add
+        tree, where the tag would have to accumulate instead. Writing the
+        composing version by habit still passes small tests, since the two
+        disagree only when a second assign reaches a node before the first has
+        been pushed down.
+        """
         self.tree[node] = value
         self.lazy[node] = value
 
     def _push(self, node):
+        """Hand this node's pending assignment to both children.
+
+        Called before descending, so a child is never read or written while an
+        ancestor still holds a tag that outranks it.
+        """
         if self.lazy[node] is not None:
             self._apply(2 * node + 1, self.lazy[node])
             self._apply(2 * node + 2, self.lazy[node])
