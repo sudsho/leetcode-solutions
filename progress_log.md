@@ -1624,3 +1624,23 @@ alt returns the ops instead of the bool. wrote it because determinism is easier 
 kept the O(n*k) subtract-across-a-working-copy version too. too slow for the constraints, but the primary's counter is literally that inner subtraction deferred, and it makes the tail condition obvious - the loop stops at n-k so the last k-1 positions never get an op of their own and have to reach zero as a side effect. i + k > n is that same statement made one index at a time.
 
 got the test harness wrong before the solution, which was mildly annoying. replayed the returned op counts to check they clear the array and indexed past the end on the trailing zero-count entries. the solution never writes there because a nonzero count already implies the window fits; the replay didn't know that.
+
+## 2026-08-09
+
+sunday, one problem, late afternoon. 2528, maximize the minimum powered city. picked it because friday ended on "fixing the width takes the choice away" and i wanted to know whether that's actually about the width.
+
+it isn't. the width is fixed here too - every station covers exactly 2r+1 cities, same rigid window as 2772 - and the choice is completely back. what friday's problem was really leaning on was the target being an equality. clear the array *exactly*, so serving position i from anywhere left of i overshoots something already settled, and overshoot can't be undone because every op subtracts. that's what pinned the placement, not the width.
+
+change the target to `power[i] >= x` and the whole thing loosens. a station serving city i can sit anywhere in [i-r, i+r]. everything left of i is already satisfied and more power can't hurt it. so there's no forcing left and the argument turns into an exchange - all legal placements cover i, the rightmost one also covers the most of what's still ahead, nothing behind objects. push right.
+
+worth being honest that this is a weaker result than the one i wrote down friday. 2772 gave a unique multiset. this gives one optimal placement among many, and i can't check it the way i checked that one. friday's reconstruction was verifiable by having two callers agree, because there was nothing to disagree about. here two correct implementations can return different placements. so the test replays it instead - build what it says, recompute every city's power, check the minimum lands where claimed and the budget held. plus brute force over every distribution of k on small inputs, which is the only thing that actually tests the greedy rather than the arithmetic.
+
+the other new thing is the layer. everything for a week and a half has been: sweep the array, the accumulator is the answer. this one is a maximin and the sweep can't produce it. binary search on x turns it into "is x feasible on budget k", that predicate is monotone, and the predicate is the same sweep as always. so the difference array stopped being the algorithm and became the oracle inside one. that's the first time it's shown up as a subroutine rather than the whole thing, and it's a better argument for why the technique is worth having than any of the standalone uses.
+
+two failure modes from friday just evaporated and it's clean why. `remaining < 0` needed an exact target. the window falling off the end needed the placement pinned. neither survives, so the only way to fail is running out of budget, and the check is one running total against k. ninth syntax for the closing index, `min(i + r, n - 1) + r + 1`.
+
+that clamp is the one detail i'd have called a boundary patch a week ago. it isn't - it's the statement that stations go in cities, and it self-justifies: if i + r >= n then i > n - 1 - r, so the last city is within r of i regardless. the window never needs to be truncated because there was never a placement outside the array to consider.
+
+kept the linear scan alternate, targets one at a time instead of bisecting. way too slow, and the reason is the same reason as the last six days but pointing somewhere new. the primary fuses two independent ideas - the sweep is a feasibility test, the monotonicity is a separate claim about that test. bisection hides the second one. if the predicate weren't downward closed the binary search would return something confident and wrong, whereas the scan would just stop at the first no. wanted the assumption written where it could be seen.
+
+left the unspent budget unspent, which looked like a bug until i wrote down why. anything built after the sweep is satisfied lifts some city above the minimum and can't lift the minimum. invisible to the objective. the greedy isn't trying to spend k, it's trying to certify x.
