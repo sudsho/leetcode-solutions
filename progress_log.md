@@ -1644,3 +1644,21 @@ that clamp is the one detail i'd have called a boundary patch a week ago. it isn
 kept the linear scan alternate, targets one at a time instead of bisecting. way too slow, and the reason is the same reason as the last six days but pointing somewhere new. the primary fuses two independent ideas - the sweep is a feasibility test, the monotonicity is a separate claim about that test. bisection hides the second one. if the predicate weren't downward closed the binary search would return something confident and wrong, whereas the scan would just stop at the first no. wanted the assumption written where it could be seen.
 
 left the unspent budget unspent, which looked like a bug until i wrote down why. anything built after the sweep is satisfied lifts some city above the minimum and can't lift the minimum. invisible to the objective. the greedy isn't trying to spend k, it's trying to certify x.
+
+## 2026-08-10
+
+monday, one problem, mid afternoon. 1552, magnetic force between two balls. wanted the same shape as yesterday one more time to see which parts of it were actually the technique and which parts i had just memorized.
+
+the technique transferred whole. maximin, the sweep can't produce it, bisect on the answer, the pass becomes a feasibility oracle. wrote the outer loop without thinking about it, which is the first time that's happened with this shape.
+
+the direction didn't transfer, and that's the useful bit. yesterday the greedy pushed right. today it pulls left. i spent a while assuming i had one of them backwards before noticing they're the same argument - leave the most freedom for whatever hasn't been decided yet - and the direction only flips because the thing extending forward changes sign. in 2528 it's coverage, which is a benefit, so more of it costs nothing. here it's the occupied prefix, which is a cost, and every unit of line spent behind is a unit the remaining balls can't have. so there was never a direction to memorize, only a sign to read off.
+
+one place they genuinely differ though. yesterday's direction was forced - pull left in 2528 and you lose solutions, because a station left of i covers less of what's ahead and gains nothing back. today's isn't. reflect the coordinates and the rightmost-anchored greedy is exactly as correct, since distance is symmetric and nothing in the objective picks an end. put that in as maxDistanceMirrored rather than a comment, because it's the sort of claim i'd like to hear about immediately if i've misread it.
+
+the feasibility pass is two exchange claims and i ran them together on the first pass. the anchor - some optimal arrangement uses position[0] - and the step - take the earliest legal spot. they're separate. the anchor is a slide argument on one gap, the step is about the length of the suffix left over. writing them apart made the second one obvious and the first one slightly less so than i'd assumed.
+
+sorting matters here in a way it didn't yesterday. 2528 handed me the geometry in index order, city i at index i, so "further right" was a fact about the array. this is an unordered pile of coordinates and "as early as possible" is meaningless until the order exists. also only adjacent gaps get checked, which is the whole reason the pass is linear - once sorted, anything non-adjacent is separated by at least the sum of what's between it.
+
+the pigeonhole upper bound removed a guard instead of adding one, which was a small pleasure after a week of patching boundaries after the fact. m balls in a span of W leave m-1 gaps summing to at most W. and since the positions are distinct integers the span is at least n-1 >= m-1, so the bound never drops below low=1 and the range can't come out empty. no special case for it.
+
+placement alternate again, eighth day, same verdict as yesterday and now with a name for why. the witness isn't canonical because the mirror produces a different one, so callers can't be compared on placements. but they must agree on the gap, and checking two directions against each other is a better test than replaying one greedy against itself. kept the m == n shortcut separate too - it's the only input where the greedy makes no decision at all, which makes it the cleanest thing to check the general path against.

@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (493)
+## Solved (494)
 
-<!-- last touched: 2026-08-09 (rev 583) -->
+<!-- last touched: 2026-08-10 (rev 584) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -371,6 +371,7 @@ NNNN-problem-slug/
 | 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
 | 2772 | [Apply Operations To Make All Array Elements Equal To Zero](2772-apply-operations-to-make-all-array-elements-equal-to-zero/) | Medium | Python |
 | 2528 | [Maximize The Minimum Powered City](2528-maximize-the-minimum-powered-city/) | Hard | Python |
+| 1552 | [Magnetic Force Between Two Balls](1552-magnetic-force-between-two-balls/) | Medium | Python |
 | 1147 | [Longest Chunked Palindrome Decomposition](1147-longest-chunked-palindrome-decomposition/) | Hard | Python |
 | 2858 | [Minimum Edge Reversals So Every Node Is Reachable](2858-minimum-edge-reversals-so-every-node-is-reachable/) | Hard | Python |
 | 3171 | [Find Subarray With Bitwise Or Closest To K](3171-find-subarray-with-bitwise-or-closest-to-k/) | Hard | Python |
@@ -673,3 +674,4 @@ NNNN-problem-slug/
 - 2026-08-06: minimum number of increments to form a target array, the same map read backwards since the diff array is a bijection.
 - 2026-08-07: apply operations to make all elements zero, fixing the window width removes the choice so it stops being a minimization.
 - 2026-08-09: maximize the minimum powered city, the width stays fixed but an inequality target hands the choice back and the sweep drops to being a feasibility oracle.
+- 2026-08-10: magnetic force between two balls, the same binary-search-over-a-greedy as 2528 with the direction reversed because the thing pushed forward is a cost now instead of a benefit.
