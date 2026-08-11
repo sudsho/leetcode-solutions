@@ -1662,3 +1662,27 @@ sorting matters here in a way it didn't yesterday. 2528 handed me the geometry i
 the pigeonhole upper bound removed a guard instead of adding one, which was a small pleasure after a week of patching boundaries after the fact. m balls in a span of W leave m-1 gaps summing to at most W. and since the positions are distinct integers the span is at least n-1 >= m-1, so the bound never drops below low=1 and the range can't come out empty. no special case for it.
 
 placement alternate again, eighth day, same verdict as yesterday and now with a name for why. the witness isn't canonical because the mirror produces a different one, so callers can't be compared on placements. but they must agree on the gap, and checking two directions against each other is a better test than replaying one greedy against itself. kept the m == n shortcut separate too - it's the only input where the greedy makes no decision at all, which makes it the cleanest thing to check the general path against.
+
+## 2026-08-11
+
+tuesday, one problem, late afternoon. 2064, minimized maximum of products distributed to any store. picked it wanting the same outer loop a third time, mostly to find out whether the last two days had taught me a technique or just two problems.
+
+they'd taught me two problems. the outer loop went in without thinking again, and then i sat waiting for the greedy and there isn't one. the predicate is sum(ceil(q_i/x)) <= n. arithmetic.
+
+which retroactively reframes both of the last two days. i had been treating the exchange argument as though it came bundled with binary-search-on-the-answer - like the shape arrives with a greedy attached and the work is figuring out which way it points. it doesn't. the shape is two things, a monotone predicate and a bisect that finds its boundary, and everything past that is just whatever answering the predicate happens to take. it took a greedy twice in a row, i spent two days on the hardest part of those two problems, and i filed the hard part under the wrong heading. that's the real thing from today and it's a correction rather than an addition.
+
+worth naming what buys the collapse, because it reads like a restriction rather than a gift. a store carries at most one product type. so products never compete for a store, the cost is additive over them, and the predicate decomposes. if stores could mix, feasibility would be a bin-packing question and none of this holds up. i read past that line the first time as a constraint to work around.
+
+the lemma underneath is one inversion. q units over k stores leaves the fullest holding at least ceil(q/k) by pigeonhole, and an even split hits it exactly, so the best possible max for one product on k stores *is* ceil(q/k) - not bounded by, equal to. then ceil(q/k) <= x iff q <= kx iff k >= ceil(q/x). that's the whole solution. no search inside the search, which is what the last two days both had.
+
+and monotonicity came free for the first time. 2528 and 1552 both needed the exchange argument settled before i could even claim the predicate was monotone. here it's ceil(q/x) shrinking as x grows. i notice that's the part i've been least careful about - bisection returns something confident whether or not the predicate is actually monotone, and twice now the proof of monotonicity was doing more work than the bisection was.
+
+the bisection form flipped and i wrote it wrong first. yesterday was (low+high+1)//2 with low=mid, today is (low+high)//2 with high=mid. it isn't about maximizing versus minimizing, it's about which side keeps mid - the half that keeps it has to be the one that shrinks, so the rounding goes toward the other end. two days of thinking of that as a per-problem detail to remember.
+
+upper bound is max(quantities) and it's always feasible, since the sum degenerates to m ones and m <= n is promised. so no empty-range guard. second day in a row a bound has removed a case instead of adding one, and it's the same cause both times: derived from the structure rather than picked big enough to be safe. also the unused stores, which looked wrong until i remembered writing the same paragraph about 2528's unspent budget. an extra store lifts nothing and the objective only reads the fullest one.
+
+ninth day of the summary-vs-set split, third straight time the witness isn't canonical, first time for a new reason. 1552's ambiguity was symmetry - the mirror gave an equally good placement and nothing picked an end. this one is slack. the counts only have to sum to at most n, so a spare store can go to something that isn't the bottleneck, its load drops, the max doesn't move. so what i return is the minimal counts, not the counts.
+
+kept a heap alternate that hands out the n-m spare stores one at a time to whatever currently has the worst even-split load. slower than the bisect on any realistic input. kept it anyway because the last two days both ended with two callers that shared their inner loop, and i'd been counting their agreement as a cross-check when it mostly wasn't one. this one shares no predicate, no ceiling sum, no monotonicity claim. when it agrees, that's evidence.
+
+also got a test expectation wrong from memory and let the assert catch it rather than reasoning about it, which was the right order for once.
