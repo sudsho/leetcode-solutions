@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (495)
+## Solved (496)
 
-<!-- last touched: 2026-08-11 (rev 585) -->
+<!-- last touched: 2026-08-12 (rev 586) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -295,6 +295,7 @@ NNNN-problem-slug/
 | 704 | [Binary Search](0704-binary-search/) | Easy | Python |
 | 707 | [Design Linked List](0707-design-linked-list/) | Easy | Python |
 | 715 | [Range Module](0715-range-module/) | Hard | Python |
+| 719 | [Find K Th Smallest Pair Distance](0719-find-k-th-smallest-pair-distance/) | Hard | Python |
 | 729 | [My Calendar I](0729-my-calendar-i/) | Medium | Python |
 | 731 | [My Calendar Ii](0731-my-calendar-ii/) | Medium | Python |
 | 739 | [Daily Temperatures](0739-daily-temperatures/) | Medium | Python |
@@ -677,3 +678,4 @@ NNNN-problem-slug/
 - 2026-08-09: maximize the minimum powered city, the width stays fixed but an inequality target hands the choice back and the sweep drops to being a feasibility oracle.
 - 2026-08-10: magnetic force between two balls, the same binary-search-over-a-greedy as 2528 with the direction reversed because the thing pushed forward is a cost now instead of a benefit.
 - 2026-08-11: minimized maximum of products distributed to any store, the predicate is a ceiling sum with no greedy inside it so the exchange argument turns out never to have been part of the technique.
+- 2026-08-12: find k-th smallest pair distance, the predicate counts instead of deciding so the answer needs an attainment argument for the first time, and it comes free from the boundary being a jump in the count.

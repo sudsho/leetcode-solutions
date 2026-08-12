@@ -1686,3 +1686,23 @@ ninth day of the summary-vs-set split, third straight time the witness isn't can
 kept a heap alternate that hands out the n-m spare stores one at a time to whatever currently has the worst even-split load. slower than the bisect on any realistic input. kept it anyway because the last two days both ended with two callers that shared their inner loop, and i'd been counting their agreement as a cross-check when it mostly wasn't one. this one shares no predicate, no ceiling sum, no monotonicity claim. when it agrees, that's evidence.
 
 also got a test expectation wrong from memory and let the assert catch it rather than reasoning about it, which was the right order for once.
+
+## 2026-08-12
+
+wednesday, one problem, mid afternoon. 719, find k-th smallest pair distance. fourth day on the same outer loop, and this time deliberately - yesterday ended on "the shape is a monotone predicate plus a bisect, everything else is whatever answering the predicate takes", and i wanted a predicate that wasn't a feasibility question to see whether that survives.
+
+it survives, but it's incomplete in a way i couldn't have seen from the last three.
+
+the predicate here counts. c(x) = how many pairs sit within x. and because it counts rather than decides, the boundary means something different. the last three all asked for the smallest x that can be done, so "achievable" was the question being asked and the answer being achievable never needed an argument. this asks for an order statistic of a multiset with n(n-1)/2 elements in it, which is a different sort of object entirely, and i'm not building that multiset.
+
+the bridge is that c is the cdf of the distance multiset, so the k-th smallest is where c first reaches k. fine. the part i nearly missed: i bisect over every integer in [0, max-min] and most of those aren't distances between any two elements. so the boundary can land on a value nothing realizes, or at least nothing in the setup forbids it. it can't - if x is minimal with c(x) >= k then c(x-1) < k, so c jumped at x, so some pair is exactly x apart. searching a set bigger than the set of possible answers is repaired by the predicate rather than by the range. first time in four days the answer needed attainment proved and the first time the search space was strictly too big.
+
+second thing, and this is the one that actually cost me time. there are two monotonicity claims in here and i had them fused. the outer one is c non-decreasing in the limit, which is what the bisect leans on. the inner one is left never moving backwards as right advances, which is what makes the counting pass linear instead of quadratic. different variables, neither implies the other, and the inner one would still hold if i only ever called the predicate once. i've been reading "monotone" as a single property of the setup for three days and it's two unrelated facts that happen to share a word.
+
+bounds needed no guard for the third day running. low=0 is legal even when no pair is at distance zero - it just fails and the search steps off it - and high = max-min is the largest element of the multiset so c(high) is everything. same cause as the last two days: read off the structure instead of picked big enough.
+
+tenth day of summary-vs-set and the third distinct reason for the witness not being canonical in four days. 1552 was symmetry, 2064 was slack, this is multiplicity. and this one's stronger than either - the answer is a value and every pair at that separation realizes it identically, so there's no canonical choice even available to define. the other two i could have picked one if i'd wanted to. so the tests check the property.
+
+kept the heap merge, which reads the distances as n-1 already-sorted lists and pops k times. slower on any k near the constraint ceiling and i kept it anyway, for a better reason than yesterday's: the two-pointer sweep is the piece i can't verify by staring at it, and a c that's wrong but still monotone would give me a confident wrong boundary with no symptom. so the sweep also gets checked directly against its definition, every limit from 0 to the spread, which is the assert i'd have skipped a week ago.
+
+walked every k from 1 to n(n-1)/2 on a few small arrays too. the "smallest x with c(x) >= k" phrasing is one off-by-one away from wrong and sampling one k wouldn't find it.
