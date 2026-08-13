@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (496)
+## Solved (497)
 
-<!-- last touched: 2026-08-12 (rev 586) -->
+<!-- last touched: 2026-08-13 (rev 587) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -347,6 +347,7 @@ NNNN-problem-slug/
 | 1411 | [Number Of Ways To Paint N X 3 Grid](1411-number-of-ways-to-paint-n-x-3-grid/) | Hard | Python |
 | 1463 | [Cherry Pickup Ii](1463-cherry-pickup-ii/) | Hard | Python |
 | 1473 | [Paint House Iii](1473-paint-house-iii/) | Hard | Python |
+| 1482 | [Minimum Number Of Days To Make M Bouquets](1482-minimum-number-of-days-to-make-m-bouquets/) | Medium | Python |
 | 1483 | [Kth Ancestor Of A Tree Node](1483-kth-ancestor-of-a-tree-node/) | Hard | Python |
 | 1492 | [Kth Factor Of N](1492-kth-factor-of-n/) | Medium | Python |
 | 1526 | [Minimum Number Of Increments On Subarrays To Form A Target Array](1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard | Python |
@@ -679,3 +680,4 @@ NNNN-problem-slug/
 - 2026-08-10: magnetic force between two balls, the same binary-search-over-a-greedy as 2528 with the direction reversed because the thing pushed forward is a cost now instead of a benefit.
 - 2026-08-11: minimized maximum of products distributed to any store, the predicate is a ceiling sum with no greedy inside it so the exchange argument turns out never to have been part of the technique.
 - 2026-08-12: find k-th smallest pair distance, the predicate counts instead of deciding so the answer needs an attainment argument for the first time, and it comes free from the boundary being a jump in the count.
+- 2026-08-13: minimum number of days to make m bouquets, the predicate can be false everywhere so four days of bounds needing no guard turns out to have been luck, and this is the first one whose failure is silent.

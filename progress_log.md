@@ -1706,3 +1706,23 @@ tenth day of summary-vs-set and the third distinct reason for the witness not be
 kept the heap merge, which reads the distances as n-1 already-sorted lists and pops k times. slower on any k near the constraint ceiling and i kept it anyway, for a better reason than yesterday's: the two-pointer sweep is the piece i can't verify by staring at it, and a c that's wrong but still monotone would give me a confident wrong boundary with no symptom. so the sweep also gets checked directly against its definition, every limit from 0 to the spread, which is the assert i'd have skipped a week ago.
 
 walked every k from 1 to n(n-1)/2 on a few small arrays too. the "smallest x with c(x) >= k" phrasing is one off-by-one away from wrong and sampling one k wouldn't find it.
+
+## 2026-08-13
+
+thursday, one problem, late afternoon. 1482, minimum number of days to make m bouquets. fifth day on the same outer loop and the first one where a bound actually needed a guard.
+
+four days in a row i wrote some version of "the bound came off the structure, no guard needed" and by yesterday i'd started treating that as a fact about the technique. it was a fact about the four problems. every one of them was feasible at the top of its range by construction - 2528 always powers every city given enough budget, 1552 always separates two balls, 2064 degenerates to one product per store, 719's multiset obviously contains a k-th element. so "the range is nonempty" and "an answer exists" were the same sentence and i kept getting the second one free without noticing i was taking it.
+
+here they come apart. m bouquets of k adjacent flowers need m*k flowers and waiting never produces a flower that wasn't already going to bloom. so if the garden is too small the predicate is monotone and constant false, and a bisect looking for a boundary that isn't there still returns something.
+
+that's the part worth the day. the failure is silent. drop the guard and low converges to high = max(bloomDay), which is in range and plausible and wrong. every bounds mistake i've made in this run so far announced itself - empty range, index off the end, an assert. this one just hands back a number. so the brute force in the tests is a linear scan with no bounds and no guard at all, which is the only thing that disagrees with the primary exactly where the guard would have been missing.
+
+and the guard isn't a case sitting beside the search, it's what makes the top of the range correct. max(bloomDay) is feasible *because* m*k <= n was already established. i wrote it as an early return and then spent a while convincing myself it wasn't a special case, which it isn't.
+
+the greedy inside the predicate turned out to need almost no argument. within a maximal run of L open flowers you get L//k however you place them, since each bouquet eats k and they can't overlap, so there's nothing to choose and leftmost is optimal by default. that puts this next to 2064 - a formula wearing a loop - rather than next to 2528 and 1552 where the exchange argument was most of the work. three of the five now have a trivial inner greedy. i think the interesting variation in this shape is entirely in the predicate and not at all in the bisect.
+
+yesterday's leftover: 719 searched a range strictly bigger than the set of possible answers and got rescued by the boundary being a jump in the count. here the two sets can be made to coincide, because the bloomed set only changes on days something blooms, so the predicate is piecewise constant and the answer is always an element of bloomDay. wrote the value-space bisect as an alternate. it makes the attainment question disappear instead of answering it, which is nicer, and it's also less general - it needs the pieces known ahead of time. kept the integer version as the primary for that reason.
+
+eleventh day of summary-vs-set and the first repeated reason for the witness not being canonical. symmetry, slack, multiplicity, and now slack again - a run with L % k != 0 has spare flowers and the bouquets slide inside it. the repeat is the thing i noticed. three distinct reasons in a row had me half expecting a fourth, like i was working through a list. slack is just the generic case: when the objective reads a threshold instead of the whole assignment, whatever's left over is free. symmetry and multiplicity were the special ones and i'd been reading them as the pattern.
+
+also had to cut the exhaustive day-by-day checks down to the small gardens after the 1e9 case sat there spinning. obvious in hindsight and a decent illustration of the gap - the search is log in the bloom day and verifying it directly is linear in it.
