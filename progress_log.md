@@ -1726,3 +1726,31 @@ yesterday's leftover: 719 searched a range strictly bigger than the set of possi
 eleventh day of summary-vs-set and the first repeated reason for the witness not being canonical. symmetry, slack, multiplicity, and now slack again - a run with L % k != 0 has spare flowers and the bouquets slide inside it. the repeat is the thing i noticed. three distinct reasons in a row had me half expecting a fourth, like i was working through a list. slack is just the generic case: when the objective reads a threshold instead of the whole assignment, whatever's left over is free. symmetry and multiplicity were the special ones and i'd been reading them as the pattern.
 
 also had to cut the exhaustive day-by-day checks down to the small gardens after the 1e9 case sat there spinning. obvious in hindsight and a decent illustration of the gap - the search is log in the bloom day and verifying it directly is linear in it.
+
+## 2026-08-15
+
+saturday, one problem, late morning. 774, minimize max distance to gas station. skipped friday, first gap in the run. sixth problem on the same outer loop and the first one where the answer isn't an integer.
+
+i went in expecting that to be a detail about the loop condition. it isn't. it changes what the bisect is allowed to claim.
+
+the setup is the same as always - a station only ever shortens a gap, so needed(x) <= k is upward closed and the bisect finds the boundary. predicate is a ceiling sum with the gaps independent, so no greedy inside it. that's four of six now with a trivial predicate and i'm fairly convinced the variation in this shape is entirely in what the predicate is and not at all in how it's answered.
+
+three things break when the search space is the reals and only the first one is the one people warn about.
+
+termination stops being free. low = mid + 1 on integers strictly shrinks the range every pass, so the loop terminating was a proof. on floats mid can round to low and then low = mid moves nothing and it spins. five days of `while low < high` and i never once thought about progress, because there was nothing to think about. went with a fixed hundred iterations rather than an eps, mostly because the eps form terminates here for a reason that lives in the coordinate constraint rather than in the algorithm, and i'd rather the loop not depend on the input being small.
+
+second, i don't return a point of the search space anymore. i return an endpoint of a bracket and claim the answer is inside it. correctness is a tolerance claim now.
+
+third and this is the actual day. the predicate is allowed to be wrong. every implementation of this i've seen counts with floor(d/x) instead of ceil(d/x)-1, and those differ - floor is one bigger at exact multiples. so the floor version calls infeasible something that's feasible, and the single point it gets wrong is the answer itself. floor-feasible is (ans, inf) where true feasible is [ans, inf).
+
+and it doesn't matter. the bisect never returns a member of the feasible set, it brackets the infimum, and a set and its closure have the same infimum. half-open at one point is invisible to a limit.
+
+that's the thing worth the day. the same substitution on any of the previous five would have been a wrong answer, because there the boundary was a point of the search space and moving one evaluation moved the answer by one. here the boundary is a limit, so the predicate can be wrong on any measure-zero set and nothing moves. what decides it is whether points have weight, and i'd have said "use eps instead of low<high" if asked what changes on the reals. put both counts in the file and asserted the disagreement is exactly the divisors, then asserted the two searches land on the same limit anyway.
+
+kept the greedy heap as the exact alternate. the penalty is max d_i/(c_i+1) and feeding the current argmax is optimal by exchange, so with Fraction keys it gives the answer exactly and not to within anything. i kept it for a specific reason - it shares nothing with the bisect. no predicate, no bounds, no monotonicity claim, no float. the last few days i kept alternates that reused the inner loop and counted their agreement as a cross-check, and mostly it wasn't one.
+
+yesterday's leftover didn't survive contact. 1482's candidate set was the input itself and small enough to bisect over directly, which made attainment disappear instead of proving it. the same set exists here - the answer is d_i/j for some gap and some j <= k+1 - and it has |gaps|*(k+1) elements, two billion at the ceiling. so it's a brute force on toy inputs and nothing more. attained and enumerable are not the same property and i'd been carrying them as one.
+
+twelfth day of summary-vs-set, fourth non-canonical witness running. yesterday i decided slack was the generic case and symmetry and multiplicity were the special ones, so this was the first real test of that and it holds - it's slack, in the most literal version yet. two gaps of 10 and one station to place: penalty is 10 either way, and the station isn't reallocatable so much as inert. same as 2528's unspent budget and 2064's unused stores. three problems now with a resource the objective can't see, always because the objective is a max and a max ignores everything that isn't the argmax.
+
+wrote the inert-station case out as its own assert instead of letting the property check cover it. "the witness isn't canonical" and "the resource does nothing" are different claims and i've now run them together three times.

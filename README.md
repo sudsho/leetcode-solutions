@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (497)
+## Solved (498)
 
-<!-- last touched: 2026-08-13 (rev 587) -->
+<!-- last touched: 2026-08-15 (rev 588) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -304,6 +304,7 @@ NNNN-problem-slug/
 | 753 | [Cracking The Safe](0753-cracking-the-safe/) | Hard | Python |
 | 759 | [Employee Free Time](0759-employee-free-time/) | Hard | Python |
 | 763 | [Partition Labels](0763-partition-labels/) | Medium | Python |
+| 774 | [Minimize Max Distance To Gas Station](0774-minimize-max-distance-to-gas-station/) | Hard | Python |
 | 778 | [Swim In Rising Water](0778-swim-in-rising-water/) | Hard | Python |
 | 787 | [Cheapest Flights Within K Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
 | 793 | [Preimage Size Of Factorial Zeroes](0793-preimage-size-of-factorial-zeroes/) | Hard | Python |
@@ -681,3 +682,4 @@ NNNN-problem-slug/
 - 2026-08-11: minimized maximum of products distributed to any store, the predicate is a ceiling sum with no greedy inside it so the exchange argument turns out never to have been part of the technique.
 - 2026-08-12: find k-th smallest pair distance, the predicate counts instead of deciding so the answer needs an attainment argument for the first time, and it comes free from the boundary being a jump in the count.
 - 2026-08-13: minimum number of days to make m bouquets, the predicate can be false everywhere so four days of bounds needing no guard turns out to have been luck, and this is the first one whose failure is silent.
+- 2026-08-15: minimize max distance to gas station, the answer is real-valued so the boundary is a limit instead of a point, and the predicate gets to be wrong on a measure-zero set for free.
