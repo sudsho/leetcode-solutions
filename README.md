@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (498)
+## Solved (499)
 
-<!-- last touched: 2026-08-15 (rev 588) -->
+<!-- last touched: 2026-08-17 (rev 589) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -368,6 +368,7 @@ NNNN-problem-slug/
 | 1808 | [Maximize Number Of Nice Divisors](1808-maximize-number-of-nice-divisors/) | Hard | Python |
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
 | 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
+| 1898 | [Maximum Number Of Removable Characters](1898-maximum-number-of-removable-characters/) | Medium | Python |
 | 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
@@ -683,3 +684,4 @@ NNNN-problem-slug/
 - 2026-08-12: find k-th smallest pair distance, the predicate counts instead of deciding so the answer needs an attainment argument for the first time, and it comes free from the boundary being a jump in the count.
 - 2026-08-13: minimum number of days to make m bouquets, the predicate can be false everywhere so four days of bounds needing no guard turns out to have been luck, and this is the first one whose failure is silent.
 - 2026-08-15: minimize max distance to gas station, the answer is real-valued so the boundary is a limit instead of a point, and the predicate gets to be wrong on a measure-zero set for free.
+- 2026-08-17: maximum number of removable characters, the search space is a chain of nested sets rather than a range of numbers, so the monotonicity comes from prefixes nesting and nothing else.
