@@ -13,6 +13,31 @@ greedy with a real exchange argument twice (2528, 1552) and a one-line ceiling s
 three times (2064, 1482, 774), and for two days i filed the exchange argument under
 "part of the technique". it isn't. the variation lives in the predicate.
 
+## what is being searched
+
+1898, two days after the above was written, and the above is right about a family
+narrower than i thought it was. all six problems searched a *quantity* - a budget, a
+separation, a load, a bloom day, a gap width - and the monotonicity came out of the
+objective, because more of the resource did more work. i had "ordered space of
+candidate answers, predicate ordered along it" and never noticed that the ordered
+space being the answer's own numeric value was an assumption rather than the
+definition.
+
+1898 bisects an index into an unsorted array. `removable[3]` is not bigger than
+`removable[1]` in any sense the problem cares about. what `k` indexes is the set
+`removable[:k]`, those sets nest by construction, and "p is still a subsequence
+after deleting a set" is antitone in the set. so the predicate is monotone in `k`
+because prefixes nest, and that is the whole argument - no objective, no exchange,
+nothing about what a removal costs.
+
+**what the technique needs is a chain and a predicate constant on each end of it.**
+a chain of sets is a chain. the six days of numbers were a special case where the
+chain happened to be an interval of integers.
+
+worth keeping separate from "the variation lives in the predicate", which still
+holds. two things vary independently: what the chain is, and what answering the
+predicate takes.
+
 ## which half keeps mid
 
 - `mid = (low + high) // 2`, `high = mid` on true.
@@ -57,6 +82,12 @@ advance.
 which is finite and attained and has two billion elements. **attained and enumerable
 are not the same property.**
 
+1898 gets it free and the reason is the section above. when the chain *is* the answer
+set - `k` indexes `{0..n}` and the answer is one of those indices - there is no gap
+between the search space and the answer set for attainment to live in. all three of
+the hard cases above are cases where the chain was a convenient superset of the
+answers. so this is a question about the choice of chain and not about the problem.
+
 ## monotonicity
 
 check it. bisection returns something confident whether or not the predicate is
@@ -92,6 +123,23 @@ thing: the objective reads a max, and a max cannot see anything that is not the
 argmax. so the witness is never canonical and the tests check the property. slack is
 the generic reason for that; 1552's symmetry and 719's multiplicity are the special
 ones, and i had been reading the special ones as the pattern.
+
+**that last sentence is backwards and 1898 is what showed it.** 1898's witness set
+has slack in the ordinary way - "ab" embeds into "aab" two ways - and the witness is
+canonical anyway, because the embeddings are ordered coordinatewise and there is a
+least one. leftmost names a member and the greedy already computes it.
+
+so slack is not what removes the canonical choice. the question is not whether the
+witness set has more than one element, which it nearly always does, but whether it
+has a *distinguished* element, and slack alone does not decide that. what decides it
+is symmetry: 2528's budget split among tied cities has no canonical split because
+permuting the cities is a symmetry of the whole problem and there is nothing left to
+break the tie with. positions in a string are not symmetric, so "leftmost" is a real
+choice rather than an arbitrary one.
+
+the six days of slack cases were all symmetric too, which is why slack looked like
+the generic reason. it was a confound. and the test changes with it - equality
+against the canonical witness where one exists, property check where it doesn't.
 
 ## unfiled
 
