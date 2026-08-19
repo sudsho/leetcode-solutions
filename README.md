@@ -11,6 +11,67 @@ NNNN-problem-slug/
   README.md
 ```
 
+## Quick start (runs offline)
+
+There is nothing to deploy here - it is a solutions notebook. To sanity-check
+that a representative batch of solutions is actually correct, run the offline
+smoke. It loads a sample of the solution modules and checks each against known
+input/output cases, reporting pass/fail per problem. Pure Python, no downloads,
+no third-party dependencies.
+
+```
+python scripts/smoke.py
+```
+
+Real output:
+
+```
+leetcode-solutions offline smoke
+running 27 sampled solutions from ...\leetcode-solutions
+------------------------------------------------------------
+[PASS] 0001-two-sum                                  expected=[0, 1]
+[PASS] 0007-reverse-integer                          expected=-321
+[PASS] 0009-palindrome-number                        expected=(True, False)
+[PASS] 0013-roman-to-integer                         expected=1994
+[PASS] 0014-longest-common-prefix                    expected='fl'
+[PASS] 0020-valid-parentheses                        expected=(True, False)
+[PASS] 0026-remove-duplicates-from-sorted-array      expected=(5, [0, 1, 2, 3, 4])
+[PASS] 0027-remove-element                           expected=(2, [2, 2])
+[PASS] 0028-implement-strstr                         expected=(0, -1)
+[PASS] 0035-search-insert-position                   expected=2
+[PASS] 0053-maximum-subarray                         expected=6
+[PASS] 0058-length-of-last-word                      expected=4
+[PASS] 0066-plus-one                                 expected=[1, 3, 0]
+[PASS] 0070-climbing-stairs                          expected=8
+[PASS] 0088-merge-sorted-array                       expected=[1, 2, 2, 3, 5, 6]
+[PASS] 0121-best-time-to-buy-and-sell-stock          expected=5
+[PASS] 0125-valid-palindrome                         expected=(True, False)
+[PASS] 0136-single-number                            expected=4
+[PASS] 0169-majority-element                         expected=2
+[PASS] 0217-contains-duplicate                       expected=(True, False)
+[PASS] 0242-valid-anagram                            expected=(True, False)
+[PASS] 0268-missing-number                           expected=2
+[PASS] 0283-move-zeroes                              expected=[1, 3, 12, 0, 0]
+[PASS] 0344-reverse-string                           expected=['o', 'l', 'l', 'e', 'h']
+[PASS] 0412-fizz-buzz                                expected=['1', '2', 'Fizz', '4', 'Buzz']
+[PASS] 0509-fibonacci-number                         expected=55
+[PASS] 0704-binary-search                            expected=(4, -1)
+------------------------------------------------------------
+total=27 passed=27 failed=0
+SMOKE PASSED
+```
+
+The same cases also run as individual tests under pytest:
+
+```
+python -m pytest tests/ -q
+```
+
+giving `27 passed`. With GNU make available, `make smoke` and `make test` wrap
+these two commands. The batch is a representative sample (arrays, strings, math,
+DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
+list in `scripts/smoke.py` to cover more problems.
+
 ## Solved (500)
 
 <!-- last touched: 2026-08-19 (rev 590) -->
