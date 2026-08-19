@@ -19,5 +19,5 @@ Time O(n log n), space O(n).
 
 ## Files
 
-- `python/solution.py` — merge sort with a two-pointer count per level
-- `python/solution_alt.py` — Fenwick tree with coordinate compression
+- `python/solution.py` - merge sort with a two-pointer count per level
+- `python/solution_alt.py` - Fenwick tree with coordinate compression

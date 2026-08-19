@@ -13,7 +13,7 @@ Given an integer array `nums`, return `True` if there exists a triple of indices
 Greedily track two values: `first`, the smallest seen so far, and `second`, the
 smallest value that has something strictly smaller before it. The first number
 strictly greater than `second` completes an increasing triplet. Updating `first`
-even after `second` is set is safe — `second` still encodes a real earlier pair.
+even after `second` is set is safe - `second` still encodes a real earlier pair.
 
 ## Complexity
 

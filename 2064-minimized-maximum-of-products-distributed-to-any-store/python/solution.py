@@ -81,7 +81,7 @@ class Solution:
 
         Ninth day of the summary-versus-set split and the third straight time
         the set turns out not to be canonical, but this is a new reason for it.
-        1552's ambiguity was a symmetry — the mirror produced a different
+        1552's ambiguity was a symmetry - the mirror produced a different
         placement and there was no way to prefer either end. Here it is slack.
         At the optimum `x` the counts only have to sum to at most `n`, so any
         leftover store can be handed to a product that is not the bottleneck.
@@ -113,7 +113,7 @@ class Solution:
         second copy of the first one. The last two days both ended with two
         callers that shared their inner loop, so agreeing between them was
         weaker evidence than it looked. This one shares nothing with the bisect
-        — no predicate, no ceiling-sum, no monotonicity claim — and it still has
+        - no predicate, no ceiling-sum, no monotonicity claim - and it still has
         to land on the same number.
 
         `O(m + (n - m) log m)`, which is worse than the bisect whenever the
@@ -134,7 +134,7 @@ class Solution:
 
         There are no spare stores to place, so nothing is being minimized and
         the answer is just the largest quantity. Same role the `m == n` case
-        played yesterday — the one input where the algorithm makes no decision,
+        played yesterday - the one input where the algorithm makes no decision,
         which makes it the cleanest thing to check the general path against.
 
         Returns `None` when the shortcut does not apply, so it cannot be used by

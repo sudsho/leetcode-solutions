@@ -13,11 +13,11 @@ Applying each booking directly is O(n) per booking and O(n · m) overall, which 
 
 That makes this the mirror image of the last few weeks. Those problems all went values → prefix sums so that a range *query* was a subtraction of two entries. Here the range *update* is the frequent operation, so the array is stored pre-differenced and the prefix sum is the step that undoes it. Same pair of operations, opposite direction, and which one you precompute is decided by which one happens more often.
 
-The indexing is where this actually goes wrong. Flights are 1-indexed and the array is not, so flight `f` sits at `f - 1` and the opening `+seats` lands at `first - 1`. The closing `-seats` goes at `last`, not `last - 1`, because it has to take effect on the first flight *outside* the range — the range is inclusive of `last`, so `last` itself must still see the seats. Allocating `n + 1` slots means a booking ending on the final flight writes its cancellation into a real index instead of needing a bounds check, and that last slot is never read back.
+The indexing is where this actually goes wrong. Flights are 1-indexed and the array is not, so flight `f` sits at `f - 1` and the opening `+seats` lands at `first - 1`. The closing `-seats` goes at `last`, not `last - 1`, because it has to take effect on the first flight *outside* the range - the range is inclusive of `last`, so `last` itself must still see the seats. Allocating `n + 1` slots means a booking ending on the final flight writes its cancellation into a real index instead of needing a bounds check, and that last slot is never read back.
 
 ## Complexity
 
-Time O(n + m) for m bookings — each booking is two writes, then one pass to accumulate. Space O(n) for the difference array, or O(1) beyond the output if you accumulate in place.
+Time O(n + m) for m bookings - each booking is two writes, then one pass to accumulate. Space O(n) for the difference array, or O(1) beyond the output if you accumulate in place.
 
 ## Files
 

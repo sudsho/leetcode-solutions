@@ -9,7 +9,7 @@ Given a collection of numbers that may contain duplicates, return all possible u
 
 ## Approach
 
-Sort first so duplicates sit next to each other. Standard backtracking with a `used[]` array. To skip duplicate branches: if the current value equals the previous and the previous slot is not currently in the path, skip — that branch was already covered when we placed the previous copy.
+Sort first so duplicates sit next to each other. Standard backtracking with a `used[]` array. To skip duplicate branches: if the current value equals the previous and the previous slot is not currently in the path, skip - that branch was already covered when we placed the previous copy.
 
 ## Complexity
 
