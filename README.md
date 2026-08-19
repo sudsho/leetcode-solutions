@@ -11,9 +11,9 @@ NNNN-problem-slug/
   README.md
 ```
 
-## Solved (499)
+## Solved (500)
 
-<!-- last touched: 2026-08-17 (rev 589) -->
+<!-- last touched: 2026-08-19 (rev 590) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -373,6 +373,7 @@ NNNN-problem-slug/
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
 | 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
+| 2616 | [Minimize The Maximum Difference Of Pairs](2616-minimize-the-maximum-difference-of-pairs/) | Medium | Python |
 | 2772 | [Apply Operations To Make All Array Elements Equal To Zero](2772-apply-operations-to-make-all-array-elements-equal-to-zero/) | Medium | Python |
 | 2528 | [Maximize The Minimum Powered City](2528-maximize-the-minimum-powered-city/) | Hard | Python |
 | 1552 | [Magnetic Force Between Two Balls](1552-magnetic-force-between-two-balls/) | Medium | Python |
@@ -685,3 +686,4 @@ NNNN-problem-slug/
 - 2026-08-13: minimum number of days to make m bouquets, the predicate can be false everywhere so four days of bounds needing no guard turns out to have been luck, and this is the first one whose failure is silent.
 - 2026-08-15: minimize max distance to gas station, the answer is real-valued so the boundary is a limit instead of a point, and the predicate gets to be wrong on a measure-zero set for free.
 - 2026-08-17: maximum number of removable characters, the search space is a chain of nested sets rather than a range of numbers, so the monotonicity comes from prefixes nesting and nothing else.
+- 2026-08-19: minimize the maximum difference of pairs, an exchange argument shrinks the candidate answers to the n-1 adjacent gaps, so attained and enumerable finally coincide and for a reason rather than by luck.
