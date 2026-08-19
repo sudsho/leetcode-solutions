@@ -1,3 +1,7 @@
+import itertools
+import random
+
+
 class Solution:
     def minimizeMax(self, nums, p):
         # eighth problem on the monotone-predicate-plus-bisect shape. the search
@@ -224,9 +228,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    import itertools
-    import random
-
     s = Solution()
 
     assert s.minimizeMax([10, 1, 2, 7, 1, 3], 2) == 1
@@ -302,6 +303,17 @@ if __name__ == "__main__":
     # form is linear-sized rather than quadratic. checked by brute force over all
     # pairings on small inputs: the best achievable maximum never beats what the
     # adjacent-only pairings achieve.
+    def _perfect_matchings(items):
+        if not items:
+            yield []
+            return
+        first = items[0]
+        for k in range(1, len(items)):
+            partner = items[k]
+            rest = items[1:k] + items[k + 1:]
+            for tail in _perfect_matchings(rest):
+                yield [(first, partner)] + tail
+
     def best_over_all_pairings(values, p):
         if p == 0:
             return 0
@@ -314,17 +326,6 @@ if __name__ == "__main__":
                 if best is None or worst < best:
                     best = worst
         return best
-
-    def _perfect_matchings(items):
-        if not items:
-            yield []
-            return
-        first = items[0]
-        for k in range(1, len(items)):
-            partner = items[k]
-            rest = items[1:k] + items[k + 1:]
-            for tail in _perfect_matchings(rest):
-                yield [(first, partner)] + tail
 
     for values, p in cases:
         if len(values) > 7:
