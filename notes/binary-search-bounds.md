@@ -88,6 +88,22 @@ between the search space and the answer set for attainment to live in. all three
 the hard cases above are cases where the chain was a convenient superset of the
 answers. so this is a question about the choice of chain and not about the problem.
 
+2616 is the first one where both properties hold together and neither is free. an
+exchange argument says an optimal pairing can be taken to use pairs adjacent in
+sorted order, so the answer is one of the `n-1` adjacent gaps: attained because it is
+a member, enumerable because there are `n-1` of them. the interval `[0, max-min]` is a
+superset of the answer set exactly the way 719's was, and here the superset gets
+*replaced* rather than repaired - the candidate-space bisect runs over the gap list
+directly.
+
+so the shape of this section is now: the search space is generically bigger than the
+answer set, and there are three things to do about it. repair it at the boundary
+(719, the jump in the count). replace it with the answer set (1482 by luck, 2616 by
+argument). or leave it alone because the answer set is finite and still hopeless
+(774). the property that decides which is available is the *size* of the answer set,
+which is why 774's note had to separate attained from enumerable before any of this
+could be said.
+
 ## monotonicity
 
 check it. bisection returns something confident whether or not the predicate is
@@ -140,6 +156,27 @@ choice rather than an arbitrary one.
 the six days of slack cases were all symmetric too, which is why slack looked like
 the generic reason. it was a confound. and the test changes with it - equality
 against the canonical witness where one exists, property check where it doesn't.
+
+**2616 says even that is not a property of the problem.** the witness is `p` disjoint
+pairs. named as pairs of sorted positions it is canonical, leftmost, 1898's argument
+verbatim. named as pairs of original indices it isn't, because ties in `nums` are
+interchangeable and the sort picked between them by input order.
+
+same problem, same witness set, two answers. so canonicity is relative to the space
+the witness is written down in, and sorting is the step that manufactures it: a total
+order laid over a multiset that only had a partial one. symmetry is still what
+removes the distinguished element - what i had wrong is *where to look for it*. i was
+checking the problem when the question is whether the representation has already
+quotiented the symmetry away. 2528's tied cities are not more symmetric than 2616's
+duplicate values; the difference is that i was still standing in the unquotiented
+space when i asked.
+
+which makes the last thirteen entries suspect as a group rather than individually.
+each of them recorded a representation, not a problem, and i can't currently tell
+which calls would flip under a different one. re-read them.
+
+and the test splits rather than choosing: equality against the canonical witness in
+the space that has one, property check on whatever survives the quotient.
 
 ## unfiled
 
