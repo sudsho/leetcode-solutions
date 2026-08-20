@@ -1798,3 +1798,35 @@ so canonicity isn't a property of the problem. it's a property of the space the 
 which means the test splits. equality against the leftmost greedy in sorted space, and a property check on the multiset of paired values after reshuffling the input, because the second one is the only version that survives the sort. first time in the run the witness has needed two tests rather than a choice between them.
 
 still uneasy about one thing. if canonicity is representation-relative then the last thirteen days of filing witnesses as canonical or not were all really filing *representations*, and i don't currently have a way to tell which of those calls would flip under a different one. worth going back through them at some point rather than assuming today is the only case.
+
+## 2026-08-20
+
+thursday, one problem, after dinner. 2517, maximum tastiness of candy basket. ninth on the same outer loop, and the first one where i opened the file and already knew the predicate.
+
+this is 1552 with a different noun. baskets on a line became prices on a line, minimum separation became minimum difference, and the greedy is the same left-to-right scan holding one variable. i spent the first ten minutes looking for the part that was new. there isn't one. the algorithm is nine days old and i wrote it on the 10th.
+
+so either today is filler or the repeat is worth something, and what makes it not filler is that it lands exactly on the thing i left open last night.
+
+the note i wrote yesterday said the search space is generically bigger than the answer set and there are three moves available. repair it at the boundary, which is 719. replace it with the answer set, which is 1482 by luck and 2616 by argument. or leave it alone because the answer set is finite and hopeless regardless, which is 774. and i said the property that decides which move you get is the size of the answer set.
+
+here the answer set is every pairwise difference, because the answer is the tight gap inside the chosen basket and the basket is a subsequence, so any two of its members can be the tight one. that's n choose 2. at the constraint ceiling it's 2e8. against thirty predicate calls if you just bisect the range and don't build anything.
+
+and that kills the third branch. i had filed 774's two billion under hopeless as though hopeless were a fact about the number. it isn't. today's set is five times *smaller* than 774's and it's still six hundred times worse than not building it, because the range only ever costs log of the value ceiling. and 2616's n-1 was never a win for being small either - it was a win because n-1 beat log(max-min) on that input. if the prices there had run to 1e18 the same n-1 would have been the same win for a different margin, and if n had been 1e9 it would have stopped being one.
+
+so the deciding property isn't the answer set's size. it's the size against the cost of the search it replaces. two branches and a comparison, and the hopeless branch was never separate - 774 is today with a worse constant. that's the correction, and it's the second night running that something i'd been carrying as a property of the problem turned out to be relative to something outside it. yesterday canonicity was relative to the representation. today enumerable is relative to the alternative. i don't think that's a coincidence so much as what happens when an adjective goes on a checklist and never gets asked compared to what.
+
+kept the candidate search behind a limit that makes it refuse rather than quietly cost n squared. it's a fixture, not a second implementation, and saying so in the signature is better than saying so in a docstring nobody reads before calling it.
+
+bounds, fifth day running, and this time the test threw out my reason rather than my bound. i wrote the top end as "gap max-min admits the two ends and nothing between them, count exactly two" and [7,7,7,7] has span zero, so the top and the bottom are the same point and the count is four. the bound itself is fine - no basket has a gap above max-min because no pair does - and that argument never mentioned the count at all. so i had a correct bound propped up by a sentence that was false on a whole class of inputs. the last four days the missing argument was at least visibly missing. this one was present and wrong. worse, and only caught because i'd started asserting the bounds instead of only writing them down, which i started doing on the 13th for a different reason.
+
+the k=1 hole i caught by reading. the statement asks for a minimum over the pairs of a one-element basket and there aren't any, and if you let the search run it returns max-min for no reason anyone could defend. third boundary hole in nine and the first i found before a test found it.
+
+fifteenth day of summary-vs-set, and for once it confirms rather than moves.
+
+on the 11th i called slack a reason the witness isn't canonical. on the 17th i decided slack was a confound, because every slack case in that stretch was also symmetric. but that was an inference from not having seen the two come apart, which is a weak thing to conclude from, and i've been carrying it since without a case that tests it.
+
+this is the case. [1,2,5,8,13,21] with k=3 answers 8 and both (1,13,21) and (2,13,21) achieve it. two members in the witness set, all prices distinct, nothing interchangeable with anything, no symmetry available anywhere. pure slack. and leftmost still names one of them. so the 17th was right and six days of it looking otherwise were six days of cases that happened to be symmetric too.
+
+ties bring back yesterday's other half unchanged, so the two tests are the same two tests on a witness that's a subsequence now instead of a set of pairs. that part i just transcribed.
+
+what i'd want next is a problem in this shape where the answer set genuinely is the cheaper search - not by a constant, by an exponent. everything in these nine has been a linear or quadratic set against a logarithmic range, which makes the comparison lopsided in the same direction every time and means i've only ever seen one side of the rule i just wrote down.

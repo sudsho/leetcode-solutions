@@ -72,9 +72,9 @@ these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (500)
+## Solved (501)
 
-<!-- last touched: 2026-08-19 (rev 590) -->
+<!-- last touched: 2026-08-20 (rev 591) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -434,6 +434,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
 | 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
+| 2517 | [Maximum Tastiness Of Candy Basket](2517-maximum-tastiness-of-candy-basket/) | Medium | Python |
 | 2616 | [Minimize The Maximum Difference Of Pairs](2616-minimize-the-maximum-difference-of-pairs/) | Medium | Python |
 | 2772 | [Apply Operations To Make All Array Elements Equal To Zero](2772-apply-operations-to-make-all-array-elements-equal-to-zero/) | Medium | Python |
 | 2528 | [Maximize The Minimum Powered City](2528-maximize-the-minimum-powered-city/) | Hard | Python |
@@ -748,3 +749,4 @@ list in `scripts/smoke.py` to cover more problems.
 - 2026-08-15: minimize max distance to gas station, the answer is real-valued so the boundary is a limit instead of a point, and the predicate gets to be wrong on a measure-zero set for free.
 - 2026-08-17: maximum number of removable characters, the search space is a chain of nested sets rather than a range of numbers, so the monotonicity comes from prefixes nesting and nothing else.
 - 2026-08-19: minimize the maximum difference of pairs, an exchange argument shrinks the candidate answers to the n-1 adjacent gaps, so attained and enumerable finally coincide and for a reason rather than by luck.
+- 2026-08-20: maximum tastiness of candy basket, 1552's predicate a second time with a quadratic answer set, so enumerable turns out to mean cheaper than the search it replaces rather than finite.
