@@ -72,9 +72,9 @@ these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (502)
+## Solved (503)
 
-<!-- last touched: 2026-08-21 (rev 592) -->
+<!-- last touched: 2026-08-22 (rev 593) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -581,6 +581,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 2251 | [Number Of Flowers In Full Bloom](2251-number-of-flowers-in-full-bloom/) | Medium | Python |
 | 2406 | [Divide Intervals Into Minimum Number Of Groups](2406-divide-intervals-into-minimum-number-of-groups/) | Medium | Python |
 | 2141 | [Maximum Running Time Of N Computers](2141-maximum-running-time-of-n-computers/) | Hard | Python |
+| 1802 | [Maximum Value At A Given Index In A Bounded Array](1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -752,3 +753,4 @@ list in `scripts/smoke.py` to cover more problems.
 - 2026-08-19: minimize the maximum difference of pairs, an exchange argument shrinks the candidate answers to the n-1 adjacent gaps, so attained and enumerable finally coincide and for a reason rather than by luck.
 - 2026-08-20: maximum tastiness of candy basket, 1552's predicate a second time with a quadratic answer set, so enumerable turns out to mean cheaper than the search it replaces rather than finite.
 - 2026-08-21: maximum running time of n computers, the predicate is a work count that proves necessity only, the schedule proving sufficiency is the first witness the predicate does not build, and the answer set can be identified in one pass rather than searched.
+- 2026-08-22: maximum value at a given index in a bounded array, the legal arrays form a meet-semilattice so the witness is canonical for a structural reason, and the same fact makes the predicate a closed form that can be inverted instead of searched.
