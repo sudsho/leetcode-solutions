@@ -74,9 +74,9 @@ these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (503)
+## Solved (507)
 
-<!-- last touched: 2026-08-22 (rev 593) -->
+<!-- last touched: 2026-08-24 (rev 594) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -586,6 +586,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 1802 | [Maximum Value At A Given Index In A Bounded Array](1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium | Python |
 | 2226 | [Maximum Candies Allocated To K Children](2226-maximum-candies-allocated-to-k-children/) | Medium | Python |
 | 2513 | [Minimize The Maximum Of Two Arrays](2513-minimize-the-maximum-of-two-arrays/) | Medium | Python |
+| 2439 | [Minimize Maximum Of Array](2439-minimize-maximum-of-array/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -758,3 +759,6 @@ list in `scripts/smoke.py` to cover more problems.
 - 2026-08-20: maximum tastiness of candy basket, 1552's predicate a second time with a quadratic answer set, so enumerable turns out to mean cheaper than the search it replaces rather than finite.
 - 2026-08-21: maximum running time of n computers, the predicate is a work count that proves necessity only, the schedule proving sufficiency is the first witness the predicate does not build, and the answer set can be identified in one pass rather than searched.
 - 2026-08-22: maximum value at a given index in a bounded array, the legal arrays form a meet-semilattice so the witness is canonical for a structural reason, and the same fact makes the predicate a closed form that can be inverted instead of searched.
+- 2026-08-23: maximum candies allocated to k children, the predicate is an expression and still not invertible, so the axis is how many breakpoints can be located and not whether the formula is written down.
+- 2026-08-23: minimize the maximum of two arrays, an O(1) predicate with millions of breakpoints kills evaluation cost as the axis, and the three inequalities are hall's condition so the witness is certified without being built.
+- 2026-08-24: minimize maximum of array, the predicate is a conjunction of n linear terms so it inverts one term at a time and the answer is a max of the inversions, which leaves the breakpoint count wrong as well.
