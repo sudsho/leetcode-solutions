@@ -174,6 +174,25 @@ def c_merge_sorted_array(s):
     return nums1, [1, 2, 2, 3, 5, 6]
 
 
+# the sample above is all easy-tier, so it exercised none of the
+# binary-search-on-the-answer run. these two cover the boundary case in each
+# direction: a maximization whose answer is 0 because the predicate is false
+# everywhere, and a minimization whose predicate is O(1).
+
+def c_maximum_candies(s):
+    return (
+        s.maximumCandies([5, 8, 6], 3),
+        s.maximumCandies([2, 5], 11),
+    ), (5, 0)
+
+
+def c_minimize_set(s):
+    return (
+        s.minimizeSet(2, 7, 1, 3),
+        s.minimizeSet(2, 4, 8, 2),
+    ), (4, 15)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -203,6 +222,8 @@ CASES = [
     ("0412-fizz-buzz", c_fizz_buzz),
     ("0509-fibonacci-number", c_fib),
     ("0704-binary-search", c_binary_search),
+    ("2226-maximum-candies-allocated-to-k-children", c_maximum_candies),
+    ("2513-minimize-the-maximum-of-two-arrays", c_minimize_set),
 ]
 
 
