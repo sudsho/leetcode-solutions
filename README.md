@@ -584,6 +584,8 @@ list in `scripts/smoke.py` to cover more problems.
 | 2406 | [Divide Intervals Into Minimum Number Of Groups](2406-divide-intervals-into-minimum-number-of-groups/) | Medium | Python |
 | 2141 | [Maximum Running Time Of N Computers](2141-maximum-running-time-of-n-computers/) | Hard | Python |
 | 1802 | [Maximum Value At A Given Index In A Bounded Array](1802-maximum-value-at-a-given-index-in-a-bounded-array/) | Medium | Python |
+| 2226 | [Maximum Candies Allocated To K Children](2226-maximum-candies-allocated-to-k-children/) | Medium | Python |
+| 2513 | [Minimize The Maximum Of Two Arrays](2513-minimize-the-maximum-of-two-arrays/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
