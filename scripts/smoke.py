@@ -193,6 +193,26 @@ def c_minimize_set(s):
     ), (4, 15)
 
 
+# the two since, both of which answer without searching anything, so between
+# them and the two above the sample now covers a bisect that runs and a closed
+# form that replaces one.
+
+def c_minimize_array_value(s):
+    return (
+        s.minimizeArrayValue([3, 7, 1, 6]),
+        s.minimizeArrayValue([10, 1]),
+    ), (5, 10)
+
+
+def c_nth_magical(s):
+    # the second pair is the period-boundary branch, which is the one an
+    # off-by-one-period gets wrong and the first pair does not touch.
+    return (
+        s.nthMagicalNumber(1, 2, 3),
+        s.nthMagicalNumber(4, 2, 3),
+    ), (2, 6)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -222,7 +242,9 @@ CASES = [
     ("0412-fizz-buzz", c_fizz_buzz),
     ("0509-fibonacci-number", c_fib),
     ("0704-binary-search", c_binary_search),
+    ("0878-nth-magical-number", c_nth_magical),
     ("2226-maximum-candies-allocated-to-k-children", c_maximum_candies),
+    ("2439-minimize-maximum-of-array", c_minimize_array_value),
     ("2513-minimize-the-maximum-of-two-arrays", c_minimize_set),
 ]
 
