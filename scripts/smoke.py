@@ -213,6 +213,19 @@ def c_nth_magical(s):
     ), (2, 6)
 
 
+# first one in the sample that isn't a search at all - the answer is counted by
+# collapsing the array onto the divisors of k, so the case worth pinning is the
+# same-class branch, where a bucket pairs with itself and the count is C(m, 2)
+# rather than a product.
+
+def c_count_pairs_divisible(s):
+    return (
+        s.countPairs([1, 2, 3, 4, 5], 2),
+        s.countPairs([1, 2, 3, 4], 5),
+        s.countPairs([8, 10, 2, 5, 9, 6, 3, 8, 2], 6),
+    ), (7, 0, 18)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -243,6 +256,7 @@ CASES = [
     ("0509-fibonacci-number", c_fib),
     ("0704-binary-search", c_binary_search),
     ("0878-nth-magical-number", c_nth_magical),
+    ("2183-count-array-pairs-divisible-by-k", c_count_pairs_divisible),
     ("2226-maximum-candies-allocated-to-k-children", c_maximum_candies),
     ("2439-minimize-maximum-of-array", c_minimize_array_value),
     ("2513-minimize-the-maximum-of-two-arrays", c_minimize_set),

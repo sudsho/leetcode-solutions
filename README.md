@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 31 sampled solutions from ...\leetcode-solutions
+running 32 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -57,11 +57,12 @@ running 31 sampled solutions from ...\leetcode-solutions
 [PASS] 0509-fibonacci-number                         expected=55
 [PASS] 0704-binary-search                            expected=(4, -1)
 [PASS] 0878-nth-magical-number                       expected=(2, 6)
+[PASS] 2183-count-array-pairs-divisible-by-k         expected=(7, 0, 18)
 [PASS] 2226-maximum-candies-allocated-to-k-children  expected=(5, 0)
 [PASS] 2439-minimize-maximum-of-array                expected=(5, 10)
 [PASS] 2513-minimize-the-maximum-of-two-arrays       expected=(4, 15)
 ------------------------------------------------------------
-total=31 passed=31 failed=0
+total=32 passed=32 failed=0
 SMOKE PASSED
 ```
 
@@ -71,7 +72,7 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `31 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `32 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
