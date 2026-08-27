@@ -77,9 +77,9 @@ these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (509)
+## Solved (510)
 
-<!-- last touched: 2026-08-26 (rev 596) -->
+<!-- last touched: 2026-08-27 (rev 597) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -592,6 +592,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 2439 | [Minimize Maximum Of Array](2439-minimize-maximum-of-array/) | Medium | Python |
 | 878 | [Nth Magical Number](0878-nth-magical-number/) | Hard | Python |
 | 2183 | [Count Array Pairs Divisible By K](2183-count-array-pairs-divisible-by-k/) | Hard | Python |
+| 711 | [Number Of Distinct Islands II](0711-number-of-distinct-islands-ii/) | Hard | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -769,3 +770,4 @@ list in `scripts/smoke.py` to cover more problems.
 - 2026-08-24: minimize maximum of array, the predicate is a conjunction of n linear terms so it inverts one term at a time and the answer is a max of the inversions, which leaves the breakpoint count wrong as well.
 - 2026-08-25: nth magical number, an aggregate predicate of exactly 2226's shape that inverts anyway because it commutes with translation by the lcm, so the axis was never conjunction-versus-aggregate and there is no single axis - separability, an exchange argument, local decidability and a symmetry are four unrelated handles and invertible was a name for the disjunction of them.
 - 2026-08-26: count array pairs divisible by k, the predicate factors through gcd(x,k) and that quotient is coarsest rather than merely convenient, so canonical turns out to be a second word i have been using for a disjunction of unrelated things.
+- 2026-08-27: number of distinct islands ii, the orbits are the quotient and the hash key is a section of it, and the two halves of the group need different mechanisms because one acts freely with infinite orbits and the other acts finitely without a fundamental domain.
