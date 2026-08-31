@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 32 sampled solutions from ...\leetcode-solutions
+running 34 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -61,8 +61,10 @@ running 32 sampled solutions from ...\leetcode-solutions
 [PASS] 2226-maximum-candies-allocated-to-k-children  expected=(5, 0)
 [PASS] 2439-minimize-maximum-of-array                expected=(5, 10)
 [PASS] 2513-minimize-the-maximum-of-two-arrays       expected=(4, 15)
+[PASS] 0947-most-stones-removed-with-same-row-or-column expected=(5, 3, 0)
+[PASS] 1202-smallest-string-with-swaps               expected=('bacd', 'abcd', 'udu')
 ------------------------------------------------------------
-total=32 passed=32 failed=0
+total=34 passed=34 failed=0
 SMOKE PASSED
 ```
 

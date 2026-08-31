@@ -226,6 +226,26 @@ def c_count_pairs_divisible(s):
     ), (7, 0, 18)
 
 
+def c_smallest_string_with_swaps(s):
+    return (
+        s.smallestStringWithSwaps("dcab", [[0, 3], [1, 2]]),
+        s.smallestStringWithSwaps("dcab", [[0, 3], [1, 2], [0, 2]]),
+        # no pairs at all: every position is its own component, so the string
+        # comes back untouched. this is the branch where the group is trivial.
+        s.smallestStringWithSwaps("udu", []),
+    ), ("bacd", "abcd", "udu")
+
+
+def c_remove_stones(s):
+    return (
+        s.removeStones([[0, 0], [0, 1], [1, 0], [1, 2], [2, 1], [2, 2]]),
+        s.removeStones([[0, 0], [0, 2], [1, 1], [2, 0], [2, 2]]),
+        # every stone isolated, so c == n and nothing can move. pins the sign of
+        # the answer, which is the one thing n - c can get wrong.
+        s.removeStones([[0, 0], [1, 1], [2, 2]]),
+    ), (5, 3, 0)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -260,6 +280,8 @@ CASES = [
     ("2226-maximum-candies-allocated-to-k-children", c_maximum_candies),
     ("2439-minimize-maximum-of-array", c_minimize_array_value),
     ("2513-minimize-the-maximum-of-two-arrays", c_minimize_set),
+    ("0947-most-stones-removed-with-same-row-or-column", c_remove_stones),
+    ("1202-smallest-string-with-swaps", c_smallest_string_with_swaps),
 ]
 
 
