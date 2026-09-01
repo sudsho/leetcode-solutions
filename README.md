@@ -79,9 +79,9 @@ these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (512)
+## Solved (513)
 
-<!-- last touched: 2026-08-31 (rev 599) -->
+<!-- last touched: 2026-09-01 (rev 600) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -597,6 +597,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 711 | [Number Of Distinct Islands II](0711-number-of-distinct-islands-ii/) | Hard | Python |
 | 1202 | [Smallest String With Swaps](1202-smallest-string-with-swaps/) | Medium | Python |
 | 947 | [Most Stones Removed With Same Row Or Column](0947-most-stones-removed-with-same-row-or-column/) | Medium | Python |
+| 721 | [Accounts Merge](0721-accounts-merge/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -777,3 +778,4 @@ list in `scripts/smoke.py` to cover more problems.
 - 2026-08-27: number of distinct islands ii, the orbits are the quotient and the hash key is a section of it, and the two halves of the group need different mechanisms because one acts freely with infinite orbits and the other acts finitely without a fundamental domain.
 - 2026-08-31: smallest string with swaps, the pair graph is a presentation of the group and only its components survive, so the answer is a section again and this time lex order is handed over by the problem instead of having to be found.
 - 2026-08-31: most stones removed with same row or column, the answer is n minus the component count and so depends on the partition only, which makes it the first one in the run where the quotient is the whole answer and no representative is built.
+- 2026-09-01: accounts merge, three parts of one printed answer land in three different places - the partition is the quotient, the sorted email list is a rendering of a determined set rather than a section at all, and the name is an observable pick that still needs no argument because it is constant on classes.
