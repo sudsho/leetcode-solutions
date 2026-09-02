@@ -79,9 +79,9 @@ these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (513)
+## Solved (514)
 
-<!-- last touched: 2026-09-01 (rev 600) -->
+<!-- last touched: 2026-09-02 (rev 601) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -598,6 +598,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 1202 | [Smallest String With Swaps](1202-smallest-string-with-swaps/) | Medium | Python |
 | 947 | [Most Stones Removed With Same Row Or Column](0947-most-stones-removed-with-same-row-or-column/) | Medium | Python |
 | 721 | [Accounts Merge](0721-accounts-merge/) | Medium | Python |
+| 1061 | [Lexicographically Smallest Equivalent String](1061-lexicographically-smallest-equivalent-string/) | Medium | Python |
 
 ## Recent activity
 - 2025-01-08: added link to the alt file.
@@ -779,3 +780,4 @@ list in `scripts/smoke.py` to cover more problems.
 - 2026-08-31: smallest string with swaps, the pair graph is a presentation of the group and only its components survive, so the answer is a section again and this time lex order is handed over by the problem instead of having to be found.
 - 2026-08-31: most stones removed with same row or column, the answer is n minus the component count and so depends on the partition only, which makes it the first one in the run where the quotient is the whole answer and no representative is built.
 - 2026-09-01: accounts merge, three parts of one printed answer land in three different places - the partition is the quotient, the sorted email list is a rendering of a determined set rather than a section at all, and the name is an observable pick that still needs no argument because it is constant on classes.
+- 2026-09-02: lexicographically smallest equivalent string, run as the pre-registered test of yesterday's rule - the factoring form predicts correctly and the "varies across the class" paraphrase written beside it does not, because min is an aggregate over the class rather than a member picked out of it.
