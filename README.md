@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 34 sampled solutions from ...\leetcode-solutions
+running 35 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -63,8 +63,9 @@ running 34 sampled solutions from ...\leetcode-solutions
 [PASS] 2513-minimize-the-maximum-of-two-arrays       expected=(4, 15)
 [PASS] 0947-most-stones-removed-with-same-row-or-column expected=(5, 3, 0)
 [PASS] 1202-smallest-string-with-swaps               expected=('bacd', 'abcd', 'udu')
+[PASS] 0685-redundant-connection-ii                  expected=([2, 3], [2, 1], [3, 1])
 ------------------------------------------------------------
-total=34 passed=34 failed=0
+total=35 passed=35 failed=0
 SMOKE PASSED
 ```
 
@@ -74,14 +75,14 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `32 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `35 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (514)
+## Solved (515)
 
-<!-- last touched: 2026-09-02 (rev 601) -->
+<!-- last touched: 2026-09-04 (rev 602) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -355,6 +356,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 642 | [Design Search Autocomplete System](0642-design-search-autocomplete-system/) | Hard | Python |
 | 647 | [Palindromic Substrings](0647-palindromic-substrings/) | Medium | Python |
 | 658 | [Find K Closest Elements](0658-find-k-closest-elements/) | Medium | Python |
+| 685 | [Redundant Connection Ii](0685-redundant-connection-ii/) | Hard | Python |
 | 691 | [Stickers To Spell Word](0691-stickers-to-spell-word/) | Hard | Python |
 | 692 | [Top K Frequent Words](0692-top-k-frequent-words/) | Medium | Python |
 | 695 | [Max Area Of Island](0695-max-area-of-island/) | Medium | Python |

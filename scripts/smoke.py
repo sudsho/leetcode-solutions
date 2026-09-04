@@ -246,6 +246,21 @@ def c_remove_stones(s):
     ), (5, 3, 0)
 
 
+def c_redundant_connection_ii(s):
+    return (
+        # two parents on node 3, and both candidates are legal removals. the
+        # later one is the answer, which is the case that fails if the two
+        # trials are attempted in the other order.
+        s.findRedundantDirectedConnection([[1, 2], [1, 3], [2, 3]]),
+        # two parents on node 1 with the earlier candidate on the cycle, so
+        # there is exactly one legal removal and the tie-break never applies.
+        s.findRedundantDirectedConnection([[2, 1], [3, 1], [4, 2], [1, 4]]),
+        # no node has two parents: a pure directed cycle, where every edge is a
+        # legal removal and the answer is decided entirely by input order.
+        s.findRedundantDirectedConnection([[1, 2], [2, 3], [3, 1]]),
+    ), ([2, 3], [2, 1], [3, 1])
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -282,6 +297,7 @@ CASES = [
     ("2513-minimize-the-maximum-of-two-arrays", c_minimize_set),
     ("0947-most-stones-removed-with-same-row-or-column", c_remove_stones),
     ("1202-smallest-string-with-swaps", c_smallest_string_with_swaps),
+    ("0685-redundant-connection-ii", c_redundant_connection_ii),
 ]
 
 
