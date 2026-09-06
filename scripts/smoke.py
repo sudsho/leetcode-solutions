@@ -261,6 +261,26 @@ def c_redundant_connection_ii(s):
     ), ([2, 3], [2, 1], [3, 1])
 
 
+def c_the_maze_iii(s):
+    maze = [
+        [0, 0, 0, 0, 0],
+        [1, 1, 0, 0, 1],
+        [0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 1],
+        [0, 1, 0, 0, 0],
+    ]
+    return (
+        # two optimal strings at distance 6, and the answer is the longer of
+        # them - "lul" over "ul". a solution minimising moves instead of cells
+        # travelled passes every other case and fails this one.
+        s.findShortestWay(maze, [4, 3], [0, 1]),
+        # the hole is walled off, so the tie-break never comes up.
+        s.findShortestWay(maze, [4, 3], [3, 0]),
+        # the ball starts on the hole: zero distance, empty instructions.
+        s.findShortestWay(maze, [0, 1], [0, 1]),
+    ), ("lul", "impossible", "")
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -298,6 +318,7 @@ CASES = [
     ("0947-most-stones-removed-with-same-row-or-column", c_remove_stones),
     ("1202-smallest-string-with-swaps", c_smallest_string_with_swaps),
     ("0685-redundant-connection-ii", c_redundant_connection_ii),
+    ("0499-the-maze-iii", c_the_maze_iii),
 ]
 
 

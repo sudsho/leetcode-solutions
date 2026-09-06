@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 35 sampled solutions from ...\leetcode-solutions
+running 36 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -64,8 +64,9 @@ running 35 sampled solutions from ...\leetcode-solutions
 [PASS] 0947-most-stones-removed-with-same-row-or-column expected=(5, 3, 0)
 [PASS] 1202-smallest-string-with-swaps               expected=('bacd', 'abcd', 'udu')
 [PASS] 0685-redundant-connection-ii                  expected=([2, 3], [2, 1], [3, 1])
+[PASS] 0499-the-maze-iii                             expected=('lul', 'impossible', '')
 ------------------------------------------------------------
-total=35 passed=35 failed=0
+total=36 passed=36 failed=0
 SMOKE PASSED
 ```
 
@@ -75,14 +76,14 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `35 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `36 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (515)
+## Solved (516)
 
-<!-- last touched: 2026-09-04 (rev 602) -->
+<!-- last touched: 2026-09-06 (rev 603) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -337,6 +338,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 488 | [Zuma Game](0488-zuma-game/) | Hard | Python |
 | 493 | [Reverse Pairs](0493-reverse-pairs/) | Hard | Python |
 | 494 | [Target Sum](0494-target-sum/) | Medium | Python |
+| 499 | [The Maze Iii](0499-the-maze-iii/) | Hard | Python |
 | 509 | [Fibonacci Number](0509-fibonacci-number/) | Easy | Python |
 | 514 | [Freedom Trail](0514-freedom-trail/) | Hard | Python |
 | 518 | [Coin Change 2](0518-coin-change-2/) | Medium | Python |
@@ -783,3 +785,4 @@ list in `scripts/smoke.py` to cover more problems.
 - 2026-08-31: most stones removed with same row or column, the answer is n minus the component count and so depends on the partition only, which makes it the first one in the run where the quotient is the whole answer and no representative is built.
 - 2026-09-01: accounts merge, three parts of one printed answer land in three different places - the partition is the quotient, the sorted email list is a rendering of a determined set rather than a section at all, and the name is an observable pick that still needs no argument because it is constant on classes.
 - 2026-09-02: lexicographically smallest equivalent string, run as the pre-registered test of yesterday's rule - the factoring form predicts correctly and the "varies across the class" paraphrase written beside it does not, because min is an aggregate over the class rather than a member picked out of it.
+- 2026-09-06: the maze iii, the tie-break goes into the dijkstra key and needs a monotonicity proof to get there, which the distance component supplies by forbidding the prefix case - so stipulated and free come apart and the axis is whether the choice is carried through a construction.
