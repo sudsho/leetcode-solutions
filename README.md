@@ -79,8 +79,9 @@ python -m pytest tests/ -q
 
 giving `37 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
-DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
-list in `scripts/smoke.py` to cover more problems.
+DP, hashing, in-place mutation, plus union-find, Dijkstra and binary search on
+the answer from the last nine additions), not the full problem set; extend the
+`CASES` list in `scripts/smoke.py` to cover more problems.
 
 ## Solved (517)
 
