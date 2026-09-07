@@ -2099,3 +2099,75 @@ the thing i got wrong, and for once it is in the same place as the finding rathe
 the second thing, smaller and about the oracle. `all_optimal_paths` is 685's oracle again, and this time i expected the tie to be the interesting part and it was not - both reachable cases come back with `|optimal| = 2`, which is unremarkable. what is worth having is that in the first case the two strings have different *lengths* and the answer is the longer one: `lul` at three moves over `ul` at two, both covering six cells. fewest cells and fewest moves are different objectives and only one of them is the problem's. so the run asserts it, and a solution that quietly minimised moves now fails rather than disagreeing quietly. that is the second time in three entries that the oracle's value was a thing i was not looking for when i wrote it.
 
 bounds, and it is about the key rather than the input for the first time in the log. the instruction string is not bounded by the number of resting cells - a lex-smallest optimal path may revisit a cell, as long as it pays distance to do so - but it is bounded by the distance, since every letter costs at least one cell, so `L <= d* <= R * C`. that is what makes the comparison in the heap `O(L)` rather than unbounded and the whole thing `O(R * C * log(R * C) * L)`. the other end: `L >= 1` whenever the ball does not start on the hole, and `L = 0` exactly when it does, which is the one input where the answer is the empty string and every tie-break is vacuous.
+
+## 2026-09-07
+
+first night in a while where i went in with a prediction rather than a question.
+the 6th split "stipulated" into two cases - 685's tie-break sat beside the
+algorithm and cost one line, 499's went into the dijkstra key and owed a
+monotonicity proof - and the proposed axis was whether the choice has to be
+carried *through* a construction. two data points, both found by picking the
+problem for them, which is the weakest evidential position this log has been in
+all month. so tonight is the test: same order, same delicate case, no
+construction.
+
+1163, last substring in lexicographical order. the answer is a suffix, and two
+pointers duel over the n candidates, retiring the loser and the whole matched
+run behind it on every mismatch.
+
+the prediction holds, and the shape of it is better than i expected.
+
+lex order fails monotonicity on exactly one kind of pair - one string a proper
+prefix of the other. on 499 those pairs could not arise: equal distance forbade
+them, and the entire proof was that eliminating step. here they are unavoidable
+by construction. the candidates are suffixes of one string so no two have the
+same length, and suffix j is a proper prefix of suffix i the moment the string
+repeats enough for a match to run off the end. and it costs nothing, because
+nothing is extended - the candidates are complete strings compared once, lex
+order on a finite set of complete strings is a total order, and its maximum
+exists however the prefixes fall. the longer one wins. that is the same fact
+that broke 499, read forwards.
+
+so the two nights have the identical order and the identical delicate case on
+opposite sides of the line, and the only thing that differs is whether the
+comparison has to survive an extension. that is as clean a controlled comparison
+as this thread is going to get, and it is the first prediction in eleven nights
+that was written before the problem rather than after it.
+
+what i had wrong, and it is not the finding. i filed the prefix case as an edge
+case - the thing you check in the last test and never see again. `k > 0` at the
+loop exit is exactly it, so i counted. 502 of 1000 random binary strings of
+length 200 end that way, 323 of 1000 ternary, 48 of 1000 over 26 letters. half
+the time on a binary alphabet the answer is decided by the case 499 spent a
+paragraph proving impossible. `banana` is the small version: `nana` against
+`na`, and `na` is a proper prefix. the rarity i assumed was a property of the
+alphabet size and i had never had a reason to notice.
+
+the second thing, and it is the one worth keeping. `i = max(i + k + 1, j)` in
+the skip. i had it down as a correctness guard - without it the left pointer can
+land below j and the invariant i < j breaks. that is not what happens. i + k + 1
+is the first index the elimination argument does not kill, and everything below
+j was killed in an earlier round, so dropping the max leaves the scan correct
+and merely re-eliminating. exhaustive over every binary string to length 11 and
+every ternary string to length 7: the unguarded version never returned a
+different answer.
+
+it is not free either. on `("ba" * m) + "aabb"` the guarded scan runs in exactly
+n steps and the unguarded one in exactly n*n/4 - 1, at every size i checked out
+to n = 804, both agreeing about the answer throughout. so the line is
+load-bearing and no part of the correctness argument mentions it, which is 685's
+shape exactly - a convention the code has to respect that the proof never sees -
+except that what it is protecting is the complexity rather than the printed
+answer. that is a third position for a choice to sit in and i did not have it.
+i am not promoting it into anything tonight; five axes died in nine nights for
+being written the night they were born.
+
+bounds. the answer's length runs from 1, when the last character wins, to n,
+when the whole string is the maximum of its own suffixes - `zzzzz` and every
+single-character input. the crude termination argument is that each mismatch
+retires at least one of n candidates; the k+1 version is the whole difference
+between linear and quadratic, and j + k never decreasing is the invariant the
+unguarded skip gives up. the other end is that the reduction from substrings to
+suffixes is itself the prefix fact - a string is never smaller than its own
+proper prefix - so the case that is delicate in the comparison is also what
+makes the candidate set small enough to scan.

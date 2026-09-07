@@ -281,6 +281,21 @@ def c_the_maze_iii(s):
     ), ("lul", "impossible", "")
 
 
+def c_last_substring(s):
+    return (
+        # the scan finishes with one candidate a proper prefix of the other -
+        # "na" against "nana" - and the longer one is the answer.
+        s.lastSubstring("banana"),
+        # no repeats, so the scan ends by exhausting the candidates instead.
+        s.lastSubstring("leetcode"),
+        # every suffix is a prefix of the one before it and the whole string
+        # wins, which is the maximal version of the same case.
+        s.lastSubstring("zzzzz"),
+        # the answer is the last character, the shortest it can be.
+        s.lastSubstring("cacacb"),
+    ), ("nana", "tcode", "zzzzz", "cb")
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -319,6 +334,7 @@ CASES = [
     ("1202-smallest-string-with-swaps", c_smallest_string_with_swaps),
     ("0685-redundant-connection-ii", c_redundant_connection_ii),
     ("0499-the-maze-iii", c_the_maze_iii),
+    ("1163-last-substring-in-lexicographical-order", c_last_substring),
 ]
 
 

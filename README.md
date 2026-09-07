@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 36 sampled solutions from ...\leetcode-solutions
+running 37 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -65,8 +65,9 @@ running 36 sampled solutions from ...\leetcode-solutions
 [PASS] 1202-smallest-string-with-swaps               expected=('bacd', 'abcd', 'udu')
 [PASS] 0685-redundant-connection-ii                  expected=([2, 3], [2, 1], [3, 1])
 [PASS] 0499-the-maze-iii                             expected=('lul', 'impossible', '')
+[PASS] 1163-last-substring-in-lexicographical-order  expected=('nana', 'tcode', 'zzzzz', 'cb')
 ------------------------------------------------------------
-total=36 passed=36 failed=0
+total=37 passed=37 failed=0
 SMOKE PASSED
 ```
 
@@ -76,14 +77,14 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `36 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `37 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation), not the full problem set; extend the `CASES`
 list in `scripts/smoke.py` to cover more problems.
 
-## Solved (516)
+## Solved (517)
 
-<!-- last touched: 2026-09-06 (rev 603) -->
+<!-- last touched: 2026-09-07 (rev 604) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -408,6 +409,7 @@ list in `scripts/smoke.py` to cover more problems.
 | 1106 | [Parsing A Boolean Expression](1106-parsing-a-boolean-expression/) | Hard | Python |
 | 1109 | [Corporate Flight Bookings](1109-corporate-flight-bookings/) | Medium | Python |
 | 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
+| 1163 | [Last Substring In Lexicographical Order](1163-last-substring-in-lexicographical-order/) | Hard | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
 | 1240 | [Tiling A Rectangle With The Fewest Squares](1240-tiling-a-rectangle-with-the-fewest-squares/) | Hard | Python |
 | 1268 | [Search Suggestions System](1268-search-suggestions-system/) | Medium | Python |
@@ -787,3 +789,4 @@ list in `scripts/smoke.py` to cover more problems.
 - 2026-09-02: lexicographically smallest equivalent string, run as the pre-registered test of yesterday's rule - the factoring form predicts correctly and the "varies across the class" paraphrase written beside it does not, because min is an aggregate over the class rather than a member picked out of it.
 - 2026-09-04: redundant connection ii, the statement legislates the tie so the printed function does not factor through the quotient and no argument is owed anyway, which kills the "only if" half of the rule and the four axes behind it - and the oracle says the answer set is the whole cycle, up to n, rather than the two candidates every account describes.
 - 2026-09-06: the maze iii, the tie-break goes into the dijkstra key and needs a monotonicity proof to get there, which the distance component supplies by forbidding the prefix case - so stipulated and free come apart and the axis is whether the choice is carried through a construction.
+- 2026-09-07: last substring in lexicographical order, run as the check on 499's distinction - same order, same proper-prefix case, and here it is not ruled out but decides the answer in half of random binary strings, because nothing extends the candidates. plus the max in the skip is not correctness at all, it is exactly n against n*n/4-1.
