@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 37 sampled solutions from ...\leetcode-solutions
+running 38 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -66,8 +66,9 @@ running 37 sampled solutions from ...\leetcode-solutions
 [PASS] 0685-redundant-connection-ii                  expected=([2, 3], [2, 1], [3, 1])
 [PASS] 0499-the-maze-iii                             expected=('lul', 'impossible', '')
 [PASS] 1163-last-substring-in-lexicographical-order  expected=('nana', 'tcode', 'zzzzz', 'cb')
+[PASS] 1345-jump-game-iv                             expected=(3, 1, 0, 2)
 ------------------------------------------------------------
-total=37 passed=37 failed=0
+total=38 passed=38 failed=0
 SMOKE PASSED
 ```
 
@@ -77,15 +78,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `37 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `38 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
-DP, hashing, in-place mutation, plus union-find, Dijkstra and binary search on
-the answer from the last nine additions), not the full problem set; extend the
+DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
+on the answer from the last ten additions), not the full problem set; extend the
 `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (517)
+## Solved (518)
 
-<!-- last touched: 2026-09-07 (rev 604) -->
+<!-- last touched: 2026-09-09 (rev 605) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -417,6 +418,7 @@ the answer from the last nine additions), not the full problem set; extend the
 | 1278 | [Palindrome Partitioning Iii](1278-palindrome-partitioning-iii/) | Hard | Python |
 | 1293 | [Shortest Path With Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
 | 1320 | [Minimum Distance To Type A Word Using Two Fingers](1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard | Python |
+| 1345 | [Jump Game Iv](1345-jump-game-iv/) | Hard | Python |
 | 1376 | [Time Needed To Inform All Employees](1376-time-needed-to-inform-all-employees/) | Medium | Python |
 | 1397 | [Find All Good Strings](1397-find-all-good-strings/) | Hard | Python |
 | 1402 | [Reducing Dishes](1402-reducing-dishes/) | Hard | Python |
@@ -791,3 +793,4 @@ the answer from the last nine additions), not the full problem set; extend the
 - 2026-09-04: redundant connection ii, the statement legislates the tie so the printed function does not factor through the quotient and no argument is owed anyway, which kills the "only if" half of the rule and the four axes behind it - and the oracle says the answer set is the whole cycle, up to n, rather than the two candidates every account describes.
 - 2026-09-06: the maze iii, the tie-break goes into the dijkstra key and needs a monotonicity proof to get there, which the distance component supplies by forbidding the prefix case - so stipulated and free come apart and the axis is whether the choice is carried through a construction.
 - 2026-09-07: last substring in lexicographical order, run as the check on 499's distinction - same order, same proper-prefix case, and here it is not ruled out but decides the answer in half of random binary strings, because nothing extends the candidates. plus the max in the skip is not correctness at all, it is exactly n against n*n/4-1.
+- 2026-09-09: jump game iv, taken to see whether the 7th's third position survives a change of algorithm family, and it does - the bucket clear in the bfs is 3n-2 against n*n+n-2 with the answer fixed at 1. the proof obligations come out mirrored, and the claim that a complexity-only guard hides from random testing was mine and is wrong: this one charges 6x on random arrays over 100 values.

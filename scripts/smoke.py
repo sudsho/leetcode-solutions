@@ -296,6 +296,20 @@ def c_last_substring(s):
     ), ("nana", "tcode", "zzzzz", "cb")
 
 
+def c_min_jumps(s):
+    return (
+        # the value classes are the only reason this is 3 rather than 9.
+        s.minJumps([100, -23, -23, 404, 100, 23, 23, 23, 3, 404]),
+        # one class holding every index, which is the input the bucket clear
+        # exists for - quadratic without it and still answering 1.
+        s.minJumps([7, 7, 7, 7, 7, 7, 7, 7, 7]),
+        # already at the target, so no jump and no scan at all.
+        s.minJumps([7]),
+        # every value distinct, so nothing but the i+1 walk is available.
+        s.minJumps([6, 1, 9]),
+    ), (3, 1, 0, 2)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -335,6 +349,7 @@ CASES = [
     ("0685-redundant-connection-ii", c_redundant_connection_ii),
     ("0499-the-maze-iii", c_the_maze_iii),
     ("1163-last-substring-in-lexicographical-order", c_last_substring),
+    ("1345-jump-game-iv", c_min_jumps),
 ]
 
 

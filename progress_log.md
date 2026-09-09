@@ -2171,3 +2171,61 @@ unguarded skip gives up. the other end is that the reduction from substrings to
 suffixes is itself the prefix fact - a string is never smaller than its own
 proper prefix - so the case that is delicate in the comparison is also what
 makes the candidate set small enough to scan.
+
+## 2026-09-09
+
+two nights off, and the thing i left sitting was the one i said i would not
+promote. the 7th ended with a line - `i = max(i + k + 1, j)` - that no part of
+the correctness argument mentions and that is the entire complexity bound, and i
+called it a third position for a choice to sit in and then refused to build
+anything on it. one instance, in a two-pointer scan on strings, which is the
+setting the whole axis was born in. five axes died in nine nights for exactly
+that.
+
+so tonight is the cheapest test available: look for the same position as far
+from a lex duel as this log goes. 1345, jump game iv. unweighted bfs on a graph
+with n*n edges that is never built, because a value class of size m contributes
+m(m-1) of them and `[7] * n` is one class.
+
+it is there, and it is `same.clear()`.
+
+harmless: when i comes off the queue, every index sharing its value is enqueued
+right then or was visited already, so the class is exhausted by that single
+expansion and every later look at the bucket finds nothing to do. deleting it
+cannot move the visited set. necessary: on `[7] * n` each of the n dequeues
+rescans all n members and the scan is quadratic while returning 1. exactly
+3n-2 against exactly n*n+n-2, asserted as identities rather than fitted, and
+agreement about the answer checked over every array on two values to length 11
+and three values to length 8.
+
+so the position is not an artifact of the setting. that is what i went in for.
+
+what i did not go in for is that the two instances have their proof obligations
+the other way round. on 1163 harmlessness was the hard direction - dropping the
+max is safe only because everything below j died in an earlier round, and it
+took an exhaustive search over two alphabets before i believed it - while the
+cost was one family and one measurement. here harmlessness is a one-line
+argument and necessity is the whole night. what the two share is the position
+and not the shape of getting into it, which is worth writing down because i had
+been reading 1163's difficulty as part of the definition.
+
+and the correction, which is the part that matters. i had written down before the
+run that a complexity-only guard is invisible to random testing. the 7th's was:
+re-elimination needs a periodic string, so random inputs never charge for it and
+i had to build `("ba" * m) + "aabb"` to see it at all. i filed that as a property
+of the position. it is a property of that guard. this one needs a collision, not
+a period, and on random arrays of length 2000 it charges 1.35x at 2000 distinct
+values, 6.29x at 100, 19.5x at 20. there is no threshold and no family to
+construct - the penalty is just the mean class size.
+
+so "you will not catch it by testing" is not something the position implies. it
+depends on how rare the input that charges for it is, and that is per instance.
+two instances is still two, and i am not naming this yet. but the difference
+between them is measured rather than asserted, which is more than the axis it
+came from had at the same age.
+
+bounds. 0 when n is 1 and the start is the target, otherwise at least 1 and at
+most n-1 by walking i+1 the whole way, attained exactly when every value is
+distinct. never -1: the i+1 edges alone connect the line, so the graph is
+connected and the bfs always arrives, which is the one place tonight where a
+thing that looks like a case split is not one.
