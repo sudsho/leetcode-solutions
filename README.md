@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 38 sampled solutions from ...\leetcode-solutions
+running 39 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -67,8 +67,9 @@ running 38 sampled solutions from ...\leetcode-solutions
 [PASS] 0499-the-maze-iii                             expected=('lul', 'impossible', '')
 [PASS] 1163-last-substring-in-lexicographical-order  expected=('nana', 'tcode', 'zzzzz', 'cb')
 [PASS] 1345-jump-game-iv                             expected=(3, 1, 0, 2)
+[PASS] 1976-number-of-ways-to-arrive-at-destination  expected=(4, 1, 1, 2)
 ------------------------------------------------------------
-total=38 passed=38 failed=0
+total=39 passed=39 failed=0
 SMOKE PASSED
 ```
 
@@ -78,15 +79,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `38 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `39 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last ten additions), not the full problem set; extend the
+on the answer from the last eleven additions), not the full problem set; extend the
 `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (518)
+## Solved (519)
 
-<!-- last touched: 2026-09-09 (rev 605) -->
+<!-- last touched: 2026-09-10 (rev 606) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -448,6 +449,7 @@ on the answer from the last ten additions), not the full problem set; extend the
 | 1898 | [Maximum Number Of Removable Characters](1898-maximum-number-of-removable-characters/) | Medium | Python |
 | 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
+| 1976 | [Number Of Ways To Arrive At Destination](1976-number-of-ways-to-arrive-at-destination/) | Medium | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
 | 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
 | 2517 | [Maximum Tastiness Of Candy Basket](2517-maximum-tastiness-of-candy-basket/) | Medium | Python |
@@ -794,3 +796,4 @@ on the answer from the last ten additions), not the full problem set; extend the
 - 2026-09-06: the maze iii, the tie-break goes into the dijkstra key and needs a monotonicity proof to get there, which the distance component supplies by forbidding the prefix case - so stipulated and free come apart and the axis is whether the choice is carried through a construction.
 - 2026-09-07: last substring in lexicographical order, run as the check on 499's distinction - same order, same proper-prefix case, and here it is not ruled out but decides the answer in half of random binary strings, because nothing extends the candidates. plus the max in the skip is not correctness at all, it is exactly n against n*n/4-1.
 - 2026-09-09: jump game iv, taken to see whether the 7th's third position survives a change of algorithm family, and it does - the bucket clear in the bfs is 3n-2 against n*n+n-2 with the answer fixed at 1. the proof obligations come out mirrored, and the claim that a complexity-only guard hides from random testing was mine and is wrong: this one charges 6x on random arrays over 100 values.
+- 2026-09-10: number of ways to arrive at destination, the dijkstra stale-entry skip under counting - deleting it is exactly (n-1)(1+n(n-1)/2) scans against n(n-1) and harmless if the relaxation reads the popped key, and a wrong answer if it reads dist[u], with the two programs identical wherever the guard is present. so the complexity-only position belongs to a line plus a choice the line hides, not to the line. the prediction that the bad version hides at large weights was mine and is wrong: 164 of 400 random graphs at weights up to 10^4, and it is only absent at w = 1, where nothing ever goes stale.

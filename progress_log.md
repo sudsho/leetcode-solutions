@@ -2229,3 +2229,69 @@ most n-1 by walking i+1 the whole way, attained exactly when every value is
 distinct. never -1: the i+1 edges alone connect the line, so the graph is
 connected and the bfs always arrives, which is the one place tonight where a
 thing that looks like a case split is not one.
+
+## 2026-09-10
+
+the 9th left two instances of a line that no correctness argument mentions and
+that is the whole bound, plus a measurement that how well such a line hides from
+testing is decided per instance. both nights asked the same question of the
+line: does it have the property. tonight is a check on whether the line is even
+the right thing to be asking.
+
+1976, number of ways to arrive at destination. counting dijkstra, and the line
+is the one every account already has a name for - `if d > dist[u]: continue`,
+the stale-entry skip, an optimisation in every textbook and harmless on plain
+distances.
+
+counting gives it a neighbour. on every pop the guard lets through,
+`d == dist[u]`, so the relaxation can add the weight to either and nothing can
+tell which one it reads. that is four programs, and against a floyd-warshall
+oracle with no heap in it, over every graph on 4 nodes with weights up to 3 and
+every graph on 5 nodes with weights up to 2:
+
+- guard, reads d: 0 wrong
+- guard, reads dist[u]: 0 wrong
+- no guard, reads d: 0 wrong
+- no guard, reads dist[u]: 18 of 3954, 90 of 57354
+
+the third is the 7th's and 9th's position exactly. a stale pop offers d + w,
+strictly more than dist[u] + w, which is already at least dist[v], so nothing
+fires. on the staircase - complete graph, w(i, j) = 2(j-i)-1, node j pushed once
+by every earlier node - that is exactly (n-1)(1 + n(n-1)/2) scans against
+n(n-1), asserted. the fourth is a wrong answer, 10404 at n = 10 where the truth
+is 1. a stale pop offering dist[u] + w re-reads every tight edge out of u, and a
+tight edge is an equality by definition, so ways[u] goes in twice.
+
+so the same deleted line is complexity-only in one program and correctness in
+another, and the two programs are the same character for character wherever
+the line is present. the property i have been giving to a line for three nights
+belongs to the line together with a choice the line itself makes invisible. i
+did not go back tonight to look for a partner in 1163 or 1345, and it is the
+obvious next thing: if the max in the skip or the bucket clear has a neighbour
+like dist[u], then the instances were each read off one program out of several
+and i do not yet know which.
+
+the prediction, written before the run, and wrong. i had the fourth program
+hiding at large weight ranges, on the reasoning that it needs a tie and paths
+rarely tie once the weights spread out. it is wrong on 56 of 400 random graphs
+at weights up to 2 and 164 of 400 at weights up to 10^4, and the rate never
+comes back down. the equality it trips is not a tie between two paths. it is
+the edge that already counted, read a second time, and every shortest path has
+those whatever the weights are. the one range where it hides is w = 1, and not
+for my reason: with every weight equal the pops come out in bfs order, nothing
+is improved after it is pushed, and there is no stale entry for anything to go
+wrong on. absent, not rare.
+
+and the 9th's axis from the other side. 0.46% of the 4-node graphs and 0.16% of
+the 5-node ones catch it, against 41-44% of random 40-node graphs at wide
+weights. the graphs a person draws by hand to test dijkstra are the ones where
+this version comes out right.
+
+bounds. at least 1, since everything is reachable. not polynomially bounded
+above: when 3 divides n-2, the middle nodes in layers of three with unit weights
+give 3^((n-2)/3) routes, 3^66 at n = 200, which is the whole reason for the
+modulus. guarded, each node is really popped once, O((n + E) log n). unguarded
+and reading d, every push is a strict improvement along a directed edge, so a
+node carries at most its degree in entries and the scan is at most the sum of
+squared degrees - O(n^3) on a complete graph, and the staircase gets within a
+factor of two of it.

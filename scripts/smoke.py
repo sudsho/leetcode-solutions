@@ -310,6 +310,21 @@ def c_min_jumps(s):
     ), (3, 1, 0, 2)
 
 
+def c_count_paths(s):
+    return (
+        # the statement's example: four routes of length 7 through three
+        # different middle nodes.
+        s.countPaths(7, [[0, 6, 7], [0, 1, 2], [1, 2, 3], [1, 3, 3], [6, 3, 3],
+                         [3, 5, 1], [6, 5, 1], [2, 5, 1], [0, 4, 5], [4, 6, 2]]),
+        # one road, one route.
+        s.countPaths(2, [[1, 0, 10]]),
+        # start is the destination - the empty route counts once.
+        s.countPaths(1, []),
+        # a square with unit sides, two routes that tie on every prefix.
+        s.countPaths(4, [[0, 1, 1], [1, 3, 1], [0, 2, 1], [2, 3, 1]]),
+    ), (4, 1, 1, 2)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -350,6 +365,7 @@ CASES = [
     ("0499-the-maze-iii", c_the_maze_iii),
     ("1163-last-substring-in-lexicographical-order", c_last_substring),
     ("1345-jump-game-iv", c_min_jumps),
+    ("1976-number-of-ways-to-arrive-at-destination", c_count_paths),
 ]
 
 
