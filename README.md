@@ -68,8 +68,9 @@ running 39 sampled solutions from ...\leetcode-solutions
 [PASS] 1163-last-substring-in-lexicographical-order  expected=('nana', 'tcode', 'zzzzz', 'cb')
 [PASS] 1345-jump-game-iv                             expected=(3, 1, 0, 2)
 [PASS] 1976-number-of-ways-to-arrive-at-destination  expected=(4, 1, 1, 2)
+[PASS] 0882-reachable-nodes-in-subdivided-graph      expected=(13, 1, 15)
 ------------------------------------------------------------
-total=39 passed=39 failed=0
+total=40 passed=40 failed=0
 SMOKE PASSED
 ```
 
@@ -79,15 +80,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `39 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `40 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last eleven additions), not the full problem set; extend the
+on the answer from the last twelve additions), not the full problem set; extend the
 `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (519)
+## Solved (520)
 
-<!-- last touched: 2026-09-10 (rev 606) -->
+<!-- last touched: 2026-09-11 (rev 607) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -394,6 +395,7 @@ on the answer from the last eleven additions), not the full problem set; extend 
 | 871 | [Minimum Number Of Refueling Stops](0871-minimum-number-of-refueling-stops/) | Hard | Python |
 | 875 | [Koko Eating Bananas](0875-koko-eating-bananas/) | Medium | Python |
 | 876 | [Middle Of The Linked List](0876-middle-of-the-linked-list/) | Easy | Python |
+| 882 | [Reachable Nodes In Subdivided Graph](0882-reachable-nodes-in-subdivided-graph/) | Hard | Python |
 | 891 | [Sum Of Subsequence Widths](0891-sum-of-subsequence-widths/) | Hard | Python |
 | 895 | [Maximum Frequency Stack](0895-maximum-frequency-stack/) | Hard | Python |
 | 902 | [Numbers At Most N Given Digit Set](0902-numbers-at-most-n-given-digit-set/) | Hard | Python |
@@ -797,3 +799,4 @@ on the answer from the last eleven additions), not the full problem set; extend 
 - 2026-09-07: last substring in lexicographical order, run as the check on 499's distinction - same order, same proper-prefix case, and here it is not ruled out but decides the answer in half of random binary strings, because nothing extends the candidates. plus the max in the skip is not correctness at all, it is exactly n against n*n/4-1.
 - 2026-09-09: jump game iv, taken to see whether the 7th's third position survives a change of algorithm family, and it does - the bucket clear in the bfs is 3n-2 against n*n+n-2 with the answer fixed at 1. the proof obligations come out mirrored, and the claim that a complexity-only guard hides from random testing was mine and is wrong: this one charges 6x on random arrays over 100 values.
 - 2026-09-10: number of ways to arrive at destination, the dijkstra stale-entry skip under counting - deleting it is exactly (n-1)(1+n(n-1)/2) scans against n(n-1) and harmless if the relaxation reads the popped key, and a wrong answer if it reads dist[u], with the two programs identical wherever the guard is present. so the complexity-only position belongs to a line plus a choice the line hides, not to the line. the prediction that the bad version hides at large weights was mine and is wrong: 164 of 400 random graphs at weights up to 10^4, and it is only absent at w = 1, where nothing ever goes stale.
+- 2026-09-11: reachable nodes in subdivided graph, the 10th's rule tested on a dijkstra whose pop feeds an overwrite and a counter - with the guard deleted, reading d breaks the overwrite on 120 of 2916 small stale instances and 278 of 279 random graphs, reading dist[u] is harmless, and the counter is wrong under both. so the property is not the read either, it is whether each update absorbs a repeat under the value read. the textbook program minus its guard is right on 117 stale instances only because its two bugs cancel exactly.

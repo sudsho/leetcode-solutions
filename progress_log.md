@@ -2295,3 +2295,77 @@ and reading d, every push is a strict improvement along a directed edge, so a
 node carries at most its degree in entries and the scan is at most the sum of
 squared degrees - O(n^3) on a complete graph, and the staircase gets within a
 factor of two of it.
+
+## 2026-09-11
+
+the 10th ended with a rule and a thing i did not do. the rule was that the stale
+skip's position belongs to the guard plus the read it hides - read `d` and
+deleting it only costs scans, read `dist[u]` and it is a wrong answer. the thing
+i did not do was go back to 1163 and 1345 for a partner. i did not do it tonight
+either, because the rule as written makes a cheaper prediction first: any
+dijkstra whose pop feeds something besides the relaxation, and reads `d`, can
+lose the guard.
+
+882, reachable nodes in subdivided graph. the textbook program reads `d`, and its
+pop feeds two things 1976 did not have: `answer += 1` for the original node, and
+`used[u, v] = min(cnt, maxMoves - d)`, an overwrite. with the guard both happen
+once per node at `d == dist[u]`, so the read, the update and where the count is
+taken are all free. sixteen programs, and the eight guarded ones agree with a bfs
+on the subdivided graph on all 36864 four-node and 177147 five-node instances.
+
+without the guard:
+
+- counter, either read, either update: wrong on every instance with a stale pop,
+  2916 of 2916 and 7218 of 7218
+- overwrite reading d: 120 and 324
+- overwrite reading dist[u]: 0
+- max, either read: 0
+
+so the prediction is wrong, and wrong the other way round. the read the 10th
+called safe is the one that breaks the overwrite, and the read it called harmful
+writes the same value twice and changes nothing. neither read has the property.
+what fits all twenty programs over the two nights is per update: does it absorb
+a repeat under the value the read hands it. a strict `<` absorbs both reads, max
+absorbs both, an overwrite absorbs only an identical value, `+=` absorbs
+nothing, and 1976's `==` branch was only safe from `d` because a strictly larger
+offer never gets to it. the counter is not reached through a read at all.
+
+that is fitted to two problems on the night it was written. five axes died of
+that in nine nights, and the 10th's rule has now died of it in one. it stays a
+table in the readme and does not get a name.
+
+the prediction, written before the run: the overwrite from d wrong but rarely,
+since `min(cnt, used[u, v] + used[v, u])` saturates and hides a lowered reach,
+and less often as the budget grows. the exhaustive sets agreed, about 4%. random
+30-node graphs do not: wrong on 55 of the 55 with a stale pop at budget 5, 278 of
+279 at 10, then 54 at 20 and none from 40. it falls with the budget as a cliff
+rather than a slope, and the small graphs only looked safe because at counts up
+to 2 nearly every edge is saturated before anything goes stale. the 10th had the
+same thing at 0.16%. twice in two nights the graphs small enough to enumerate
+are the ones the bug hides in, and i am going to stop reading an exhaustive
+small set as a statement about rate. it is a statement about correctness on
+that set and nothing else.
+
+and one i had no prediction for. the textbook program minus its guard is right
+on 117 and 288 of the stale instances, and in every one of them the overwrite
+undercounts by exactly the number of stale pops the counter adds back, asserted
+per instance rather than read off the table. on the lasso - `0-2` at weight L
+beside `0-1-2` at weight 2, long pendant off 2 - the overwrite loses L-2 and the
+counter gains 1, so at L = 3 the program with its guard deleted is exactly
+right with both bugs in it.
+
+the 10th's open item is still open, with a sharper form now. the bucket clear
+in 1345 skips a rescan that only reaches `if not visited[j]`, a strict test, and
+the table says that absorbs a repeat. the neighbour to look for is a version
+where the rescan reaches something that does not, and counting shortest jump
+sequences is the obvious one. the table predicts the direction reverses there:
+a second member of a class at the same level brings ways the first did not, so
+its rescan is not a repeat at all, and it is the clear that is wrong and
+deleting it that is right. written down before i have run anything.
+
+bounds. at least 1, node 0, and at most n + sum(cnt). guarded, one real pop per
+node, O(E log E). unguarded, a real pop pushes each neighbour at most once and a
+stale pop pushes nothing under either read, so there are at most 2E + 1 pushes
+and the counter's error is at most 2E. the overwrite's error at one end of an
+edge is the gap between the last stale key at u and dist[u], capped by cnt, and
+the lasso attains L - 2 of it with a single stale pop.

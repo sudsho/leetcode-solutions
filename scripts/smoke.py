@@ -325,6 +325,19 @@ def c_count_paths(s):
     ), (4, 1, 1, 2)
 
 
+def c_reachable_nodes(s):
+    return (
+        # the statement's first example: 13 of the 16 nodes, with the long edge
+        # walked into from both ends.
+        s.reachableNodes([[0, 1, 10], [0, 2, 1], [1, 2, 2]], 6, 3),
+        # node 0 has no edges at all, so only itself counts.
+        s.reachableNodes([[1, 2, 4], [1, 4, 5], [1, 3, 1], [2, 3, 4], [3, 4, 5]], 17, 5),
+        # the lasso at length 5. node 2 goes stale once, and this is the input
+        # the textbook program minus its guard answers 13 on.
+        s.reachableNodes([[0, 2, 4], [0, 1, 0], [1, 2, 0], [2, 3, 10]], 10, 4),
+    ), (13, 1, 15)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -366,6 +379,7 @@ CASES = [
     ("1163-last-substring-in-lexicographical-order", c_last_substring),
     ("1345-jump-game-iv", c_min_jumps),
     ("1976-number-of-ways-to-arrive-at-destination", c_count_paths),
+    ("0882-reachable-nodes-in-subdivided-graph", c_reachable_nodes),
 ]
 
 
