@@ -10,3 +10,8 @@
 - bfs over an implicit dense graph: hold the equivalence classes as buckets and
   clear a bucket once you expand it. one expansion settles the whole class, so
   the clear cannot change an answer, and without it the scan is quadratic.
+- dijkstra stale skip (`if d > dist[u]: continue`): plain dijkstra survives
+  losing it, which says nothing about the program in front of you. go through
+  each update the pop reaches and ask whether a repeat is absorbed under what it
+  reads - strict `<` and max are, an overwrite only from dist[u], `+=` and a
+  per-pop counter never (1976, 882).
