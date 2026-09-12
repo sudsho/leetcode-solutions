@@ -2369,3 +2369,57 @@ stale pop pushes nothing under either read, so there are at most 2E + 1 pushes
 and the counter's error is at most 2E. the overwrite's error at one end of an
 edge is the gap between the last stale key at u and dist[u], capped by cnt, and
 the lasso attains L - 2 of it with a single stale pop.
+
+## 2026-09-12
+
+the 11th left a prediction written down before anything was run, which is the
+first time the table has been asked for one. 1345's bucket clear skips a rescan
+that only reaches `if not visited[j]`, a strict test, which absorbs a repeat.
+count shortest jump sequences and the rescan reaches a `+=` instead, which does
+not, so the table says the direction reverses: keeping the clear is the bug and
+deleting it is the fix.
+
+counting shortest sequences in 1345 is not a problem on the site, so 1871, jump
+game vii, which has the same line in another shape. `farthest` is the right end
+of the last window scanned and every new window starts past it. harmless because
+the queue comes out in index order, so everything below `farthest` was taken or
+rejected from a lower index, and identical reach and distances on all 229374
+instances with strings to length 12. necessary: n-1 scans against n(n-1)/2 on
+all zeros with the widest window, asserted, and on random strings the ratio is
+0.7 times the window, to two digits up to 100, which i did predict.
+
+the reversal holds, on both lines. keeping the skip and counting is wrong on
+30641 of the 68864 reachable instances, 1345's clear is wrong on 104 of 1024 and
+48 of 2187, and deleting either one is wrong on none. the table got a
+prediction right that it was not fitted to. it is still a table.
+
+the 1871 version is not an undercount in the usual sense. under the skip every
+index is scanned once, by its lowest predecessor, so the counter copies the 1 at
+index 0 down the chain and returns 1 on every reachable instance, asserted per
+index. wrong exactly when there is more than one shortest sequence, and absent
+when min and max jump are equal.
+
+and the part i did not go in for. deleting the line is right, but the counting
+program does not have to pay n * maxJump for it. the same index order means
+distance is non-decreasing in the index, asserted on all of them, so each level
+is one run and the predecessors one level down are a window cut to that run, one
+prefix-sum difference. O(n), with the skip kept, and it matches the oracle
+everywhere. so "the line is wrong under counting" and "the fix costs what the
+line saved" are two claims, and here only the first is true. 1345 has no such
+order and i have not looked for its replacement.
+
+two predictions wrong. 1345's clear under 10% on the small sets: 10.2% and
+2.2%, which straddles it. and the 1871 skip wrong on more than 80% of reachable
+random instances once the window is 3 wide, which holds at (2, 4) and (3, 7) and
+fails at (1, 10), 195 of 269. i had a reason ready, that ten-wide jumps leave
+the shortest sequences less room, and put a slack column in before believing it.
+mean slack 4.35 against 4.15 to 4.93 for the others. not that, and i do not
+have the reason, which is where it stays tonight. the fall in 1345's random rate
+at 3 values did have the reason i guessed: a third of those arrays share their
+ends, one jump and one sequence, and among the rest it is 43% against 47% at 8.
+
+bounds. false whenever the last character is a 1. with the skip each index is
+scanned at most once, so at most n-1, attained on all zeros at the widest
+window. without it, at most the reachable count times the window width. at
+least one shortest sequence when reachable, exactly one when the window is a
+single index.

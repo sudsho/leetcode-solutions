@@ -69,8 +69,9 @@ running 39 sampled solutions from ...\leetcode-solutions
 [PASS] 1345-jump-game-iv                             expected=(3, 1, 0, 2)
 [PASS] 1976-number-of-ways-to-arrive-at-destination  expected=(4, 1, 1, 2)
 [PASS] 0882-reachable-nodes-in-subdivided-graph      expected=(13, 1, 15)
+[PASS] 1871-jump-game-vii                            expected=(True, False, False, True)
 ------------------------------------------------------------
-total=40 passed=40 failed=0
+total=41 passed=41 failed=0
 SMOKE PASSED
 ```
 
@@ -80,15 +81,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `40 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `41 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twelve additions), not the full problem set; extend the
+on the answer from the last thirteen additions), not the full problem set; extend the
 `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (520)
+## Solved (521)
 
-<!-- last touched: 2026-09-11 (rev 607) -->
+<!-- last touched: 2026-09-12 (rev 608) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -448,6 +449,7 @@ on the answer from the last twelve additions), not the full problem set; extend 
 | 1808 | [Maximize Number Of Nice Divisors](1808-maximize-number-of-nice-divisors/) | Hard | Python |
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
 | 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
+| 1871 | [Jump Game Vii](1871-jump-game-vii/) | Medium | Python |
 | 1898 | [Maximum Number Of Removable Characters](1898-maximum-number-of-removable-characters/) | Medium | Python |
 | 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
@@ -800,3 +802,4 @@ on the answer from the last twelve additions), not the full problem set; extend 
 - 2026-09-09: jump game iv, taken to see whether the 7th's third position survives a change of algorithm family, and it does - the bucket clear in the bfs is 3n-2 against n*n+n-2 with the answer fixed at 1. the proof obligations come out mirrored, and the claim that a complexity-only guard hides from random testing was mine and is wrong: this one charges 6x on random arrays over 100 values.
 - 2026-09-10: number of ways to arrive at destination, the dijkstra stale-entry skip under counting - deleting it is exactly (n-1)(1+n(n-1)/2) scans against n(n-1) and harmless if the relaxation reads the popped key, and a wrong answer if it reads dist[u], with the two programs identical wherever the guard is present. so the complexity-only position belongs to a line plus a choice the line hides, not to the line. the prediction that the bad version hides at large weights was mine and is wrong: 164 of 400 random graphs at weights up to 10^4, and it is only absent at w = 1, where nothing ever goes stale.
 - 2026-09-11: reachable nodes in subdivided graph, the 10th's rule tested on a dijkstra whose pop feeds an overwrite and a counter - with the guard deleted, reading d breaks the overwrite on 120 of 2916 small stale instances and 278 of 279 random graphs, reading dist[u] is harmless, and the counter is wrong under both. so the property is not the read either, it is whether each update absorbs a repeat under the value read. the textbook program minus its guard is right on 117 stale instances only because its two bugs cancel exactly.
+- 2026-09-12: jump game vii, standing in for counting shortest sequences in 1345 - the farthest pointer is the same line, n-1 scans against n(n-1)/2 with the answer unchanged on 229374 instances. 882's table predicted the direction reverses under counting and it does on both lines: the skip returns 1 on every reachable instance and is wrong on 30641 of 68864, 1345's clear is wrong on 104 of 1024, deleting either is right. the fix does not have to cost what the line saved, since distance is monotone in the index here and a prefix sum over each level's run counts in O(n). the 80% prediction on random windows fails at (1, 10), and slack is not why.

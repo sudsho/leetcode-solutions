@@ -338,6 +338,19 @@ def c_reachable_nodes(s):
     ), (13, 1, 15)
 
 
+def c_can_reach(s):
+    return (
+        # the statement's two examples.
+        s.canReach("011010", 2, 3),
+        s.canReach("01101110", 2, 3),
+        # widest window, and the last index is a '1', so nothing the skip
+        # decides matters.
+        s.canReach("0000000001", 1, 9),
+        # lo == hi over a run of ones: one jump or nothing.
+        s.canReach("0111110", 6, 6),
+    ), (True, False, False, True)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -380,6 +393,7 @@ CASES = [
     ("1345-jump-game-iv", c_min_jumps),
     ("1976-number-of-ways-to-arrive-at-destination", c_count_paths),
     ("0882-reachable-nodes-in-subdivided-graph", c_reachable_nodes),
+    ("1871-jump-game-vii", c_can_reach),
 ]
 
 
