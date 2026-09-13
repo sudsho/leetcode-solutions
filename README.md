@@ -70,8 +70,9 @@ running 39 sampled solutions from ...\leetcode-solutions
 [PASS] 1976-number-of-ways-to-arrive-at-destination  expected=(4, 1, 1, 2)
 [PASS] 0882-reachable-nodes-in-subdivided-graph      expected=(13, 1, 15)
 [PASS] 1871-jump-game-vii                            expected=(True, False, False, True)
+[PASS] 3552-grid-teleportation-traversal             expected=(2, 13, 0, -1)
 ------------------------------------------------------------
-total=41 passed=41 failed=0
+total=42 passed=42 failed=0
 SMOKE PASSED
 ```
 
@@ -81,15 +82,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `41 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `42 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last thirteen additions), not the full problem set; extend the
+on the answer from the last fourteen additions), not the full problem set; extend the
 `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (521)
+## Solved (522)
 
-<!-- last touched: 2026-09-12 (rev 608) -->
+<!-- last touched: 2026-09-13 (rev 609) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -531,6 +532,7 @@ on the answer from the last thirteen additions), not the full problem set; exten
 | 3505 | [Minimum Operations To Make Elements Within K Subarrays Equal](3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard | Python |
 | 3517 | [Smallest Palindromic Rearrangement I](3517-smallest-palindromic-rearrangement-i/) | Medium | Python |
 | 3543 | [Maximum Weighted K Edge Path](3543-maximum-weighted-k-edge-path/) | Medium | Python |
+| 3552 | [Grid Teleportation Traversal](3552-grid-teleportation-traversal/) | Medium | Python |
 | 3559 | [Number Of Ways To Assign Edge Weights Ii](3559-number-of-ways-to-assign-edge-weights-ii/) | Hard | Python |
 | 3578 | [Count Partitions With Max Min Difference At Most K](3578-count-partitions-with-max-min-difference-at-most-k/) | Medium | Python |
 | 54 | [Spiral Matrix](0054-spiral-matrix/) | Medium | Python |
@@ -803,3 +805,4 @@ on the answer from the last thirteen additions), not the full problem set; exten
 - 2026-09-10: number of ways to arrive at destination, the dijkstra stale-entry skip under counting - deleting it is exactly (n-1)(1+n(n-1)/2) scans against n(n-1) and harmless if the relaxation reads the popped key, and a wrong answer if it reads dist[u], with the two programs identical wherever the guard is present. so the complexity-only position belongs to a line plus a choice the line hides, not to the line. the prediction that the bad version hides at large weights was mine and is wrong: 164 of 400 random graphs at weights up to 10^4, and it is only absent at w = 1, where nothing ever goes stale.
 - 2026-09-11: reachable nodes in subdivided graph, the 10th's rule tested on a dijkstra whose pop feeds an overwrite and a counter - with the guard deleted, reading d breaks the overwrite on 120 of 2916 small stale instances and 278 of 279 random graphs, reading dist[u] is harmless, and the counter is wrong under both. so the property is not the read either, it is whether each update absorbs a repeat under the value read. the textbook program minus its guard is right on 117 stale instances only because its two bugs cancel exactly.
 - 2026-09-12: jump game vii, standing in for counting shortest sequences in 1345 - the farthest pointer is the same line, n-1 scans against n(n-1)/2 with the answer unchanged on 229374 instances. 882's table predicted the direction reverses under counting and it does on both lines: the skip returns 1 on every reachable instance and is wrong on 30641 of 68864, 1345's clear is wrong on 104 of 1024, deleting either is right. the fix does not have to cost what the line saved, since distance is monotone in the index here and a prefix sum over each level's run counts in O(n). the 80% prediction on random windows fails at (1, 10), and slack is not why.
+- 2026-09-13: grid teleportation traversal, 1345's bucket clear with a zero-cost teleport, and the clear is also the statement's at-most-once rule - deleting it never changes the minimum on 248832 small grids and costs N^2 against N. under counting the table's first half holds and its second does not: keeping the clear and copying the pop's count is wrong on 26912 of 137097 3x3 grids, deleting it and copying is wrong on 89306. read the level's walking sum instead and both are right, since a letter's portals share one level whose walking arrivals are final by its first pop. 1345's replacement is the same idea one level wider, one pass per bucket, wrong on none. the prediction that the copy fails on more than half the grids a teleport shortens was mine and is wrong: 7% to 34%, because it needs two portals of one letter walked into at the same level.

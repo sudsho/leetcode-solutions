@@ -351,6 +351,18 @@ def c_can_reach(s):
     ), (True, False, False, True)
 
 
+def c_min_moves(s):
+    return (
+        # the statement's two examples.
+        s.minMoves(["A..", ".A.", "..."]),
+        s.minMoves([".#...", ".#.#.", ".#.#.", "...#."]),
+        # the target shares the start's letter behind walls: no moves at all.
+        s.minMoves(["A#", "#A"]),
+        # walled off.
+        s.minMoves([".#", "#."]),
+    ), (2, 13, 0, -1)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -394,6 +406,7 @@ CASES = [
     ("1976-number-of-ways-to-arrive-at-destination", c_count_paths),
     ("0882-reachable-nodes-in-subdivided-graph", c_reachable_nodes),
     ("1871-jump-game-vii", c_can_reach),
+    ("3552-grid-teleportation-traversal", c_min_moves),
 ]
 
 

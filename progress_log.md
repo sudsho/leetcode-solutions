@@ -2423,3 +2423,80 @@ scanned at most once, so at most n-1, attained on all zeros at the widest
 window. without it, at most the reachable count times the window width. at
 least one shortest sequence when reachable, exactly one when the window is a
 single index.
+
+## 2026-09-13
+
+the 12th left two things open. 1345 has no index order, so 1871's prefix sums do
+not carry over and i had not looked for what does. and the (1, 10) failure,
+which still has no reason and is not what tonight is about.
+
+3552, grid teleportation traversal, because it is 1345's bucket clear with one
+change that matters: a teleport costs nothing. the statement also writes the
+clear down as a rule, each letter at most once, so deleting the line deletes a
+sentence of the problem. for the minimum that is harmless. a shortest route
+never teleports on a letter twice with a move in between, since the later
+teleport could have been taken from the first portal, and the answer is the same
+with and without it on all 248832 grids over `.#AB` up to 3x3, against an oracle
+that keeps the used letters in its state. necessary: N against N^2 bucket scans
+on an all-portal grid, asserted, and about the mean class size on random 60x60
+grids, 62x at 26 letters and 1595x at one.
+
+under counting the 11th's table says what 1871 and 1345 confirmed: the rescan
+the clear skips reaches a `+=`, so keeping the clear is wrong and deleting it is
+right. the first half holds here and the second does not. on the 137097
+reachable 3x3 grids:
+
+- keep the clear, copy the pop's count: wrong on 26912, always under
+- delete it, copy: wrong on 89306, 83840 of them over
+- keep it, read the level's walking sum: 0
+- delete it, same read as an overwrite: 0
+
+zero cost is the whole difference. every portal of a letter is one teleport from
+the first one popped, so they all sit on one level, asserted, and a move into
+that level comes from a pop one level down, which the deque has finished before
+any pop at this level starts. so at the first pop of a letter everything the
+letter will ever hand on is already final: the walked-in journeys of its members.
+a journey into a member either walked in or teleported from a member that walked
+in, so every member's count is that one sum, and they come out equal on 209356
+letters. the copy reads the wrong number. at the first pop a member's own count
+is only its own walked-in journeys, and without the clear a later pop's count
+already has teleports in it, and copying those on is a second teleport on the
+same letter.
+
+so the line is complexity-only again once the read is the sum, and the update
+that makes it so is an overwrite of an identical value, which 882's table
+already has. the table survives tonight. but the program it was asked about had
+to be rewritten before its answer was right, and the table has nothing to say
+about which program to write.
+
+and 1345's replacement, which is the same idea one level wider. a bucket there is
+one jump wide, so its members span at most two levels, asserted, and when the
+first member shows up in a frontier, the frontier's members of that value are all
+the bucket will ever hand on. one pass per bucket gives the count with the clear
+kept: wrong on none of 1024 and 2187, at most 2.97 scans per index on random
+arrays. it needed one correction on the way. a member next to a frontier member
+of its own value is reached by the step and the jump, which is one index
+sequence, and without taking that back out it is wrong on 96 and 312.
+
+so the order 1871 had was not the point. what the three counting programs
+needed was to know when a class had finished contributing. 1871 got that from
+the index, and 1345 and 3552 get it from the class being one jump wide.
+
+the prediction, written before the run, and wrong. i had keeping the clear and
+copying wrong on more than half the random 6x6 grids a teleport shortens. it is
+11%, 16%, 22%, 34% and 7% over five letter mixes. a teleport is not enough. the
+copy only loses anything when two portals of one letter are both walked into at
+its level, and without such a tie it is right at every cell of every exhaustive
+grid, asserted. ties are 36 of the 300 reachable grids at one letter and 238 of
+297 at six, and the wrong grids are inside the tied ones every time. the other
+seven predictions held, including the one that mattered, that deleting the clear
+and copying would be wrong too.
+
+bounds. -1 when the target is a wall or cut off, 0 when it is the start or
+shares the start's letter. otherwise at most mn - 1, since a shortest journey
+visits no cell twice: the stretch between two visits holds a move, and cutting
+it is shorter, or only teleports, and two in a row reuse a letter. with the clear
+a cell is pushed at most twice and each bucket is scanned once, O(mn). without it
+the scans are the sum over popped portals of their class sizes, (mn)^2 on one
+letter. no modulus in the count, because nothing asks for one, and with no walls
+and no portals it is already C(m + n - 2, m - 1).
