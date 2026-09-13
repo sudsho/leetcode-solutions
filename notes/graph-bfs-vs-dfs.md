@@ -10,8 +10,12 @@
 - bfs over an implicit dense graph: hold the equivalence classes as buckets and
   clear a bucket once you expand it. one expansion settles the whole class, so
   the clear cannot change an answer, and without it the scan is quadratic.
-  that is for reachability only. counting shortest sequences, the rescan reaches
-  a `+=` and the clear (or a `farthest` pointer) is the wrong answer (1345, 1871).
+  that is for reachability only. counting shortest sequences, copying the pop's
+  own count through the clear (or a `farthest` pointer) is the wrong answer
+  (1345, 1871), and at zero cost deleting the clear is wrong too (3552). keep the
+  clear and hand on the class's summed count once the class is finished - the
+  index order says when in 1871, and a class one jump wide spans at most two
+  levels in 1345 and one in 3552.
 - dijkstra stale skip (`if d > dist[u]: continue`): plain dijkstra survives
   losing it, which says nothing about the program in front of you. go through
   each update the pop reaches and ask whether a repeat is absorbed under what it
