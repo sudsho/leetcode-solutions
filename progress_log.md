@@ -2500,3 +2500,66 @@ a cell is pushed at most twice and each bucket is scanned once, O(mn). without i
 the scans are the sum over popped portals of their class sizes, (mn)^2 on one
 letter. no modulus in the count, because nothing asks for one, and with no walls
 and no portals it is already C(m + n - 2, m - 1).
+
+## 2026-09-14
+
+the 13th ended on a sentence i liked too much. what the three counting programs
+needed was to know when a class had finished contributing, 1871 from the index
+and 1345 and 3552 from a class one jump wide. the way to test that is a program
+with the same skip and nothing in it that is a class.
+
+2612, minimum reverse operations. a 1 at p, reverse any length-k subarray that
+does not put it on a banned index, fewest reversals to each index. one reversal
+sends i anywhere in a stride-2 run, and my program keeps the unvisited indices of
+each parity behind skip pointers and removes each one the first time a run hands
+it out. harmless: every n up to 9 with every p, k and banned set, 33789
+instances, both programs equal to an oracle that simulates the reversal on an
+array. necessary: 2r - 1 indices examined for r reachable, asserted, against
+4005999 without the skip at n = 4000, k = 2000.
+
+the counts are the part the 13th was about.
+
+- keep the skip, `+=`: 1 at every reachable index, asserted, which is 1871 again.
+  each index is handed out once, to whoever finds it first
+- delete the skip, `+=` from the level below: right on all 33789 and on 2400
+  random instances at n = 60
+- keep the skip and pull: right on all of the same
+
+the pull is where the class should have been. a second reversal of the same
+subarray puts the 1 back, so the indices that reach j are landing(j), a stride-2 run. a
+length-k reversal sends i to something congruent to k - 1 - i mod 2, so a level
+is one parity, asserted, and every index of the finished level inside j's run is
+a predecessor with no filter. sort the level, prefix-sum its counts, two
+bisections per new index. 0.011s against 1.155s for the unskipped `+=` at
+n = 5000, k = 2500, with counts up to 30 digits at k = 8.
+
+so the 13th's sentence was half about the wrong thing. a bfs that goes one
+frontier at a time knows when a level is finished without being told, and 1871
+and 1345 were both that kind. 3552 needed an argument for it only because the 0-1
+deque does not go a frontier at a time. what every fix needed was the other
+half, that the finished level restricted to what reaches j is one sum. a window
+of a run in 1871, a bucket in 1345 and 3552, and a run again here because the
+relation is symmetric.
+
+the prediction i am least proud of: keeping the skip wrong on more than half of
+the reachable non-start indices once k >= 3 and n >= 8. on the exhaustive set it
+never passes 18%, and it is 3336 of 45874 overall. at k = 3 it is zero at every
+size, because a length-3 reversal moves the 1 by two, each parity is a path, and
+a path has one shortest route. at n = 60 it holds at k = 8, 9 and 20 and fails at
+3, 5, 21 and 45. that is the 11th's lesson a third time. the sizes small enough
+to enumerate say which program is right and nothing about how often the wrong one
+is wrong. the two even k at n = 60 are the two highest rates, 0.775 and 0.726,
+and at n = 9 k = 4 and 6 sit at 18% against 2% and 4% for 5 and 7. i do not have
+the reason.
+
+the nk/2 i had for the unskipped count is right in the middle, 24724 against 25500
+at k = 51, and wrong at the ends. at k = n - 1 a run holds at most two indices and
+it is 1498 against 499500. the other four predictions held. 1871's (1, 10) is
+still open, and it was not tonight.
+
+bounds. 0 at p, -1 on banned or unreachable indices, otherwise at most r - 1,
+since every level before an index is nonempty, and n - 1 is attained at k = 2
+from an end. with the skip, 2r - 1 examined and path halving keeps a lookup
+O(log n) amortised. without it at most r * min(k, n - k + 1), about half that with
+nothing banned. the pull adds a sort per level and two bisections per index,
+O(n log n). no modulus, since nothing asks for one.

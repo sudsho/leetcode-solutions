@@ -71,8 +71,9 @@ running 39 sampled solutions from ...\leetcode-solutions
 [PASS] 0882-reachable-nodes-in-subdivided-graph      expected=(13, 1, 15)
 [PASS] 1871-jump-game-vii                            expected=(True, False, False, True)
 [PASS] 3552-grid-teleportation-traversal             expected=(2, 13, 0, -1)
+[PASS] 2612-minimum-reverse-operations               expected=([0, -1, -1, 1], [0, -1, -1, -1, -1], [-1, -1, 0, -1], [0, 1, 2, 3, 4])
 ------------------------------------------------------------
-total=42 passed=42 failed=0
+total=43 passed=43 failed=0
 SMOKE PASSED
 ```
 
@@ -82,15 +83,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `42 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `43 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last fourteen additions), not the full problem set; extend the
+on the answer from the last fifteen additions), not the full problem set; extend the
 `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (522)
+## Solved (523)
 
-<!-- last touched: 2026-09-13 (rev 609) -->
+<!-- last touched: 2026-09-14 (rev 610) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -458,6 +459,7 @@ on the answer from the last fourteen additions), not the full problem set; exten
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
 | 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
 | 2517 | [Maximum Tastiness Of Candy Basket](2517-maximum-tastiness-of-candy-basket/) | Medium | Python |
+| 2612 | [Minimum Reverse Operations](2612-minimum-reverse-operations/) | Hard | Python |
 | 2616 | [Minimize The Maximum Difference Of Pairs](2616-minimize-the-maximum-difference-of-pairs/) | Medium | Python |
 | 2772 | [Apply Operations To Make All Array Elements Equal To Zero](2772-apply-operations-to-make-all-array-elements-equal-to-zero/) | Medium | Python |
 | 2528 | [Maximize The Minimum Powered City](2528-maximize-the-minimum-powered-city/) | Hard | Python |

@@ -363,6 +363,17 @@ def c_min_moves(s):
     ), (2, 13, 0, -1)
 
 
+def c_min_reverse_ops(s):
+    return (
+        # the statement's three examples.
+        s.minReverseOperations(4, 0, [1, 2], 4),
+        s.minReverseOperations(5, 0, [2, 4], 3),
+        s.minReverseOperations(4, 2, [0, 1, 3], 1),
+        # k = 2 moves the 1 one step, so the answer is the distance.
+        s.minReverseOperations(5, 0, [], 2),
+    ), ([0, -1, -1, 1], [0, -1, -1, -1, -1], [-1, -1, 0, -1], [0, 1, 2, 3, 4])
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -407,6 +418,7 @@ CASES = [
     ("0882-reachable-nodes-in-subdivided-graph", c_reachable_nodes),
     ("1871-jump-game-vii", c_can_reach),
     ("3552-grid-teleportation-traversal", c_min_moves),
+    ("2612-minimum-reverse-operations", c_min_reverse_ops),
 ]
 
 
