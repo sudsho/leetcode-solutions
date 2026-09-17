@@ -2563,3 +2563,87 @@ from an end. with the skip, 2r - 1 examined and path halving keeps a lookup
 O(log n) amortised. without it at most r * min(k, n - k + 1), about half that with
 nothing banned. the pull adds a sort per level and two bisections per index,
 O(n log n). no modulus, since nothing asks for one.
+
+## 2026-09-17
+
+the 14th said a bfs that goes one frontier at a time knows when a level is
+finished without being told, and that what every fix needed was the other half,
+the finished level restricted to what reaches j as one sum. so: a graph with no
+levels in it at all.
+
+2577, minimum time to visit a cell in a grid. every cell carries the second it
+opens, a move costs one, and you may walk back and forth to kill time. dijkstra,
+where standing next to a shut cell at t you arrive at the first second past its
+value with the parity of t + 1, since the wait is spent stepping away and back.
+the only cell that cannot do that is the corner at second 0, which has nothing
+behind it to bounce against. everywhere else the cell you came from has value at
+most t - 1 and is open again at t + 1.
+
+the marking rule is the line. writing a cell's second when it is pushed is what
+a bfs does and what a weighted graph usually punishes, and here it is right on
+all 10092 exhaustive grids and 2000 random ones, against an oracle that takes
+single steps and never uses the arrival rule.
+
+the reason is parity, and it is the 14th's parity fact standing in a different
+place. every second in a cell has the parity of i + j, asserted on 50337 cells.
+so all four neighbours of a cell sit at the other parity, the wait bump is the
+same whichever one you came from, and the arrival is nondecreasing in the
+neighbour's second. the heap hands over the earliest neighbour first, so the
+first write is the answer.
+
+two things fall out that i did not expect.
+
+- a tentative second is never written twice. zero rewrites on every grid i ran.
+  so the reset a shortest-path count is supposed to carry never fires, and
+  count_relax with the reset deleted matches it on all 10092
+- so the marking rule saves no pushes. 999999 either way on a 1000x1000. what it
+  saves is the done array and the stale test, 1.92s against 2.14s and 3.11s
+  against 3.56s, about 10%
+
+under counting the copy fails again, which is five problems in a row now. the
+cell is written once by its earliest neighbour, so its count is that one
+neighbour's count, and every other neighbour arriving in the same second is
+dropped: wrong on 28 of 64, 448 of 1024, 3645 of 6561, 1215 of 2187, and on all
+400 of every random family. the one shape it survives is 1x5, 0 of 256, where a
+path has one route into each cell and there is nothing to drop.
+
+the pull is the 14th's pull with nothing clever in it. at the pop of a cell, sum
+the settled neighbours whose arrival lands exactly on this second. four slots,
+3.99 per cell on a 300x300 once the border is taken off, and no filter, because a
+neighbour that is not settled cannot become a predecessor and no two adjacent
+cells share a second, again parity.
+
+so the sentence i have been carrying since the 11th is about the wrong noun. it
+was never classes, or levels, or knowing when either has finished. the
+predecessors of a cell have to be enumerable at the moment you need them, and
+what changes between the five problems is only how you enumerate them. a window
+of a run in 1871, a bucket in 1345 and 3552, a run again in 2612, and four
+pointers here. the finished-set argument is how you know the enumeration is
+complete, and in a heap it is free.
+
+and the number that is not what it looks like. the oracle counts walks, which
+spell the bouncing out, and the dijkstra counts routes, which fold it into the
+arrival rule. they differ on 2394 of 10092 grids and the walk count is never the
+smaller, up to 4.7x at one cell of a 2x3. waiting is necessary and not
+sufficient: 5038 grids hold a waiting cell and 2394 differ, and a grid that never
+waits never differs, asserted. a bounce can be spent against any open neighbour,
+so what the pull reports is how many routes there are and not how many ways to
+spend the seconds. worth saying out loud, because 1871 through 2612 were all
+unweighted, where the two nouns are the same thing and i never had to choose.
+
+predictions, written before the run. the parity argument held, and it was the
+one that mattered. four did not. pushes without the mark roughly doubling: they
+are identical. the mark buying 30% of the time: 10%. some grid in the exhaustive
+set needing the reset: none does. the copy wrong on more than half the grids:
+56% at 3x3 and 2x4, 44% at 2x2 and 2x3, zero at 1x5, and 100% on random grids
+with a neighbour of the corner forced open, which says the exhaustive rate is
+counting dead grids rather than measuring the copy. that is the 11th's lesson a
+fourth time, and this time it bit the denominator instead of the program.
+
+bounds. 0 at the corner, -1 everywhere else when both of its neighbours are shut
+at second 1, and otherwise every cell is reachable, between i + j and
+max(grid) + i + j + 1. both ends show up: 2000 against a manhattan 1998 at
+top = 10, and 656468114 at top = 1e9. O(mn log mn) with each cell pushed once
+under either rule, four slots per cell for the pull, route counts to 178 digits
+on a 300x300 and no modulus, since nothing asks for one. 1871's (1, 10) is still
+open, and it was not tonight either.

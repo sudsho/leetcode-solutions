@@ -374,6 +374,18 @@ def c_min_reverse_ops(s):
     ), ([0, -1, -1, 1], [0, -1, -1, -1, -1], [-1, -1, 0, -1], [0, 1, 2, 3, 4])
 
 
+def c_minimum_time(s):
+    return (
+        # the statement's two examples.
+        s.minimumTime([[0, 1, 3, 2], [5, 1, 2, 5], [4, 3, 8, 6]]),
+        s.minimumTime([[0, 2, 4], [3, 2, 1], [1, 0, 4]]),
+        # nothing is ever shut, so the answer is the number of steps.
+        s.minimumTime([[0, 1], [1, 1]]),
+        # both routes wait: the corner opens at 5 and the parity costs one more.
+        s.minimumTime([[0, 1], [5, 5]]),
+    ), (7, -1, 2, 6)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -419,6 +431,7 @@ CASES = [
     ("1871-jump-game-vii", c_can_reach),
     ("3552-grid-teleportation-traversal", c_min_moves),
     ("2612-minimum-reverse-operations", c_min_reverse_ops),
+    ("2577-minimum-time-to-visit-a-cell-in-a-grid", c_minimum_time),
 ]
 
 

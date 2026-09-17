@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 39 sampled solutions from ...\leetcode-solutions
+running 44 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -72,8 +72,9 @@ running 39 sampled solutions from ...\leetcode-solutions
 [PASS] 1871-jump-game-vii                            expected=(True, False, False, True)
 [PASS] 3552-grid-teleportation-traversal             expected=(2, 13, 0, -1)
 [PASS] 2612-minimum-reverse-operations               expected=([0, -1, -1, 1], [0, -1, -1, -1, -1], [-1, -1, 0, -1], [0, 1, 2, 3, 4])
+[PASS] 2577-minimum-time-to-visit-a-cell-in-a-grid   expected=(7, -1, 2, 6)
 ------------------------------------------------------------
-total=43 passed=43 failed=0
+total=44 passed=44 failed=0
 SMOKE PASSED
 ```
 
@@ -83,15 +84,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `43 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `44 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last fifteen additions), not the full problem set; extend the
-`CASES` list in `scripts/smoke.py` to cover more problems.
+on the answer from the last sixteen additions), not the full problem set. Extend
+the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (523)
+## Solved (524)
 
-<!-- last touched: 2026-09-14 (rev 610) -->
+<!-- last touched: 2026-09-17 (rev 611) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -459,6 +460,7 @@ on the answer from the last fifteen additions), not the full problem set; extend
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
 | 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
 | 2517 | [Maximum Tastiness Of Candy Basket](2517-maximum-tastiness-of-candy-basket/) | Medium | Python |
+| 2577 | [Minimum Time To Visit A Cell In A Grid](2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard | Python |
 | 2612 | [Minimum Reverse Operations](2612-minimum-reverse-operations/) | Hard | Python |
 | 2616 | [Minimize The Maximum Difference Of Pairs](2616-minimize-the-maximum-difference-of-pairs/) | Medium | Python |
 | 2772 | [Apply Operations To Make All Array Elements Equal To Zero](2772-apply-operations-to-make-all-array-elements-equal-to-zero/) | Medium | Python |
