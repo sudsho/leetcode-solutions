@@ -2647,3 +2647,67 @@ top = 10, and 656468114 at top = 1e9. O(mn log mn) with each cell pushed once
 under either rule, four slots per cell for the pull, route counts to 178 digits
 on a 300x300 and no modulus, since nothing asks for one. 1871's (1, 10) is still
 open, and it was not tonight either.
+
+## 2026-09-18
+
+the 17th moved the sentence onto the right noun. the predecessors of a node have
+to be enumerable at the moment you need them, and in a heap the finished-set
+argument that says the enumeration is complete comes free. every pull since the
+14th has also been a pull with no filter in it, and i wanted one that needs a
+filter to see whether the free part survives.
+
+1786, number of restricted paths. dijkstra from n, then count paths from 1 on
+which the distance to n strictly falls at every step. that is not a shortest-path
+count. the noun is paths down a potential, and the predecessors of u are its
+neighbours strictly closer to n, all settled before u because the heap settles
+in nondecreasing distance. so the pull works at the settle, with the filter
+`dist[v] < dist[u]`, and it is right on every connected graph at n = 3, 4 and 5
+over small weight sets, 59136 of them, and 14000 random ones at n = 9, against
+an oracle that enumerates simple paths and takes its distances from
+floyd-warshall.
+
+the filter only ever removes one kind of neighbour. i put a `<=` version in to
+land between strict and none, and it is the same program as none, asserted on
+all of them, since a settled neighbour is never further away. so what the filter
+is for is a neighbour at the same distance, and every wrong answer is on a graph
+with an edge between two tied nodes. the unfiltered pull counts that edge as a
+step, and on the random graphs it is too big 3751 times of 3751.
+
+the part i did not see coming: the unfiltered answer depends on the heap. break
+ties on the smaller id and node 1 settles first in its distance group, so it
+never picks up a tied neighbour itself, and the errors all come from ties below
+it, asserted. break them on the larger id and node 1 settles last.
+
+- default order wrong on 216 of 3834 at n = 4, 8124 of 55248 at n = 5
+- flipped order wrong on 1452 and 33960
+- the two orders disagree on 1344 and 32160
+
+so a failure rate for the unfiltered program is a rate for a tie-break. that is
+the 11th's lesson in a new place. the enumerated sizes say which program is
+right, and how often the wrong one is wrong was a fact about the heap and not
+about graphs.
+
+at the statement's size random graphs have nothing to count, answers of 3, 2 and
+1 at n = 20000, m = 40000. a ladder of node pairs with all four edges between
+neighbouring pairs is 2^(layers - 1), 2408 digits at 7999 layers, and with a
+tied rung in each pair the unfiltered count grows by 3 per pair against 2 and is
+off by 1409 digits. first modulus in six problems, and the first time the
+distance tie mattered to a count rather than to a time.
+
+so the 17th's sentence holds with a correction. the predecessors have to be
+enumerable at the moment you need them, and they have to be exactly the ones the
+relation names. a heap hands over everything settled so far, which in 2577 was
+the predecessors because no two neighbours shared a second, and here is a
+superset, because two neighbours can share a distance.
+
+predictions, written before the run. strict matches the oracle, right. the flip
+changes the unfiltered answer somewhere, right, on 32160 graphs. over 30% of the
+n = 5 graphs have a tie, right, 78%. the unfiltered pull wrong on more than half
+the tied graphs, right for one heap and wrong for the other, 12% and 19% under
+the default order, 82% and 79% flipped. i had not thought of the heap as a
+variable.
+
+bounds. at least one, since the shortest path from 1 read forward falls at every
+step. the ladder gets 2^((n - 3) / 2), which is not the most there can be:
+layers of three would grow like 3^(n / 3), and i have not worked out the
+maximum. O(m log n) for the dijkstra and O(n + m) for the pull. 1871's (1, 10) is still open.

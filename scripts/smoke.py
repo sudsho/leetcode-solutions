@@ -386,6 +386,19 @@ def c_minimum_time(s):
     ), (7, -1, 2, 6)
 
 
+def c_count_restricted_paths(s):
+    return (
+        # the statement's two examples.
+        s.countRestrictedPaths(5, [[1, 2, 3], [1, 3, 3], [2, 3, 1], [1, 4, 2], [5, 2, 2], [3, 5, 1], [5, 4, 10]]),
+        s.countRestrictedPaths(7, [[1, 3, 1], [4, 1, 2], [7, 3, 4], [2, 5, 3], [5, 6, 1], [6, 7, 2], [7, 5, 3], [2, 6, 4]]),
+        # 2 and 3 tie at one from n. a pull with no filter gives 3 the count of 2 as well, and says 2.
+        s.countRestrictedPaths(4, [[1, 3, 1], [2, 3, 1], [2, 4, 1], [3, 4, 1]]),
+        # two nodes per layer, all four edges to the next and a tied rung inside each, 2^19.
+        s.countRestrictedPaths(41, [[2 * k + a, 2 * k + 2 + b, 1] for k in range(19) for a in (1, 2) for b in (1, 2)]
+                               + [[39, 41, 1], [40, 41, 1]] + [[2 * k + 1, 2 * k + 2, 1] for k in range(20)]),
+    ), (3, 1, 1, 524288)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -432,6 +445,7 @@ CASES = [
     ("3552-grid-teleportation-traversal", c_min_moves),
     ("2612-minimum-reverse-operations", c_min_reverse_ops),
     ("2577-minimum-time-to-visit-a-cell-in-a-grid", c_minimum_time),
+    ("1786-number-of-restricted-paths-from-first-to-last-node", c_count_restricted_paths),
 ]
 
 

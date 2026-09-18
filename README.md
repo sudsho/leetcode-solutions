@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 44 sampled solutions from ...\leetcode-solutions
+running 45 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -73,8 +73,9 @@ running 44 sampled solutions from ...\leetcode-solutions
 [PASS] 3552-grid-teleportation-traversal             expected=(2, 13, 0, -1)
 [PASS] 2612-minimum-reverse-operations               expected=([0, -1, -1, 1], [0, -1, -1, -1, -1], [-1, -1, 0, -1], [0, 1, 2, 3, 4])
 [PASS] 2577-minimum-time-to-visit-a-cell-in-a-grid   expected=(7, -1, 2, 6)
+[PASS] 1786-number-of-restricted-paths-from-first-to-last-node expected=(3, 1, 1, 524288)
 ------------------------------------------------------------
-total=44 passed=44 failed=0
+total=45 passed=45 failed=0
 SMOKE PASSED
 ```
 
@@ -84,15 +85,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `44 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `45 passed`. With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last sixteen additions), not the full problem set. Extend
+on the answer from the last seventeen additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (524)
+## Solved (525)
 
-<!-- last touched: 2026-09-17 (rev 611) -->
+<!-- last touched: 2026-09-18 (rev 612) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -449,6 +450,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1707 | [Maximum Xor With An Element From Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |
 | 1751 | [Maximum Number Of Events That Can Be Attended Ii](1751-maximum-number-of-events-that-can-be-attended-ii/) | Hard | Python |
 | 1755 | [Closest Subsequence Sum](1755-closest-subsequence-sum/) | Hard | Python |
+| 1786 | [Number Of Restricted Paths From First To Last Node](1786-number-of-restricted-paths-from-first-to-last-node/) | Medium | Python |
 | 1808 | [Maximize Number Of Nice Divisors](1808-maximize-number-of-nice-divisors/) | Hard | Python |
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
 | 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
