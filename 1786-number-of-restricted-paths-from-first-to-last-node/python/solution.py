@@ -160,11 +160,12 @@ def random_graph(rng: random.Random, n: int, extra: int, top: int) -> List[List[
     return [[u, v, w] for (u, v), w in edges.items()]
 
 
-def tied_edge(edges, dist) -> bool:
-    return any(dist[u] == dist[v] for u, v, _ in edges)
+def tied_edge(edges, dist, avoid=None) -> bool:
+    """Whether some edge joins two nodes at the same distance from n, skipping edges that touch `avoid`."""
+    return any(dist[u] == dist[v] and avoid not in (u, v) for u, v, _ in edges)
 
 
-def run(n, edges) -> Dict[str, int]:
+def run(n, edges) -> Dict[str, object]:
     adj = adjacency(n, edges)
     dist, order = distances(n, adj)
     _, flipped = distances(n, adj, flip=True)
@@ -175,7 +176,7 @@ def run(n, edges) -> Dict[str, int]:
         "none flipped": pull(n, adj, dist, flipped, unfiltered)[1],
         "tied": tied_edge(edges, dist),
         # ties that do not touch node 1, which is where the ascending tie-break cannot protect the count
-        "tied below 1": any(dist[u] == dist[v] and 1 not in (u, v) for u, v, _ in edges),
+        "tied below 1": tied_edge(edges, dist, avoid=1),
     }
 
 
