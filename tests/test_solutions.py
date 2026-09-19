@@ -23,3 +23,10 @@ import smoke  # noqa: E402
 def test_solution(problem_dir, case_fn):
     ok, detail = smoke.run_case(problem_dir, case_fn)
     assert ok, "{}: {}".format(problem_dir, detail)
+
+
+def test_registry_names_real_folders_once():
+    names = [c[0] for c in smoke.CASES]
+    assert len(names) == len(set(names)), "a problem is registered twice"
+    missing = [n for n in names if not os.path.isfile(os.path.join(REPO_ROOT, n, "python", "solution.py"))]
+    assert not missing, "registered with no solution file: {}".format(missing)
