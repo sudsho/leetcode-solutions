@@ -2711,3 +2711,49 @@ bounds. at least one, since the shortest path from 1 read forward falls at every
 step. the ladder gets 2^((n - 3) / 2), which is not the most there can be:
 layers of three would grow like 3^(n / 3), and i have not worked out the
 maximum. O(m log n) for the dijkstra and O(n + m) for the pull. 1871's (1, 10) is still open.
+
+## 2026-09-19
+
+the 18th ended on a correction. the predecessors have to be exactly the ones the
+relation names, and a heap hands over a superset whenever two neighbours share a
+distance. 1786's relation was strict, closer to n. i wanted one where the
+relation is an equality, to see whether the strict filter survives being carried
+over or was only right because of what 1786 asked.
+
+3123, find edges in shortest paths. one dijkstra from 0 and a walk back from n-1
+over tight edges, `d0[u] + w == d0[v]`. right on every simple graph at n = 3, 4
+and 5 over small weight sets, 63209 of them with the disconnected ones in, and
+5000 random ones at n = 10, against an oracle that enumerates simple paths and
+never builds a distance.
+
+1786's filter carried over is wrong on 11487 of the n = 5 graphs, always too big,
+and never wrong with unit weights, because one step closer is one unit closer and
+that is tight. so it was not a rule about predecessors. it was the right relation
+for that problem, and here it coincides with the right one only when the weights
+cannot separate them.
+
+the heap question from yesterday has the opposite answer. the parent chain only
+ever misses edges, never adds one, so it is wrong on exactly the graphs with two
+shortest paths, 10686 at n = 5, and flipping the tie-break moves which edges it
+keeps on 2466 of them and the number it gets wrong on none. in 1786 the heap
+decided whether the count was wrong. here it decides which path survives and
+never whether one is lost.
+
+- every tight edge, not walked from n-1: wrong on 95% at n = 5, always too big
+- 1786's filter on random graphs at n = 10: 0, 315, 0, 679, 763 of 1000 as the
+  weights widen from 1 to 100
+
+so the sentence gets narrower again. the predecessors are the ones the relation
+names, and the relation is the problem's, not the last problem's. a filter that
+worked is evidence about the relation it encoded and nothing else.
+
+predictions, written before the run. the tight walk matches the oracle, right.
+every tight edge wrong on more than 20% at n = 5 and only too big, right. the
+parent chain only too small, with the flip changing its edges and not its error
+count, right. under a second at the statement's size, right, 0.11s. 1786's filter
+wrong on more than half the reachable n = 5 graphs, wrong, 20%, and i should have
+seen the unit-weight case from the weights alone.
+
+bounds. O(m log n) and O(n + m) for the walk. the 158x158 grid marks all 49612
+edges and the parent chain 314 of them. 1871's (1, 10) is still open, and the
+maximum count for 1786 too.

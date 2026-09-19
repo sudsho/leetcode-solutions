@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 45 sampled solutions from ...\leetcode-solutions
+running 46 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -74,8 +74,9 @@ running 45 sampled solutions from ...\leetcode-solutions
 [PASS] 2612-minimum-reverse-operations               expected=([0, -1, -1, 1], [0, -1, -1, -1, -1], [-1, -1, 0, -1], [0, 1, 2, 3, 4])
 [PASS] 2577-minimum-time-to-visit-a-cell-in-a-grid   expected=(7, -1, 2, 6)
 [PASS] 1786-number-of-restricted-paths-from-first-to-last-node expected=(3, 1, 1, 524288)
+[PASS] 3123-find-edges-in-shortest-paths             expected=([True, True, True, False, True, True, True, False], [True, False, False, True], [False, False, True], [False])
 ------------------------------------------------------------
-total=45 passed=45 failed=0
+total=46 passed=46 failed=0
 SMOKE PASSED
 ```
 
@@ -85,15 +86,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `46 passed` (the 45 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `47 passed` (the 46 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last seventeen additions), not the full problem set. Extend
+on the answer from the last eighteen additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (525)
+## Solved (526)
 
-<!-- last touched: 2026-09-18 (rev 612) -->
+<!-- last touched: 2026-09-19 (rev 613) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -471,6 +472,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 2064 | [Minimized Maximum Of Products Distributed To Any Store](2064-minimized-maximum-of-products-distributed-to-any-store/) | Medium | Python |
 | 1147 | [Longest Chunked Palindrome Decomposition](1147-longest-chunked-palindrome-decomposition/) | Hard | Python |
 | 2858 | [Minimum Edge Reversals So Every Node Is Reachable](2858-minimum-edge-reversals-so-every-node-is-reachable/) | Hard | Python |
+| 3123 | [Find Edges In Shortest Paths](3123-find-edges-in-shortest-paths/) | Hard | Python |
 | 3171 | [Find Subarray With Bitwise Or Closest To K](3171-find-subarray-with-bitwise-or-closest-to-k/) | Hard | Python |
 | 2030 | [Smallest K Length Subsequence With Occurrences Of A Letter](2030-smallest-k-length-subsequence-with-occurrences-of-a-letter/) | Hard | Python |
 | 3003 | [Maximize The Number Of Partitions After Operations](3003-maximize-the-number-of-partitions-after-operations/) | Hard | Python |

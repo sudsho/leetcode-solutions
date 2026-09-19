@@ -399,6 +399,18 @@ def c_count_restricted_paths(s):
     ), (3, 1, 1, 524288)
 
 
+def c_find_edges_in_shortest_paths(s):
+    return (
+        # the statement's two examples.
+        s.findAnswer(6, [[0, 1, 4], [0, 2, 1], [1, 3, 2], [1, 4, 3], [1, 5, 1], [2, 3, 1], [3, 5, 3], [4, 5, 2]]),
+        s.findAnswer(4, [[2, 0, 1], [0, 1, 1], [0, 3, 4], [3, 2, 2]]),
+        # 1786's filter walks back over every neighbour closer to 0 and marks all three. only 0-2 is tight into 2.
+        s.findAnswer(3, [[0, 1, 1], [1, 2, 2], [0, 2, 2]]),
+        # n-1 unreachable, nothing is on a shortest path.
+        s.findAnswer(3, [[0, 1, 5]]),
+    ), ([True, True, True, False, True, True, True, False], [True, False, False, True], [False, False, True], [False])
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -446,6 +458,7 @@ CASES = [
     ("2612-minimum-reverse-operations", c_min_reverse_ops),
     ("2577-minimum-time-to-visit-a-cell-in-a-grid", c_minimum_time),
     ("1786-number-of-restricted-paths-from-first-to-last-node", c_count_restricted_paths),
+    ("3123-find-edges-in-shortest-paths", c_find_edges_in_shortest_paths),
 ]
 
 
