@@ -85,7 +85,7 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `45 passed`. With GNU make available, `make smoke` and `make test` wrap
+giving `46 passed` (the 45 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
 on the answer from the last seventeen additions), not the full problem set. Extend
