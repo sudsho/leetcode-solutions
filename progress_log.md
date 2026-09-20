@@ -2757,3 +2757,68 @@ seen the unit-weight case from the weights alone.
 bounds. O(m log n) and O(n + m) for the walk. the 158x158 grid marks all 49612
 edges and the parent chain 314 of them. 1871's (1, 10) is still open, and the
 maximum count for 1786 too.
+
+## 2026-09-20
+
+the 19th narrowed the sentence to the relation is the problem's, not the last
+problem's. every problem it was narrowed on was a shortest path, so the relation
+was always a sum of weights and i could not tell which part of the settle
+argument was doing the work. i wanted one where the arithmetic changes.
+
+1514, path with maximum probability. dijkstra with the heap the other way up,
+largest product first. right on every simple graph at n = 3, 4 and 5 over small
+probability sets, 63209 of them with the disconnected ones in, exact rationals
+throughout, against an oracle that enumerates simple paths and never settles
+anything.
+
+so the settle argument never needed addition. a node popped at p is final
+because every route still in the heap starts at some q <= p and can only be
+multiplied by factors in [0, 1] from here on, which is the same sentence as the
+one about non-negative weights with one word changed. what carries it is that
+the update cannot improve a value.
+
+the heap question is closed in the third different way in three nights. 27279 of
+the n = 5 graphs have two or more routes attaining the best product, and
+flipping the tie-break moves the answer on none of them. it cannot: what comes
+back is one number and a tie is two routes carrying that number. in 1786 the
+heap decided whether a count was wrong, in 3123 which of the tied edges a set
+kept, and here nothing, because the answer cannot tell the tied objects apart.
+that is a property of what is returned and not of the graph or the heap.
+
+the failure i went looking for was rounding and it is not there. floats against
+exact rationals on every n = 4 graph over tenths: never off by more than
+1.1e-16, against a judge that allows 1e-5. the product and -log forms disagree
+in their last bits on 516 of 1000 random graphs and neither is ever wrong.
+
+what does break is range, and not the way i wrote down. a chain of 0.5 reaches
+0 at 1075 edges because halving is exact. a chain of 0.9 never reaches 0 at all:
+once the value is subnormal each product rounds back up, x * 0.9 == x becomes
+true at 2.47e-323, and it sits there. at the statement's 10000 edges that is a
+nonzero garbage value about 10^592 too big, and 0.9 and 0.8 come back two
+subnormal steps apart when they are 511 orders apart. the ordering survives by
+luck. the -log cost is still good to 4.5e-11 and loses everything at the same
+place if you exponentiate it back.
+
+- product form on a chain: 0.5 -> 0 at 1075, 0.9 -> pinned at 2.470e-323, 0.99
+  -> still an ordinary float at 20000
+- factors of 3/2 allowed, against the best simple path: wrong on 20315 of 59049
+  at n = 5, too big 16897
+
+that last line was the one i had backwards. i predicted the broken settle could
+only be too small, and it is too big 153 times of 166 at n = 4. the too-big half
+is not the settle at all: the relaxation writes into best[v] without asking
+whether v is done, so a settled node gets overwritten by a route back through
+it, 0 -> 3 -> 2 -> 3 on two edges. add the done check and every one of the 16897
+goes and only the honest failure is left. with factors in [0, 1] no such write
+can land, so the missing check is free and invisible, which is why it survived
+to be found by going outside the statement.
+
+predictions, written before the run. the settle survives the product, right. the
+tie-break cannot matter, right, on 27279 tied graphs. float rounding is the
+interesting failure, wrong, it never exceeds 2.2e-16. the 0.9 chain underflows
+to zero near 7000 edges, wrong, it has a fixed point instead. p > 1 only ever
+too small, wrong, and the half i did not predict belongs to a missing guard.
+
+bounds. O(m log n) and O(n + m), one pop per node. the answer is in [0, 1] and
+is 0 exactly when every route uses a zero edge. 0.03s at n = 10000, m = 20000.
+1871's (1, 10) is still open, and the maximum count for 1786.

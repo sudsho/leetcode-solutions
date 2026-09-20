@@ -75,8 +75,9 @@ running 46 sampled solutions from ...\leetcode-solutions
 [PASS] 2577-minimum-time-to-visit-a-cell-in-a-grid   expected=(7, -1, 2, 6)
 [PASS] 1786-number-of-restricted-paths-from-first-to-last-node expected=(3, 1, 1, 524288)
 [PASS] 3123-find-edges-in-shortest-paths             expected=([True, True, True, False, True, True, True, False], [True, False, False, True], [False, False, True], [False])
+[PASS] 1514-path-with-maximum-probability            expected=(0.25, 0.3, 0.0, 0.25)
 ------------------------------------------------------------
-total=46 passed=46 failed=0
+total=47 passed=47 failed=0
 SMOKE PASSED
 ```
 
@@ -86,15 +87,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `47 passed` (the 46 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `48 passed` (the 47 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last eighteen additions), not the full problem set. Extend
+on the answer from the last nineteen additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (526)
+## Solved (527)
 
-<!-- last touched: 2026-09-19 (rev 613) -->
+<!-- last touched: 2026-09-20 (rev 614) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -437,6 +438,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1482 | [Minimum Number Of Days To Make M Bouquets](1482-minimum-number-of-days-to-make-m-bouquets/) | Medium | Python |
 | 1483 | [Kth Ancestor Of A Tree Node](1483-kth-ancestor-of-a-tree-node/) | Hard | Python |
 | 1492 | [Kth Factor Of N](1492-kth-factor-of-n/) | Medium | Python |
+| 1514 | [Path With Maximum Probability](1514-path-with-maximum-probability/) | Medium | Python |
 | 1526 | [Minimum Number Of Increments On Subarrays To Form A Target Array](1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard | Python |
 | 1531 | [String Compression Ii](1531-string-compression-ii/) | Hard | Python |
 | 1542 | [Find Longest Awesome Substring](1542-find-longest-awesome-substring/) | Hard | Python |

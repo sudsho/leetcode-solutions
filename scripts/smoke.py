@@ -411,6 +411,17 @@ def c_find_edges_in_shortest_paths(s):
     ), ([True, True, True, False, True, True, True, False], [True, False, False, True], [False, False, True], [False])
 
 
+def c_max_probability(s):
+    return (
+        # the statement's three examples.
+        s.maxProbability(3, [[0, 1], [1, 2], [0, 2]], [0.5, 0.5, 0.2], 0, 2),
+        s.maxProbability(3, [[0, 1], [1, 2], [0, 2]], [0.5, 0.5, 0.3], 0, 2),
+        s.maxProbability(3, [[0, 1]], [0.5], 0, 2),
+        # two routes tie at 1/4. the heap picks one and the answer cannot tell which.
+        s.maxProbability(4, [[0, 1], [1, 3], [0, 2], [2, 3]], [0.5, 0.5, 0.25, 1.0], 0, 3),
+    ), (0.25, 0.3, 0.0, 0.25)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -459,6 +470,7 @@ CASES = [
     ("2577-minimum-time-to-visit-a-cell-in-a-grid", c_minimum_time),
     ("1786-number-of-restricted-paths-from-first-to-last-node", c_count_restricted_paths),
     ("3123-find-edges-in-shortest-paths", c_find_edges_in_shortest_paths),
+    ("1514-path-with-maximum-probability", c_max_probability),
 ]
 
 
