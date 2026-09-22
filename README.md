@@ -76,8 +76,9 @@ running 46 sampled solutions from ...\leetcode-solutions
 [PASS] 1786-number-of-restricted-paths-from-first-to-last-node expected=(3, 1, 1, 524288)
 [PASS] 3123-find-edges-in-shortest-paths             expected=([True, True, True, False, True, True, True, False], [True, False, False, True], [False, False, True], [False])
 [PASS] 1514-path-with-maximum-probability            expected=(0.25, 0.3, 0.0, 0.25)
+[PASS] 1631-path-with-minimum-effort                 expected=(2, 1, 0, 1, 0)
 ------------------------------------------------------------
-total=47 passed=47 failed=0
+total=48 passed=48 failed=0
 SMOKE PASSED
 ```
 
@@ -87,13 +88,13 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `48 passed` (the 47 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `49 passed` (the 48 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last nineteen additions), not the full problem set. Extend
+on the answer from the last twenty additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (527)
+## Solved (528)
 
 <!-- last touched: 2026-09-20 (rev 614) -->
 
@@ -446,6 +447,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1568 | [Minimum Number Of Days To Disconnect Island](1568-minimum-number-of-days-to-disconnect-island/) | Hard | Python |
 | 1591 | [Strange Printer Ii](1591-strange-printer-ii/) | Hard | Python |
 | 1622 | [Fancy Sequence](1622-fancy-sequence/) | Hard | Python |
+| 1631 | [Path With Minimum Effort](1631-path-with-minimum-effort/) | Medium | Python |
 | 1632 | [Rank Transform Of A Matrix](1632-rank-transform-of-a-matrix/) | Hard | Python |
 | 1639 | [Number Of Ways To Form A Target String](1639-number-of-ways-to-form-a-target-string/) | Hard | Python |
 | 1671 | [Minimum Number Of Removals To Make Mountain Array](1671-minimum-number-of-removals-to-make-mountain-array/) | Hard | Python |

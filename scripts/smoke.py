@@ -422,6 +422,19 @@ def c_max_probability(s):
     ), (0.25, 0.3, 0.0, 0.25)
 
 
+def c_minimum_effort(s):
+    return (
+        # the statement's three examples.
+        s.minimumEffortPath([[1, 2, 2], [3, 8, 2], [5, 3, 5]]),
+        s.minimumEffortPath([[1, 2, 3], [3, 8, 4], [5, 3, 5]]),
+        s.minimumEffortPath([[1, 2, 1, 1, 1], [1, 2, 1, 2, 1], [1, 2, 1, 2, 1], [1, 2, 1, 2, 1], [1, 1, 1, 2, 1]]),
+        # right and down only gives 2. the route with effort 1 takes one step left, onto the middle 2.
+        s.minimumEffortPath([[0, 0, 1], [0, 2, 2], [2, 1, 0]]),
+        # one cell, no steps.
+        s.minimumEffortPath([[5]]),
+    ), (2, 1, 0, 1, 0)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -471,6 +484,7 @@ CASES = [
     ("1786-number-of-restricted-paths-from-first-to-last-node", c_count_restricted_paths),
     ("3123-find-edges-in-shortest-paths", c_find_edges_in_shortest_paths),
     ("1514-path-with-maximum-probability", c_max_probability),
+    ("1631-path-with-minimum-effort", c_minimum_effort),
 ]
 
 

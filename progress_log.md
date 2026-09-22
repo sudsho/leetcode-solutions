@@ -2822,3 +2822,44 @@ too small, wrong, and the half i did not predict belongs to a missing guard.
 bounds. O(m log n) and O(n + m), one pop per node. the answer is in [0, 1] and
 is 0 exactly when every route uses a zero edge. 0.03s at n = 10000, m = 20000.
 1871's (1, 10) is still open, and the maximum count for 1786.
+
+## 2026-09-21
+
+the 20th put the settle argument on one condition, the update cannot improve a
+value, and tested it by changing the sum to a product. a product in [0, 1]
+still moves the value every time. i wanted a relation that mostly does not.
+
+1631, path with minimum effort. the effort of a route is its largest step, so
+the update is max(e, w), and most of the time that is just e. dijkstra on it is
+right on every grid i could enumerate, 83813 of them from 2x2 to 3x4, against an
+oracle that walks every simple route. kruskal until the corners join and a
+binary search over the limit agree with it everywhere, 100x100 included. so the
+condition holds with an idempotent update, which it should, since max(e, w) >= e
+is all it asks.
+
+what the idempotence does is make ties the normal case. 88% of the 3x3 grids
+over 0..2 have two or more routes at the best effort. the answer is one number,
+so as in 1514 the tie-break has nothing to change.
+
+the place i expected the max to help was the early exit, returning the first
+time the corner is written instead of when it pops. that is wrong for a sum
+because the first neighbour to settle need not have the cheap last step. i
+thought the max would forgive it more, since a large last step disappears under
+a larger e. it is the other way: 1900 wrong on the 3x3 grids against 706 for
+the sum, 2.7x. every sum failure and 1552 of the max's have the corner's two
+neighbours settled at the same value, which the heap then orders by position.
+the plateaus that make the settle cheap are what make the pop order say nothing.
+
+- right and down only: too big every time it is wrong, 44 of 19683 at 3x3,
+  271 of 2000 at random 10x10, 12 of 20 at 100x100
+- smallest kind of case: 0 0 1 / 0 2 2 / 2 1 0, where the effort-1 route takes
+  one step left onto the middle 2
+
+predictions, written before the run. dijkstra matches the oracle, right. the
+other two methods agree, right. under a second at the statement's size, right,
+0.03s. right and down only too big, right, and wrong on more than 10% at 3x3,
+wrong, 0.2%. the early exit wrong for both relations, right, and less often for
+the max, wrong, 2.7x more often.
+
+bounds. O(rc log rc) for dijkstra and for kruskal. 1871's (1, 10) is still open,
+and the maximum count for 1786.
