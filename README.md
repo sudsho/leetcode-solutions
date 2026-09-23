@@ -77,8 +77,9 @@ running 46 sampled solutions from ...\leetcode-solutions
 [PASS] 3123-find-edges-in-shortest-paths             expected=([True, True, True, False, True, True, True, False], [True, False, False, True], [False, False, True], [False])
 [PASS] 1514-path-with-maximum-probability            expected=(0.25, 0.3, 0.0, 0.25)
 [PASS] 1631-path-with-minimum-effort                 expected=(2, 1, 0, 1, 0)
+[PASS] 2045-second-minimum-time-to-reach-destination expected=(13, 11, 3, 4)
 ------------------------------------------------------------
-total=48 passed=48 failed=0
+total=49 passed=49 failed=0
 SMOKE PASSED
 ```
 
@@ -88,15 +89,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `49 passed` (the 48 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `50 passed` (the 49 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty additions), not the full problem set. Extend
+on the answer from the last twenty-one additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (528)
+## Solved (529)
 
-<!-- last touched: 2026-09-20 (rev 614) -->
+<!-- last touched: 2026-09-23 (rev 615) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -465,6 +466,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
 | 1976 | [Number Of Ways To Arrive At Destination](1976-number-of-ways-to-arrive-at-destination/) | Medium | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
+| 2045 | [Second Minimum Time To Reach Destination](2045-second-minimum-time-to-reach-destination/) | Hard | Python |
 | 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
 | 2517 | [Maximum Tastiness Of Candy Basket](2517-maximum-tastiness-of-candy-basket/) | Medium | Python |
 | 2577 | [Minimum Time To Visit A Cell In A Grid](2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard | Python |

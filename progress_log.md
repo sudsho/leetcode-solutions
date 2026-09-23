@@ -2863,3 +2863,52 @@ the max, wrong, 2.7x more often.
 
 bounds. O(rc log rc) for dijkstra and for kruskal. 1871's (1, 10) is still open,
 and the maximum count for 1786.
+
+## 2026-09-23
+
+the 20th and 21st asked what the settle argument needs from the update and got
+the same answer twice: that it cannot improve a value. both times the question
+was about the first value to reach a vertex. i wanted one that asks for the
+second.
+
+2045, second minimum time to reach destination. every edge costs the same and
+every signal is in phase, so the clock is a strictly increasing function of the
+edge count and the problem is the second smallest walk length, strictly larger
+than the smallest. bfs with two slots per vertex, a vertex queued again when its
+second slot is written, is right on every connected graph to n = 6, 27475 of
+them, against an oracle that keeps no distances and just takes neighbour sets
+layer by layer. the same search run on clock times with the signal rule applied
+at every step agrees under four clocks.
+
+so the settle argument extends to the second value without change. bfs pops by
+count, so the second distinct count to reach a vertex is final when it pops for
+the same reason the first is, and each vertex is queued at most twice. the heap
+question does not come up at all, the answer is a count again.
+
+what the problem is really about is the word second, and each wrong reading of
+it fails on its own share of the 26704 graphs at n = 6:
+
+- second route instead of second value, 18%, and exactly the graphs with two
+  shortest routes into n, 4896 and 4896
+- settle once and read the second off n's neighbours, 24%, nearly all of them
+  returning nothing because every neighbour of n is one layer closer
+- simple paths only, 14%. the statement allows the bounce and bipartite graphs
+  need it
+
+all three can only be too big or missing, never too small.
+
+the second count is d1 + 1 or d1 + 2. bipartite forces d1 + 2 by parity, and
+the converse is false: 16% of the non-bipartite graphs at n = 6 still answer
+d1 + 2 because their odd cycle is off the shortest routes. what decides it is
+one edge (u, v) with d(1, u) + d(v, n) = d(1, n). along a walk of length d1 + 1
+the quantity i + d(w_i, n) goes from d1 to d1 + 1 in steps of 0, 1 or 2, so one
+step is exactly 1 and that step is the edge. the test agrees with the oracle on
+every graph enumerated.
+
+predictions, written before the run. two-slot bfs matches the oracle, right.
+non-strict wrong on about 40%, wrong, 18%. settle once under 5%, wrong, 24% and
+the worst of the three. simple paths wrong on about half, wrong, 14%.
+non-bipartite at d1 + 2 under a fifth, right, 16%.
+
+bounds. O(n + m) and O(n + m). 0.03s at n = 10^4, m = 2 x 10^4. 1871's (1, 10)
+is still open, and the maximum count for 1786.

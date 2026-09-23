@@ -435,6 +435,18 @@ def c_minimum_effort(s):
     ), (2, 1, 0, 1, 0)
 
 
+def c_second_minimum(s):
+    return (
+        # the statement's two examples.
+        s.secondMinimum(5, [[1, 2], [1, 3], [1, 4], [3, 4], [4, 5]], 3, 5),
+        s.secondMinimum(2, [[1, 2]], 3, 2),
+        # the second count needs vertex 3's second value, from the triangle. reading it off 4's neighbours finds nothing.
+        s.secondMinimum(4, [[1, 2], [2, 3], [1, 3], [3, 4]], 1, 10),
+        # two shortest routes. letting the second one fill the second slot returns 2.
+        s.secondMinimum(4, [[1, 2], [1, 3], [2, 4], [3, 4]], 1, 10),
+    ), (13, 11, 3, 4)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -485,6 +497,7 @@ CASES = [
     ("3123-find-edges-in-shortest-paths", c_find_edges_in_shortest_paths),
     ("1514-path-with-maximum-probability", c_max_probability),
     ("1631-path-with-minimum-effort", c_minimum_effort),
+    ("2045-second-minimum-time-to-reach-destination", c_second_minimum),
 ]
 
 
