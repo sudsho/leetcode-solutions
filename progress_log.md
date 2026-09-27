@@ -2953,3 +2953,45 @@ wrong on about 30%, wrong, 66%. first move 2 changes about half, half, 11% to
 
 bounds. O(nm log nm) and O(nm), 1.97s at 750 x 750 in python. 1871's (1, 10)
 is still open, and the maximum count for 1786.
+
+## 2026-09-27
+
+3342's extra coordinate collapsed: the grid is bipartite, so the parity was a
+function of the cell and the search could forget it. i wanted one that does not
+collapse, where the state really is two numbers and the question is how much of
+it the search has to carry.
+
+1928, minimum cost to reach destination in time. two arrivals at a city with
+different time and cost do not compare, so the state is (city, time), up to
+maxtime + 1 of them per city. dijkstra on cost needs one number per city
+anyway: pops come in cost order, so a pop is dominated exactly when it is also
+no faster than the fastest earlier pop there, and that time bar is the whole
+pareto frontier. it matches an oracle that settles nothing, least cost at
+exactly time t for every t, on all 354294 instances on 4 cities, all 3306744 on
+5, and every random multigraph.
+
+the readings that keep one label per city:
+
+- settle once by cost is never wrong on 4 cities and wrong on 0.34% at 5. it
+  needs two routes into a middle city and the budget to bind right behind it,
+  and the first failure is a 5-city graph where the cheap arrival at city 2
+  lands at time 4 of 4
+- settle once by time is wrong on 1% at 4, 13.8% at 5 and 12% to 57% on random
+  graphs. the fastest arrival is often the dear one
+- setting the time bar at the push instead of the pop is never wrong. a push
+  into v costs the popped cost plus v's fee, and popped costs never fall, so
+  pushes into v come in cost order anyway. put tolls on the roads and it is
+  wrong on 16% and 19%. so the shortcut people write is right because of where
+  the statement put the fee, and not because of the argument they give for it
+
+at the statement's size the frontier is 1.01 per city at n = 1000, which is a
+tree plus one edge, and up to 14 at 100 cities with 1000 roads.
+
+predictions, written before the run. pareto matches the oracle, right. settle by
+cost wrong on about 15%, wrong, never at 4 and 0.34% at 5. settle by time about
+25%, half, 1% to 57%. bar at push wrong on under 2%, half, right by the letter
+but i had it as a rare bug and it is a correct shortcut. frontier at most 10 per
+city, wrong, 14.
+
+bounds. O(T m log(T m)) and O(T n) with T = maxtime. 1871's (1, 10) is still
+open, and the maximum count for 1786.

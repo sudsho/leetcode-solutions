@@ -460,6 +460,21 @@ def c_min_time_to_reach(s):
     ), (7, 6, 4, 1, 6)
 
 
+def c_min_cost_in_time(s):
+    ex = [[0, 1, 10], [1, 2, 10], [2, 5, 10], [0, 3, 1], [3, 4, 10], [4, 5, 15]]
+    fees = [5, 1, 2, 20, 20, 3]
+    return (
+        # the statement's three examples.
+        s.minCost(30, ex, fees),
+        s.minCost(29, ex, fees),
+        s.minCost(25, ex, fees),
+        # the cheap arrival at 2 is too slow to finish. settling once by cost returns -1.
+        s.minCost(4, [[0, 3, 1], [1, 2, 1], [1, 3, 1], [2, 3, 3], [2, 4, 1]], [1, 1, 1, 1, 1]),
+        # the fast arrival is the dear one. settling once by time returns 4.
+        s.minCost(4, [[0, 3, 1], [2, 3, 1], [2, 4, 1], [3, 4, 3]], [1, 1, 1, 1, 1]),
+    ), (11, 48, -1, 5, 3)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -513,6 +528,7 @@ CASES = [
     ("1631-path-with-minimum-effort", c_minimum_effort),
     ("2045-second-minimum-time-to-reach-destination", c_second_minimum),
     ("3342-find-minimum-time-to-reach-last-room-ii", c_min_time_to_reach),
+    ("1928-minimum-cost-to-reach-destination-in-time", c_min_cost_in_time),
 ]
 
 

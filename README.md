@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 50 sampled solutions from ...\leetcode-solutions
+running 51 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -79,8 +79,9 @@ running 50 sampled solutions from ...\leetcode-solutions
 [PASS] 1631-path-with-minimum-effort                 expected=(2, 1, 0, 1, 0)
 [PASS] 2045-second-minimum-time-to-reach-destination expected=(13, 11, 3, 4)
 [PASS] 3342-find-minimum-time-to-reach-last-room-ii  expected=(7, 6, 4, 1, 6)
+[PASS] 1928-minimum-cost-to-reach-destination-in-time expected=(11, 48, -1, 5, 3)
 ------------------------------------------------------------
-total=50 passed=50 failed=0
+total=51 passed=51 failed=0
 SMOKE PASSED
 ```
 
@@ -90,15 +91,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `51 passed` (the 50 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `52 passed` (the 51 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty-two additions), not the full problem set. Extend
+on the answer from the last twenty-three additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (530)
+## Solved (531)
 
-<!-- last touched: 2026-09-26 (rev 616) -->
+<!-- last touched: 2026-09-27 (rev 617) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -463,6 +464,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
 | 1871 | [Jump Game Vii](1871-jump-game-vii/) | Medium | Python |
 | 1898 | [Maximum Number Of Removable Characters](1898-maximum-number-of-removable-characters/) | Medium | Python |
+| 1928 | [Minimum Cost To Reach Destination In Time](1928-minimum-cost-to-reach-destination-in-time/) | Hard | Python |
 | 1944 | [Number Of Visible People In A Queue](1944-number-of-visible-people-in-a-queue/) | Hard | Python |
 | 1948 | [Delete Duplicate Folders In System](1948-delete-duplicate-folders-in-system/) | Hard | Python |
 | 1976 | [Number Of Ways To Arrive At Destination](1976-number-of-ways-to-arrive-at-destination/) | Medium | Python |
