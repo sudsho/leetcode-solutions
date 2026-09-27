@@ -460,7 +460,8 @@ def c_min_time_to_reach(s):
     ), (7, 6, 4, 1, 6)
 
 
-# problem_dir -> case callable. Order roughly by problem number.
+# problem_dir -> case callable. The first block is in problem-number order,
+# and everything from 0947 on is in the order it was added.
 CASES = [
     ("0001-two-sum", c_two_sum),
     ("0007-reverse-integer", c_reverse_integer),
