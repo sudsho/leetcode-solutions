@@ -2912,3 +2912,44 @@ non-bipartite at d1 + 2 under a fifth, right, 16%.
 
 bounds. O(n + m) and O(n + m). 0.03s at n = 10^4, m = 2 x 10^4. 1871's (1, 10)
 is still open, and the maximum count for 1786.
+
+## 2026-09-26
+
+2045 ended on parity: a bipartite graph cannot have a walk of length d1 + 1.
+the settle argument had so far been asked about the update and about which
+value. i wanted a problem where parity is part of the state, so the question is
+what the state has to be before the argument applies at all.
+
+3342, find minimum time to reach last room ii. moves cost 1 and 2 seconds
+alternately and each room has a gate on when a move into it may start, so
+arrival is max(t, gate) + cost and non-decreasing in t. the next cost is not a
+property of the edge, it is the parity of the move count, so two arrivals at
+one cell only compare if they owe the same next step and the honest state is
+(cell, parity). on a 4-neighbour grid that collapses to the cell, because the
+grid is bipartite and every walk into (i, j) has the parity of i + j. dijkstra
+on the cell matches an oracle that settles nothing, earliest arrival over walks
+of exactly L moves for every L, on all 73662 grids enumerated to 3x3 and 2600
+random ones to 10x10.
+
+add the diagonals and the grid has triangles. the cell-only search is then
+wrong on 10% of 2x3 grids, 2% at 3x3 with gates to 3 and 10-12% on the random
+ones, and keeping the parity fixes every one. same argument, wrong state.
+
+the other readings:
+
+- the gate as a bound on arrival, max(t + cost, gate), is never later and is
+  wrong on exactly the grids that need a wait, 43520 of 65536 at 3x3. the two
+  formulas agree when gate <= t, so the equal counts are expected
+- starting the alternation on 2 changes 11% of 3x3 answers and 75% of 2x3,
+  which is parity again
+- right and down only is never wrong to 4x4, nor in 200000 random grids from
+  2x3 to 4x4. a detour costs 3 seconds before it saves anything. 2% at 6x6,
+  12% at 10x10
+
+predictions, written before the run. cell-only matches on the grid, right.
+cell-only with diagonals wrong on about 5%, half, 2% to 12%. gate as arrival
+wrong on about 30%, wrong, 66%. first move 2 changes about half, half, 11% to
+75%. right and down only wrong on about 10% at 3x3 like 1631, wrong, never.
+
+bounds. O(nm log nm) and O(nm), 1.97s at 750 x 750 in python. 1871's (1, 10)
+is still open, and the maximum count for 1786.

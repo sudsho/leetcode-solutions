@@ -447,6 +447,19 @@ def c_second_minimum(s):
     ), (13, 11, 3, 4)
 
 
+def c_min_time_to_reach(s):
+    return (
+        # the statement's three examples.
+        s.minTimeToReach([[0, 4], [4, 4]]),
+        s.minTimeToReach([[0, 0, 0, 0], [0, 0, 0, 0]]),
+        s.minTimeToReach([[0, 1], [1, 2]]),
+        # one move, which costs 1. starting the alternation on 2 returns 2.
+        s.minTimeToReach([[0, 0]]),
+        # a wait. reading the gate as an arrival bound returns 5.
+        s.minTimeToReach([[0, 5]]),
+    ), (7, 6, 4, 1, 6)
+
+
 # problem_dir -> case callable. Order roughly by problem number.
 CASES = [
     ("0001-two-sum", c_two_sum),
@@ -498,6 +511,7 @@ CASES = [
     ("1514-path-with-maximum-probability", c_max_probability),
     ("1631-path-with-minimum-effort", c_minimum_effort),
     ("2045-second-minimum-time-to-reach-destination", c_second_minimum),
+    ("3342-find-minimum-time-to-reach-last-room-ii", c_min_time_to_reach),
 ]
 
 

@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 49 sampled solutions from ...\leetcode-solutions
+running 50 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -78,8 +78,9 @@ running 49 sampled solutions from ...\leetcode-solutions
 [PASS] 1514-path-with-maximum-probability            expected=(0.25, 0.3, 0.0, 0.25)
 [PASS] 1631-path-with-minimum-effort                 expected=(2, 1, 0, 1, 0)
 [PASS] 2045-second-minimum-time-to-reach-destination expected=(13, 11, 3, 4)
+[PASS] 3342-find-minimum-time-to-reach-last-room-ii  expected=(7, 6, 4, 1, 6)
 ------------------------------------------------------------
-total=49 passed=49 failed=0
+total=50 passed=50 failed=0
 SMOKE PASSED
 ```
 
@@ -89,15 +90,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `50 passed` (the 49 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `51 passed` (the 50 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty-one additions), not the full problem set. Extend
+on the answer from the last twenty-two additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (529)
+## Solved (530)
 
-<!-- last touched: 2026-09-23 (rev 615) -->
+<!-- last touched: 2026-09-26 (rev 616) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -531,6 +532,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 3258 | [Count Substrings Containing Every Vowel And K Consonants I](3258-count-substrings-containing-every-vowel-and-k-consonants-i/) | Medium | Python |
 | 3306 | [Count Of Substrings Containing Every Vowel And K Consonants Ii](3306-count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | Medium | Python |
 | 3340 | [Check Balanced String](3340-check-balanced-string/) | Easy | Python |
+| 3342 | [Find Minimum Time To Reach Last Room Ii](3342-find-minimum-time-to-reach-last-room-ii/) | Medium | Python |
 | 3381 | [Maximum Subarray Sum With Length Divisible By K](3381-maximum-subarray-sum-with-length-divisible-by-k/) | Medium | Python |
 | 3402 | [Minimum Operations To Make Columns Strictly Increasing](3402-minimum-operations-to-make-columns-strictly-increasing/) | Easy | Python |
 | 3445 | [Maximum Difference Between Even And Odd Frequency Ii](3445-maximum-difference-between-even-and-odd-frequency-ii/) | Hard | Python |
