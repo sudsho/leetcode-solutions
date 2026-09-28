@@ -2995,3 +2995,48 @@ city, wrong, 14.
 
 bounds. O(T m log(T m)) and O(T n) with T = maxtime. 1871's (1, 10) is still
 open, and the maximum count for 1786.
+
+## 2026-09-28
+
+1928's second coordinate did not collapse, and the search still needed only
+one number per city, because a pop in cost order is dominated exactly when it
+is also no faster. i wanted a second coordinate with a direction built in, one
+where more is never worse, to see whether the same bar works with the
+inequality turned round and whether the bar at the push still gets away with it.
+
+2093, minimum cost to reach city with discounts. the state is (city, discounts
+left), and a discount left over never costs anything, so a pop is dominated
+when it has no more left than an earlier pop at the same city. one bar per
+city, the most discounts left, and it matches an oracle that keeps no state,
+every simple path discounted on its dearest roads, on all 16384 instances on 4
+cities, 531441 on 5, and every random multigraph. simple paths are enough: a
+cycle never lowers the toll and only spends discounts, so the
+once-per-highway rule in the statement never binds.
+
+the readings that go wrong:
+
+- the bar at the push, 73% on 5 cities and 95% to 100% on random graphs. two
+  faults stacked. with no discounts it is 1928's tolled-road failure, 9% on 4
+  cities, since the toll is on the road. with discounts the full-price push
+  sets the bar at what it still has and the discounted push carries one fewer,
+  so the search almost never spends one
+- one label per city, under 3% exhaustively and 18% to 19% on random graphs
+  with one or two discounts. the smallest failure is 0-2 at 1 and 2-3 at 3 with
+  one discount: 2 is reached for free by spending it on the cheap road
+- the full-price shortest route discounted afterwards, 0% to 4.7%. never wrong
+  with tolls {1, 4} at 5 cities, which is those two values tying, and 2% with
+  {2, 7}
+
+at the statement's size the frontier is 3.9 to 8.6 per city with a max of 17
+out of 501, because a discount past the number of roads on the route saves
+nothing. so the bar is not only right, it is 190x faster than the layered
+search at k = 500, 0.010s against 1.9s.
+
+predictions, written before the run. layered and pareto match, right. bar at
+push wrong on about 5%, wrong, 73%. one label about 20%, half, 18% to 19% on
+random graphs and under 3% exhaustively. discount after about 3%, right, 0% to
+4.7%. at most 3 states per city at size, wrong, 8.6.
+
+bounds. O(k m log(k m)) and O(k n) worst case, with the frontier bounded by
+route length rather than k in practice. 1871's (1, 10) is still open, and the
+maximum count for 1786.

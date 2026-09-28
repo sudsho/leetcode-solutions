@@ -475,6 +475,19 @@ def c_min_cost_in_time(s):
     ), (11, 48, -1, 5, 3)
 
 
+def c_min_cost_discounts(s):
+    return (
+        # the statement's three examples.
+        s.minimumCost(5, [[0, 1, 4], [2, 1, 3], [1, 4, 11], [3, 2, 3], [3, 4, 2]], 1),
+        s.minimumCost(4, [[1, 3, 17], [1, 2, 7], [3, 2, 5], [0, 1, 6], [3, 0, 20]], 20),
+        s.minimumCost(4, [[0, 1, 3], [2, 3, 2]], 0),
+        # the discount spent on the cheap road settles 2 first. one label per city returns 3.
+        s.minimumCost(4, [[0, 2, 1], [2, 3, 3]], 1),
+        # two routes at 5 full price, 2 and 1 after halving. shortest-then-discount can keep the wrong one.
+        s.minimumCost(4, [[0, 2, 1], [1, 2, 1], [1, 3, 3], [2, 3, 4]], 3),
+    ), (9, 8, -1, 2, 1)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -529,6 +542,7 @@ CASES = [
     ("2045-second-minimum-time-to-reach-destination", c_second_minimum),
     ("3342-find-minimum-time-to-reach-last-room-ii", c_min_time_to_reach),
     ("1928-minimum-cost-to-reach-destination-in-time", c_min_cost_in_time),
+    ("2093-minimum-cost-to-reach-city-with-discounts", c_min_cost_discounts),
 ]
 
 

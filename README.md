@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 51 sampled solutions from ...\leetcode-solutions
+running 52 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -80,8 +80,9 @@ running 51 sampled solutions from ...\leetcode-solutions
 [PASS] 2045-second-minimum-time-to-reach-destination expected=(13, 11, 3, 4)
 [PASS] 3342-find-minimum-time-to-reach-last-room-ii  expected=(7, 6, 4, 1, 6)
 [PASS] 1928-minimum-cost-to-reach-destination-in-time expected=(11, 48, -1, 5, 3)
+[PASS] 2093-minimum-cost-to-reach-city-with-discounts expected=(9, 8, -1, 2, 1)
 ------------------------------------------------------------
-total=51 passed=51 failed=0
+total=52 passed=52 failed=0
 SMOKE PASSED
 ```
 
@@ -91,15 +92,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `52 passed` (the 51 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `53 passed` (the 52 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty-three additions), not the full problem set. Extend
+on the answer from the last twenty-four additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (531)
+## Solved (532)
 
-<!-- last touched: 2026-09-27 (rev 617) -->
+<!-- last touched: 2026-09-28 (rev 618) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -470,6 +471,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1976 | [Number Of Ways To Arrive At Destination](1976-number-of-ways-to-arrive-at-destination/) | Medium | Python |
 | 1986 | [Minimum Number Of Work Sessions To Finish The Tasks](1986-minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | Python |
 | 2045 | [Second Minimum Time To Reach Destination](2045-second-minimum-time-to-reach-destination/) | Hard | Python |
+| 2093 | [Minimum Cost To Reach City With Discounts](2093-minimum-cost-to-reach-city-with-discounts/) | Medium | Python |
 | 2158 | [Amount Of New Area Painted Each Day](2158-amount-of-new-area-painted-each-day/) | Hard | Python |
 | 2517 | [Maximum Tastiness Of Candy Basket](2517-maximum-tastiness-of-candy-basket/) | Medium | Python |
 | 2577 | [Minimum Time To Visit A Cell In A Grid](2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard | Python |
