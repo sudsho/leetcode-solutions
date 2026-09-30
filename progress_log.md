@@ -3090,3 +3090,61 @@ right, but none with a, b to 6. a >= b never past x + b, right. bar saves under
 bounds. O(max(x, F) + a + b) time and space. open: why queuing the backward
 jump first is never wrong, and which pairs need all of a + b. 1871's (1, 10) is
 still open, and the maximum count for 1786.
+
+## 2026-09-30
+
+1654's bar was one number per position and 2093's one per city, and both
+worked because the second coordinate was totally ordered: more discounts, or
+a free arrival, is never worse than less. i wanted the same bar where that
+order is only partial, so that no single number can stand in for the
+coordinate and the bar has to be a set.
+
+864, shortest path to get all keys. the state is (cell, mask of keys), and
+{a} and {b} are incomparable. the bar at a cell is the set of masks already
+queued there with none a subset of another, a push is dropped when some
+queued mask contains it, and a surviving push evicts the subsets it
+dominates. set at the push, since every move costs 1. it matches a layer
+oracle that marks nothing on all 32256 3x3 grids with one key, every seventh
+of the 241920 with two and 3000 random 4x4 with three, and is wrong on none
+of 12000 random grids up to 8x8 with six keys.
+
+the readings that go wrong:
+
+- one number per cell, the most keys held, 5.61% of the answerable 2-key
+  grids and 81% at 8x8 with six keys. @.a / bAB / ...: the arrival at the
+  middle-top cell with {a} is queued a layer before the one with {b}, which
+  has no more keys and is dropped, and the search says 5 for 4
+- one mark per cell, 30% at two keys and 99.7% at six. @.A / a.b / B..: the
+  middle cell is reached without a key one pop before it is reached with one,
+  3 moves and it says -1
+- with one key neither is ever wrong, on any of the 21688 grids, and it is
+  not the searches. the one lock is the one key's own and cannot open before
+  the search ends, so it is a wall and the state is the cell. i had put one
+  mark at 15% there
+
+the move order, which made the one-mark search right on everything in 1654,
+does nothing here: all 24 orders are wrong on exactly the same 48360 grids.
+the count bar does move with it, 8978 to 9204. a push from one state lands
+on four different cells, so the order can only reach a cell through the
+order of earlier pops, and i do not have the argument for why that leaves
+the count fixed.
+
+the antichain gets as wide as sperner allows: 6 of 6 at four keys, 10 of 10
+at five, 15 of 20 at six on 8x8 and 17 on a 30x30. the bar saves 0.4% of the
+pops at two keys on 3x3 and 33% at six, and at the statement's size it is
+still up to 2.1x slower than the layered search, 0.14s against 0.08s,
+because each push scans the antichain in python and a bit test is free.
+
+predictions, written before the run. layered and the antichain bar match
+the oracle, right. count bar about 5% at two keys and 0 at one, right, 5.61%
+and 0. one mark about 15% at one key and 30% at two, half, 0 and 30.22%. no
+order makes one mark right and the best order still over 5% at one key,
+half, 0 of 24 and every order right at one key. the bar saves under 10% at
+six keys and the antichain never passes 4, wrong, 33% and 15. the bar within
+20% of the layered search's time at 30x30, half, no faster is right and 2.1x
+slower is not within 20%.
+
+bounds. O(cells 2^k) for the layered search, times C(k, k/2) for the
+antichain scan. open: why the move order cannot change the one-mark count
+here when it changed everything in 1654. 1871's (1, 10) is still open, and
+the maximum count for 1786.

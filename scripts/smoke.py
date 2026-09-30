@@ -501,6 +501,19 @@ def c_min_jumps_home(s):
     ), (3, -1, 2, 4, 7)
 
 
+def c_all_keys(s):
+    return (
+        # the statement's three examples.
+        s.shortestPathAllKeys(["@.a..", "###.#", "b.A.B"]),
+        s.shortestPathAllKeys(["@..aA", "..B#.", "....b"]),
+        s.shortestPathAllKeys(["@Aa"]),
+        # the middle cell is reached without a key one pop before it is reached from a with one. one mark per cell says -1.
+        s.shortestPathAllKeys(["@.A", "a.b", "B.."]),
+        # b is next to the start, and the arrival holding {b} is dropped at the top-middle cell for holding no more keys than {a}. one number per cell says 5.
+        s.shortestPathAllKeys(["@.a", "bAB", "..."]),
+    ), (8, 6, -1, 3, 4)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -557,6 +570,7 @@ CASES = [
     ("1928-minimum-cost-to-reach-destination-in-time", c_min_cost_in_time),
     ("2093-minimum-cost-to-reach-city-with-discounts", c_min_cost_discounts),
     ("1654-minimum-jumps-to-reach-home", c_min_jumps_home),
+    ("0864-shortest-path-to-get-all-keys", c_all_keys),
 ]
 
 
