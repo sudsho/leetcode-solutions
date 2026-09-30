@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 52 sampled solutions from ...\leetcode-solutions
+running 53 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -81,8 +81,9 @@ running 52 sampled solutions from ...\leetcode-solutions
 [PASS] 3342-find-minimum-time-to-reach-last-room-ii  expected=(7, 6, 4, 1, 6)
 [PASS] 1928-minimum-cost-to-reach-destination-in-time expected=(11, 48, -1, 5, 3)
 [PASS] 2093-minimum-cost-to-reach-city-with-discounts expected=(9, 8, -1, 2, 1)
+[PASS] 1654-minimum-jumps-to-reach-home              expected=(3, -1, 2, 4, 7)
 ------------------------------------------------------------
-total=52 passed=52 failed=0
+total=53 passed=53 failed=0
 SMOKE PASSED
 ```
 
@@ -92,15 +93,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `53 passed` (the 52 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `54 passed` (the 53 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty-four additions), not the full problem set. Extend
+on the answer from the last twenty-five additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (532)
+## Solved (533)
 
-<!-- last touched: 2026-09-28 (rev 618) -->
+<!-- last touched: 2026-09-29 (rev 619) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -454,6 +455,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1631 | [Path With Minimum Effort](1631-path-with-minimum-effort/) | Medium | Python |
 | 1632 | [Rank Transform Of A Matrix](1632-rank-transform-of-a-matrix/) | Hard | Python |
 | 1639 | [Number Of Ways To Form A Target String](1639-number-of-ways-to-form-a-target-string/) | Hard | Python |
+| 1654 | [Minimum Jumps To Reach Home](1654-minimum-jumps-to-reach-home/) | Medium | Python |
 | 1671 | [Minimum Number Of Removals To Make Mountain Array](1671-minimum-number-of-removals-to-make-mountain-array/) | Hard | Python |
 | 1681 | [Minimum Incompatibility](1681-minimum-incompatibility/) | Hard | Python |
 | 1707 | [Maximum Xor With An Element From Array](1707-maximum-xor-with-an-element-from-array/) | Hard | Python |

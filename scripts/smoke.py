@@ -488,6 +488,19 @@ def c_min_cost_discounts(s):
     ), (9, 8, -1, 2, 1)
 
 
+def c_min_jumps_home(s):
+    return (
+        # the statement's three examples.
+        s.minimumJumps([14, 4, 18, 1, 15], 3, 15, 9),
+        s.minimumJumps([8, 3, 16, 6, 12, 20], 15, 13, 11),
+        s.minimumJumps([1, 6, 2, 14, 5, 17, 4], 16, 9, 7),
+        # 0, 3, 1, 4, 2. one mark per position gives 4 to the backward arrival from 6 and returns -1.
+        s.minimumJumps([], 3, 2, 2),
+        # 9 cannot jump back onto 2, so the route stands on 12 = max(x, F) + a + b. a cap one short returns -1.
+        s.minimumJumps([2], 3, 7, 1),
+    ), (3, -1, 2, 4, 7)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -543,6 +556,7 @@ CASES = [
     ("3342-find-minimum-time-to-reach-last-room-ii", c_min_time_to_reach),
     ("1928-minimum-cost-to-reach-destination-in-time", c_min_cost_in_time),
     ("2093-minimum-cost-to-reach-city-with-discounts", c_min_cost_discounts),
+    ("1654-minimum-jumps-to-reach-home", c_min_jumps_home),
 ]
 
 

@@ -3040,3 +3040,53 @@ random graphs and under 3% exhaustively. discount after about 3%, right, 0% to
 bounds. O(k m log(k m)) and O(k n) worst case, with the frontier bounded by
 route length rather than k in practice. 1871's (1, 10) is still open, and the
 maximum count for 1786.
+
+## 2026-09-29
+
+2093's bar was one number per city out of 501. i wanted the same coordinate at
+its smallest, two values, on a graph where the cost order is free, to see what
+is left of the argument when the heap is a queue. and a graph with no far
+edge, because every search so far was handed a finite one.
+
+1654, minimum jumps to reach home. the state is (position, arrived by a
+backward jump), and a forward arrival can do everything a backward one can, so
+one bar per position, has a free arrival been queued here, and a backward
+arrival is dropped when one has. every jump costs 1, so the bar goes on at the
+push, which 2093 could not do. it matches an oracle that keeps each layer as
+two bitsets and marks nothing on all 184320 instances with a, b to 6 and x and
+the forbidden set inside 1..10, and on 55000 random ones.
+
+the readings that go wrong:
+
+- one mark per position, 4.2% exhaustively and 13% to 54% on random
+  instances. nothing forbidden, a = 3, b = 2, x = 2: the route is 0, 3, 1, 4,
+  2, and 4 is reached from 6 by a backward jump before it is reached from 1 by
+  a forward one, on the same jump count. it says -1
+- the same search with the backward jump queued first is wrong on none of
+  them, and none of 92395 more where the other order is wrong on 31%. i do
+  not have the argument. the two arrivals do not always tie, the bar only
+  saves 7.5% of the pops
+- the cap. x + b is wrong on 1.0% and up to 5.0%, max(x, F) + b on 0.63%,
+  max(x, F) + a on 1.6%, and every one of those has a < b. with a >= b no cap
+  in the table is wrong
+
+max(x, F) + a + b is the bound everyone quotes and one short of it was never
+wrong in the first enumeration, or on the random instances. with b to 8 it is:
+a = 3, b = 7, x = 1 with 2 forbidden goes 0, 3, 6, 9, 12, 5, 8, 1, because 9
+cannot jump back onto 2. 5 of the 28 pairs a < b <= 8 need all of it, (3, 7),
+(3, 8), (4, 7), (5, 7), (5, 8), and one short is wrong on 112 of 26692. had i
+stopped at the first table i would have written down a tighter bound that is
+false.
+
+at the statement's size the worst row is a = 1998, b = 1999, x = 2000, 3994
+jumps and 7987 states, and the bar saves nothing.
+
+predictions, written before the run. layered with the full cap matches, right.
+one mark wrong on about 10%, half, 4.2% to 54% and 0% in the other order.
+x + b wrong on about 5%, half, 1.0% to 5.0%. some instance needs all of a + b,
+right, but none with a, b to 6. a >= b never past x + b, right. bar saves under
+20%, right, 7.5%.
+
+bounds. O(max(x, F) + a + b) time and space. open: why queuing the backward
+jump first is never wrong, and which pairs need all of a + b. 1871's (1, 10) is
+still open, and the maximum count for 1786.
