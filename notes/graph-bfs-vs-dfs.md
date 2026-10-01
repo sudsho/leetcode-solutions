@@ -19,6 +19,15 @@
   in 2612, since a reversal undoes itself and a level is one parity. a
   frontier-at-a-time bfs knows when a level is finished for free. only the 0-1
   deque in 3552 needed an argument, that a letter's portals share one level.
+- a bar on a second coordinate (1928, 2093, 1654, 864): when the state is
+  (node, extra) and more extra is never worse, keep one bar per node, the most
+  extra any arrival had, and drop an arrival that brings no more. set it at the
+  pop when edge costs vary, since a push is not yet in cost order (2093's push
+  bar was wrong on 73%), and at the push when every move costs 1 (1654, 864).
+  when the extra is only partly ordered, {a} against {b} in 864, no single
+  number stands in for it and the bar is an antichain of what was held, as
+  wide as sperner allows. in python it was slower than the plain layered
+  search even while it saved a third of the pops, since a bit test is free.
 - dijkstra stale skip (`if d > dist[u]: continue`): plain dijkstra survives
   losing it, which says nothing about the program in front of you. go through
   each update the pop reaches and ask whether a repeat is absorbed under what it
