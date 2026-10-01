@@ -514,6 +514,20 @@ def c_all_keys(s):
     ), (8, 6, -1, 3, 4)
 
 
+def c_shortest_path_all_nodes(s):
+    return (
+        # the statement's two examples.
+        s.shortestPathLength([[1, 2, 3], [0], [0], [0]]),
+        s.shortestPathLength([[1], [0, 2, 4], [1, 3, 4], [2], [1, 2]]),
+        # the path 3-0-1-2. one number per node, the most visited, drops the arrival at 1 holding {0, 1, 3} and says -1.
+        s.shortestPathLength([[1, 3], [0, 2], [1], [0]]),
+        # the fewest-edges 5-node graph the count bar gets wrong, 7 for 4.
+        s.shortestPathLength([[2, 4], [2, 3], [0, 1], [1], [0]]),
+        # one node, no moves.
+        s.shortestPathLength([[]]),
+    ), (4, 4, 3, 4, 0)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -571,6 +585,7 @@ CASES = [
     ("2093-minimum-cost-to-reach-city-with-discounts", c_min_cost_discounts),
     ("1654-minimum-jumps-to-reach-home", c_min_jumps_home),
     ("0864-shortest-path-to-get-all-keys", c_all_keys),
+    ("0847-shortest-path-visiting-all-nodes", c_shortest_path_all_nodes),
 ]
 
 

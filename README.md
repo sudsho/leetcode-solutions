@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 54 sampled solutions from ...\leetcode-solutions
+running 55 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -83,8 +83,9 @@ running 54 sampled solutions from ...\leetcode-solutions
 [PASS] 2093-minimum-cost-to-reach-city-with-discounts expected=(9, 8, -1, 2, 1)
 [PASS] 1654-minimum-jumps-to-reach-home              expected=(3, -1, 2, 4, 7)
 [PASS] 0864-shortest-path-to-get-all-keys            expected=(8, 6, -1, 3, 4)
+[PASS] 0847-shortest-path-visiting-all-nodes         expected=(4, 4, 3, 4, 0)
 ------------------------------------------------------------
-total=54 passed=54 failed=0
+total=55 passed=55 failed=0
 SMOKE PASSED
 ```
 
@@ -94,15 +95,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `55 passed` (the 54 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `56 passed` (the 55 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty-six additions), not the full problem set. Extend
+on the answer from the last twenty-seven additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (534)
+## Solved (535)
 
-<!-- last touched: 2026-09-30 (rev 620) -->
+<!-- last touched: 2026-10-01 (rev 621) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -503,6 +504,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 313 | [Super Ugly Number](0313-super-ugly-number/) | Medium | Python |
 | 887 | [Super Egg Drop](0887-super-egg-drop/) | Hard | Python |
 | 2402 | [Meeting Rooms Iii](2402-meeting-rooms-iii/) | Hard | Python |
+| 847 | [Shortest Path Visiting All Nodes](0847-shortest-path-visiting-all-nodes/) | Hard | Python |
 | 862 | [Shortest Subarray With Sum At Least K](0862-shortest-subarray-with-sum-at-least-k/) | Hard | Python |
 | 864 | [Shortest Path To Get All Keys](0864-shortest-path-to-get-all-keys/) | Hard | Python |
 | 975 | [Odd Even Jump](0975-odd-even-jump/) | Hard | Python |

@@ -3148,3 +3148,74 @@ bounds. O(cells 2^k) for the layered search, times C(k, k/2) for the
 antichain scan. open: why the move order cannot change the one-mark count
 here when it changed everything in 1654. 1871's (1, 10) is still open, and
 the maximum count for 1786.
+
+## 2026-10-01
+
+864's bar was an antichain of masks per cell and it was right everywhere and
+slower everywhere, and its open question was why the move order could not
+change the one-mark count there when it changed everything in 1654. i wanted
+the same bar on a graph with no locks at all, where every node is its own key
+and the mask grows at every first visit, and the order question asked again on
+a search that has two orders to vary, the adjacency lists and the starts.
+
+847, shortest path visiting all nodes. the state is (node, mask), every
+(u, {u}) is queued at level 0, and the bar at a node is the set of masks
+queued there with none a subset of another, set at the push since every edge
+costs 1. every mask at u holds u so it is at most C(n - 1, (n - 1) // 2)
+wide. it matches a layer oracle that marks nothing on every connected
+labelled graph to n = 5 and every seventh of the 26704 at n = 6, and on 12000
+random graphs of 8 nodes.
+
+the readings that go wrong:
+
+- the count bar, one number per node, the most nodes visited, dies on the
+  path 3 - 0 - 1 - 2: the arrival at 1 holding {0, 1, 2} sets the bar to 3
+  and the arrival at 0 holding {0, 1, 3} is then dropped at 1. 3 and it says
+  -1. wrong on 15.8%, 29.5% and 42.1% at n = 4, 5, 6, and on 83% of random
+  trees of 8 nodes down to 0% at 28 edges. at n = 5 it says -1 on 49 of its
+  215 and too long on the rest, up to 7 for 4
+- one mark per (node, number visited), n^2 states, is wrong on exactly the
+  count bar's graphs in every row and under every order. it keeps strictly
+  more states and it never helps, and i do not have the argument
+- one mark per node is dead before the first pop, since every node is a
+  start and every node is marked. wrong on every graph with n >= 3 for a
+  reason that has nothing to do with order, so 864's question cannot be put
+  to it here
+
+so i put it to the count bar instead, and the answer has two halves. at
+n = 5 all 120 adjacency orders are wrong on exactly 215 graphs and all 120
+start orders on exactly 215, and the 215 is a different set under every one
+of the 240. at n = 6 the count moves, 11037 to 11246 over six sampled
+orders. and for each permutation the adjacency column and the start column
+had the same count on different sets, which i stared at before seeing it is
+a relabelling: sorting G's lists by pi is the default search on pi(G) with
+the starts in the order pi lists them, and the labelled connected graphs
+are closed under relabelling. one experiment, run twice. why the count is
+pinned at n <= 5 and free at n = 6 i do not have.
+
+the bar never fires at either end of the edge range. on a tree a mask is a
+subtree and the cheapest walk covering S and ending at w costs
+2 E(S) - max d(s, w) over s in S, so adding k nodes adds 2k edges and at most
+k to the distance and a superset is always strictly later. on the complete
+graph (w, M) is first reached at level |M| - 1. 0.0% of the pops saved on
+both at 12 nodes, 33% to 47% at 20 edges, and the antichain is 462 of 462
+wide from 45 edges up. the scan is then 70x slower than the bit test for a
+4% saving, so the bar is right on this problem and worth having nowhere on
+it.
+
+predictions, written before the run. layered and the bar match the oracle,
+right. count bar about 10% at n = 5 and 30% at 6, wrong, 29.5% and 42.1%.
+count mark about 15% at n = 5, wrong, 29.5% and the same graphs as the
+count bar. the adjacency order moves the count bar by at least 20% at n = 5
+and the start order by less, wrong, neither moves it and they are the same
+experiment. the widest antichain reaches 6 and 10, right. over half the
+pops saved on a tree, under 10% on the complete graph, slower everywhere,
+half, 0% and 0% and 2x to 70x slower. the fewest-edges failure has 4
+nodes, right, the path.
+
+bounds. O(2^n (n + m)) time and O(n 2^n) space for the layered search, the
+scan times C(n - 1, (n - 1) // 2). open: why the count bar's wrong count is
+the same under every order at n <= 5 and not at n = 6, and why the count
+mark fails exactly where the count bar does. 864's order question is still
+open on its own grid, 1871's (1, 10) is still open, and the maximum count
+for 1786.
