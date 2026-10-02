@@ -78,7 +78,18 @@ pops.
   comes first and is wrong whenever the dead one does, 0.78% at `n = 3` and up
   to 9.18% at 10 nodes and 40 edges.
 - **Both wrong counts at `n = 3` are powers of two**, `2^18 / 16` and
-  `2^18 / 128`. I do not have the argument.
+  `2^18 / 128`, and half of that has an argument. Grouped by the node it gets
+  wrong and the true answer, one mark with blue first fails four ways, 4096
+  each. Where the answer is 2 the group is every instance with six edges
+  pinned and the other twelve free: for node 2, red `0 -> 1`, blue `0 -> 1`,
+  red `1 -> 2`, and no blue `1 -> 2` and no `0 -> 2` of either colour, the
+  fewest-edges failure plus everything that cannot rescue it. Node 1 is the
+  same with 1 and 2 swapped. The mono mark's two groups are these with node
+  1's (or 2's) blue out-edges also absent, which is what makes it a one-colour
+  node, eight pinned and `2^10` each, so its 2048 is explained. Where the
+  answer is 3 only `0 -> 2` (or `0 -> 1`) of both colours is pinned, the group
+  is not a product of free edges, and it is still 4096. That half I do not
+  have.
 - **The pruning pays where the graph is sparse**, 61% of the pops at one edge
   a node, because most nodes then have one colour out or none. By `n^2` edges
   every node has both and it saves 0.1%.

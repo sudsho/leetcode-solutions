@@ -206,6 +206,22 @@ if __name__ == "__main__":
             print(f"    fewest-edges one_mark failure: red {smallest[1]} blue {smallest[2]}"
                   f" want {smallest[3]} R-first {smallest[4]} B-first {smallest[5]}")
 
+    print("\nn = 3 failures grouped by (node, true answer), and the edges every member agrees on")
+    pairs = [(u, v) for u in range(3) for v in range(3)]
+    names = ["r%d%d" % p for p in pairs] + ["b%d%d" % p for p in pairs]
+    for name, first in (("one_mark B", BLUE), ("mono B", BLUE)):
+        fn = one_mark if name.startswith("one") else mono_mark
+        groups = {}
+        for bits, (red, blue) in enumerate(exhaustive(3)):
+            want, got = oracle(3, red, blue), fn(3, red, blue, first)
+            if got != want:
+                key = tuple((i, want[i]) for i in range(3) if got[i] != want[i])
+                groups.setdefault(key, []).append(bits)
+        for key, members in sorted(groups.items()):
+            fixed = [names[i] + "=" + str(members[0] >> i & 1) for i in range(18)
+                     if all((b >> i & 1) == (members[0] >> i & 1) for b in members)]
+            print(f"  {name:10s} node, answer {key}: {len(members):5d}, fixed {' '.join(fixed)}")
+
     print("\nrandom, n = 6 and n = 10, 20000 each over edge counts")
     rng = random.Random(1129)
     for n in (6, 10):

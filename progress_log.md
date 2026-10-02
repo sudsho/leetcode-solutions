@@ -3269,3 +3269,12 @@ bounds. O(n + m) time and space. open: why the n = 3 counts are powers of two,
 and whether one mark per node's failures are always -1 below 4 nodes for an
 argument or for lack of room. 847's pinned count at n <= 5 is still open,
 1871's (1, 10), and the maximum count for 1786.
+
+later. half of the powers of two. grouped by the node wrong and the true
+answer, one mark with blue first fails four ways at 4096 each, and the two
+groups where the answer is 2 are cylinders: six edges pinned, red 0 -> 1,
+blue 0 -> 1, red 1 -> 2, no blue 1 -> 2, no 0 -> 2 of either colour, and the
+other twelve free, so 2^12. the mono mark's groups pin two more, node 1's
+other blue out-edges, which is what makes it one-colour, and 2 x 2^10 is its 2048.
+the answer-3 groups pin only 0 -> 2 of both colours, are not cylinders, and
+still come to 4096 each. that half is open.
