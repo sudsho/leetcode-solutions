@@ -28,6 +28,12 @@
   number stands in for it and the bar is an antichain of what was held, as
   wide as sperner allows. in python it was slower than the plain layered
   search even while it saved a third of the pops, since a bit test is free.
+  on 847, where every node is a key, it never fires on a tree or a complete
+  graph, since a superset always arrives later there. with no order at all,
+  the arriving colour in 1129, the bar is one mark per value, and the only
+  dominance left is an arrival that cannot move: record its answer and do not
+  queue it. before running an order column, look for the symmetry that makes
+  it one experiment twice, relabelling in 847 and the colour swap in 1129.
 - dijkstra stale skip (`if d > dist[u]: continue`): plain dijkstra survives
   losing it, which says nothing about the program in front of you. go through
   each update the pop reaches and ask whether a repeat is absorbed under what it
