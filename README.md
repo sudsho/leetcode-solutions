@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 55 sampled solutions from ...\leetcode-solutions
+running 56 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -84,8 +84,9 @@ running 55 sampled solutions from ...\leetcode-solutions
 [PASS] 1654-minimum-jumps-to-reach-home              expected=(3, -1, 2, 4, 7)
 [PASS] 0864-shortest-path-to-get-all-keys            expected=(8, 6, -1, 3, 4)
 [PASS] 0847-shortest-path-visiting-all-nodes         expected=(4, 4, 3, 4, 0)
+[PASS] 1129-shortest-path-with-alternating-colors    expected=([0, 1, -1], [0, 1, -1], [0, 1, 2], [0, 2, 2, 1], [0])
 ------------------------------------------------------------
-total=55 passed=55 failed=0
+total=56 passed=56 failed=0
 SMOKE PASSED
 ```
 
@@ -95,15 +96,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `56 passed` (the 55 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `57 passed` (the 56 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty-seven additions), not the full problem set. Extend
+on the answer from the last twenty-eight additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (535)
+## Solved (536)
 
-<!-- last touched: 2026-10-01 (rev 621) -->
+<!-- last touched: 2026-10-02 (rev 622) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -428,6 +429,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1095 | [Find In Mountain Array](1095-find-in-mountain-array/) | Hard | Python |
 | 1106 | [Parsing A Boolean Expression](1106-parsing-a-boolean-expression/) | Hard | Python |
 | 1109 | [Corporate Flight Bookings](1109-corporate-flight-bookings/) | Medium | Python |
+| 1129 | [Shortest Path With Alternating Colors](1129-shortest-path-with-alternating-colors/) | Medium | Python |
 | 1143 | [Longest Common Subsequence](1143-longest-common-subsequence/) | Medium | Python |
 | 1163 | [Last Substring In Lexicographical Order](1163-last-substring-in-lexicographical-order/) | Hard | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |

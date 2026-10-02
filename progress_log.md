@@ -3219,3 +3219,53 @@ the same under every order at n <= 5 and not at n = 6, and why the count
 mark fails exactly where the count bar does. 864's order question is still
 open on its own grid, 1871's (1, 10) is still open, and the maximum count
 for 1786.
+
+## 2026-10-02
+
+847 put 864's order question to a search with two orders and found one
+experiment run twice, the adjacency order and the start order being the same
+thing under relabelling. i wanted the other end of the thread from 847: a
+second coordinate with no order at all, where the bar cannot be one mark for
+any reason, and to see whether the relabelling argument predicts the order
+column before the run instead of after it.
+
+1129, shortest path with alternating colors. the state is (node, colour that
+arrived), both colours queued at 0, and an arrival by c leaves by 1 - c, so in
+general neither colour stands in for the other and the bar is two marks per
+node. the one place the coordinate is ordered is a node whose out-edges are
+one colour: the arrival by that colour can never leave, so it answers the node
+and is not queued. layered and pruned match a layer oracle on every red and
+blue edge set on 2 and 3 nodes, 262144 at n = 3, self-loops in.
+
+the readings that go wrong:
+
+- one mark per node, whichever colour arrives first, dies on red 0 -> 1,
+  red 1 -> 2, blue 0 -> 1 with the blue start first: 1 is marked by red and
+  the blue arrival, the only one that can take red 1 -> 2, is dropped. it says
+  -1 for 2. 6.25% at n = 3, up to 59% at 10 nodes and 40 edges
+- the mono mark, one mark at one-colour nodes and nothing pruned, is the right
+  bar without the pruning, and is wrong whenever the dead arrival gets there
+  first. 0.78% at n = 3, 9.18% at its worst
+- at n = 3 every failure says -1. a wrong length starts at n = 4, 3 for 2,
+  and over 36000 random instances neither reading was ever too short
+
+the order column came out the way the argument said it would. red first and
+blue first are each wrong on exactly 16384, on sets sharing 8192, and swapping
+the colours of G turns one search on G into the other on the swapped graph, a
+set the instances are closed under. what the argument does not say is why both
+wrong counts are powers of two, 2^18 / 16 and 2^18 / 128.
+
+the pruning saves 61% of the pops at one edge a node and 0.1% at n^2, and at
+100 nodes and 400 edges it costs what it saves, 0.103 ms against 0.107.
+
+predictions, written before the run. layered and pruned match the oracle,
+right. one mark about 20% at n = 3, wrong, 6.25%. the mono mark about 5%,
+wrong, 0.78%. red first and blue first wrong on the same number on different
+sets, right, 16384 each and 8192 shared. pruned saves about 25% at n = 10,
+half, 61% to 0.1% by density. the fewest-edges failure has 3 edges, right.
+pruned no slower at 100 nodes, right.
+
+bounds. O(n + m) time and space. open: why the n = 3 counts are powers of two,
+and whether one mark per node's failures are always -1 below 4 nodes for an
+argument or for lack of room. 847's pinned count at n <= 5 is still open,
+1871's (1, 10), and the maximum count for 1786.
