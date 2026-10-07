@@ -160,6 +160,7 @@ def exhaustive(n):
 
 
 def random_instance(rng, n, m):
+    """m distinct (colour, u, v) edges drawn without replacement, so m is at most 2n^2 and no edge repeats."""
     pairs = [(u, v) for u in range(n) for v in range(n)]
     chosen = rng.sample([(c, p) for c in (RED, BLUE) for p in pairs], m)
     return [p for c, p in chosen if c == RED], [p for c, p in chosen if c == BLUE]
