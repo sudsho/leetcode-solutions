@@ -542,6 +542,21 @@ def c_alternating_paths(s):
     ), ([0, 1, -1], [0, 1, -1], [0, 1, 2], [0, 2, 2, 1], [0])
 
 
+def c_push_box(s):
+    def g(*rows):
+        return [list(r) for r in rows]
+    return (
+        # the statement's three examples.
+        s.minPushBox(g("######", "#T####", "#..B.#", "#.##.#", "#...S#", "######")),
+        s.minPushBox(g("######", "#T####", "#..B.#", "####.#", "#...S#", "######")),
+        s.minPushBox(g("######", "#T..##", "#.#B.#", "#....#", "#...S#", "######")),
+        # one mark per box cell says -1 here: the box goes right once and comes back past its start, which is already marked.
+        s.minPushBox(g("##...", "STB..")),
+        # one row, one push.
+        s.minPushBox(g("SBT")),
+    ), (3, -1, 5, 3, 1)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -601,6 +616,7 @@ CASES = [
     ("0864-shortest-path-to-get-all-keys", c_all_keys),
     ("0847-shortest-path-visiting-all-nodes", c_shortest_path_all_nodes),
     ("1129-shortest-path-with-alternating-colors", c_alternating_paths),
+    ("1263-minimum-moves-to-move-a-box-to-their-target-location", c_push_box),
 ]
 
 

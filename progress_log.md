@@ -3278,3 +3278,52 @@ other twelve free, so 2^12. the mono mark's groups pin two more, node 1's
 other blue out-edges, which is what makes it one-colour, and 2 x 2^10 is its 2048.
 the answer-3 groups pin only 0 -> 2 of both colours, are not cylinders, and
 still come to 4096 each. that half is open.
+
+## 2026-10-08
+
+1129 found the second coordinate with no order at all, where the bar is one
+mark per value and the only dominance left is an arrival that cannot move. i
+wanted a coordinate that is neither ordered nor unordered, and the player in a
+push-box search is one: two player cells that can walk to each other with the
+box where it is are the same state, completely. not dominance, equivalence.
+
+1263, minimum moves to move a box to their target location. the textbook
+search marks (box, side) and flood-fills the player's region at every pop. the
+quotient bar is one mark per (box, component), with the components labelled
+once per box cell, so a push is a table lookup. side, component and a 0-1 bfs
+on (box, player cell) match a layer oracle on every board of 2 x 4, 2 x 5 and
+3 x 3, 134k instances.
+
+the reading that should go wrong, one mark per box cell, almost never does.
+0 on 2 x 4 and 3 x 3, 28 of 92160 on 2 x 5, at most 0.67% on random 8 x 8.
+the 2 x 5 failure is `##...` over `STB..`: the player is shut in behind the
+box with the target, so the box goes right, the player walks round the top,
+and the box comes back left twice, past its start, which one mark already
+spent. on 3 x 3 there is an argument that it cannot fail: a box on an edge
+only moves along the edge into a corner and a corner is dead, so no box cell
+is ever reached by two player states that both matter.
+
+the order column was flatter than the symmetry. relabelling only says the
+count is constant on each orbit of push orders under the board's symmetries,
+and it was constant on all of them. on 2 x 5 all 24 orders are wrong on the
+same 28 instances, because in two rows the box's cells are an interval grown
+from its start and a new cell has one parent. the symmetry check from 847 and
+1129 was right and not the whole story: here the order cannot matter at all.
+
+the component bar saves 3% to 56% of the side search's pops, more as the
+board opens. the 0-1 bfs pops 20 to 80 times as often and is still as fast as
+the side search, 41 ms against 43 at 20 x 20, the component search 25.
+
+predictions, written before the run. side, component and cell match the
+oracle, right. one mark about 3% at 3 x 3, wrong, it cannot fail there. one
+mark never wrong on two rows, wrong, 28 at 2 x 5. one count per orbit and the
+three orbits at 3 x 3 differ, half, every orbit the same. component saves
+about 20% at 6 x 6 with a fifth walls, half, 28.5%. component at least 2x
+faster than side and cell slowest, wrong, 1.7x and cell is not slowest.
+
+bounds. O(N^2) for the side and component searches on N cells, O(N^2) states
+for the 0-1 bfs. open: the 28 at 2 x 5 all need the box to pass back over a
+marked cell, and whether every failure of one mark on any board is a return
+like that, or whether a first arrival from the wrong side can cost a cell the
+box never revisits. 1129's answer-3 groups, 847's pinned count at n <= 5,
+1871's (1, 10), and the maximum count for 1786 are still open.

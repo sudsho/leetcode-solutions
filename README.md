@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 56 sampled solutions from ...\leetcode-solutions
+running 57 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -85,8 +85,9 @@ running 56 sampled solutions from ...\leetcode-solutions
 [PASS] 0864-shortest-path-to-get-all-keys            expected=(8, 6, -1, 3, 4)
 [PASS] 0847-shortest-path-visiting-all-nodes         expected=(4, 4, 3, 4, 0)
 [PASS] 1129-shortest-path-with-alternating-colors    expected=([0, 1, -1], [0, 1, -1], [0, 1, 2], [0, 2, 2, 1], [0])
+[PASS] 1263-minimum-moves-to-move-a-box-to-their-target-location expected=(3, -1, 5, 3, 1)
 ------------------------------------------------------------
-total=56 passed=56 failed=0
+total=57 passed=57 failed=0
 SMOKE PASSED
 ```
 
@@ -96,15 +97,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `57 passed` (the 56 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `58 passed` (the 57 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty-eight additions), not the full problem set. Extend
+on the answer from the last twenty-nine additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (536)
+## Solved (537)
 
-<!-- last touched: 2026-10-02 (rev 622) -->
+<!-- last touched: 2026-10-08 (rev 623) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -434,6 +435,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1163 | [Last Substring In Lexicographical Order](1163-last-substring-in-lexicographical-order/) | Hard | Python |
 | 1235 | [Maximum Profit Job Scheduling](1235-maximum-profit-job-scheduling/) | Hard | Python |
 | 1240 | [Tiling A Rectangle With The Fewest Squares](1240-tiling-a-rectangle-with-the-fewest-squares/) | Hard | Python |
+| 1263 | [Minimum Moves To Move A Box To Their Target Location](1263-minimum-moves-to-move-a-box-to-their-target-location/) | Hard | Python |
 | 1268 | [Search Suggestions System](1268-search-suggestions-system/) | Medium | Python |
 | 1278 | [Palindrome Partitioning Iii](1278-palindrome-partitioning-iii/) | Hard | Python |
 | 1293 | [Shortest Path With Obstacle Elimination](1293-shortest-path-with-obstacle-elimination/) | Hard | Python |
