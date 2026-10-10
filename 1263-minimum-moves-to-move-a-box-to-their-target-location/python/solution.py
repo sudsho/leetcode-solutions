@@ -325,6 +325,30 @@ if __name__ == "__main__":
         print(f"  {rows}x{cols}: {solvable} solvable, {solvable - avoid} with no self-avoiding optimum, "
               f"one mark wrong on {wrong}, (said, best self-avoiding) on those {sorted(said)}")
 
+    print("\none mark against the shortest self-avoiding solution at any length")
+    for rows, cols in ((2, 5), (3, 4)):
+        total = differ = 0
+        for grid in exhaustive(rows, cols):
+            total += 1
+            differ += one_mark(grid) != self_avoiding(grid, rows * cols)
+        print(f"  {rows}x{cols}: {total} boards, differ on {differ}")
+    rng_sa = random.Random(1010)
+    for rows, cols in ((4, 4), (5, 5), (6, 6)):
+        total = differ = long = 0
+        for wall in (0.2, 0.3, 0.4):
+            for _ in range(1500):
+                grid = random_instance(rng_sa, rows, cols, wall)
+                got = one_mark(grid)
+                total += 1
+                differ += got != self_avoiding(grid, rows * cols)
+                long += got >= 0 and got != by_cell(grid)
+        print(f"  {rows}x{cols} random: {total} boards, differ on {differ}, one mark answers too long on {long}")
+    # the box has to go out and come back through its own start, so a self-avoiding
+    # solution exists, it is just not the shortest one
+    witness = ["#...#", "...BS", "..#T#", ".....", "##..."]
+    print(f"  witness {witness}: answer {by_cell(witness)}, one mark {one_mark(witness)}, "
+          f"shortest self-avoiding {self_avoiding(witness, 25)}")
+
     print("\nrandom, 4000 at each size and wall density, pops per instance")
     rng = random.Random(1263)
     for rows, cols in ((4, 4), (6, 6), (8, 8)):

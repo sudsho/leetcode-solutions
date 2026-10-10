@@ -3337,3 +3337,14 @@ need a return as well. so a first arrival from the wrong side has not yet
 cost a cell the box never comes back to. the forced direction is that one
 mark's tree is itself a self-avoiding path. the other, that a self-avoiding
 solution is always found at the right length, is a count and not an argument.
+
+later. that converse was wrong as written, and the counterexample is 5 x 5.
+`#...#` over `...BS` over `..#T#`: the player is shut in behind the box, so
+the box goes out one cell and back over its start, 3 pushes. there is a
+self-avoiding way round at 7, and one mark says 7. none of the small boards
+could show this, because every failure there had no self-avoiding path at
+all. what survives is narrower: one mark gives the shortest self-avoiding
+count. equal on all 92160 boards at 2 x 5, all 675840 at 3 x 4 and 13500
+random up to 6 x 6. 4 of 426 random failures from 5 x 5 to 8 x 8 answered too
+long and not -1, each at the shortest self-avoiding count. still open: why
+marking the first arrival never blocks a shorter self-avoiding path.

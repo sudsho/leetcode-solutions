@@ -80,6 +80,19 @@ against the 0-1 BFS and on 4 x 4 against the oracle too. Pops per instance.
   every solution returns gets -1 from it. The other half, that a board with
   any self-avoiding solution gets the right count from it, I have only as a
   count.
+- **That other half was wrong as stated.** On `#...#` / `...BS` / `..#T#` /
+  `.....` / `##...` the player is shut in behind the box, so the fastest way
+  is out one cell and back through the start, 3 pushes. A self-avoiding way
+  round exists, 7 pushes, and one mark says 7. What held is narrower: one mark
+  says the shortest self-avoiding count, whatever it is. That is equal on all
+  92160 boards of 2 x 5 and all 675840 of 3 x 4, and on 13500 random boards
+  from 4 x 4 to 6 x 6. Too-long answers are rare. A separate search of 192000
+  random boards from 5 x 5 to 8 x 8 had 426 failures, 4 of them too long, and
+  each was the shortest self-avoiding count. The old claim holds only where
+  the shortest self-avoiding solution is also optimal. The forced half still
+  stands: one mark's answer is at least the self-avoiding minimum. The other
+  direction, that marking the first arrival never blocks a shorter
+  self-avoiding path, is still only a count.
 - **The order column came out flatter than the symmetry said.** The 24 push
   orders fall into orbits under the board's symmetries, three of eight on
   3 x 3 and six of four on 2 x 5, and relabelling says only that the count is
