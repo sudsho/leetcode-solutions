@@ -69,6 +69,17 @@ against the 0-1 BFS and on 4 x 4 against the oracle too. Pops per instance.
   the start or is reached from the centre with the player standing there, and a corner is
   a dead end where the player's side no longer matters. No box cell is ever
   reached with two player states that both matter.
+- **Every failure is a return**, on every board tried. `self_avoiding` finds
+  the fewest pushes over box paths that never stand on a cell twice, start
+  included. On 2 x 5, 2 x 6 and 3 x 4, exhaustively, the boards with no such
+  path at the optimum are exactly the boards one mark gets wrong, 28, 400 and
+  60, and on all of them there is no self-avoiding path at any length and one
+  mark says -1. On 3000 random boards at each of 5 x 5, 6 x 6 and 8 x 8 and
+  three wall densities, all 30 failures need a return too. Half of this is
+  forced: one mark's search tree is a self-avoiding path, so a board where
+  every solution returns gets -1 from it. The other half, that a board with
+  any self-avoiding solution gets the right count from it, I have only as a
+  count.
 - **The order column came out flatter than the symmetry said.** The 24 push
   orders fall into orbits under the board's symmetries, three of eight on
   3 x 3 and six of four on 2 x 5, and relabelling says only that the count is

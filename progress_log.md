@@ -3327,3 +3327,13 @@ marked cell, and whether every failure of one mark on any board is a return
 like that, or whether a first arrival from the wrong side can cost a cell the
 box never revisits. 1129's answer-3 groups, 847's pinned count at n <= 5,
 1871's (1, 10), and the maximum count for 1786 are still open.
+
+later. the return question, half of it. self_avoiding is the fewest pushes
+over box paths that never stand on a cell twice. on 2 x 5, 2 x 6 and 3 x 4,
+every board, one mark is wrong on exactly the boards where every solution
+returns, 28, 400 and 60, says -1 on all of them, and none of them has a
+self-avoiding path at any length. 30 random failures on 5 x 5 to 8 x 8 all
+need a return as well. so a first arrival from the wrong side has not yet
+cost a cell the box never comes back to. the forced direction is that one
+mark's tree is itself a self-avoiding path. the other, that a self-avoiding
+solution is always found at the right length, is a count and not an argument.

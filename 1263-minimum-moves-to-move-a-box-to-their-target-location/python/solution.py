@@ -165,6 +165,36 @@ def one_mark(grid, order=(0, 1, 2, 3)):
     return -1
 
 
+def self_avoiding(grid, bound):
+    """Fewest pushes over paths on which the box never stands on a cell twice, its start included, up to bound, else -1.
+
+    Layers of (box, component, cells used), pruned when the Manhattan distance
+    to the target cannot fit in what is left of bound. One mark's search tree
+    is one such path, so wherever one mark answers this finds at least as short.
+    """
+    g = Board(grid)
+    if g.box == g.target:
+        return 0
+    tr, tc = divmod(g.target, g.cols)
+    layer = {(g.box, g.labels(g.box)[g.player], 1 << g.box)}
+    k = 0
+    while layer and k < bound:
+        nxt = set()
+        for b, comp, used in layer:
+            lab = g.labels(b)
+            for d in range(4):
+                ahead, behind = g.nbr[d][b], g.nbr[(d + 2) % 4][b]
+                if ahead >= 0 and behind >= 0 and lab[behind] == comp and not used >> ahead & 1:
+                    if ahead == g.target:
+                        return k + 1
+                    r, c = divmod(ahead, g.cols)
+                    if k + 1 + abs(r - tr) + abs(c - tc) <= bound:
+                        nxt.add((ahead, g.labels(ahead)[b], used | 1 << ahead))
+        layer = nxt
+        k += 1
+    return -1
+
+
 def oracle(grid):
     """Every layer as the set of (box, player cell) after exactly k pushes, nothing marked across layers.
 
@@ -277,6 +307,23 @@ if __name__ == "__main__":
         every = frozenset.intersection(*wrong.values())
         some = frozenset.union(*wrong.values())
         print(f"  {rows}x{cols}: wrong under every order {len(every)}, under some order {len(some)}")
+
+    print("\none mark's failures against the box paths that never revisit a cell")
+    for rows, cols in ((2, 5), (2, 6), (3, 4)):
+        solvable = avoid = wrong = 0
+        said = set()
+        for grid in exhaustive(rows, cols):
+            want = by_cell(grid)
+            if want < 0:
+                continue
+            solvable += 1
+            avoid += self_avoiding(grid, want) == want
+            got = one_mark(grid)
+            if got != want:
+                wrong += 1
+                said.add((got, self_avoiding(grid, 40)))
+        print(f"  {rows}x{cols}: {solvable} solvable, {solvable - avoid} with no self-avoiding optimum, "
+              f"one mark wrong on {wrong}, (said, best self-avoiding) on those {sorted(said)}")
 
     print("\nrandom, 4000 at each size and wall density, pops per instance")
     rng = random.Random(1263)
