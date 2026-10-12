@@ -3348,3 +3348,46 @@ count. equal on all 92160 boards at 2 x 5, all 675840 at 3 x 4 and 13500
 random up to 6 x 6. 4 of 426 random failures from 5 x 5 to 8 x 8 answered too
 long and not -1, each at the shortest self-avoiding count. still open: why
 marking the first arrival never blocks a shorter self-avoiding path.
+
+## 2026-10-12
+
+1263 left one claim open, that one mark per box cell gives the shortest
+self-avoiding count, and i only had it as a count. the way to break a count
+is a problem where the same coarse mark exists and self-avoiding comes free.
+the snake in 1210 is one: right and down never lower the head's r + c and a
+turn keeps it, so every shortest solution keeps its head off any cell twice.
+if one mark per head cell fails there, it fails with no return to blame.
+
+1210, minimum moves to reach target with rotations. bfs on (tail,
+orientation), and an oracle with no queue at all: tail cells in order of
+r + c, each orientation from the cell above and the cell to the left, then the
+two orientations relaxed through the one 2 x 2 block they share. it matches
+the bfs on every 3 x 3 and 4 x 4 grid and 48000 random ones up to 8 x 8.
+
+one mark per head cell fails, and not rarely. 64 of 368 solvable 4 x 4 grids,
+and those 64 are exactly the grids that need a turn. at 20% walls it is wrong
+on 242 of 243 turning boards at 5 x 5, 354 of 362 at 6 x 6, 556 of 576 at
+8 x 8, and never on a board that needs no turn. every failure says -1. the
+witness is `0000 / 0010 / 1000 / 0000`, answer 7: turn, right, down column 1.
+going down unturned puts a head on (1, 1) at move 1, a dead end, and the
+turned snake arrives there at move 2 and is refused. the turn's block is free,
+so a turn followed by a right move always loses its head cell this way.
+whether that is every failure i did not check.
+
+so the 1263 claim is not a fact about marking first arrivals. here the
+shortest solution is self-avoiding in the head on every board and one mark
+still says -1. my guess at what kept the first arrival harmless in 1263 is
+the player walking free inside a component, so an arrival from the wrong side
+could usually walk round to the right one. that is a guess, not a run. the open question there becomes which
+property of the player's component does that, and the snake has no such
+component to test it on.
+
+predictions, written before the run. dp matches bfs, right. one mark per tail
+wrong exactly on turning boards, right, a turn keeps the tail so it can never
+turn. head-mark failures need no return, right, forced. head mark under 1% of
+solvable boards like 1263, wrong, 17% at 4 x 4. move order matters, wrong, 64
+on all 24. some failures answer too long, wrong, all -1.
+
+bounds. O(n^2) for the bfs and the dp. open: 1263's component property above,
+1129's answer-3 groups, 847's pinned count at n <= 5, 1871's (1, 10), and the
+maximum count for 1786.

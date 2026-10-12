@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 57 sampled solutions from ...\leetcode-solutions
+running 58 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -86,8 +86,9 @@ running 57 sampled solutions from ...\leetcode-solutions
 [PASS] 0847-shortest-path-visiting-all-nodes         expected=(4, 4, 3, 4, 0)
 [PASS] 1129-shortest-path-with-alternating-colors    expected=([0, 1, -1], [0, 1, -1], [0, 1, 2], [0, 2, 2, 1], [0])
 [PASS] 1263-minimum-moves-to-move-a-box-to-their-target-location expected=(3, -1, 5, 3, 1)
+[PASS] 1210-minimum-moves-to-reach-target-with-rotations expected=(11, 9, 7, 3, -1)
 ------------------------------------------------------------
-total=57 passed=57 failed=0
+total=58 passed=58 failed=0
 SMOKE PASSED
 ```
 
@@ -97,15 +98,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `58 passed` (the 57 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `59 passed` (the 58 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last twenty-nine additions), not the full problem set. Extend
+on the answer from the last thirty additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (537)
+## Solved (538)
 
-<!-- last touched: 2026-10-08 (rev 623) -->
+<!-- last touched: 2026-10-12 (rev 624) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -643,6 +644,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 2183 | [Count Array Pairs Divisible By K](2183-count-array-pairs-divisible-by-k/) | Hard | Python |
 | 711 | [Number Of Distinct Islands II](0711-number-of-distinct-islands-ii/) | Hard | Python |
 | 1202 | [Smallest String With Swaps](1202-smallest-string-with-swaps/) | Medium | Python |
+| 1210 | [Minimum Moves To Reach Target With Rotations](1210-minimum-moves-to-reach-target-with-rotations/) | Hard | Python |
 | 947 | [Most Stones Removed With Same Row Or Column](0947-most-stones-removed-with-same-row-or-column/) | Medium | Python |
 | 721 | [Accounts Merge](0721-accounts-merge/) | Medium | Python |
 | 1061 | [Lexicographically Smallest Equivalent String](1061-lexicographically-smallest-equivalent-string/) | Medium | Python |

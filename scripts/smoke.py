@@ -557,6 +557,22 @@ def c_push_box(s):
     ), (3, -1, 5, 3, 1)
 
 
+def c_snake(s):
+    return (
+        # the statement's two examples.
+        s.minimumMoves([[0, 0, 0, 0, 0, 1], [1, 1, 0, 0, 1, 0], [0, 0, 0, 0, 1, 1],
+                        [0, 0, 1, 0, 1, 0], [0, 1, 1, 0, 0, 0], [0, 1, 1, 0, 0, 0]]),
+        s.minimumMoves([[0, 0, 1, 1, 1, 1], [0, 0, 0, 0, 1, 1], [1, 1, 0, 0, 0, 1],
+                        [1, 1, 1, 0, 0, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 0, 0, 0]]),
+        # one mark per head cell says -1 here: going down unturned takes (1, 1) a move before the turned snake gets there.
+        s.minimumMoves([[0, 0, 0, 0], [0, 0, 1, 0], [1, 0, 0, 0], [0, 0, 0, 0]]),
+        # empty 3 x 3, down twice and right once, no turn.
+        s.minimumMoves([[0, 0, 0], [0, 0, 0], [0, 0, 0]]),
+        # a wall across the middle.
+        s.minimumMoves([[0, 0, 0], [1, 1, 0], [0, 0, 0]]),
+    ), (11, 9, 7, 3, -1)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -617,6 +633,7 @@ CASES = [
     ("0847-shortest-path-visiting-all-nodes", c_shortest_path_all_nodes),
     ("1129-shortest-path-with-alternating-colors", c_alternating_paths),
     ("1263-minimum-moves-to-move-a-box-to-their-target-location", c_push_box),
+    ("1210-minimum-moves-to-reach-target-with-rotations", c_snake),
 ]
 
 
