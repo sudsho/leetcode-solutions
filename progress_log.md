@@ -3391,3 +3391,46 @@ on all 24. some failures answer too long, wrong, all -1.
 bounds. O(n^2) for the bfs and the dp. open: 1263's component property above,
 1129's answer-3 groups, 847's pinned count at n <= 5, 1871's (1, 10), and the
 maximum count for 1786.
+
+## 2026-10-13
+
+1210 left a guess and no way to run it: one mark per box cell was harmless in
+1263 because the player walks free inside its component, so an arrival from
+the wrong side can walk round to the right one. the snake had no component.
+1824 has one with a price i can set. the lanes at one point are the
+component, a forward move is the push, and a sideways jump is the walk round.
+
+1824, minimum sideway jumps. the answer is three numbers carried down the
+road, the blocked lane set to infinity and every clear lane taking the
+smallest plus one. checked against a 0-1 bfs on (point, lane) and a second dp
+that relaxes the jumps at each point as a shortest path on three lanes, so the
+jump can cost 0 or 1, and go to any lane or only a neighbouring one. one mark
+per point lets the first forward arrival claim the point, jump inside it from
+there, and refuses every later forward arrival.
+
+free walk, jump costs 0: one mark is wrong on none of 16384 roads at n = 8,
+65536 at n = 9, or 18000 random ones. priced walk, the statement: 3410 at
+n = 8 and 14998 at n = 9, 21% and 23%, every one too long and none -1, over by
+1 mostly and by up to 4. cut walk, neighbouring lanes only, so an obstacle in
+lane 2 splits 1 from 3: 2942 at n = 8, and 2522 of those say -1. so the guess
+holds as far as this goes. harmless when the walk round is free, too long when
+it costs, -1 when it is cut. the witness for the priced one is `0 0 2 1 0`,
+answer 1. lanes 1 and 3 reach point 2 on one jump each, lane 1 is popped
+first and claims it, and lane 1 is blocked at point 3.
+
+what i had wrong about where it fails. i expected only ties, two forward
+arrivals at one point on the same count. 1501 of the 3410 at n = 8 are ties
+in the real search. my guess is that one mark's counts drift after its first
+refusal, so its ties are not the real search's. not checked. and lane order
+decides the witness's tie, which i did not vary.
+
+predictions, written before the run. both dps match the bfs, right. free walk
+never wrong, right. priced walk wrong only on ties, by exactly 1, never -1,
+half, never -1 held. cut walk wrong on more roads than priced and some -1,
+half, most -1 but 2942 against 3410. priced walk under 5% of roads at n = 8,
+wrong, 21%. 0-1 bfs within 3x of the dp at 5 * 10^5, wrong, 4.3x.
+
+bounds. O(n) for the dp, O(n) states for the bfs. open: whether 1263's -1
+failures are all boards where the box cuts the player's region, the drift
+guess above, 1129's answer-3 groups, 847's pinned count at n <= 5, 1871's
+(1, 10), and the maximum count for 1786.

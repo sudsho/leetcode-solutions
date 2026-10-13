@@ -573,6 +573,19 @@ def c_snake(s):
     ), (11, 9, 7, 3, -1)
 
 
+def c_sideway_jumps(s):
+    return (
+        # the statement's three examples.
+        s.minSideJumps([0, 1, 2, 3, 0]),
+        s.minSideJumps([0, 1, 1, 3, 3, 0]),
+        s.minSideJumps([0, 2, 1, 0, 3, 0]),
+        # one mark per point says 2: lane 1 claims point 2 on a tie and is blocked at point 3.
+        s.minSideJumps([0, 0, 2, 1, 0]),
+        # a clear road, no jumps.
+        s.minSideJumps([0, 0, 0]),
+    ), (2, 0, 2, 1, 0)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -634,6 +647,7 @@ CASES = [
     ("1129-shortest-path-with-alternating-colors", c_alternating_paths),
     ("1263-minimum-moves-to-move-a-box-to-their-target-location", c_push_box),
     ("1210-minimum-moves-to-reach-target-with-rotations", c_snake),
+    ("1824-minimum-sideway-jumps", c_sideway_jumps),
 ]
 
 

@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 58 sampled solutions from ...\leetcode-solutions
+running 59 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -87,8 +87,9 @@ running 58 sampled solutions from ...\leetcode-solutions
 [PASS] 1129-shortest-path-with-alternating-colors    expected=([0, 1, -1], [0, 1, -1], [0, 1, 2], [0, 2, 2, 1], [0])
 [PASS] 1263-minimum-moves-to-move-a-box-to-their-target-location expected=(3, -1, 5, 3, 1)
 [PASS] 1210-minimum-moves-to-reach-target-with-rotations expected=(11, 9, 7, 3, -1)
+[PASS] 1824-minimum-sideway-jumps                    expected=(2, 0, 2, 1, 0)
 ------------------------------------------------------------
-total=58 passed=58 failed=0
+total=59 passed=59 failed=0
 SMOKE PASSED
 ```
 
@@ -98,15 +99,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `59 passed` (the 58 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `60 passed` (the 59 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last thirty additions), not the full problem set. Extend
+on the answer from the last thirty-one additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (538)
+## Solved (539)
 
-<!-- last touched: 2026-10-12 (rev 624) -->
+<!-- last touched: 2026-10-13 (rev 625) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -471,6 +472,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 1786 | [Number Of Restricted Paths From First To Last Node](1786-number-of-restricted-paths-from-first-to-last-node/) | Medium | Python |
 | 1808 | [Maximize Number Of Nice Divisors](1808-maximize-number-of-nice-divisors/) | Hard | Python |
 | 1819 | [Number Of Different Subsequences Gcds](1819-number-of-different-subsequences-gcds/) | Hard | Python |
+| 1824 | [Minimum Sideway Jumps](1824-minimum-sideway-jumps/) | Medium | Python |
 | 1857 | [Largest Color Value In A Directed Graph](1857-largest-color-value-in-a-directed-graph/) | Hard | Python |
 | 1871 | [Jump Game Vii](1871-jump-game-vii/) | Medium | Python |
 | 1898 | [Maximum Number Of Removable Characters](1898-maximum-number-of-removable-characters/) | Medium | Python |
