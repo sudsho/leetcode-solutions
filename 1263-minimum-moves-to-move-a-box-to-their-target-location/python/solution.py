@@ -165,6 +165,93 @@ def one_mark(grid, order=(0, 1, 2, 3)):
     return -1
 
 
+def one_mark_refusals(grid, order=(0, 1, 2, 3)):
+    """One mark per box cell with every refusal recorded, sorted by whether the walk round was there.
+
+    Each mark remembers the component the player stood in when the box arrived,
+    with the box on the marked cell. A later arrival at a marked cell is free
+    when its player is in that component, since the first arrival could have
+    walked there for nothing, and cut when it is not. Returns one mark's answer,
+    the free and cut counts, and the cut refusals as (box cell, component,
+    pushes) so they can be put back on a shortest solution.
+    """
+    g = Board(grid)
+    if g.box == g.target:
+        return 0, 0, 0, []
+    comp_at = {g.box: g.labels(g.box)[g.player]}
+    queue = deque([(g.box, g.player, 0)])
+    free = cut = 0
+    cuts = []
+    while queue:
+        b, p, k = queue.popleft()
+        lab = g.labels(b)
+        for d in order:
+            ahead, behind = g.nbr[d][b], g.nbr[(d + 2) % 4][b]
+            if ahead >= 0 and behind >= 0 and lab[behind] == lab[p]:
+                if ahead == g.target:
+                    return k + 1, free, cut, cuts
+                c = g.labels(ahead)[b]
+                if ahead not in comp_at:
+                    comp_at[ahead] = c
+                    queue.append((ahead, b, k + 1))
+                elif comp_at[ahead] == c:
+                    free += 1
+                else:
+                    cut += 1
+                    cuts.append((ahead, c, k + 1))
+    return -1, free, cut, cuts
+
+
+def pushes_from(g, box, comp):
+    """Fewest pushes to the target from the state (box, component), the component search started there."""
+    if box == g.target:
+        return 0
+    seen = {(box, comp)}
+    queue = deque([(box, comp, 0)])
+    while queue:
+        b, comp, k = queue.popleft()
+        lab = g.labels(b)
+        for d in range(4):
+            ahead, behind = g.nbr[d][b], g.nbr[(d + 2) % 4][b]
+            if ahead >= 0 and behind >= 0 and lab[behind] == comp:
+                if ahead == g.target:
+                    return k + 1
+                key = (ahead, g.labels(ahead)[b])
+                if key not in seen:
+                    seen.add(key)
+                    queue.append((ahead, key[1], k + 1))
+    return -1
+
+
+def refusal_study(grids, label):
+    """Boards split by whether one mark made a cut refusal, and whether a cut refusal sat on a shortest solution."""
+    total = solvable = with_cut = 0
+    free_total = cut_total = 0
+    outcome = {"right": 0, "long": 0, "-1": 0}
+    on_path = {"right": 0, "long": 0, "-1": 0}
+    for grid in grids:
+        total += 1
+        want = by_cell(grid)
+        if want < 0:
+            continue
+        solvable += 1
+        got, free, cut, cuts = one_mark_refusals(grid)
+        free_total += free
+        cut_total += cut
+        if not cut:
+            assert got == want, (grid, want, got)
+            continue
+        with_cut += 1
+        key = "right" if got == want else ("-1" if got < 0 else "long")
+        outcome[key] += 1
+        g = Board(grid)
+        if any(k + pushes_from(g, b, c) == want for b, c, k in cuts if pushes_from(g, b, c) >= 0):
+            on_path[key] += 1
+    print(f"  {label}: {solvable} solvable of {total}, refusals free {free_total} cut {cut_total}, "
+          f"boards with a cut refusal {with_cut}: right {outcome['right']} ({on_path['right']} with it on a "
+          f"shortest solution), too long {outcome['long']} ({on_path['long']}), -1 {outcome['-1']} ({on_path['-1']})")
+
+
 def self_avoiding(grid, bound):
     """Fewest pushes over paths on which the box never stands on a cell twice, its start included, up to bound, else -1.
 
@@ -348,6 +435,17 @@ if __name__ == "__main__":
     witness = ["#...#", "...BS", "..#T#", ".....", "##..."]
     print(f"  witness {witness}: answer {by_cell(witness)}, one mark {one_mark(witness)}, "
           f"shortest self-avoiding {self_avoiding(witness, 25)}")
+
+    # a refused arrival is free when its player could have walked to the first arrival's side with the
+    # box where it is, and cut when the box stands between them; only a cut refusal can lose anything
+    print("\none mark's refusals, free when the player could have walked to the marked arrival's side, cut when not")
+    for rows, cols in ((2, 5), (2, 6), (3, 4)):
+        refusal_study(exhaustive(rows, cols), f"{rows}x{cols}")
+    rng_cut = random.Random(1014)
+    for rows, cols in ((5, 5), (6, 6), (8, 8)):
+        for wall in (0.2, 0.35):
+            refusal_study((random_instance(rng_cut, rows, cols, wall) for _ in range(3000)),
+                          f"{rows}x{cols} random walls {wall:.2f}")
 
     print("\nrandom, 4000 at each size and wall density, pops per instance")
     rng = random.Random(1263)

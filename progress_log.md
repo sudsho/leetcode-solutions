@@ -3434,3 +3434,51 @@ bounds. O(n) for the dp, O(n) states for the bfs. open: whether 1263's -1
 failures are all boards where the box cuts the player's region, the drift
 guess above, 1129's answer-3 groups, 847's pinned count at n <= 5, 1871's
 (1, 10), and the maximum count for 1786.
+
+## 2026-10-14
+
+1824 said the first arrival is harmless when the walk round is free and
+loses the road when it is cut, and left open whether 1263's -1 failures are
+all boards where the box cuts the player's region. that is checkable on
+1263 itself, so no new problem tonight. one mark's refusals sorted the way
+1824 sorted them: free when the refused arrival's player stands in the
+component the first arrival's player stood in, with the box where it is, and
+cut when the box stands between them. a free refusal cannot lose anything,
+the first arrival could have walked there. a cut refusal might. and each cut
+refusal put back on the board, the component search run from the refused
+state, to see whether it sat on a shortest solution.
+
+the forced half held and was not interesting: one mark is right on every
+board with no cut refusal, 5776 of 5840 solvable at 2 x 5. the other half is
+the number. of the 64 boards at 2 x 5 with a cut refusal, 28 fail, of 762 at
+2 x 6, 400, of 231 at 3 x 4, 60, and 3 to 10 of the 10 to 38 such boards at
+each random size from 5 x 5 to 8 x 8. a quarter to a half. i had guessed
+under one in twenty. and every one of the 532 failures, the single too-long
+answer at 8 x 8 with a fifth walls included, had a cut refusal on a
+shortest solution, while the boards that survived a cut refusal had it on a
+shortest solution 8 times in 667, all at 3 x 4, where a second shortest
+route went round. so the answer to the question is yes by construction, and
+the sharper fact is that one mark fails exactly when a cut refusal lands on
+a shortest solution and no other shortest route survives, and the cut
+refusal is harmless on three quarters of the boards where it happens at
+all, because the state it threw away was off every shortest path.
+
+free refusals are the common case, 220 to 64 on 2 x 5 and 21622 to 50 on
+the open 8 x 8, which is why one mark is almost always right on an open
+board: the box rarely stands on a cut vertex of the floor, and when it does
+not, every side is one component and one mark per box cell is exactly the
+component search.
+
+predictions, written before the run. cut refusals on under 5% of solvable
+boards at 2 x 5 and 3 x 4, right, 1.1% and 0.5%. every failure on a board
+with a cut refusal and under 5% of those boards failing, wrong, 26% to 52%.
+a cut refusal on a shortest solution on under a tenth of the boards one mark
+still gets right, right, 8 of 667. every failure with a cut refusal on a
+shortest solution, right, 532 of 532. free refusals at least ten to one over
+cut on a random 8 x 8 with a fifth walls, right, 432 to 1.
+
+open: 1824's drift guess, whether one mark's own counts drift after its
+first refusal so its ties are not the real search's, which is the last thing
+1824 left and now the only thing from this thread. and 1129's answer-3
+groups, 847's pinned count at n <= 5, 1871's (1, 10), and the maximum count
+for 1786.

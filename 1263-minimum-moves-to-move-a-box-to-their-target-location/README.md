@@ -93,6 +93,26 @@ against the 0-1 BFS and on 4 x 4 against the oracle too. Pops per instance.
   stands: one mark's answer is at least the self-avoiding minimum. The other
   direction, that marking the first arrival never blocks a shorter
   self-avoiding path, is still only a count.
+- **Every failure is a cut refusal on a shortest solution, and most cut
+  refusals are harmless.** 1824 sorted one mark's refusals by whether the walk
+  round was free, priced or cut, and said the first arrival is harmless when
+  the walk is free and loses the road when it is cut. Here the walk is never
+  priced: a later arrival at a marked box cell is free when its player stands
+  in the component the first arrival's player stood in, and cut when the box
+  separates them. `one_mark_refusals` records both kinds, and `pushes_from`
+  puts each cut refusal back on the board to see whether it sat on a shortest
+  solution. Free refusals outnumber cut ones 3 to 1 on 2 x 5 and 432 to 1 on a
+  random 8 x 8 with a fifth walls, and one mark is right on every board with
+  no cut refusal, which is forced. On the boards with one, exhaustively, 64 of
+  5840 solvable at 2 x 5, 762 of 37548 at 2 x 6 and 231 of 44072 at 3 x 4, one
+  mark is wrong on 28, 400 and 60, between a quarter and a half, and on 3 to 10
+  of the 10 to 38 such boards at each random size and density. All 532
+  failures, the one too-long answer at 8 x 8 included, had a cut refusal on a
+  shortest solution, and the right answers had it on one only 8 times, all at
+  3 x 4, where a second shortest route survived. So the cut refusal is the
+  failure, and it is harmless exactly when the refused state is off every
+  shortest path, which it is on three quarters of the boards where it happens
+  at all. I had guessed under one in twenty.
 - **The order column came out flatter than the symmetry said.** The 24 push
   orders fall into orbits under the board's symmetries, three of eight on
   3 x 3 and six of four on 2 x 5, and relabelling says only that the count is
