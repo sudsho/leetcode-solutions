@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 59 sampled solutions from ...\leetcode-solutions
+running 60 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -88,8 +88,9 @@ running 59 sampled solutions from ...\leetcode-solutions
 [PASS] 1263-minimum-moves-to-move-a-box-to-their-target-location expected=(3, -1, 5, 3, 1)
 [PASS] 1210-minimum-moves-to-reach-target-with-rotations expected=(11, 9, 7, 3, -1)
 [PASS] 1824-minimum-sideway-jumps                    expected=(2, 0, 2, 1, 0)
+[PASS] 3568-minimum-moves-to-clean-the-classroom     expected=(2, 3, -1, 5, 0)
 ------------------------------------------------------------
-total=59 passed=59 failed=0
+total=60 passed=60 failed=0
 SMOKE PASSED
 ```
 
@@ -99,15 +100,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `60 passed` (the 59 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `61 passed` (the 60 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last thirty-one additions), not the full problem set. Extend
+on the answer from the last thirty-two additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (539)
+## Solved (540)
 
-<!-- last touched: 2026-10-13 (rev 625) -->
+<!-- last touched: 2026-10-15 (rev 626) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -567,6 +568,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 3543 | [Maximum Weighted K Edge Path](3543-maximum-weighted-k-edge-path/) | Medium | Python |
 | 3552 | [Grid Teleportation Traversal](3552-grid-teleportation-traversal/) | Medium | Python |
 | 3559 | [Number Of Ways To Assign Edge Weights Ii](3559-number-of-ways-to-assign-edge-weights-ii/) | Hard | Python |
+| 3568 | [Minimum Moves To Clean The Classroom](3568-minimum-moves-to-clean-the-classroom/) | Medium | Python |
 | 3578 | [Count Partitions With Max Min Difference At Most K](3578-count-partitions-with-max-min-difference-at-most-k/) | Medium | Python |
 | 54 | [Spiral Matrix](0054-spiral-matrix/) | Medium | Python |
 | 168 | [Excel Sheet Column Title](0168-excel-sheet-column-title/) | Easy | Python |

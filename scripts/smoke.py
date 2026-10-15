@@ -586,6 +586,20 @@ def c_sideway_jumps(s):
     ), (2, 0, 2, 1, 0)
 
 
+def c_clean_classroom(s):
+    return (
+        # the statement's three examples.
+        s.minMoves(["S.", "XL"], 2),
+        s.minMoves(["LS", "RL"], 4),
+        s.minMoves(["L.S", "RXL"], 3),
+        # one mark per (cell, mask) says -1: the arrival at the middle cell with no energy
+        # claims it at move 2, the one with energy left after two resets is refused at move 4.
+        s.minMoves(["SLR", "L.R"], 2),
+        # no litter, nothing to do.
+        s.minMoves(["S.", ".."], 1),
+    ), (2, 3, -1, 5, 0)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -648,6 +662,7 @@ CASES = [
     ("1263-minimum-moves-to-move-a-box-to-their-target-location", c_push_box),
     ("1210-minimum-moves-to-reach-target-with-rotations", c_snake),
     ("1824-minimum-sideway-jumps", c_sideway_jumps),
+    ("3568-minimum-moves-to-clean-the-classroom", c_clean_classroom),
 ]
 
 

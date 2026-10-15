@@ -3482,3 +3482,66 @@ first refusal so its ties are not the real search's, which is the last thing
 1824 left and now the only thing from this thread. and 1129's answer-3
 groups, 847's pinned count at n <= 5, 1871's (1, 10), and the maximum count
 for 1786.
+
+## 2026-10-15
+
+1824 left the drift guess, that one mark's own counts drift after its first
+refusal so its ties are not the real search's, and 1263 and 1824 between
+them had two kinds of fine coordinate, a component the walk round can cross
+and a lane the walk round can be priced on. 3568 has a third, a budget. the
+classroom has litter to collect, a mask like 864's keys, and an energy that
+drops by one a move and refills on a reset cell, so a later arrival at the
+same (cell, mask) can be the one with the energy to go on. one mark per
+(cell, mask) is 1263's first arrival claims. the standard solution is the
+same mark holding the most energy seen there and reopened when more
+arrives, the dominance mark, and it is checked against the full state
+search everywhere.
+
+3568, minimum moves to clean the classroom. the dominance mark matches the
+full search on every one of 74000 exhaustive boards and 18000 random ones,
+and at 20 x 20 with ten litter it is 1.2 s against 13 s for the full
+state. one mark per (cell, mask) fails on 4.2% of solvable 3 x 3 boards at
+energy 2, 3.7% at 3, 1.3% at 4, 17 boards at 6 and none at 20, and 64% to
+82% of the failures say -1. the witness is `SLR / L.R` at energy 2, answer
+5: the arrival at the middle cell with the top litter taken comes at move 2
+with no energy left and claims it, and the arrival at move 4 with one energy
+after the two resets is refused. no tie anywhere in that, the refusal is two
+moves later and loses the board, which is 1824's -1 column with the cut
+made of energy instead of a lane.
+
+the tie question did not get an answer because i measured the wrong thing.
+i counted a board as having a real tie if any (cell, mask) is first reached
+by two energies at the same move count, which is a fact about the board and
+not about the failing claim, and nearly every 6 x 6 board has one, 407 of
+423 failures. what it does show is the other way round: 551 of the 1504
+failures at 3 x 3 and energy 2 have no tie anywhere on the board in either
+search, so over a third of the failures need no tie at all. and the own-tie
+column is zero on every row, so a refusal at equal count in one mark's run
+never came on a board the real search does not tie on. drift, one mark's
+count for a refused state above that state's true distance, exists and is
+rare: 0 of 147 refusals at 2 x 3, 376 of 44259 at 3 x 3 energy 3, 2850 of
+70460 on random 6 x 6 at energy 8, under 4% on every row. so the counts
+barely drift here, and if 1824's 56% non-tie failures are drift, it is
+drift this budget does not make. the record is the right instrument, and
+it has to be run on 1824's own roads.
+
+one mark per cell, the mask ignored, is wrong on 11139 of the 29050
+solvable 3 x 3 boards with two or more litter at energy 20, 38%, and on 72%
+to 85% of the random boards from 4 x 4 up. the small board leaves little
+room for the second litter to sit on the wrong side of the first.
+
+predictions, written before the run. dominance mark matches the full search
+everywhere, right. first-arrival mark wrong on over 20% of solvable 3 x 3
+boards at the tightest energy and falling with energy, half, 4.2% and it
+falls. over 70% of failures say -1, half, 73% to 82% on most rows and 64% on
+random 6 x 6 at energy 8. under a quarter of failures with a real tie at the
+claim, wrong, and the measure was board-wide, 63% to 96%. one mark per cell
+wrong on over half of solvable boards with two or more litter, half, 38%
+exhaustive and 72% to 85% random. drift on at least 10% of refusals, wrong,
+under 4%.
+
+bounds. O(R C 2^L E) states for the full search and O(R C 2^L) entries for
+the dominance mark, four moves each. open: the refusal record run on 1824's
+roads, which is where the drift guess lives and the one thing this thread
+has left. and 1129's answer-3 groups, 847's pinned count at n <= 5, 1871's
+(1, 10), and the maximum count for 1786.
