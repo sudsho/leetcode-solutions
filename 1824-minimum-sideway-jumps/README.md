@@ -70,11 +70,29 @@ every road in every variant.
 - **Cutting the walk is what makes it -1.** With neighbouring lanes only, 86%
   of the failures at n = 8 say -1, the way I expect 1263's did when the box
   split the player's region, though there I never split the failures by that.
-- **The failures are not the real search's ties.** I expected a failure only
-  where two forward arrivals reach a point at the same count. At n = 8 that
-  covers 1501 of the 3410 failures. My guess is that one mark's own counts
-  drift after its first refusal, so the tie that matters is in its run, not
-  the real one. Not checked.
+- **The failures are the real search's ties after all, and the count that
+  said otherwise was a bug.** The first run said a tie between two forward
+  arrivals covered 1501 of the 3410 failures at n = 8, and I guessed the rest
+  were ties in one mark's own drifted counts. `ties_at_claim` started its loop
+  at point 1 and never relaxed the side jumps at point 0, so on the quarter
+  of roads with lane 2 blocked at point 1 every count was infinite from there
+  on and the road read as having no tie. Fixed, it covers 3410 of 3410.
+- **The refusal record, each refusal put back on a shortest path.**
+  `refusal_study` records every refused forward arrival with its count in one
+  mark's run and the claimer's, and keeps the ones whose real cost plus the
+  fewest jumps from there to the end is the answer. On the priced road every
+  failure, 3410 at n = 8, 14998 at n = 9 and all 12,121 on random roads at
+  n = 30 and 100, has such a refusal at the claimer's own count, and the point
+  is a real tie every time. That is forced: a refused arrival above the
+  claimer's count is one the claimer reaches by a single jump, so only an
+  equal count can lose anything. With the walk cut, 2720 of 2942 at n = 8 and
+  11056 of 12329 at n = 9 are the same tie, and the rest, 222 and 1273, are
+  refusals above the claimer's count where the claimer's lane cannot reach
+  the refused one. Drift, one mark's count for a refused state above its
+  real cost, exists and grows with the road: 13% and 15% of the priced road's
+  refusals at n = 8 and 9, 21% to 36% at n = 30 and 51% to 70% at n = 100,
+  against 2.6% and 3.0% cut at n = 8 and 9 and 9% to 23% at n = 100. It is
+  real and it is not what the failures are made of.
 
 So the 1263 guess holds where it can be tested: the first arrival is
 harmless exactly when the walk round is free, it costs when the walk is
@@ -91,7 +109,8 @@ Six predictions written before the run. Two right, two half, two wrong.
 - **Right:** both DPs match the BFS everywhere.
 - **Right:** with a free walk one mark is never wrong.
 - **Half:** at cost 1 one mark is wrong only on ties, by exactly 1, and never
-  -1. Never -1 held. Over by up to 4, and 1501 of 3410 on ties.
+  -1. Never -1 held. Over by up to 4, and 1501 of 3410 on ties, which the
+  refusal record later put at 3410 of 3410 once the tie count was fixed.
 - **Half:** adjacent only is wrong on more roads than the real one, some
   saying -1. Most say -1, but 2942 against 3410, fewer.
 - **Wrong:** one mark wrong on under 5% of real roads at n = 8. 21%.
@@ -105,4 +124,5 @@ exhaustive check is `4^(n - 1)` roads, so it stops at n = 9.
 ## Files
 
 - `python/solution.py`: the DP, the 0-1 BFS with and without one mark, the
-  second DP, the three variants and the runs above, about 80 seconds.
+  second DP, the three variants, the refusal record and the runs above, about
+  110 seconds.

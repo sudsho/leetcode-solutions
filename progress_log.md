@@ -3545,3 +3545,55 @@ the dominance mark, four moves each. open: the refusal record run on 1824's
 roads, which is where the drift guess lives and the one thing this thread
 has left. and 1129's answer-3 groups, 847's pinned count at n <= 5, 1871's
 (1, 10), and the maximum count for 1786.
+
+## 2026-10-16
+
+3568 said the tie question wants the refusal record, each refusal's own
+count against its real cost, at the claim that sits on a shortest path, and
+that it had to be run on 1824's own roads. no new problem tonight. one mark's
+search now records every refused forward arrival with its count in that run
+and the claimer's, the real search is run to the end for every state's cost,
+the oracle's dp is run backwards for the fewest jumps from any state to the
+end, and a refusal is on a shortest path when the two add to the answer.
+
+the first thing the record did was break the number it was built to explain.
+every failure on the priced road, 3410 at n = 8, 14998 at n = 9 and all 12121
+on 18000 random roads at n = 30 and 100, has a refusal on a shortest path at
+the claimer's own count, and the real search ties at that point every time.
+3410 of 3410, where the 13th said 1501. the 1501 was a bug: ties_at_claim
+started at point 1 and never relaxed the side jumps at point 0, so on the
+quarter of roads with lane 2 blocked at point 1 every count went infinite
+and the road read as having no tie. fixed, the board-wide count is 3410 too,
+and 2788 of 2942 on the cut walk. so the drift guess was built on a
+measurement error and is dead.
+
+the own-count half is forced, and i should have seen it before running
+anything. a refusal above the claimer's count is an arrival the claimer
+reaches by one jump at the claimer's count plus one, which is at most the
+refused count, so it loses nothing. only an equal count can. on the cut walk
+the claimer's lane may not reach the refused one, and there the remainder
+shows up: 222 of 2942 at n = 8 and 1273 of 12329 at n = 9 are refusals above
+the claimer's count, the rest the same tie.
+
+drift is real and is not what the failures are made of. one mark's count for
+a refused state sits above its real cost on 13% of the priced road's refusals
+at n = 8, 15% at n = 9, 21% to 36% at n = 30 and 51% to 70% at n = 100, so it
+compounds down a long road, and on 2.6% to 3% of the cut walk's at n = 8 and
+9, 9% to 23% at n = 100. 3568's under 4% was the short-board end of that.
+among the tie refusals that cause a failure, a drifted count on either side
+is rare at n = 8, 393 of 3410, and nearly universal at n = 100, 2712 of 2849,
+and the point is a real tie either way.
+
+predictions, written before the run. every priced failure has a refusal on a
+shortest path at the claimer's count, right. the real tie at that point
+covers under half of the priced failures at n = 8, wrong, all of them, and
+the half was a bug. drift on 10% to 25% of the priced road's refusals, half,
+13% to 36% at n <= 30 and 51% to 70% at n = 100. cut walk failures mostly
+above the claimer's count, wrong, 92% at the claimer's count. drift under 5%
+of the cut walk's refusals, half, 3% at n = 8 and 9 and 23% at n = 100. the
+real-tie share of priced failures under 20% at n = 30, wrong, 100%.
+
+bounds unchanged. 110 s with the record. open: 1129's answer-3 groups, 847's
+pinned count at n <= 5, 1871's (1, 10), and the maximum count for 1786. the
+1263/1824/3568 thread is closed: the first arrival fails exactly on a tie it
+cannot walk round, a cut it cannot cross, or a budget it cannot refill.
