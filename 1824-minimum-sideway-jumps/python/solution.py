@@ -84,6 +84,7 @@ def all_roads(n):
 
 
 def random_road(rng, n, rate):
+    """A road of n + 1 points with clear ends, each inner point blocked in a uniformly drawn lane with probability rate."""
     return (0,) + tuple(rng.randint(1, 3) if rng.random() < rate else 0 for _ in range(n - 1)) + (0,)
 
 
