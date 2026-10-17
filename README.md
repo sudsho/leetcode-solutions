@@ -27,7 +27,7 @@ Real output:
 
 ```
 leetcode-solutions offline smoke
-running 60 sampled solutions from ...\leetcode-solutions
+running 61 sampled solutions from ...\leetcode-solutions
 ------------------------------------------------------------
 [PASS] 0001-two-sum                                  expected=[0, 1]
 [PASS] 0007-reverse-integer                          expected=-321
@@ -89,8 +89,9 @@ running 60 sampled solutions from ...\leetcode-solutions
 [PASS] 1210-minimum-moves-to-reach-target-with-rotations expected=(11, 9, 7, 3, -1)
 [PASS] 1824-minimum-sideway-jumps                    expected=(2, 0, 2, 1, 0)
 [PASS] 3568-minimum-moves-to-clean-the-classroom     expected=(2, 3, -1, 5, 0)
+[PASS] 0797-all-paths-from-source-to-target          expected=([[0, 1, 3], [0, 2, 3]], [[0, 4], [0, 3, 4], [0, 1, 3, 4], [0, 1, 2, 3, 4], [0, 1, 4]], 4, 13)
 ------------------------------------------------------------
-total=60 passed=60 failed=0
+total=61 passed=61 failed=0
 SMOKE PASSED
 ```
 
@@ -100,15 +101,15 @@ The same cases also run as individual tests under pytest:
 python -m pytest tests/ -q
 ```
 
-giving `61 passed` (the 60 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
+giving `62 passed` (the 61 cases and a check on the registry itself). With GNU make available, `make smoke` and `make test` wrap
 these two commands. The batch is a representative sample (arrays, strings, math,
 DP, hashing, in-place mutation, plus union-find, Dijkstra, BFS and binary search
-on the answer from the last thirty-two additions), not the full problem set. Extend
+on the answer from the last thirty-three additions), not the full problem set. Extend
 the `CASES` list in `scripts/smoke.py` to cover more problems.
 
-## Solved (540)
+## Solved (541)
 
-<!-- last touched: 2026-10-15 (rev 626) -->
+<!-- last touched: 2026-10-17 (rev 627) -->
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
@@ -405,6 +406,7 @@ the `CASES` list in `scripts/smoke.py` to cover more problems.
 | 778 | [Swim In Rising Water](0778-swim-in-rising-water/) | Hard | Python |
 | 787 | [Cheapest Flights Within K Stops](0787-cheapest-flights-within-k-stops/) | Medium | Python |
 | 793 | [Preimage Size Of Factorial Zeroes](0793-preimage-size-of-factorial-zeroes/) | Hard | Python |
+| 797 | [All Paths From Source To Target](0797-all-paths-from-source-to-target/) | Medium | Python |
 | 803 | [Bricks Falling When Hit](0803-bricks-falling-when-hit/) | Hard | Python |
 | 805 | [Split Array With Same Average](0805-split-array-with-same-average/) | Hard | Python |
 | 815 | [Bus Routes](0815-bus-routes/) | Hard | Python |

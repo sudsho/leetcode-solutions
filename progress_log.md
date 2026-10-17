@@ -3597,3 +3597,64 @@ bounds unchanged. 110 s with the record. open: 1129's answer-3 groups, 847's
 pinned count at n <= 5, 1871's (1, 10), and the maximum count for 1786. the
 1263/1824/3568 thread is closed: the first arrival fails exactly on a tie it
 cannot walk round, a cut it cannot cross, or a budget it cannot refill.
+
+## 2026-10-17
+
+the one-mark thread closed on the 16th, so one of the old four. 1786 left
+the maximum count: the ladder gets 2^((n - 3) / 2) and i wrote that layers
+of three would grow like 3^(n / 3) and did not work it out. a restricted path
+is a path in the dag the distance potential defines, and the other direction
+holds too: any dag whose nodes all reach the sink is a 1786 instance with
+weight = the fall in a potential that decreases along its edges, since a
+walk's weight telescopes to at least the fall and equals it exactly when it
+never climbs. so the question is the most 0 -> n - 1 paths a dag on n nodes
+and m edges can hold, which is what 797 prints.
+
+797, all paths from source to target. dfs with the path on the stack, and
+the cap of 15 is there because the tournament has 2^(n - 2) of them. the
+realisation holds on every edge set whose nodes reach the sink at n <= 5, 339
+of 339, and on 2000 random dags at n = 9 under random potentials, 1786's
+program against the dag's count. then the maximum exhaustively to n = 9, by
+predecessor sets with the last three nodes closed per size, since the sink's
+count is a sum of non-negative terms and each term only needs its best
+subset of each size; it matches the plain enumeration at n <= 6.
+
+i went in with chains of complete blocks. a block of k nodes sharing a node
+with the next multiplies by 2^(k - 2) for k(k - 1) / 2 edges, so at 1786's
+two edges a node the K4 chain gets 4^(n / 3), 1.587^n, over my 3^(n / 3) and
+the ladder's 2^(n / 2), and the best chain at the statement's size is 6665
+K4s and one K5, 2^13333, 4014 digits against the ladder's 2408. the table
+says the chain is right where it fits, (7, 9) = 8 and (7, 12) = 16, and
+beaten on 67 of the 77 cells between, 2.125x at worst, and (9, 20) = 74
+beats two K5s, so it is not safe where it fits either once the blocks are
+five wide. the witnesses all have node j joined to the nodes just before it:
+(6, 10) = 10 is K4 then 4 <- {2, 3}, 5 <- {3, 4}, counts 1 1 2 4 6 10. strips
+with any in-degree sequence on at most n nodes match every cell at n = 4 to
+9, 89 of 89, and at 2n - 3 edges the strip is the fibonacci numbers, F_n on
+every row, 1.618^n at two edges a node. at 1786's size that is 4180 digits
+against the chain's 4014, with the three spare edges buying nothing in the
+digit count, and 1786's program returns it in 0.04 s. so the most restricted
+paths at the statement's size is at least 4180 digits, and i had the growth
+wrong twice, on the 18th and again this morning before the table.
+
+the climber is no instrument: twenty restarts of 3000 swaps at n = 13 reach
+204 at m = 24, under the chain's 256 and the K4-start strip's 288, and 700
+at m = 30, over the chain's 512 and equal to the best strip with windows to
+three. and every edge buys a path from n = 5 up: one flat step in the whole
+table, (4, 3) to (4, 4).
+
+predictions, written before the run. every dag whose nodes reach the sink
+realises with the same count, right. (7, 12) = 16 and (7, 9) = 8 and nothing
+beats them, right. the chain beaten on over half the cells between and never
+by more than 2x, half, 67 of 77 and 2.125x. a flat step at every n from 4 to
+9, wrong, one in all. the climber reaches 256 at (13, 24) and 512 at (13, 30)
+and nothing above, wrong, 204 and 700. the best chain at the statement's size
+is 6665 K4s and a K5, 2^13333, and 1786's program returns it in under a
+second, right, 0.04 s, and it is not the maximum there.
+
+bounds. O(n 2^n) output and time for the dfs, O(n) stack. the enumeration is
+2^C(n - 3, 2) leaves at O(n^3) each, 4 s at n = 9. open: whether the strip is
+the maximum past n = 9, and the most paths for m edges with the nodes free,
+where the fibonacci strip's 1.272 an edge beats the chains' 1.260 and i do
+not know what beats it. and 1129's answer-3 groups, 847's pinned count at
+n <= 5, and 1871's (1, 10).

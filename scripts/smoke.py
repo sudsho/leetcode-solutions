@@ -600,6 +600,18 @@ def c_clean_classroom(s):
     ), (2, 3, -1, 5, 0)
 
 
+def c_all_paths(s):
+    return (
+        # the statement's two examples, in dfs order.
+        s.allPathsSourceTarget([[1, 2], [3], [3], []]),
+        s.allPathsSourceTarget([[4, 3, 1], [3, 2, 4], [3], [4], []]),
+        # the transitive tournament on four nodes, every subset of the middle two: 2^(n - 2).
+        len(s.allPathsSourceTarget([[1, 2, 3], [2, 3], [3], []])),
+        # the fibonacci strip, each node on the two before it: F_7 on seven nodes and eleven edges.
+        len(s.allPathsSourceTarget([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6], []])),
+    ), ([[0, 1, 3], [0, 2, 3]], [[0, 4], [0, 3, 4], [0, 1, 3, 4], [0, 1, 2, 3, 4], [0, 1, 4]], 4, 13)
+
+
 # problem_dir -> case callable. The first block is in problem-number order,
 # and everything from 0947 on is in the order it was added.
 CASES = [
@@ -663,6 +675,7 @@ CASES = [
     ("1210-minimum-moves-to-reach-target-with-rotations", c_snake),
     ("1824-minimum-sideway-jumps", c_sideway_jumps),
     ("3568-minimum-moves-to-clean-the-classroom", c_clean_classroom),
+    ("0797-all-paths-from-source-to-target", c_all_paths),
 ]
 
 
