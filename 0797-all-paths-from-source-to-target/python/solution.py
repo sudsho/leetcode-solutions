@@ -12,6 +12,8 @@ Run as a script: the realisation check against 1786's own program, the
 exhaustive maximum over DAGs to n = 9 by predecessor sets, chains of
 complete blocks against it, a climber at n = 13, and the best chain at
 1786's statement size, n = 20000 and m = 40000, through 1786's program.
+Section 5 (Oct 20) frees the node count and asks the most paths for m
+edges alone, over strips to m = 44 and the exhaustive table where it reaches.
 """
 
 import importlib.util
@@ -295,6 +297,34 @@ def window_best(n, m, cap=None):
     return best
 
 
+def strip_free(m, kmin=2, kmax=5):
+    """Most paths over strips with at most m edges and the node count free, with the in-degree
+    sequence that reaches it. Node 1 has one predecessor whatever kmin says, since it has one
+    node before it; every later node takes between kmin and kmax of the nodes just before it."""
+    best = [0] * (m + 1)
+    how = [None] * (m + 1)
+    counts, seq = [1], []
+
+    def rec(j, used):
+        if j >= 2 and counts[-1] > best[used]:
+            best[used] = counts[-1]
+            how[used] = tuple(seq)
+        for k in range(1 if j == 1 else kmin, min(j, kmax) + 1):
+            if used + k > m:
+                break
+            counts.append(sum(counts[j - k:j]))
+            seq.append(k)
+            rec(j + 1, used + k)
+            counts.pop()
+            seq.pop()
+
+    rec(1, 0)
+    for e in range(1, m + 1):
+        if best[e - 1] > best[e]:
+            best[e], how[e] = best[e - 1], how[e - 1]
+    return best, how
+
+
 def strip_preds(n, widths):
     """A strip: node j takes the widths[j] nodes before it (1 where widths runs out, at most j)."""
     preds = [0] * n
@@ -469,6 +499,32 @@ def main():
     t1 = time.time() - t1
     print(f"  1786's program on the K4-start strip with four at the end: n = {N}, m = {len(edges)}, answer {got}, "
           f"{'matches' if got == exact % MOD else 'DOES NOT MATCH'} the exact count, {t1:.2f} s")
+
+    # 5. (Oct 20) the most paths for m edges with the node count free
+    print("\n5. most paths on at most m edges, nodes free: strips of any length against the exhaustive n <= 9")
+    one, _ = strip_free(20, kmin=1)
+    two, how = strip_free(44)
+    print(f"  in-degree 1 allowed past node 1 changes the strip maximum at m <= 20 on "
+          f"{sum(one[m] != two[m] for m in range(1, 21))} cells")
+    ex9 = exhaustive(9)
+    fits = [m for m in range(1, 37) if len(how[m]) + 1 <= 9]
+    agree = sum(ex9[m] == two[m] for m in fits)
+    print(f"  exhaustive at n <= 9 against the strip, where the strip fits in 9 nodes (m <= {fits[-1]}): "
+          f"{agree} of {len(fits)} agree")
+    for m in range(fits[-1] + 1, 23):
+        print(f"    m = {m}: exhaustive n <= 9 {ex9[m]}, strip {two[m]} on {len(how[m]) + 1} nodes")
+    shapes = {}
+    for m in range(3, 45):
+        tail = how[m][1:]
+        key = "all 2" if set(tail) == {2} else ("2s, sink on 3" if set(tail[:-1]) <= {2} and tail[-1] == 3 else str(how[m]))
+        shapes.setdefault(key, []).append(m)
+    for key, ms in shapes.items():
+        print(f"  {key:14s} at m = {ms[0]}..{ms[-1]}, {len(ms)} cells")
+    for m in (21, 30, 37, 43, 44):
+        print(f"  m = {m}: {two[m]}, against m - 2 {two[m] / two[m - 2]:.5f}, per edge {two[m] ** (1 / m):.4f}")
+    print(f"  phi {(1 + 5 ** 0.5) / 2:.5f}, its square root {((1 + 5 ** 0.5) / 2) ** 0.5:.4f}")
+    for n, m in ((13, 22), (17, 30), (20, 36)):
+        print(f"  climber at n = {n}, m = {m}: {climb(rng, n, m, 3000, 20)} against the strip's {two[m]}")
 
     print(f"\n{time.time() - t0:.0f} s")
 

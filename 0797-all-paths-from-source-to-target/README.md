@@ -121,6 +121,38 @@ Six predictions written before the run. Three right, one half, two wrong.
   and 1786's program returns it in under a second. 0.04 s. It is not the
   maximum there, which I did not predict either way.
 
+## Nodes free (Oct 20)
+
+The open question was the most paths for `m` edges when the node count costs
+nothing. Section 5 searches every strip with in-degrees 2 to 5 to `m = 44`,
+any length, and checks it three ways.
+
+- Letting a node past the first take one predecessor changes nothing at
+  `m <= 20`, 0 cells. A one-in node copies its predecessor's count and
+  spends an edge doing it.
+- The exhaustive table at `n <= 9` agrees with the strip on all 16 cells
+  where the strip fits in nine nodes, `m <= 16`. From `m = 17` the strip
+  needs ten nodes and the table falls behind, 52 against 55, then 81
+  against 144 at `m = 21`, so past 16 the table says nothing.
+- The best strip has two shapes: all twos, the Fibonacci strip, on odd `m`
+  (and on `m = 4`), and all twos with the sink on three at even `m` from 6
+  to 44. 1220 at `m = 30`, 28657 at `m = 43`.
+- Two more edges multiply by `phi` to five places from `m = 21`, so the
+  rate an edge is `sqrt(phi) = 1.2720`, approached from below, 1.2696 at
+  `m = 43`.
+- The climber with the node count set to the strip's reaches 178 at
+  `(13, 22)`, equal, and 880 and 3060 at `(17, 30)` and `(20, 36)` against
+  1220 and 5168.
+
+So among strips the answer is the Fibonacci strip, and on all DAGs it is
+proved only to `m = 16`. Whether some non-strip beats it past that is the
+same question as before, moved from nodes to edges.
+
+Five predictions written before the run. Five right, which mostly says they
+were cautious: in-degree 1 never helps; twos with only the ends changed;
+the table agrees wherever it reaches; the two-edge ratio within 1% of
+`phi` by `m = 40` (it is there by 21); the climber does not beat the strip.
+
 ## Bounds
 
 Up to `2^(n-2)` paths of up to `n` nodes, so `O(n 2^n)` output and time, and
@@ -132,4 +164,4 @@ Up to `2^(n-2)` paths of up to `n` nodes, so `O(n 2^n)` output and time, and
 - `python/solution.py`: the dfs, the path count by predecessor sums, the
   realisation check against 1786's program, the exhaustive maximum to
   `n = 9`, the chain and strip families, the climber and the runs above,
-  about ten seconds.
+  and the nodes-free strip search, about thirty seconds.

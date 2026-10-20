@@ -3658,3 +3658,35 @@ the maximum past n = 9, and the most paths for m edges with the nodes free,
 where the fibonacci strip's 1.272 an edge beats the chains' 1.260 and i do
 not know what beats it. and 1129's answer-3 groups, 847's pinned count at
 n <= 5, and 1871's (1, 10).
+
+## 2026-10-20
+
+797 left the most paths for m edges with the nodes free, where the fibonacci
+strip's 1.272 an edge beat the chains' 1.260 and i did not know what beat it.
+no new problem tonight. every strip with in-degrees 2 to 5 is searched to
+m = 44 with the length free, and checked against the exhaustive table, a
+version that allows one-in nodes, and the climber.
+
+the answer among strips is the fibonacci strip and nothing else. all twos on
+odd m, all twos with the sink on three on even m from 6 to 44, 1220 at
+m = 30 and 28657 at m = 43. two more edges multiply by phi to five places
+from m = 21, so 1.272 is the rate, sqrt(phi), and the finite counts reach it
+from below, 1.2696 at m = 43. a one-in node never helps at m <= 20: it
+copies its predecessor's count and pays an edge for it. the exhaustive table
+agrees on all 16 cells where the strip fits in nine nodes and falls behind
+from m = 17, where the strip needs ten, 52 against 55, 81 against 144 at 21.
+the climber, given the strip's node count, ties at (13, 22) = 178 and gets
+880 and 3060 against 1220 and 5168 at (17, 30) and (20, 36).
+
+predictions, written before the run. one-in nodes never help, right. the
+best strip is twos with only the ends changed, right, only the sink end.
+the table agrees wherever the strip fits, right, 16 of 16. the two-edge
+ratio within 1% of phi by m = 40, right, by m = 21. the climber does not
+beat the strip, right. five of five, which says they were timid more than
+that i understand it.
+
+bounds. the strip search is the compositions of m into parts 2 to 5, about
+1.38^m leaves, 18 s at m = 44. open: whether any non-strip beats the
+fibonacci strip past m = 16, which is the old question with edges in place
+of nodes, and the exhaustive table cannot reach it. and 1129's answer-3
+groups, 847's pinned count at n <= 5, and 1871's (1, 10).
