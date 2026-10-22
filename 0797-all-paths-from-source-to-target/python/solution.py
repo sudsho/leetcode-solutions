@@ -14,6 +14,8 @@ complete blocks against it, a climber at n = 13, and the best chain at
 1786's statement size, n = 20000 and m = 40000, through 1786's program.
 Section 5 (Oct 20) frees the node count and asks the most paths for m
 edges alone, over strips to m = 44 and the exhaustive table where it reaches.
+Section 6 (Oct 22) rewrites any DAG into a strip that is never worse, which
+makes the strip the maximum at every n and m.
 """
 
 import importlib.util
@@ -335,6 +337,52 @@ def strip_preds(n, widths):
     return preds
 
 
+def top_rewrite(n, preds):
+    """Give each node, in index order, as many predecessors as it had, taken from the earlier
+    nodes with the largest new counts. Returns the in-degrees of the nonzero nodes in order and
+    the largest new count. Every new count dominates (section 6), so this is never below the
+    old count at n - 1, and the result is a strip on at most n nodes with the same edges."""
+    new, widths = [1], []
+    for j in range(1, n):
+        k = bin(preds[j]).count("1")
+        if k == 0:
+            continue
+        new.append(sum(sorted(new, reverse=True)[:k]))
+        widths.append(k)
+    return widths, max(new)
+
+
+def strip_any(m, floor, budget):
+    """Strips with any in-degree on at most m edges, nodes free, pruned against `floor` (the
+    in-degree 2 to 5 maximum per edge count): a node taking k nodes is at most k times the
+    last count, so a branch at count t with r edges left reaches at most t * prod(r), the
+    largest product of parts summing to r, and is dropped when that cannot beat floor
+    anywhere. Returns the cells where something beat floor and whether it finished in budget."""
+    prod = [1] * (m + 1)
+    for r in range(2, m + 1):
+        prod[r] = max(k * prod[r - k] for k in range(1, r + 1))
+    thr = [min(floor[e] // prod[e - u] for e in range(u, m + 1)) for u in range(m + 1)]
+    beat, counts, stop = {}, [1], time.time() + budget
+
+    def rec(j, used):
+        if time.time() > stop:
+            return False
+        t = counts[-1]
+        if j >= 2 and t > floor[used]:
+            beat[used] = max(beat.get(used, 0), t)
+        if t <= thr[used]:
+            return True
+        for k in range(1, min(j, m - used) + 1):
+            counts.append(sum(counts[j - k:j]))
+            done = rec(j + 1, used + k)
+            counts.pop()
+            if not done:
+                return False
+        return True
+
+    return beat, rec(1, 0)
+
+
 def digits(x):
     return len(str(x))
 
@@ -525,6 +573,37 @@ def main():
     print(f"  phi {(1 + 5 ** 0.5) / 2:.5f}, its square root {((1 + 5 ** 0.5) / 2) ** 0.5:.4f}")
     for n, m in ((13, 22), (17, 30), (20, 36)):
         print(f"  climber at n = {n}, m = {m}: {climb(rng, n, m, 3000, 20)} against the strip's {two[m]}")
+
+    # 6. (Oct 22) the rewrite to the largest earlier counts: every DAG is beaten by a strip
+    print("\n6. every node's predecessors moved to the earlier nodes with the largest counts")
+    tried = lower = 0
+    near = {}
+    for _ in range(20000):
+        n = rng.randrange(4, 21)
+        pr = pairs(n)
+        dens = rng.random()
+        preds = preds_of(n, pr, sum(1 << b for b in range(len(pr)) if rng.random() < dens))
+        m = sum(bin(p).count("1") for p in preds)
+        old = count_paths(n, preds)
+        widths, new = top_rewrite(n, preds)
+        k = len(widths) + 1
+        assert sum(widths) == m and k <= n
+        assert count_paths(k, strip_preds(k, {j + 1: w for j, w in enumerate(widths)})) == new
+        tried += 1
+        lower += new < old
+        if m <= 44:
+            assert old <= two[m], (n, m, old)
+            if 20 <= m <= 30 and old / two[m] > near.get(m, 0):
+                near[m] = old / two[m]
+    print(f"  {lower} of {tried} random DAGs on 4 to 20 nodes counted fewer paths after the rewrite, "
+          f"which keeps the edges and never adds a node")
+    print("  best random DAG against the strip at m = 20..30: "
+          + " ".join(f"{m}:{near[m]:.2f}" for m in sorted(near)))
+    t1 = time.time()
+    beat, done = strip_any(32, two, 120)
+    print(f"  strips with any in-degree, pruned by count x largest part product, m <= 32: "
+          f"{'finished' if done else 'out of time'}, {len(beat)} cells beat in-degrees 2 to 5, "
+          f"{time.time() - t1:.0f} s")
 
     print(f"\n{time.time() - t0:.0f} s")
 

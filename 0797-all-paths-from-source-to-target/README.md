@@ -153,6 +153,47 @@ were cautious: in-degree 1 never helps; twos with only the ends changed;
 the table agrees wherever it reaches; the two-edge ratio within 1% of
 `phi` by `m = 40` (it is there by 21); the climber does not beat the strip.
 
+## Every DAG loses to a strip (Oct 22)
+
+The open question had a short answer that no search was going to find.
+Take any DAG in index order and give each node the same number of
+predecessors it had, but drawn from the earlier nodes with the largest
+*new* counts. By induction the new counts, sorted, sit above the old ones
+place by place: node `j`'s old count is a sum of `k` old counts, at most
+the top `k` old counts, at most the top `k` new ones, which is its new
+count, and putting a larger number into a larger list keeps the order.
+Every new count is at least the largest before it, so the top `k` are the
+`k` latest nonzero nodes, and the rewritten graph is a strip with the same
+edges and no more nodes. So for every `(n, m)` the maximum is a strip, and
+for every `m` with nodes free it is the best strip.
+
+Section 6 checks it rather than trusting it.
+
+- 20000 random DAGs on 4 to 20 nodes, rewritten: 0 counted fewer paths,
+  every one kept its edge count, and every rewrite is a strip whose count
+  `count_paths` reproduces.
+- The best random DAG at `m = 20..30` holds 29% of the strip's count at
+  20 and 7% at 30.
+- Section 5 only searched in-degrees 2 to 5. Strips with any in-degree,
+  pruned by "a node on `k` nodes is at most `k` times the last count",
+  finish to `m = 32` in 14 s and beat it on 0 cells.
+
+That closes both forms. 1786's maximum on `n` nodes and `m` edges is the
+best strip on at most `n` nodes for every `n`, not only `n <= 9`, and the
+89 of 89 cells in 2b were never luck. With nodes free it is the Fibonacci
+strip (sink on three at even `m`) as far as the in-degree cap is checked,
+`m = 32` for any in-degree and `m = 44` for in-degrees to 5.
+
+Four predictions before the run, four right: the rewrite never loses; wide
+nodes never help where the search reaches; the pruned search reaches
+`m = 32` inside a minute; random DAGs sit under half the strip by `m = 30`.
+The proof was the part I had not expected, two sessions of search for a
+question that was an exchange argument.
+
+What the argument does not give is a reason in-degree 2 wins. A node on
+`k` nodes is the window sum, and why windows of two beat threes at
+`1.2720` against `1.2599` an edge is still only measured.
+
 ## Bounds
 
 Up to `2^(n-2)` paths of up to `n` nodes, so `O(n 2^n)` output and time, and
@@ -164,4 +205,5 @@ Up to `2^(n-2)` paths of up to `n` nodes, so `O(n 2^n)` output and time, and
 - `python/solution.py`: the dfs, the path count by predecessor sums, the
   realisation check against 1786's program, the exhaustive maximum to
   `n = 9`, the chain and strip families, the climber and the runs above,
-  and the nodes-free strip search, about thirty seconds.
+  the nodes-free strip search, and the rewrite to a strip, about fifty
+  seconds.

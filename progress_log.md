@@ -3690,3 +3690,35 @@ bounds. the strip search is the compositions of m into parts 2 to 5, about
 fibonacci strip past m = 16, which is the old question with edges in place
 of nodes, and the exhaustive table cannot reach it. and 1129's answer-3
 groups, 847's pinned count at n <= 5, and 1871's (1, 10).
+
+## 2026-10-22
+
+797 left one question: whether any dag that is not a strip beats the
+fibonacci strip past m = 16, where the exhaustive table stops. no new problem
+tonight, and no search either, it turned out. give every node, in order, the
+same number of predecessors it had, taken from the earlier nodes with the
+largest new counts. the new counts, sorted, sit above the old ones place by
+place, since the old count was a sum of k old counts and the new one is the
+top k new ones, and each new count is at least every count before it, so the
+top k are the k latest and the rewritten graph is a strip with the same edges
+and no more nodes. the maximum on n nodes and m edges is a strip for every n,
+and with nodes free it is the best strip.
+
+checked anyway, section 6. 20000 random dags on 4 to 20 nodes, rewritten, 0
+lost paths, every rewrite a strip with the same edge count. the best random
+dag at m = 20..30 holds 29% of the strip at 20 and 7% at 30. section 5 only
+searched in-degrees 2 to 5, so strips with any in-degree went through a
+pruned search (a node on k nodes is at most k times the last count): done to
+m = 32 in 14 s, nothing beats the 2 to 5 table.
+
+predictions, written before the run. the rewrite never loses, right. wide
+nodes never help where the search reaches, right. the pruned search gets to
+m = 32 inside a minute, right, 14 s. random dags under half the strip by
+m = 30, right, 7%. four of four, and the thing worth writing down is that
+two nights of enumeration were spent on what is an exchange argument.
+
+bounds. the rewrite is O(n^2 log n) a dag. the pruned strip search grows
+about 8x every four edges, 14 s at m = 32 and past a minute at 36. the
+797/1786 maximum thread is closed except for why windows of two beat threes,
+1.2720 against 1.2599 an edge, which is measured and not explained. open:
+1129's answer-3 groups, 847's pinned count at n <= 5, and 1871's (1, 10).
