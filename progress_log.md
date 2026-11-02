@@ -3722,3 +3722,35 @@ about 8x every four edges, 14 s at m = 32 and past a minute at 36. the
 797/1786 maximum thread is closed except for why windows of two beat threes,
 1.2720 against 1.2599 an edge, which is measured and not explained. open:
 1129's answer-3 groups, 847's pinned count at n <= 5, and 1871's (1, 10).
+
+## 2026-11-02
+
+1871's (1, 10), open since september 12th: the skip under counting is wrong on
+more than 80% of reachable random strings at (2, 4) and (3, 7) but on 195 of
+269 at (1, 10), and the mean slack, 4.35 against 4.15 to 4.93, did not explain
+it. no new problem tonight. the mean was the wrong summary. split by distance,
+the slack is two values: 179 of the 269 sit at the floor, ceil(39/10) = 4
+jumps with slack 1, and 90 one jump above it with slack 11. the 90 are all
+wrong. the 179 are wrong on 105.
+
+at slack 1 every shortest sequence is three full jumps and one short by a
+step, so the sequences differ only in where the short jump goes, and the
+places that work are an interval of the four. counting over the six landing
+cells gives P(more than one | reachable at the floor) = 0.589 exactly, against
+105/179 = 0.587 measured. 0.665 x 0.589 + 0.335 = 0.727, against 0.725. (2, 4)
+has a slack-1 floor too, exact 0.643 against 21/38, but only 16% of its
+reachable strings are at the floor, so it reads 92%. (3, 7)'s floor has slack
+3, enough room that 214 of 222 have more than one. so the rate is set by
+n - 1 mod hi, not by the window being wide.
+
+predictions, written before the second run. n = 32 and 42, slack 9 at the
+floor, above 90%: right, 1.000 both. n = 41, slack 0 at the floor, under 40%:
+wrong, 0.640. slack 0 does make every floor string unique, but reaching at the
+floor then needs all three tens free, 0.7^3, so only 36% of reachable strings
+are there; 1 - 0.36 = 0.64 to the digit. n = 51 the same, 0.754 with 25% at
+the floor. one right, one wrong for a reason the same split gives.
+
+bounds. the exact table is 2^(2(d-1)) weights, 64 at (1, 10). with lo = 1 a
+string reached above the floor has more than one sequence on 100% of those
+sampled here, which is measured and not proved. 1871's (1, 10) is closed. open:
+1129's answer-3 groups and 847's pinned count at n <= 5.

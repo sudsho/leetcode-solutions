@@ -273,19 +273,26 @@ if __name__ == "__main__":
     print("\nskip + counting on random strings, n = 40, 70% zeros")
     for lo, hi in ((3, 3), (2, 3), (2, 4), (3, 7), (1, 10)):
         reachable = wrong = slack = 0
+        at_floor = wrong_at_floor = 0
+        floor = -(-39 // hi)
         for _ in range(400):
             text = "0" + "".join("0" if random.random() < 0.7 else "1" for _ in range(39))
             dist, ways = oracle(text, lo, hi)
             if dist[-1] < 0:
                 continue
             reachable += 1
-            wrong += scan(text, lo, hi, skip=True)[1][-1] != ways[-1]
+            bad = scan(text, lo, hi, skip=True)[1][-1] != ways[-1]
+            wrong += bad
             # how far the shortest sequences could overshoot 39 if every jump
             # were maximal. zero slack means one sequence and nothing to lose.
             slack += dist[-1] * hi - 39
+            if dist[-1] == floor:
+                at_floor += 1
+                wrong_at_floor += bad
         mean_slack = slack / reachable if reachable else 0.0
         print(f"  lo={lo} hi={hi:2d}   reachable {reachable:3d}/400   skip + counting wrong {wrong:3d}"
-              f"   mean slack {mean_slack:5.2f}")
+              f"   mean slack {mean_slack:5.2f}   at the floor {at_floor:3d}, wrong {wrong_at_floor:3d}"
+              f" (slack {floor * hi - 39})")
 
     print("\n1345's bucket clear under counting, exhaustively")
     for alphabet, length in ((2, 10), (3, 7)):
@@ -314,3 +321,41 @@ if __name__ == "__main__":
                 assert truth == 1 and not wrong
         print(f"  |distinct values|={distinct:3d}   cleared wrong {wrong_cleared:3d}/300"
               f"   of the {300 - one_jump:3d} not solved in one jump")
+
+    # the (1, 10) rate. at the floor distance d = ceil((n-1)/hi) with slack 1,
+    # every shortest sequence is d - 1 full jumps and one short by a step, so
+    # the sequences differ only in where the short jump goes and the valid
+    # places are an interval of the d. exact, over the 2(d - 1) landing cells:
+    def many_at_floor(d: int, hi: int, p: float = 0.7) -> float:
+        cells = sorted({hi * m - (m > k) for k in range(d) for m in range(1, d)})
+        some = many = 0.0
+        for bits in itertools.product((0, 1), repeat=len(cells)):
+            free = dict(zip(cells, bits))
+            weight = 1.0
+            for b in bits:
+                weight *= p if b else 1 - p
+            places = sum(all(free[hi * m - (m > k)] for m in range(1, d)) for k in range(d))
+            some += weight * (places >= 1)
+            many += weight * (places >= 2)
+        return many / some
+
+    print(f"\n(1, 10) at slack 1: P(more than one sequence | reachable at the floor) = "
+          f"{many_at_floor(4, 10):.3f} exactly, (2, 4): {many_at_floor(10, 4):.3f}")
+
+    # so the rate is set by n - 1 mod hi, not by the window: slack 0 at the
+    # floor is one sequence, slack 2+ almost never is.
+    print("\n(1, 10) by length, 400 random strings each, 70% zeros")
+    rng = random.Random(13)
+    for n in (32, 36, 40, 41, 42, 51):
+        reachable = wrong = at_floor = 0
+        floor = -(-(n - 1) // 10)
+        for _ in range(400):
+            text = "0" + "".join("0" if rng.random() < 0.7 else "1" for _ in range(n - 1))
+            dist, ways = oracle(text, 1, 10)
+            if dist[-1] < 0:
+                continue
+            reachable += 1
+            wrong += ways[-1] > 1
+            at_floor += dist[-1] == floor
+        print(f"  n={n:3d}  slack at the floor {floor * 10 - (n - 1)}   reachable {reachable:3d}"
+              f"   wrong {wrong / reachable:.3f}   at the floor {at_floor / reachable:.2f}")
