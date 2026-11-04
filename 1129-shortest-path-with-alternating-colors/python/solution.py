@@ -223,6 +223,21 @@ if __name__ == "__main__":
                      if all((b >> i & 1) == (members[0] >> i & 1) for b in members)]
             print(f"  {name:10s} node, answer {key}: {len(members):5d}, fixed {' '.join(fixed)}")
 
+    # the answer-3 groups agree on nothing but 0 -> 2, so look for the edges a
+    # member can toggle and stay a member instead. those are free, and what is
+    # left is a short list of patterns on the edges that matter.
+    print("\nn = 3 answer-3 groups of one_mark: free edges, then the patterns on the rest")
+    for node in (1, 2):
+        for first in (RED, BLUE):
+            members = {bits for bits, (red, blue) in enumerate(exhaustive(3))
+                       if oracle(3, red, blue)[node] == 3 and one_mark(3, red, blue, first)[node] != 3}
+            free = [i for i in range(18) if all(b ^ (1 << i) in members for b in members)]
+            core = [i for i in range(18) if i not in free]
+            patterns = sorted({tuple(b >> i & 1 for i in core) for b in members})
+            print(f"  node {node}, {'RB'[first]} first: {len(members)} = 2^{len(free)} free x {len(patterns)} patterns")
+            for pat in patterns:
+                print("    " + " ".join(names[i] for i, x in zip(core, pat) if x))
+
     print("\nrandom, n = 6 and n = 10, 20000 each over edge counts")
     rng = random.Random(1129)
     for n in (6, 10):

@@ -3754,3 +3754,33 @@ bounds. the exact table is 2^(2(d-1)) weights, 64 at (1, 10). with lo = 1 a
 string reached above the floor has more than one sequence on 100% of those
 sampled here, which is measured and not proved. 1871's (1, 10) is closed. open:
 1129's answer-3 groups and 847's pinned count at n <= 5.
+
+## 2026-11-03
+
+1129's answer-3 groups, open since october 2nd: one mark with blue first fails
+four ways at n = 3, 4096 each, and the two where the answer is 2 were
+cylinders, six edges pinned and twelve free. the answer-3 pair pinned only
+0 -> 2 of both colours across every member and still came to 4096. no new
+problem tonight.
+
+the test for pinned was the wrong test. an edge is free when toggling it keeps
+every member in the group, and on node 2's answer-3 group ten are: 0's two
+self-loops, both 1 -> 0, and all six out of 2. the other eight take four
+patterns out of 256, and the four pair up. blue 0 -> 1, red 1 -> 1, blue 1 -> 2,
+no red 0 -> 1, no red 1 -> 2, no 0 -> 2, with blue 1 -> 1 free, and the same
+with the colours swapped. seven pinned each, 2 x 2^11. two cylinders that
+disagree on everything but 0 -> 2, which is why "fixed in every member" found
+only that. node 1's group is the same through 2's self-loop.
+
+the walk is 0 -> 1, once round 1's self-loop, out to 2. the arrival back at 1
+by the loop's colour is the only one that can take the last edge, and one mark
+drops it because the first arrival already marked 1. red first and blue first
+both have the group, since the start order only decides which of 0's two
+states pops first and neither one is the loop's arrival.
+
+no prediction written this time; the first run answered it. so every wrong
+count at n = 3 is a sum of cylinders: one mark's 16384 is two of 2^12 and two
+pairs of 2^11 for each colour first, the mono mark's 2048 is two of 2^10.
+bounds unchanged, the free-edge test is 18 toggles a member, 43 s for the whole
+file. 1129 is closed. open: 847's pinned count at n <= 5, the last of the old
+threads, so the next night needs that or a new problem.
