@@ -3784,3 +3784,33 @@ pairs of 2^11 for each colour first, the mono mark's 2048 is two of 2^10.
 bounds unchanged, the free-edge test is 18 toggles a member, 43 s for the whole
 file. 1129 is closed. open: 847's pinned count at n <= 5, the last of the old
 threads, so the next night needs that or a new problem.
+
+## 2026-11-07
+
+847's pinned count, the last of the old threads: the count bar is wrong on
+exactly 215 of the 728 connected graphs at n = 5 under all 120 adjacency
+orders, and the 215 is a different set under every one. no new problem
+tonight. i had two ways for that to happen, a graph whose answer never depends
+on the order, or classes trading wrong graphs so that only the total holds.
+it is neither. the adjacency order alone changes the answer on 204 of the 728,
+and grouped by isomorphism class every one of the 21 holds its own count under
+all 120, 13 of them nonzero. the 215 is those 13 added up, nothing cancels.
+
+at n = 6, 20 of the 112 classes move and 78 are wrong and pinned. over 60
+orders the total runs 10984 to 11246, and the ascending order the file has
+used since october 1st is the worst of the 60, and the worst on 14 of the 20
+that move. so the 42.1% in the table is the top of the range, not a typical
+value.
+
+the guess, written before the second run: a class moves when the first
+start's own place in the other nodes' lists can change the answer, since
+everything else about the start order looked like it washed out over the
+labellings. wrong as a rule. it holds on 16 of the 20 moving classes, misses
+4, and fires on 3 that are pinned anyway, plus k_{2,3} at n = 5, which is
+pinned with it firing on a quarter of the pairs tried.
+
+bounds. the per-class pass canonicalises by 720 relabellings a graph at n = 6,
+and the whole file is now 176 s. the question is smaller and still open: what
+pins a class. for n <= 5 every class is pinned, so the first unpinned class
+is a 6-node one, and there are 20 to look at. open: that, and nothing else from the old list, so the next night
+needs a new problem or this.

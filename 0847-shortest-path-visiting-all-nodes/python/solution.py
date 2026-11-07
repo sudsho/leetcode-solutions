@@ -278,6 +278,36 @@ if __name__ == "__main__":
         print(f"  pops: layered {pops_l[0]}   antichain bar {pops_a[0]}   saved {100 * (1 - pops_a[0] / pops_l[0]):.1f}%"
               f"   widest antichain at a node {widest[0]} against C({n - 1}, {(n - 1) // 2}) = {bound}")
 
+    # why the count bar's wrong count is pinned at n <= 5. first per graph:
+    # does the adjacency order alone ever change its answer? then per
+    # isomorphism class: does each class hold its own count under every order,
+    # or do the classes trade wrong graphs and only the total hold still?
+    print("\n== the pinned count, per graph and per isomorphism class ==")
+    prng = random.Random(8470)
+    for n in (5, 6):
+        pairs = list(itertools.combinations(range(n), 2))
+        idx = {p: i for i, p in enumerate(pairs)}
+        perms = list(itertools.permutations(range(n)))
+        pmaps = [[idx[tuple(sorted((p[a], p[b])))] for a, b in pairs] for p in perms]
+        orders = perms if n <= 5 else [tuple(range(n))] + prng.sample(perms, 59)
+        per_class, copies, moves = {}, {}, 0
+        for graph, m in exhaustive(n):
+            bits = [i for i, (a, b) in enumerate(pairs) if b in graph[a]]
+            canon = min(sum(1 << pm[i] for i in bits) for pm in pmaps)
+            want = layered(graph)
+            outs = [count_bar(reorder(graph, o)) for o in orders]
+            moves += len(set(outs)) > 1
+            row = per_class.setdefault(canon, [0] * len(orders))
+            copies[canon] = copies.get(canon, 0) + 1
+            for k, got in enumerate(outs):
+                row[k] += got != want
+        totals = [sum(r[k] for r in per_class.values()) for k in range(len(orders))]
+        moving = [c for c, r in per_class.items() if len(set(r)) > 1]
+        print(f"  n = {n}, {len(orders)} adjacency orders: the order changes the answer on {moves} graphs,"
+              f" totals {min(totals)} to {max(totals)} (default {totals[0]}),"
+              f" classes {len(per_class)}, {sum(1 for r in per_class.values() if r[0] and len(set(r)) == 1)} wrong and pinned,"
+              f" {len(moving)} move, default the worst on {sum(per_class[c][0] == max(per_class[c]) for c in moving)}")
+
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")
     for m in (7, 9, 12, 16, 22, 28):

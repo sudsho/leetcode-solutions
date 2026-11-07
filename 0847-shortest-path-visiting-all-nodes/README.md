@@ -75,8 +75,18 @@ each edge count. The bound is `C(7, 3) = 35`.
   sets, which is a relabelling: sorting the adjacency lists of `G` by `pi` is
   the default search on `pi(G)` with the starts in the order `pi` lists them,
   and the set of labelled connected graphs is closed under relabelling. So
-  that was one experiment run twice. Why the count is fixed at `n <= 5` and
-  not at `n = 6` I do not have.
+  that was one experiment run twice.
+- **The pin is per isomorphism class, not a total that balances.** The
+  order does change the answer on single graphs at `n = 5`, 204 of the 728
+  under the 120 adjacency orders, so no graph is order-free in general. But
+  all 21 classes hold their own wrong count under every one of the 120, 13
+  of them nonzero, and the 215 is those 13 added up. At `n = 6`, 78 classes
+  are wrong and pinned and 20 move, and over 60 orders the total runs 10984
+  to 11246. The ascending order is the worst of the 60, and the worst on 14
+  of the 20 moving classes. My guess was that a class moves when the first
+  start's own place in the other lists matters. That holds on 16 of the 20,
+  misses 4, and fires on 3 that do not move (and on `K_{2,3}` at `n = 5`,
+  which is pinned). What pins a class I still do not have.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.
