@@ -290,11 +290,12 @@ if __name__ == "__main__":
         perms = list(itertools.permutations(range(n)))
         pmaps = [[idx[tuple(sorted((p[a], p[b])))] for a, b in pairs] for p in perms]
         orders = perms if n <= 5 else [tuple(range(n))] + prng.sample(perms, 59)
-        per_class, copies, moves = {}, {}, 0
+        per_class, copies, moves, reps = {}, {}, 0, {}
         for graph, m in exhaustive(n):
             bits = [i for i, (a, b) in enumerate(pairs) if b in graph[a]]
             canon = min(sum(1 << pm[i] for i in bits) for pm in pmaps)
             want = layered(graph)
+            reps.setdefault(canon, (graph, want))
             outs = [count_bar(reorder(graph, o)) for o in orders]
             moves += len(set(outs)) > 1
             row = per_class.setdefault(canon, [0] * len(orders))
@@ -307,6 +308,27 @@ if __name__ == "__main__":
               f" totals {min(totals)} to {max(totals)} (default {totals[0]}),"
               f" classes {len(per_class)}, {sum(1 for r in per_class.values() if r[0] and len(set(r)) == 1)} wrong and pinned,"
               f" {len(moving)} move, default the worst on {sum(per_class[c][0] == max(per_class[c]) for c in moving)}")
+
+    # what pins a class. summing over a class's labellings averages the
+    # member's answer over adjacency orders a and start orders b together, so
+    # if wrongness on one member is g(a) + h(b) each part averages to a
+    # constant and the class cannot move. split each n = 6 class by how its
+    # representative's wrongness depends on (a, b) over 40 x 40 pairs.
+    print("\n== what pins a class: one member under 40 adjacency orders x 40 start orders, n = 6 ==")
+    oa = [tuple(range(6))] + random.Random(1).sample(perms, 39)
+    ob = [tuple(range(6))] + random.Random(2).sample(perms, 39)
+    split = {}
+    for canon, (graph, want) in reps.items():
+        f = [[int(count_bar(reorder(graph, a), b) != want) for b in ob] for a in oa]
+        a_only = all(r[j] == r[0] for r in f for j in range(len(ob)))
+        b_only = all(f[i][j] == f[0][j] for i in range(len(oa)) for j in range(len(ob)))
+        additive = all(f[i][j] - f[i][0] - f[0][j] + f[0][0] == 0 for i in range(len(oa)) for j in range(len(ob)))
+        kind = ("neither" if a_only and b_only else "adjacency only" if a_only else "start only" if b_only
+                else "additive" if additive else "joint")
+        key = ("moves" if canon in moving else "pinned", kind)
+        split[key] = split.get(key, 0) + 1
+    for (state, kind), c in sorted(split.items()):
+        print(f"  {state:6s}  {kind:14s} {c:3d} classes")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")

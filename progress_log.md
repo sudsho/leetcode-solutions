@@ -3814,3 +3814,26 @@ and the whole file is now 176 s. the question is smaller and still open: what
 pins a class. for n <= 5 every class is pinned, so the first unpinned class
 is a 6-node one, and there are 20 to look at. open: that, and nothing else from the old list, so the next night
 needs a new problem or this.
+
+## 2026-11-08
+
+847 again, what pins a class. no new problem tonight. a class's total is
+one member summed over every labelling, and a labelling sets the adjacency
+order and the start order at once, so the total averages the member over
+(a, b) pairs tied together. if the member's wrongness splits as g(a) + h(b),
+each half averages to a constant over the labellings and the class cannot
+move. the guess, written before the run: that split is exactly what pins a
+class, and the 20 that move are the ones where a and b interact.
+
+half. on one member of each of the 112 classes at n = 6, over 40 x 40 pairs:
+15 never change, 12 depend on the start order alone, none on the adjacency
+order alone, 85 interact. all 20 moving classes are in the 85, so an
+interaction is needed. but 65 interacting classes are pinned anyway, so it
+is not enough, and the guess is wrong on three in four of the classes it
+was about.
+
+no adjacency-only class at all is the surprise, not predicted: no member
+that moves with the order moves with the adjacency order alone. bounds: 40 x 40 x 112 calls
+of the count bar on 6 nodes, the file is now 183 s from 176. open: what in
+the class's symmetry cancels the interaction on the 65, still the only
+thread, so the next night needs that or a new problem.

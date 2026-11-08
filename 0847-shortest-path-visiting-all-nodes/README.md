@@ -87,6 +87,17 @@ each edge count. The bound is `C(7, 3) = 35`.
   start's own place in the other lists matters. That holds on 16 of the 20,
   misses 4, and fires on 3 that do not move (and on `K_{2,3}` at `n = 5`,
   which is pinned). What pins a class I still do not have.
+- **An interaction is needed to move, and is not enough.** Summing a class
+  over its labellings averages one member over adjacency orders `a` and
+  start orders `b` together, so if the member's wrongness is `g(a) + h(b)`
+  each part averages to a constant and the class is pinned. Over 40 x 40
+  pairs on one member of each `n = 6` class: 15 classes never change, 12
+  depend on the start order alone, none on the adjacency order alone, and
+  85 have `a` and `b` interact. All 20 moving classes are among the 85, so
+  the argument holds as far as it goes. But 65 interacting classes are
+  pinned anyway, and the guess that interaction is what moves a class is
+  wrong for three in four of them. Something in the class's own symmetry
+  still cancels.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.
