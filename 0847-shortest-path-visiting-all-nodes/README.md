@@ -98,6 +98,18 @@ each edge count. The bound is `C(7, 3) = 35`.
   pinned anyway, and the guess that interaction is what moves a class is
   wrong for three in four of them. Something in the class's own symmetry
   still cancels.
+- **It is not the class's symmetry.** Counting automorphisms on the same
+  112 members: the 20 moving classes have median `|Aut| = 2` and the 65
+  pinned interacting ones median 4, but 5 of the 65 have no symmetry at
+  all, so their total is 720 distinct labellings with nothing to pair up,
+  and they are pinned anyway. The interaction is as large on both sides,
+  0.44 of the grid's variance on the movers and 0.41 on the pinned. What
+  differs is how often the member is wrong: 0.24 of the 40 x 40 grid on
+  the movers, 0.48 on the pinned interacting classes, 0.50 on the
+  start-only ones. So the cancellation is in the member's own wrongness
+  across the diagonal `a = b`, not in the class. My next guess is that a
+  pinned member is wrong on an exclusive-or of one comparison in `a` and
+  one in `b`, which is near half the grid and averages flat; not tested.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.

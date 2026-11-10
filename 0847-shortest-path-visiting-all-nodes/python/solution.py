@@ -319,7 +319,7 @@ if __name__ == "__main__":
     print("\n== what pins a class: one member under 40 adjacency orders x 40 start orders, n = 6 ==")
     oa = [tuple(range(6))] + random.Random(1).sample(perms, 39)
     ob = [tuple(range(6))] + random.Random(2).sample(perms, 39)
-    split = {}
+    split, sym = {}, {}
     for canon, (graph, want) in reps.items():
         f = [[int(count_bar(reorder(graph, a), b) != want) for b in ob] for a in oa]
         a_only = all(r[j] == r[0] for r in f for j in range(len(ob)))
@@ -329,8 +329,22 @@ if __name__ == "__main__":
                 else "additive" if additive else "joint")
         key = ("moves" if canon in moving else "pinned", kind)
         split[key] = split.get(key, 0) + 1
+        # the class's symmetry, and how much of the grid the interaction covers:
+        # the double centring of f, f - row mean - column mean + grand mean
+        bits = {i for i, (a, b) in enumerate(pairs) if b in graph[a]}
+        aut = sum(1 for pm in pmaps if {pm[i] for i in bits} == bits)
+        rows = [sum(r) / len(ob) for r in f]
+        cols = [sum(f[i][j] for i in range(len(oa))) / len(oa) for j in range(len(ob))]
+        grand = sum(rows) / len(oa)
+        inter = sum((f[i][j] - rows[i] - cols[j] + grand) ** 2 for i in range(len(oa)) for j in range(len(ob)))
+        total_var = sum((f[i][j] - grand) ** 2 for i in range(len(oa)) for j in range(len(ob)))
+        sym.setdefault(key, []).append((aut, inter / total_var if total_var else 0.0, grand))
     for (state, kind), c in sorted(split.items()):
-        print(f"  {state:6s}  {kind:14s} {c:3d} classes")
+        auts = sorted(s[0] for s in sym[(state, kind)])
+        share = sum(s[1] for s in sym[(state, kind)]) / c
+        rate = sum(s[2] for s in sym[(state, kind)]) / c
+        print(f"  {state:6s}  {kind:14s} {c:3d} classes   |Aut| median {auts[c // 2]:3d}, 1 on {auts.count(1):2d},"
+              f" interaction share of the variance {share:.2f}, wrong on {rate:.2f} of the grid")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")

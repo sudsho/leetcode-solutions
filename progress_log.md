@@ -3837,3 +3837,28 @@ that moves with the order moves with the adjacency order alone. bounds: 40 x 40 
 of the count bar on 6 nodes, the file is now 183 s from 176. open: what in
 the class's symmetry cancels the interaction on the 65, still the only
 thread, so the next night needs that or a new problem.
+
+## 2026-11-10
+
+847 again, what in a class cancels the interaction on the 65 pinned ones.
+no new problem tonight. the guess, written before the run: the class's own
+symmetry. a member with automorphisms is summed over fewer distinct
+labellings, and pairs of them might carry opposite halves of the
+interaction, so the movers should be the asymmetric classes.
+
+wrong. counting |Aut| on the 112 members, the 20 movers have median 2 and
+only 2 of them are asymmetric. the 65 pinned interacting classes have
+median 4, and 5 of them have |Aut| = 1, so their total runs over 720
+different labellings with nothing to pair, and they still never move. the
+interaction is the same size on both sides too, 0.44 of the grid's
+variance on the movers against 0.41 on the pinned.
+
+what does split them is the plain wrong rate: the movers are wrong on 0.24
+of the 40 x 40 grid, the pinned interacting classes on 0.48, the start-only
+ones on 0.50. not predicted. so the cancellation is inside the member, on
+the diagonal a = b that the class sum walks along, not in the class.
+
+bounds unchanged, the extra pass is one subset test over 720 relabellings a
+class and the file is 184 s from 183. open: whether a pinned member is wrong
+on an exclusive-or of one comparison in a and one in b, which would put it
+near half the grid and flat along any diagonal. still the only thread.
