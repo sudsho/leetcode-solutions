@@ -173,6 +173,7 @@ class Solution:
 
 
 def connected(graph):
+    """Whether a DFS from node 0 reaches every node. 847 promises a connected graph, so `exhaustive` skips the rest."""
     n = len(graph)
     seen = {0}
     stack = [0]
@@ -218,6 +219,7 @@ def random_graph(rng, n, m):
 
 
 def edges_of(graph):
+    """Each edge once as "u-w" with u < w, the form the printed witnesses use."""
     return " ".join(f"{u}-{w}" for u in range(len(graph)) for w in graph[u] if u < w)
 
 
