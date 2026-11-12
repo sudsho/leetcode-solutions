@@ -110,6 +110,17 @@ each edge count. The bound is `C(7, 3) = 35`.
   across the diagonal `a = b`, not in the class. My next guess is that a
   pinned member is wrong on an exclusive-or of one comparison in `a` and
   one in `b`, which is near half the grid and averages flat; not tested.
+- **It is not an exclusive-or either.** If a member were wrong on one fact
+  about `a` xor one about `b`, every row of its grid would be one row or
+  that row's complement. No interacting class is that exactly, 0 of the 65
+  pinned and 0 of the 20 movers. The best such pattern gets 0.82 of the
+  grid right on the pinned and 0.89 on the movers, against the 0.52 and
+  0.76 that answering the same thing everywhere would get, so it explains
+  more of the pinned classes and still leaves a sixth of the grid. What
+  the run showed that I did not ask for: the 40 adjacency orders give only
+  7 distinct rows on the median class, on both sides. The adjacency order
+  reaches the answer through a few facts and not through the whole
+  permutation. Which facts I do not know.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.

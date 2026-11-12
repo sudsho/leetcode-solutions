@@ -339,13 +339,24 @@ if __name__ == "__main__":
         grand = sum(rows) / len(oa)
         inter = sum((f[i][j] - rows[i] - cols[j] + grand) ** 2 for i in range(len(oa)) for j in range(len(ob)))
         total_var = sum((f[i][j] - grand) ** 2 for i in range(len(oa)) for j in range(len(ob)))
-        sym.setdefault(key, []).append((aut, inter / total_var if total_var else 0.0, grand))
+        # is the member wrong on an exclusive-or of one fact about a and one about
+        # b? then every row is some one row or its complement. exactly, and the
+        # share of the grid the best such pattern gets right
+        exact = all(f[i][j] ^ f[i][0] ^ f[0][j] ^ f[0][0] == 0 for i in range(len(oa)) for j in range(len(ob)))
+        fit = max(sum(max(agree, len(ob) - agree) for agree in (sum(x == y for x, y in zip(r, ref)) for r in f))
+                  for ref in f) / (len(oa) * len(ob))
+        sym.setdefault(key, []).append((aut, inter / total_var if total_var else 0.0, grand, exact, fit,
+                                        len({tuple(r) for r in f})))
     for (state, kind), c in sorted(split.items()):
         auts = sorted(s[0] for s in sym[(state, kind)])
         share = sum(s[1] for s in sym[(state, kind)]) / c
         rate = sum(s[2] for s in sym[(state, kind)]) / c
         print(f"  {state:6s}  {kind:14s} {c:3d} classes   |Aut| median {auts[c // 2]:3d}, 1 on {auts.count(1):2d},"
               f" interaction share of the variance {share:.2f}, wrong on {rate:.2f} of the grid")
+        got = sym[(state, kind)]
+        print(f"          exclusive-or exactly on {sum(g[3] for g in got):2d}, best exclusive-or pattern right on"
+              f" {sum(g[4] for g in got) / c:.2f} of the grid (least {min(g[4] for g in got):.2f}),"
+              f" distinct rows median {sorted(g[5] for g in got)[c // 2]} of {len(oa)}")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")

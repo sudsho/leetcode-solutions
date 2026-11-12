@@ -3862,3 +3862,28 @@ bounds unchanged, the extra pass is one subset test over 720 relabellings a
 class and the file is 184 s from 183. open: whether a pinned member is wrong
 on an exclusive-or of one comparison in a and one in b, which would put it
 near half the grid and flat along any diagonal. still the only thread.
+
+## 2026-11-12
+
+847 again, the exclusive-or guess from two nights ago. no new problem
+tonight. the guess, written then: a pinned member is wrong on one
+comparison in a xor one in b. on the 40 x 40 grid that has a plain test,
+every row is either one fixed row or its complement.
+
+wrong. none of the 85 interacting classes is an exclusive-or exactly, 0 of
+the 65 pinned and 0 of the 20 movers. the best pattern of that kind, over
+every choice of the fixed row, gets 0.82 of the grid right on the pinned
+classes and 0.89 on the movers, least 0.73 and 0.75. answering one thing
+everywhere would get 0.52 and 0.76, so the pattern buys 0.30 on the pinned
+and 0.13 on the movers. it is nearer the pinned classes than the movers,
+which is the direction the guess wanted, and it is still wrong on a sixth
+of their grid.
+
+not predicted: the 40 adjacency orders make only 7 distinct rows on the
+median class, pinned or moving. so the adjacency order does not act as a
+permutation, it acts through a handful of facts, and the 15 constant and 12
+start-only classes are the case of one row.
+
+bounds unchanged, the pass is 40 row comparisons against each of 40 rows a
+class, and the file is 187 s from 184. open: what the seven rows are, which
+facts about the adjacency order pick the row. still the only thread.
