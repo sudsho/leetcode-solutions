@@ -6,6 +6,7 @@ from typing import List
 
 
 def popcount(m):
+    """How many nodes a mask has visited. The count bar and the count mark keep only this number of a mask."""
     return bin(m).count("1")
 
 
