@@ -121,6 +121,17 @@ each edge count. The bound is `C(7, 3) = 35`.
   7 distinct rows on the median class, on both sides. The adjacency order
   reaches the answer through a few facts and not through the whole
   permutation. Which facts I do not know.
+- **It is not the first neighbour.** The search sees the adjacency order
+  only as six sorted lists, so I guessed the row is picked by which
+  neighbour comes first in each list, at two or three nodes. Orders that
+  agree on all six first neighbours give different rows on 59 of the 85
+  interacting classes, 13 of the 20 movers and 46 of the 65 pinned, so
+  the rest of a list matters on most of them. The part that held: the
+  full lists at 2 nodes are enough to fix the row on the median class,
+  at most 3 on a mover and 4 on a pinned one. That is a floor and not a
+  count. The 40 orders give 39 or 40 different sets of lists, so a pair
+  of nodes is tested only where two orders happen to agree on it, and
+  all 720 orders would test it properly.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.

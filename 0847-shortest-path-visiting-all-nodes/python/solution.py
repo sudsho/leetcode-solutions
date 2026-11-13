@@ -224,6 +224,21 @@ def edges_of(graph):
     return " ".join(f"{u}-{w}" for u in range(len(graph)) for w in graph[u] if u < w)
 
 
+def decides(keys, rows):
+    """Whether orders that share a key always share a row, so the key is all of the order the row needs."""
+    seen = {}
+    return all(seen.setdefault(k, r) == r for k, r in zip(keys, rows))
+
+
+def fewest_nodes(views, rows, n):
+    """The fewest nodes whose entries in each view decide the row; n + 1 if all n together do not."""
+    for k in range(n + 1):
+        for nodes in itertools.combinations(range(n), k):
+            if decides([tuple(v[u] for u in nodes) for v in views], rows):
+                return k
+    return n + 1
+
+
 if __name__ == "__main__":
     rng = random.Random(847)
     started = time.time()
@@ -345,8 +360,16 @@ if __name__ == "__main__":
         exact = all(f[i][j] ^ f[i][0] ^ f[0][j] ^ f[0][0] == 0 for i in range(len(oa)) for j in range(len(ob)))
         fit = max(sum(max(agree, len(ob) - agree) for agree in (sum(x == y for x, y in zip(r, ref)) for r in f))
                   for ref in f) / (len(oa) * len(ob))
+        # which facts about the adjacency order pick the row. the search only
+        # sees the reordered lists, so those decide it by construction; is the
+        # first neighbour in each list enough, and at how many nodes?
+        rows = [tuple(r) for r in f]
+        lists = [tuple(tuple(adj) for adj in reorder(graph, a)) for a in oa]
+        firsts = [tuple(adj[0] for adj in g2) for g2 in lists]
         sym.setdefault(key, []).append((aut, inter / total_var if total_var else 0.0, grand, exact, fit,
-                                        len({tuple(r) for r in f})))
+                                        len(set(rows)), len(set(lists)), len(set(firsts)),
+                                        decides(firsts, rows), fewest_nodes(lists, rows, 6),
+                                        fewest_nodes(firsts, rows, 6)))
     for (state, kind), c in sorted(split.items()):
         auts = sorted(s[0] for s in sym[(state, kind)])
         share = sum(s[1] for s in sym[(state, kind)]) / c
@@ -357,6 +380,11 @@ if __name__ == "__main__":
         print(f"          exclusive-or exactly on {sum(g[3] for g in got):2d}, best exclusive-or pattern right on"
               f" {sum(g[4] for g in got) / c:.2f} of the grid (least {min(g[4] for g in got):.2f}),"
               f" distinct rows median {sorted(g[5] for g in got)[c // 2]} of {len(oa)}")
+        ok = [g for g in got if g[8]]
+        print(f"          distinct list orders median {sorted(g[6] for g in got)[c // 2]}, distinct first-neighbour"
+              f" tuples median {sorted(g[7] for g in got)[c // 2]}, the firsts decide the row on {len(ok):2d},"
+              f" fewest nodes whose lists decide it: median {sorted(g[9] for g in got)[c // 2]}, most {max(g[9] for g in got)}"
+              + (f", whose firsts do, where they do: median {sorted(g[10] for g in ok)[len(ok) // 2]}" if ok else ""))
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")

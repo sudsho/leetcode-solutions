@@ -3887,3 +3887,28 @@ start-only classes are the case of one row.
 bounds unchanged, the pass is 40 row comparisons against each of 40 rows a
 class, and the file is 187 s from 184. open: what the seven rows are, which
 facts about the adjacency order pick the row. still the only thread.
+
+## 2026-11-13
+
+847 again, which facts about the adjacency order pick the row. no new
+problem tonight. the count bar never sees the order itself, only the six
+lists sorted by it, so the row is a function of those. the guess, written
+before the run: of each list only its first neighbour matters, and at two
+or three nodes.
+
+wrong on most. two orders that agree on all six first neighbours give
+different rows on 59 of the 85 interacting classes, 13 of the 20 movers
+and 46 of the 65 pinned. so what comes second in a list reaches the
+answer, and the first-arrival picture of the count bar is too simple.
+
+the half that held is the node count. the full lists at 2 nodes fix the
+row on the median class, pinned or moving, 3 at most on a mover and 4 on
+a pinned class. but that is a floor. the 40 orders make 39 or 40
+different sets of lists on the median class and about 24 different
+first-neighbour tuples, so a pair of nodes is only tested where two of
+the 40 happen to agree on it, and a pair can pass for want of a clash.
+
+bounds unchanged, the pass is 64 subsets of nodes against 40 orders a
+class, and the file is 186 s. open: the same count over all 720 orders of
+one member, where every pair of lists repeats often enough to be tested,
+and then which two nodes they are. still the only thread.
