@@ -3912,3 +3912,27 @@ bounds unchanged, the pass is 64 subsets of nodes against 40 orders a
 class, and the file is 186 s. open: the same count over all 720 orders of
 one member, where every pair of lists repeats often enough to be tested,
 and then which two nodes they are. still the only thread.
+
+## 2026-11-14
+
+847 again, the count over all 720 adjacency orders of one member. no new
+problem tonight. the guess, written before the run: two nodes was a floor
+from too few clashes, so the median stays 2 on the movers and goes to 3 on
+the pinned classes, and the nodes that decide are the highest-degree ones.
+
+half. the median is 2 on both sides, so on the pinned classes the floor was
+the answer and i was wrong to doubt it. the tails grew, most 4 on a mover
+from 3 and most 5 on a pinned class from 4, and one class of the 85 needs
+every node that has two neighbours or more. 720 orders make 360 distinct
+sets of lists on the median mover and 480 on the median pinned class, and
+those still land on 8 and 7 rows.
+
+the degree half holds on 14 of the 20 movers and 39 of the 65 pinned. on
+the rest some smallest deciding set exists and none of them is the
+busiest nodes, and on 8 and 28 classes the deciding set is the only one
+of its size, so it is a property of the graph and not a tie.
+
+bounds unchanged, the pass is one count bar a distinct set of lists a
+start order, up to 720 x 40 a class, and the file is 243 s from 186. open:
+what marks the two nodes on the third of the classes where they are not
+the highest-degree ones. still the only thread.

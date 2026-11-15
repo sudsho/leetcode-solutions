@@ -132,6 +132,18 @@ each edge count. The bound is `C(7, 3) = 35`.
   count. The 40 orders give 39 or 40 different sets of lists, so a pair
   of nodes is tested only where two orders happen to agree on it, and
   all 720 orders would test it properly.
+- **Two nodes is the count, and they are not always the busiest two.** Over
+  all 720 orders a member has 360 distinct sets of lists on the median
+  mover and 480 on the median pinned class, and still only 8 and 7
+  distinct rows. The fewest nodes whose lists fix the row stays at 2 on
+  the median of both, so the floor was the answer there. I had guessed 3
+  on the pinned side. The tails did grow, to 4 on a mover and 5 on a
+  pinned class, and only one class of the 85 needs every node that has a
+  choice to make. The second half of the guess, that the deciding nodes
+  are the highest-degree ones, holds on 14 of the 20 movers and 39 of the
+  65 pinned, and on 8 and 28 the deciding set is the only one of its size.
+  So on a third of the classes a node with fewer neighbours carries the
+  row, and I do not know what marks it.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.

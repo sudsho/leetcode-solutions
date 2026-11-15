@@ -335,7 +335,7 @@ if __name__ == "__main__":
     print("\n== what pins a class: one member under 40 adjacency orders x 40 start orders, n = 6 ==")
     oa = [tuple(range(6))] + random.Random(1).sample(perms, 39)
     ob = [tuple(range(6))] + random.Random(2).sample(perms, 39)
-    split, sym = {}, {}
+    split, sym, full = {}, {}, {}
     for canon, (graph, want) in reps.items():
         f = [[int(count_bar(reorder(graph, a), b) != want) for b in ob] for a in oa]
         a_only = all(r[j] == r[0] for r in f for j in range(len(ob)))
@@ -370,6 +370,22 @@ if __name__ == "__main__":
                                         len(set(rows)), len(set(lists)), len(set(firsts)),
                                         decides(firsts, rows), fewest_nodes(lists, rows, 6),
                                         fewest_nodes(firsts, rows, 6)))
+        # the same count over all 720 orders, where every pair of lists repeats
+        # often enough to be tested. the row is a function of the lists, so one
+        # run per distinct set of lists. then which nodes: is some smallest
+        # deciding set the highest-degree nodes?
+        by_lists = {}
+        for a in perms:
+            g2 = tuple(tuple(adj) for adj in reorder(graph, a))
+            if g2 not in by_lists:
+                by_lists[g2] = tuple(int(count_bar(g2, b) != want) for b in ob)
+        views, all_rows = list(by_lists), list(by_lists.values())
+        k = fewest_nodes(views, all_rows, 6)
+        deg = sorted((len(adj) for adj in graph), reverse=True)
+        sets = [nodes for nodes in itertools.combinations(range(6), k)
+                if decides([tuple(v[u] for u in nodes) for v in views], all_rows)]
+        top = any(sorted((len(graph[u]) for u in nodes), reverse=True) == deg[:k] for nodes in sets)
+        full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets)))
     for (state, kind), c in sorted(split.items()):
         auts = sorted(s[0] for s in sym[(state, kind)])
         share = sum(s[1] for s in sym[(state, kind)]) / c
@@ -385,6 +401,11 @@ if __name__ == "__main__":
               f" tuples median {sorted(g[7] for g in got)[c // 2]}, the firsts decide the row on {len(ok):2d},"
               f" fewest nodes whose lists decide it: median {sorted(g[9] for g in got)[c // 2]}, most {max(g[9] for g in got)}"
               + (f", whose firsts do, where they do: median {sorted(g[10] for g in ok)[len(ok) // 2]}" if ok else ""))
+        al = full[(state, kind)]
+        print(f"          all 720 orders: distinct list orders median {sorted(g[0] for g in al)[c // 2]}, distinct rows median"
+              f" {sorted(g[1] for g in al)[c // 2]}, fewest nodes whose lists decide the row: median {sorted(g[2] for g in al)[c // 2]},"
+              f" most {max(g[2] for g in al)}, every node with two neighbours or more on {sum(g[2] == g[3] for g in al):2d},"
+              f" the highest-degree nodes are such a set on {sum(g[4] for g in al):2d}, one set only on {sum(g[5] == 1 for g in al):2d}")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")
