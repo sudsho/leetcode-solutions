@@ -3936,3 +3936,29 @@ bounds unchanged, the pass is one count bar a distinct set of lists a
 start order, up to 720 x 40 a class, and the file is 243 s from 186. open:
 what marks the two nodes on the third of the classes where they are not
 the highest-degree ones. still the only thread.
+
+## 2026-11-17
+
+847 again, what marks the two nodes where they are not the busiest. no new
+problem tonight. i read the 32 classes of the 85 where no deciding set is
+the highest-degree nodes before writing a guess, so this one is not blind:
+the deciding nodes are the ones on a cycle, two neighbours or more and not a
+cut vertex, and the hub is left out because it is a cut vertex.
+
+half, and the wrong half is the useful one. some deciding set is made of
+cycle nodes on 30 of the 32, 6 of 6 movers and 24 of 26 pinned. but it is
+also true on 46 of the 53 classes where the busiest nodes do decide, so it
+does not mark anything, almost every deciding set lives on the cycles.
+
+what splits the two sides is the hub itself. on 25 of the 32 the busiest
+node is in no smallest deciding set at all, 2 of 6 movers and 23 of 26
+pinned, so its list can be in any order and the row does not move. it is a
+cut vertex on 21 of the 32 against 19 of the 53. not predicted in that
+form: the question was what marks the two nodes, and the answer on most of
+these classes is that the busiest one stopped counting and the next two in
+line took its place.
+
+bounds unchanged, the pass is one cut-vertex check a node a class, and the
+file is 240 s from 243. open: why a hub's list stops mattering, on 25
+classes, most with the hub a cut vertex, and the 7 where the hub still
+counts and is not enough. still the only thread.

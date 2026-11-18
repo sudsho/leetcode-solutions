@@ -219,6 +219,24 @@ def random_graph(rng, n, m):
     return [sorted(adj) for adj in graph]
 
 
+def cut_vertices(graph):
+    """Nodes whose removal disconnects the rest, by a DFS from a remaining node with the node taken out."""
+    n = len(graph)
+    out = set()
+    for u in range(n):
+        rest = 1 if u == 0 else 0
+        seen, stack = {rest}, [rest]
+        while stack:
+            x = stack.pop()
+            for w in graph[x]:
+                if w != u and w not in seen:
+                    seen.add(w)
+                    stack.append(w)
+        if len(seen) < n - 1:
+            out.add(u)
+    return out
+
+
 def edges_of(graph):
     """Each edge once as "u-w" with u < w, the form the printed witnesses use."""
     return " ".join(f"{u}-{w}" for u in range(len(graph)) for w in graph[u] if u < w)
@@ -385,7 +403,16 @@ if __name__ == "__main__":
         sets = [nodes for nodes in itertools.combinations(range(6), k)
                 if decides([tuple(v[u] for u in nodes) for v in views], all_rows)]
         top = any(sorted((len(graph[u]) for u in nodes), reverse=True) == deg[:k] for nodes in sets)
-        full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets)))
+        # where they are not the busiest: is a deciding set always found among
+        # the nodes on a cycle (two neighbours or more and not a cut vertex),
+        # and is the busiest node left out of every deciding set?
+        cuts = cut_vertices(graph)
+        on_cycle = {u for u in range(6) if len(graph[u]) >= 2 and u not in cuts}
+        busiest = {u for u in range(6) if len(graph[u]) == deg[0]}
+        inside = any(set(nodes) <= on_cycle for nodes in sets)
+        hub_out = not any(busiest & set(nodes) for nodes in sets)
+        full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets),
+                                         inside, hub_out, bool(busiest & cuts)))
     for (state, kind), c in sorted(split.items()):
         auts = sorted(s[0] for s in sym[(state, kind)])
         share = sum(s[1] for s in sym[(state, kind)]) / c
@@ -406,6 +433,10 @@ if __name__ == "__main__":
               f" {sorted(g[1] for g in al)[c // 2]}, fewest nodes whose lists decide the row: median {sorted(g[2] for g in al)[c // 2]},"
               f" most {max(g[2] for g in al)}, every node with two neighbours or more on {sum(g[2] == g[3] for g in al):2d},"
               f" the highest-degree nodes are such a set on {sum(g[4] for g in al):2d}, one set only on {sum(g[5] == 1 for g in al):2d}")
+        for label, part in (("where they are", [g for g in al if g[4]]), ("where they are not", [g for g in al if not g[4]])):
+            if part:
+                print(f"          {label:18s} ({len(part):2d}): a deciding set on the cycle nodes on {sum(g[6] for g in part):2d},"
+                      f" the busiest node in none on {sum(g[7] for g in part):2d}, the busiest a cut vertex on {sum(g[8] for g in part):2d}")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")

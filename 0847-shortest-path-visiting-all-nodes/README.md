@@ -144,6 +144,15 @@ each edge count. The bound is `C(7, 3) = 35`.
   65 pinned, and on 8 and 28 the deciding set is the only one of its size.
   So on a third of the classes a node with fewer neighbours carries the
   row, and I do not know what marks it.
+- **Where the busiest nodes do not decide, the busiest node mostly does not
+  matter at all.** On 32 of the 85 interacting classes no deciding set is
+  the highest-degree nodes, and on 25 of those the busiest node is in no
+  deciding set of the smallest size: its list can be put in any order and
+  the row needs the others only. The busiest node is a cut vertex on 21 of
+  the 32 against 19 of the 53 where the busiest nodes do decide. I guessed
+  the deciding nodes would be the ones on a cycle, two neighbours or more
+  and not a cut vertex. Some deciding set is made of those on 30 of the 32,
+  but also on 46 of the 53, so being on a cycle does not mark them.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.
