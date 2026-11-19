@@ -78,8 +78,14 @@ def antichain_bar(graph, counter=None, widest=None, starts=None):
     return -1
 
 
-def count_bar(graph, starts=None):
-    """One number per node, the most nodes any queued arrival had visited. 864's count bar, and wrong there."""
+def count_bar(graph, starts=None, fan=None):
+    """One number per node, the most nodes any queued arrival had visited. 864's count bar, and wrong there.
+
+    With `fan`, fan[u] is raised to the most pushes one pop of u got past the
+    bar. A pop that queues one push or none queues the same thing whatever
+    order u's list is in, so a node whose fan stays under 2 on every run
+    cannot be what the adjacency order moves.
+    """
     n = len(graph)
     if n == 1:
         return 0
@@ -91,6 +97,7 @@ def count_bar(graph, starts=None):
         queue.append((u, 1 << u, 0))
     while queue:
         u, mask, d = queue.popleft()
+        kept = 0
         for w in graph[u]:
             nm = mask | 1 << w
             if nm == full:
@@ -99,6 +106,9 @@ def count_bar(graph, starts=None):
             if c > best[w]:
                 best[w] = c
                 queue.append((w, nm, d + 1))
+                kept += 1
+        if fan is not None and kept > fan[u]:
+            fan[u] = kept
     return -1
 
 
@@ -393,10 +403,11 @@ if __name__ == "__main__":
         # run per distinct set of lists. then which nodes: is some smallest
         # deciding set the highest-degree nodes?
         by_lists = {}
+        fan = [0] * 6
         for a in perms:
             g2 = tuple(tuple(adj) for adj in reorder(graph, a))
             if g2 not in by_lists:
-                by_lists[g2] = tuple(int(count_bar(g2, b) != want) for b in ob)
+                by_lists[g2] = tuple(int(count_bar(g2, b, fan) != want) for b in ob)
         views, all_rows = list(by_lists), list(by_lists.values())
         k = fewest_nodes(views, all_rows, 6)
         deg = sorted((len(adj) for adj in graph), reverse=True)
@@ -411,8 +422,16 @@ if __name__ == "__main__":
         busiest = {u for u in range(6) if len(graph[u]) == deg[0]}
         inside = any(set(nodes) <= on_cycle for nodes in sets)
         hub_out = not any(busiest & set(nodes) for nodes in sets)
+        # why a hub's list stops mattering: does the hub ever get two pushes
+        # past the bar at one pop, over every list order and start order run?
+        # under 2 it provably cannot matter; the question is whether that is
+        # the whole reason. and the converse at every node: is a node with a
+        # fan of 2 or more always in some smallest deciding set?
+        used = set().union(*map(set, sets)) if sets else set()
+        wide = {u for u in range(6) if fan[u] >= 2}
         full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets),
-                                         inside, hub_out, bool(busiest & cuts)))
+                                         inside, hub_out, bool(busiest & cuts), max(fan[u] for u in busiest),
+                                         len(used - wide), len(wide - used), len(wide), wide == used))
     for (state, kind), c in sorted(split.items()):
         auts = sorted(s[0] for s in sym[(state, kind)])
         share = sum(s[1] for s in sym[(state, kind)]) / c
@@ -437,6 +456,13 @@ if __name__ == "__main__":
             if part:
                 print(f"          {label:18s} ({len(part):2d}): a deciding set on the cycle nodes on {sum(g[6] for g in part):2d},"
                       f" the busiest node in none on {sum(g[7] for g in part):2d}, the busiest a cut vertex on {sum(g[8] for g in part):2d}")
+                out = [g for g in part if g[7]]
+                print(f"          {'':18s}       the busiest under two pushes a pop on {sum(g[9] < 2 for g in part):2d}"
+                      f" ({sum(g[9] < 2 for g in out):2d} of the {len(out):2d} where it is in none),"
+                      f" busiest fan median {sorted(g[9] for g in part)[len(part) // 2]}")
+        print(f"          fan 2 or more at a node: deciding nodes with a fan under 2 {sum(g[10] for g in al)} (must be 0),"
+                  f" wide nodes in no smallest deciding set on {sum(g[11] > 0 for g in al):2d} classes ({sum(g[11] for g in al)} nodes"
+                  f" of {sum(g[12] for g in al)}), wide nodes exactly the deciding nodes on {sum(g[13] for g in al):2d}")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")

@@ -153,6 +153,13 @@ each edge count. The bound is `C(7, 3) = 35`.
   the deciding nodes would be the ones on a cycle, two neighbours or more
   and not a cut vertex. Some deciding set is made of those on 30 of the 32,
   but also on 46 of the 53, so being on a cycle does not mark them.
+- **A list can matter only where one pop gets two pushes past the bar, and
+  that is far from enough.** The busiest node gets two or more past at one
+  pop on every class, including all 25 where its list can be in any order.
+  No deciding node has a fan under 2, as it must not, but 46 of 116 wide
+  nodes on the movers and 141 of 337 on the pinned interacting classes are
+  in no smallest deciding set. I guessed the wide nodes were the deciding
+  ones; they are exactly those on 3 movers and 8 pinned classes.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.

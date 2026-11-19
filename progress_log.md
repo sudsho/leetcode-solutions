@@ -3962,3 +3962,35 @@ bounds unchanged, the pass is one cut-vertex check a node a class, and the
 file is 240 s from 243. open: why a hub's list stops mattering, on 25
 classes, most with the hub a cut vertex, and the 7 where the hub still
 counts and is not enough. still the only thread.
+
+## 2026-11-19
+
+847 again, why a hub's list stops mattering. no new problem tonight. the
+order of a list can only reach the answer through a pop that gets two
+pushes or more past the bar, since a pop that queues one push or none
+queues the same thing in any order. so i counted, at every node, the most
+pushes one pop got past the bar over every run of the 720 orders x 40
+starts. the guess, written before the run: on the 25 classes where the
+busiest node is in no smallest deciding set it never gets two past at
+once, and at every node the ones that do are the deciding nodes.
+
+wrong, both halves. the busiest node gets two or more past at one pop on
+every class, 25 of 25 where it does not count, with a median of 5 on the
+pinned ones and 4 on the movers. the check that has to hold does, no
+deciding node has a fan under 2 on any of the 112 classes. but nodes with
+a fan of 2 or more that sit in no smallest deciding set are 46 of 116 on
+the movers and 141 of 337 on the pinned interacting classes, and on the 27
+constant and start-only classes it is all of them. the fan is exactly the
+deciding nodes on 3 movers and 8 pinned.
+
+so a hub queues two arrivals in an order its list picks and the row does
+not care. two entries queued from one pop sit next to each other at the
+same depth, and swapping them can only matter if what grows from one of
+them reaches some bar before what grows from the other. the hub being a
+cut vertex fits that, since its branches share nothing behind it.
+
+bounds unchanged, the pass is one counter a pop on the runs already made,
+and the file is 243 s from 240. open: whether the two pushes' descendants
+ever meet at a bar with equal counts at equal depth, which would make the
+deciding nodes the ones whose wide pops feed a shared node. still the
+only thread.
