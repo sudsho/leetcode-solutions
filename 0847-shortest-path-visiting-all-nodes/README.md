@@ -160,6 +160,14 @@ each edge count. The bound is `C(7, 3) = 35`.
   nodes on the movers and 141 of 337 on the pinned interacting classes are
   in no smallest deciding set. I guessed the wide nodes were the deciding
   ones; they are exactly those on 3 movers and 8 pinned classes.
+- **The two pushes' lines do meet, everywhere, and that marks nothing
+  either.** A list can only act where a push finds the bar last set at the
+  same depth by a line that split from it at that node's pop. Every
+  deciding node splits such a meeting, as it must. But the nodes that split
+  one are the wide nodes again, 46 extra on the movers and 140 on the pinned
+  classes, ties at equal count are 79% of the meetings on both sides, and
+  the idle hub splits a tie on all 25 classes where its list does not count.
+  I guessed the tie splits were the deciding nodes; they are on 3 and 8.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.

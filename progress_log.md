@@ -3994,3 +3994,34 @@ and the file is 243 s from 240. open: whether the two pushes' descendants
 ever meet at a bar with equal counts at equal depth, which would make the
 deciding nodes the ones whose wide pops feed a shared node. still the
 only thread.
+
+## 2026-11-20
+
+847 again, whether the two pushes' lines ever meet. no new problem
+tonight. arrivals at one node at different depths are popped in depth
+order whatever the lists say, so an order can only act where a push finds
+the bar last set by another arrival at the same depth, and that pair's
+queue order was fixed at the one pop where their lines split. so the count
+bar now keeps a parent for every queued arrival, and at every such meeting
+i walk the two lines back to the split and count it there, as a tie when
+the push has the same count as the bar. the guess, written before the run:
+the nodes where ties split are exactly the deciding nodes.
+
+wrong. the lines meet on every class, ties are 79% of the meetings on the
+movers and on the pinned ones, and 0.58 to 0.62 of them go back to two
+different starts. the check that has to hold does, every deciding node
+splits some meeting on all 112 classes. but the splits are just the wide
+nodes over again, 46 extra on the movers and 140 on the pinned interacting
+classes against 46 and 141 wide nodes that decide nothing, and the tie
+splits alone are exactly the deciding nodes on the same 3 and 8. the idle
+hub splits a tie on all 25 classes where its list can be in any order.
+
+so the hub's two lines do arrive together at equal count and one of them
+is refused, and the row still does not move. a tie at a count bar keeps
+one mask and drops another with the same number of nodes, and if the two
+masks are the same set the winner is the same state either way.
+
+bounds unchanged, the pass is one parent pointer an arrival and a walk to
+the split at each meeting, and the file is 277 s from 243. open: whether
+the ties the hub splits are between equal masks, and the deciding ties
+the only ones between different masks. still the only thread.

@@ -112,6 +112,61 @@ def count_bar(graph, starts=None, fan=None):
     return -1
 
 
+def count_meets(graph, starts=None, fan=None, meet=None):
+    """The count bar with a parent for every queued arrival, recording where two lines of descent meet at a bar.
+
+    Arrivals at one node at different depths are popped in depth order
+    whatever the lists say, so the order can only act where a push at x finds
+    the bar last set by another arrival at the same depth. That pair's queue
+    order was fixed at the pop where their lines split, by that node's list
+    alone. meet[(kind, node)] counts those meetings, kind "tie" where the push
+    has the same count as the bar, "under" and "over" otherwise, node -1 where
+    the two lines go back to different starts and the start order fixed it.
+    """
+    n = len(graph)
+    if n == 1:
+        return 0
+    full = (1 << n) - 1
+    best = [0] * n
+    setter = [-1] * n
+    parent, node_of, depth_of = [], [], []
+    queue = deque()
+    for u in (range(n) if starts is None else starts):
+        best[u] = 1
+        setter[u] = len(parent)
+        parent.append(-1)
+        node_of.append(u)
+        depth_of.append(0)
+        queue.append((u, 1 << u, 0, setter[u]))
+    while queue:
+        u, mask, d, me = queue.popleft()
+        kept = 0
+        for w in graph[u]:
+            nm = mask | 1 << w
+            if nm == full:
+                return d + 1
+            c = popcount(nm)
+            s = setter[w]
+            if meet is not None and s >= 0 and depth_of[s] == d + 1:
+                a, b = me, parent[s]
+                while a != b and a >= 0:
+                    a, b = parent[a], parent[b]
+                kind = "tie" if c == best[w] else "under" if c < best[w] else "over"
+                key = (kind, node_of[a] if a >= 0 else -1)
+                meet[key] = meet.get(key, 0) + 1
+            if c > best[w]:
+                best[w] = c
+                setter[w] = len(parent)
+                parent.append(me)
+                node_of.append(w)
+                depth_of.append(d + 1)
+                queue.append((w, nm, d + 1, setter[w]))
+                kept += 1
+        if fan is not None and kept > fan[u]:
+            fan[u] = kept
+    return -1
+
+
 def count_mark(graph, starts=None):
     """One mark per (node, number of nodes visited): n^2 states instead of n 2^n, and two masks of one size are not the same mask."""
     n = len(graph)
@@ -404,10 +459,11 @@ if __name__ == "__main__":
         # deciding set the highest-degree nodes?
         by_lists = {}
         fan = [0] * 6
+        meet = {}
         for a in perms:
             g2 = tuple(tuple(adj) for adj in reorder(graph, a))
             if g2 not in by_lists:
-                by_lists[g2] = tuple(int(count_bar(g2, b, fan) != want) for b in ob)
+                by_lists[g2] = tuple(int(count_meets(g2, b, fan, meet) != want) for b in ob)
         views, all_rows = list(by_lists), list(by_lists.values())
         k = fewest_nodes(views, all_rows, 6)
         deg = sorted((len(adj) for adj in graph), reverse=True)
@@ -429,9 +485,21 @@ if __name__ == "__main__":
         # fan of 2 or more always in some smallest deciding set?
         used = set().union(*map(set, sets)) if sets else set()
         wide = {u for u in range(6) if fan[u] >= 2}
+        # do the two pushes' lines ever meet at a bar at equal depth, and where
+        # do they split? a node whose list decides the row must be the split
+        # of some meeting, since that is the only place an order acts. is it
+        # the ties, same count at same depth, that pick the deciding nodes?
+        feed = {u for (kind, u) in meet if u >= 0}
+        feed_tie = {u for (kind, u) in meet if kind == "tie" and u >= 0}
+        n_meet = sum(meet.values())
+        n_tie = sum(c for (kind, u), c in meet.items() if kind == "tie")
+        n_root = sum(c for (kind, u), c in meet.items() if u < 0)
         full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets),
                                          inside, hub_out, bool(busiest & cuts), max(fan[u] for u in busiest),
-                                         len(used - wide), len(wide - used), len(wide), wide == used))
+                                         len(used - wide), len(wide - used), len(wide), wide == used,
+                                         len(used - feed), feed == used, feed_tie == used, n_tie > 0,
+                                         n_tie / n_meet if n_meet else 0.0, n_root / n_meet if n_meet else 0.0,
+                                         hub_out and bool(busiest & feed), len(feed - used), len(feed_tie - used)))
     for (state, kind), c in sorted(split.items()):
         auts = sorted(s[0] for s in sym[(state, kind)])
         share = sum(s[1] for s in sym[(state, kind)]) / c
@@ -463,6 +531,12 @@ if __name__ == "__main__":
         print(f"          fan 2 or more at a node: deciding nodes with a fan under 2 {sum(g[10] for g in al)} (must be 0),"
                   f" wide nodes in no smallest deciding set on {sum(g[11] > 0 for g in al):2d} classes ({sum(g[11] for g in al)} nodes"
                   f" of {sum(g[12] for g in al)}), wide nodes exactly the deciding nodes on {sum(g[13] for g in al):2d}")
+        print(f"          meetings at equal depth: deciding nodes that split none {sum(g[14] for g in al)} (must be 0),"
+              f" ties on {sum(g[17] for g in al):2d} classes, {sum(g[18] for g in al) / c:.2f} of meetings ties,"
+              f" {sum(g[19] for g in al) / c:.2f} back to two starts")
+        print(f"          {'':18s} splits exactly the deciding nodes on {sum(g[15] for g in al):2d} ({sum(g[21] for g in al)} extra),"
+              f" tie splits exactly them on {sum(g[16] for g in al):2d} ({sum(g[22] for g in al)} extra),"
+              f" an idle hub splits a meeting on {sum(g[20] for g in al):2d} of {sum(g[7] for g in al):2d}")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")
