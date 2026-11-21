@@ -112,7 +112,7 @@ def count_bar(graph, starts=None, fan=None):
     return -1
 
 
-def count_meets(graph, starts=None, fan=None, meet=None):
+def count_meets(graph, starts=None, fan=None, meet=None, pair=None):
     """The count bar with a parent for every queued arrival, recording where two lines of descent meet at a bar.
 
     Arrivals at one node at different depths are popped in depth order
@@ -122,6 +122,9 @@ def count_meets(graph, starts=None, fan=None, meet=None):
     alone. meet[(kind, node)] counts those meetings, kind "tie" where the push
     has the same count as the bar, "under" and "over" otherwise, node -1 where
     the two lines go back to different starts and the start order fixed it.
+    With `pair`, every tie is also counted under (same mask?, split node): a
+    tie between two arrivals with one mask keeps the same state whichever
+    of them the order lets in.
     """
     n = len(graph)
     if n == 1:
@@ -129,7 +132,7 @@ def count_meets(graph, starts=None, fan=None, meet=None):
     full = (1 << n) - 1
     best = [0] * n
     setter = [-1] * n
-    parent, node_of, depth_of = [], [], []
+    parent, node_of, depth_of, mask_of = [], [], [], []
     queue = deque()
     for u in (range(n) if starts is None else starts):
         best[u] = 1
@@ -137,6 +140,7 @@ def count_meets(graph, starts=None, fan=None, meet=None):
         parent.append(-1)
         node_of.append(u)
         depth_of.append(0)
+        mask_of.append(1 << u)
         queue.append((u, 1 << u, 0, setter[u]))
     while queue:
         u, mask, d, me = queue.popleft()
@@ -154,12 +158,16 @@ def count_meets(graph, starts=None, fan=None, meet=None):
                 kind = "tie" if c == best[w] else "under" if c < best[w] else "over"
                 key = (kind, node_of[a] if a >= 0 else -1)
                 meet[key] = meet.get(key, 0) + 1
+                if pair is not None and kind == "tie":
+                    pk = (nm == mask_of[s], key[1])
+                    pair[pk] = pair.get(pk, 0) + 1
             if c > best[w]:
                 best[w] = c
                 setter[w] = len(parent)
                 parent.append(me)
                 node_of.append(w)
                 depth_of.append(d + 1)
+                mask_of.append(nm)
                 queue.append((w, nm, d + 1, setter[w]))
                 kept += 1
         if fan is not None and kept > fan[u]:
@@ -418,7 +426,7 @@ if __name__ == "__main__":
     print("\n== what pins a class: one member under 40 adjacency orders x 40 start orders, n = 6 ==")
     oa = [tuple(range(6))] + random.Random(1).sample(perms, 39)
     ob = [tuple(range(6))] + random.Random(2).sample(perms, 39)
-    split, sym, full = {}, {}, {}
+    split, sym, full, pairs_of = {}, {}, {}, {}
     for canon, (graph, want) in reps.items():
         f = [[int(count_bar(reorder(graph, a), b) != want) for b in ob] for a in oa]
         a_only = all(r[j] == r[0] for r in f for j in range(len(ob)))
@@ -459,11 +467,11 @@ if __name__ == "__main__":
         # deciding set the highest-degree nodes?
         by_lists = {}
         fan = [0] * 6
-        meet = {}
+        meet, pair = {}, {}
         for a in perms:
             g2 = tuple(tuple(adj) for adj in reorder(graph, a))
             if g2 not in by_lists:
-                by_lists[g2] = tuple(int(count_meets(g2, b, fan, meet) != want) for b in ob)
+                by_lists[g2] = tuple(int(count_meets(g2, b, fan, meet, pair) != want) for b in ob)
         views, all_rows = list(by_lists), list(by_lists.values())
         k = fewest_nodes(views, all_rows, 6)
         deg = sorted((len(adj) for adj in graph), reverse=True)
@@ -494,6 +502,16 @@ if __name__ == "__main__":
         n_meet = sum(meet.values())
         n_tie = sum(c for (kind, u), c in meet.items() if kind == "tie")
         n_root = sum(c for (kind, u), c in meet.items() if u < 0)
+        # are the hub's ties between equal masks? a tie keeps one of two
+        # arrivals with the same count; if both carry the same mask the state
+        # is the same whichever is kept. split the tie splits by that.
+        split_diff = {u for (eq, u) in pair if not eq and u >= 0}
+        n_same = sum(c for (eq, u), c in pair.items() if eq)
+        hub_ties = [(eq, c) for (eq, u), c in pair.items() if u in busiest]
+        hub_same = sum(c for eq, c in hub_ties if eq) / max(1, sum(c for _, c in hub_ties))
+        pairs_of.setdefault(key, []).append((split_diff == used, len(split_diff - used), len(used - split_diff),
+                                             n_same / n_tie if n_tie else 0.0, hub_out, hub_same,
+                                             hub_out and not any(not eq for eq, _ in hub_ties)))
         full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets),
                                          inside, hub_out, bool(busiest & cuts), max(fan[u] for u in busiest),
                                          len(used - wide), len(wide - used), len(wide), wide == used,
@@ -537,6 +555,13 @@ if __name__ == "__main__":
         print(f"          {'':18s} splits exactly the deciding nodes on {sum(g[15] for g in al):2d} ({sum(g[21] for g in al)} extra),"
               f" tie splits exactly them on {sum(g[16] for g in al):2d} ({sum(g[22] for g in al)} extra),"
               f" an idle hub splits a meeting on {sum(g[20] for g in al):2d} of {sum(g[7] for g in al):2d}")
+        pp = pairs_of[(state, kind)]
+        idle = [g for g in pp if g[4]]
+        print(f"          ties between equal masks {sum(g[3] for g in pp) / c:.2f} of ties, splits of unequal ties exactly"
+              f" the deciding nodes on {sum(g[0] for g in pp):2d} ({sum(g[1] for g in pp)} extra,"
+              f" {sum(g[2] for g in pp)} deciding nodes that split none), an idle hub's ties all equal masks on"
+              f" {sum(g[6] for g in idle):2d} of {len(idle):2d}"
+              + (f", equal on {sum(g[5] for g in idle) / len(idle):.2f} of its ties" if idle else ""))
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")

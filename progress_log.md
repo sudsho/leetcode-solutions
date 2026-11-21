@@ -4025,3 +4025,33 @@ bounds unchanged, the pass is one parent pointer an arrival and a walk to
 the split at each meeting, and the file is 277 s from 243. open: whether
 the ties the hub splits are between equal masks, and the deciding ties
 the only ones between different masks. still the only thread.
+
+## 2026-11-21
+
+847 again, whether the hub's ties are between equal masks. no new problem
+tonight. a tie at a count bar lets one of two arrivals in and refuses the
+other, both with the same number of nodes, and if the two carry the same
+mask the state is the same whichever is kept, so the order could not show.
+so the count bar now keeps the mask of the arrival that set each bar, and
+every tie is sorted by whether the refused push has that mask. the guess,
+written before the run: the idle hub's ties are all between equal masks,
+and the ties between different masks split exactly at the deciding nodes.
+
+wrong, both halves. equal masks are 0.11 of the ties on the movers and
+0.13 on the pinned interacting classes, 0.08 to 0.14 on the rest. the idle
+hub's ties are all equal masks on none of the 25 classes where its list
+does not count, and only 0.19 and 0.28 of its ties are. the check that has
+to hold does, every deciding node splits some unequal tie. but the splits
+of unequal ties are exactly the deciding nodes on the same 3 and 8 as
+before, with 44 and 137 extra.
+
+so the hub really does keep one mask and drop a different one, mostly,
+and the row still does not move. the bar only keeps a count, and a refused
+mask matters only if it would have reached the full mask sooner than the
+one kept. with two masks of one size at one node and one depth, that comes
+down to which of the two leaves the closer remainder.
+
+bounds unchanged, the pass is one more mask an arrival, and the file is
+288 s from 277. open: whether the two masks of the hub's ties have the same
+distance to the full mask from that node, which would make the deciding
+ties the ones where the distances differ. still the only thread.

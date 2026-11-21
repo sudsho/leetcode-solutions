@@ -168,6 +168,12 @@ each edge count. The bound is `C(7, 3) = 35`.
   classes, ties at equal count are 79% of the meetings on both sides, and
   the idle hub splits a tie on all 25 classes where its list does not count.
   I guessed the tie splits were the deciding nodes; they are on 3 and 8.
+- **The hub's ties are mostly between different masks.** A tie keeps one of
+  two arrivals with the same count, and two equal masks would be one state
+  either way. They are not: 0.11 of ties are equal masks on the movers and
+  0.13 on the pinned classes, and the idle hub's ties are all equal masks on
+  none of the 25 classes where its list does not count. I guessed they were;
+  the unequal-tie splits are the deciding nodes on the same 3 and 8.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.
