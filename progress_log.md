@@ -4055,3 +4055,39 @@ bounds unchanged, the pass is one more mask an arrival, and the file is
 288 s from 277. open: whether the two masks of the hub's ties have the same
 distance to the full mask from that node, which would make the deciding
 ties the ones where the distances differ. still the only thread.
+
+## 2026-11-23
+
+847 again, whether the two masks of a hub tie are the same distance from
+full. no new problem tonight. a tie keeps one mask and refuses another of
+the same size at one node and one depth, and the refused one can only
+cost the answer if it had less left to visit from there. so the file now
+has `to_full`, the fewest moves from (node, mask) to the full mask, done
+from the full mask down and relaxed inside each mask, checked against the
+plain search on 1200 random graphs (0 off), and every unequal tie is sorted
+by which of its two masks is nearer. the guess, written before the run:
+the idle hub's unequal ties are all at equal distance, and the splits of
+ties where the refused mask is nearer are exactly the deciding nodes.
+
+wrong, both halves, and the second one worse than wrong. the idle hub's
+unequal ties are all at equal distance on 3 of the 25 classes where its
+list does not count, and 0.81 and 0.68 of them are. the refused-nearer
+splits are exactly the deciding nodes on 5 of 20 movers and 15 of 65
+pinned, better than the 3 and 8 of the mask sort but with 30 and 101
+extra. and on the movers 8 deciding nodes split no refused-nearer tie at
+all, so a node's list can move the answer where every tie it splits is
+equal or won by the nearer mask.
+
+that is the real finding. the distance i sorted by is the true one, what
+the exact search would still need, and the count bar does not run the
+exact search after the tie. it keeps one number per node, so what a
+refused mask costs is what the count bar itself would have done from it,
+and an equally far mask can still lose the count bar a later bar that the
+other would have won. the yardstick has to be the count bar's own
+remainder, not the truth's.
+
+bounds unchanged, `to_full` is built once a class since reordering keeps
+the labels, and the file is 318 s from 288. smoke 61/61. open: the same
+sort with the count bar's own answer from each of the two states, which
+would say whether a tie decides only where that answer differs. still the
+only thread.

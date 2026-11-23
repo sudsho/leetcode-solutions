@@ -174,6 +174,12 @@ each edge count. The bound is `C(7, 3) = 35`.
   0.13 on the pinned classes, and the idle hub's ties are all equal masks on
   none of the 25 classes where its list does not count. I guessed they were;
   the unequal-tie splits are the deciding nodes on the same 3 and 8.
+- **Distance to full does not sort the ties either.** A refused mask could
+  only cost the answer if it was nearer full than the kept one. The idle hub's
+  unequal ties are all at equal distance on 3 of 25 classes (0.81 and 0.68 of
+  them are), refused-nearer splits are the deciding nodes on 5 and 15, and on
+  the movers 8 deciding nodes split no refused-nearer tie at all. The true
+  distance is the wrong yardstick; the count bar's own remainder is next.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.

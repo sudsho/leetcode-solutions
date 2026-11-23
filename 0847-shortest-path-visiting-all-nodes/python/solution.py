@@ -112,7 +112,36 @@ def count_bar(graph, starts=None, fan=None):
     return -1
 
 
-def count_meets(graph, starts=None, fan=None, meet=None, pair=None):
+def to_full(graph):
+    """far[u][mask]: the fewest moves from standing at u having visited mask to having visited every node.
+
+    Masks are done from the full one down. A move that adds a node lands on a
+    larger mask, already done; a move inside the mask stays on it, so each
+    mask is relaxed against itself until nothing changes. Masks without u are
+    left at n * n, which no real state reaches.
+    """
+    n = len(graph)
+    full = (1 << n) - 1
+    big = n * n
+    far = [[big] * (1 << n) for _ in range(n)]
+    for u in range(n):
+        far[u][full] = 0
+    for m in sorted(range(1, full), key=popcount, reverse=True):
+        inside = [u for u in range(n) if m >> u & 1]
+        for u in inside:
+            far[u][m] = min([1 + far[w][m | 1 << w] for w in graph[u] if not m >> w & 1] + [big])
+        changed = True
+        while changed:
+            changed = False
+            for u in inside:
+                for w in graph[u]:
+                    if 1 + far[w][m] < far[u][m]:
+                        far[u][m] = 1 + far[w][m]
+                        changed = True
+    return far
+
+
+def count_meets(graph, starts=None, fan=None, meet=None, pair=None, far=None, gap=None):
     """The count bar with a parent for every queued arrival, recording where two lines of descent meet at a bar.
 
     Arrivals at one node at different depths are popped in depth order
@@ -124,7 +153,11 @@ def count_meets(graph, starts=None, fan=None, meet=None, pair=None):
     the two lines go back to different starts and the start order fixed it.
     With `pair`, every tie is also counted under (same mask?, split node): a
     tie between two arrivals with one mask keeps the same state whichever
-    of them the order lets in.
+    of them the order lets in. With `far` (from to_full) and `gap`, every
+    tie between different masks is counted under (which is nearer full,
+    split node): 0 when the kept and the refused mask are equally far from
+    full at that node, 1 when the kept one is nearer, -1 when the refused one
+    is, the only case where letting the other in could have finished sooner.
     """
     n = len(graph)
     if n == 1:
@@ -161,6 +194,10 @@ def count_meets(graph, starts=None, fan=None, meet=None, pair=None):
                 if pair is not None and kind == "tie":
                     pk = (nm == mask_of[s], key[1])
                     pair[pk] = pair.get(pk, 0) + 1
+                    if gap is not None and not pk[0]:
+                        kf, rf = far[w][mask_of[s]], far[w][nm]
+                        gk = (0 if kf == rf else 1 if kf < rf else -1, key[1])
+                        gap[gk] = gap.get(gk, 0) + 1
             if c > best[w]:
                 best[w] = c
                 setter[w] = len(parent)
@@ -426,7 +463,7 @@ if __name__ == "__main__":
     print("\n== what pins a class: one member under 40 adjacency orders x 40 start orders, n = 6 ==")
     oa = [tuple(range(6))] + random.Random(1).sample(perms, 39)
     ob = [tuple(range(6))] + random.Random(2).sample(perms, 39)
-    split, sym, full, pairs_of = {}, {}, {}, {}
+    split, sym, full, pairs_of, gaps_of = {}, {}, {}, {}, {}
     for canon, (graph, want) in reps.items():
         f = [[int(count_bar(reorder(graph, a), b) != want) for b in ob] for a in oa]
         a_only = all(r[j] == r[0] for r in f for j in range(len(ob)))
@@ -467,11 +504,12 @@ if __name__ == "__main__":
         # deciding set the highest-degree nodes?
         by_lists = {}
         fan = [0] * 6
-        meet, pair = {}, {}
+        meet, pair, gap = {}, {}, {}
+        far = to_full(graph)      # reorder keeps the labels, so one table serves every order
         for a in perms:
             g2 = tuple(tuple(adj) for adj in reorder(graph, a))
             if g2 not in by_lists:
-                by_lists[g2] = tuple(int(count_meets(g2, b, fan, meet, pair) != want) for b in ob)
+                by_lists[g2] = tuple(int(count_meets(g2, b, fan, meet, pair, far, gap) != want) for b in ob)
         views, all_rows = list(by_lists), list(by_lists.values())
         k = fewest_nodes(views, all_rows, 6)
         deg = sorted((len(adj) for adj in graph), reverse=True)
@@ -512,6 +550,21 @@ if __name__ == "__main__":
         pairs_of.setdefault(key, []).append((split_diff == used, len(split_diff - used), len(used - split_diff),
                                              n_same / n_tie if n_tie else 0.0, hub_out, hub_same,
                                              hub_out and not any(not eq for eq, _ in hub_ties)))
+        # are the two masks of an unequal tie the same distance from full? a
+        # refused mask can only cost the answer if it was nearer full than the
+        # kept one, so the splits of those ties should be the deciding nodes,
+        # and the idle hub's unequal ties should all be at equal distance.
+        n_gap = sum(gap.values())
+        near_split = {u for (g, u) in gap if g < 0 and u >= 0}
+        hub_gap = [(g, c) for (g, u), c in gap.items() if u in busiest]
+        hub_eq = sum(c for g, c in hub_gap if g == 0) / max(1, sum(c for _, c in hub_gap))
+        gaps_of.setdefault(key, []).append((
+            sum(c for (g, u), c in gap.items() if g == 0) / n_gap if n_gap else 0.0,
+            sum(c for (g, u), c in gap.items() if g > 0) / n_gap if n_gap else 0.0,
+            sum(c for (g, u), c in gap.items() if g < 0) / n_gap if n_gap else 0.0,
+            near_split == used, len(near_split - used), len(used - near_split),
+            hub_out, hub_out and all(g == 0 for g, _ in hub_gap), hub_eq,
+            hub_out and not any(g < 0 for g, _ in hub_gap)))
         full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets),
                                          inside, hub_out, bool(busiest & cuts), max(fan[u] for u in busiest),
                                          len(used - wide), len(wide - used), len(wide), wide == used,
@@ -562,6 +615,14 @@ if __name__ == "__main__":
               f" {sum(g[2] for g in pp)} deciding nodes that split none), an idle hub's ties all equal masks on"
               f" {sum(g[6] for g in idle):2d} of {len(idle):2d}"
               + (f", equal on {sum(g[5] for g in idle) / len(idle):.2f} of its ties" if idle else ""))
+        gg = gaps_of[(state, kind)]
+        idle = [g for g in gg if g[6]]
+        print(f"          unequal ties, distance to full: equal {sum(g[0] for g in gg) / c:.2f}, kept nearer"
+              f" {sum(g[1] for g in gg) / c:.2f}, refused nearer {sum(g[2] for g in gg) / c:.2f}; splits of refused-nearer"
+              f" ties exactly the deciding nodes on {sum(g[3] for g in gg):2d} ({sum(g[4] for g in gg)} extra,"
+              f" {sum(g[5] for g in gg)} deciding nodes that split none), an idle hub's all equal distance on"
+              f" {sum(g[7] for g in idle):2d} of {len(idle):2d}, none refused-nearer on {sum(g[9] for g in idle):2d}"
+              + (f", equal on {sum(g[8] for g in idle) / len(idle):.2f} of its unequal ties" if idle else ""))
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")
