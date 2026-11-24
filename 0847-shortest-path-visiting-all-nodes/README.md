@@ -180,6 +180,12 @@ each edge count. The bound is `C(7, 3) = 35`.
   them are), refused-nearer splits are the deciding nodes on 5 and 15, and on
   the movers 8 deciding nodes split no refused-nearer tie at all. The true
   distance is the wrong yardstick; the count bar's own remainder is next.
+- **The count bar's own remainder does not sort them either.** Run fresh from
+  one state, the bar's remainder equals the true distance on 0.94 and 0.88 of
+  the states a tie asks about, so refused-nearer splits are the deciding nodes
+  on 4 and 14, the idle hub refuses no nearer mask on 3 of 25, and the same 8
+  mover deciding nodes split none. A fresh bar sees an empty graph; flipping
+  the tie in the real run is the yardstick left.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.

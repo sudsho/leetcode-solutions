@@ -4091,3 +4091,37 @@ the labels, and the file is 318 s from 288. smoke 61/61. open: the same
 sort with the count bar's own answer from each of the two states, which
 would say whether a tie decides only where that answer differs. still the
 only thread.
+
+## 2026-11-24
+
+847 again, the same tie sort with the count bar's own remainder. no new
+problem tonight. yesterday's yardstick was the true distance to full, and
+the count bar does not run the exact search after a tie, so the file now
+has `bar_from`, the count bar started fresh from one (node, mask) with only
+that node's bar set, and every unequal tie is sorted again by which of its
+two masks the bar itself gets home from sooner. it reads the lists, so it
+is memoised per order and only at the states a tie asks about. the guess,
+written before the run: the idle hub never refuses the bar-nearer mask on
+all 25 classes where its list does not count, and the refused-nearer
+splits are exactly the deciding nodes.
+
+wrong, and the yardstick hardly moved. the bar's own remainder equals the
+true distance on 0.94 of the states asked on the movers and 0.88 on the
+pinned interacting classes, never below it (the check that has to hold).
+so the sort comes out nearly the same: refused nearer on 0.21 and 0.27 of
+unequal ties, splits exactly the deciding nodes on 4 of 20 and 14 of 65,
+one fewer each than the true distance, the idle hub refuses no nearer mask
+on 3 of 25. and the same 8 deciding nodes on the movers split no
+refused-nearer tie under either yardstick.
+
+so what a tie costs is not in the remainder from the refused state at all,
+true or the bar's. a fresh bar from one state sees an empty graph, and the
+real search does not. the refused arrival, had it got in, would have set
+bars of its own and refused other pushes later. the yardstick that is left
+is the counterfactual itself: rerun the count bar with that one tie
+flipped, the refused arrival kept and the kept one refused, and see
+whether the answer moves.
+
+bounds unchanged, the file is 384 s from 318, smoke 61/61. open: flip each
+tie one at a time and check whether the flips that move the answer split
+exactly at the deciding nodes. still the only thread.

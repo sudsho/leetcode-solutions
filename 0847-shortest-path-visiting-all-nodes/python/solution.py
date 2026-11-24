@@ -141,7 +141,35 @@ def to_full(graph):
     return far
 
 
-def count_meets(graph, starts=None, fan=None, meet=None, pair=None, far=None, gap=None):
+def bar_from(graph, u, mask):
+    """The count bar's own answer from one state: moves from (u, mask) to the full mask, n * n where it never gets there.
+
+    Fresh bars, u's set to the size of mask, and the same pops and pushes as
+    count_bar after that. It walks real edges, so it is never below the true
+    distance in to_full, and it reads the lists in the order given, so unlike
+    to_full it has to be built again for every order.
+    """
+    n = len(graph)
+    full = (1 << n) - 1
+    if mask == full:
+        return 0
+    best = [0] * n
+    best[u] = popcount(mask)
+    queue = deque([(u, mask, 0)])
+    while queue:
+        x, m, d = queue.popleft()
+        for w in graph[x]:
+            nm = m | 1 << w
+            if nm == full:
+                return d + 1
+            c = popcount(nm)
+            if c > best[w]:
+                best[w] = c
+                queue.append((w, nm, d + 1))
+    return n * n
+
+
+def count_meets(graph, starts=None, fan=None, meet=None, pair=None, far=None, gap=None, own=None, mine=None):
     """The count bar with a parent for every queued arrival, recording where two lines of descent meet at a bar.
 
     Arrivals at one node at different depths are popped in depth order
@@ -158,6 +186,8 @@ def count_meets(graph, starts=None, fan=None, meet=None, pair=None, far=None, ga
     split node): 0 when the kept and the refused mask are equally far from
     full at that node, 1 when the kept one is nearer, -1 when the refused one
     is, the only case where letting the other in could have finished sooner.
+    With `own` (a lookup of bar_from on this graph) and `mine`, the same sort
+    by the count bar's own remainder from each mask instead of the truth's.
     """
     n = len(graph)
     if n == 1:
@@ -198,6 +228,10 @@ def count_meets(graph, starts=None, fan=None, meet=None, pair=None, far=None, ga
                         kf, rf = far[w][mask_of[s]], far[w][nm]
                         gk = (0 if kf == rf else 1 if kf < rf else -1, key[1])
                         gap[gk] = gap.get(gk, 0) + 1
+                    if mine is not None and not pk[0]:
+                        ko, ro = own(w, mask_of[s]), own(w, nm)
+                        ok_ = (0 if ko == ro else 1 if ko < ro else -1, key[1])
+                        mine[ok_] = mine.get(ok_, 0) + 1
             if c > best[w]:
                 best[w] = c
                 setter[w] = len(parent)
@@ -463,7 +497,7 @@ if __name__ == "__main__":
     print("\n== what pins a class: one member under 40 adjacency orders x 40 start orders, n = 6 ==")
     oa = [tuple(range(6))] + random.Random(1).sample(perms, 39)
     ob = [tuple(range(6))] + random.Random(2).sample(perms, 39)
-    split, sym, full, pairs_of, gaps_of = {}, {}, {}, {}, {}
+    split, sym, full, pairs_of, gaps_of, mines_of = {}, {}, {}, {}, {}, {}
     for canon, (graph, want) in reps.items():
         f = [[int(count_bar(reorder(graph, a), b) != want) for b in ob] for a in oa]
         a_only = all(r[j] == r[0] for r in f for j in range(len(ob)))
@@ -504,12 +538,25 @@ if __name__ == "__main__":
         # deciding set the highest-degree nodes?
         by_lists = {}
         fan = [0] * 6
-        meet, pair, gap = {}, {}, {}
+        meet, pair, gap, mine = {}, {}, {}, {}
         far = to_full(graph)      # reorder keeps the labels, so one table serves every order
+        own_low, own_true, own_n = 0, 0, 0
         for a in perms:
             g2 = tuple(tuple(adj) for adj in reorder(graph, a))
             if g2 not in by_lists:
-                by_lists[g2] = tuple(int(count_meets(g2, b, fan, meet, pair, far, gap) != want) for b in ob)
+                # the count bar's own remainder depends on the lists, so one memo per order,
+                # filled only at the states some unequal tie asks about
+                memo = {}
+
+                def own(w, m, g2=g2, memo=memo):
+                    if (w, m) not in memo:
+                        memo[w, m] = bar_from(g2, w, m)
+                    return memo[w, m]
+                by_lists[g2] = tuple(int(count_meets(g2, b, fan, meet, pair, far, gap, own, mine) != want) for b in ob)
+                for (w, m), v in memo.items():
+                    own_low += v < far[w][m]
+                    own_true += v == far[w][m]
+                    own_n += 1
         views, all_rows = list(by_lists), list(by_lists.values())
         k = fewest_nodes(views, all_rows, 6)
         deg = sorted((len(adj) for adj in graph), reverse=True)
@@ -565,6 +612,20 @@ if __name__ == "__main__":
             near_split == used, len(near_split - used), len(used - near_split),
             hub_out, hub_out and all(g == 0 for g, _ in hub_gap), hub_eq,
             hub_out and not any(g < 0 for g, _ in hub_gap)))
+        # the same sort with the count bar's own remainder from each mask. the
+        # bar keeps one number a node, so a refused mask costs what the bar
+        # itself would have done from it; a tie should decide only where that
+        # differs and the refused side would have got there sooner.
+        n_own = sum(mine.values())
+        own_split = {u for (g, u) in mine if g < 0 and u >= 0}
+        hub_own = [(g, c) for (g, u), c in mine.items() if u in busiest]
+        mines_of.setdefault(key, []).append((
+            sum(c for (g, u), c in mine.items() if g == 0) / n_own if n_own else 0.0,
+            sum(c for (g, u), c in mine.items() if g > 0) / n_own if n_own else 0.0,
+            sum(c for (g, u), c in mine.items() if g < 0) / n_own if n_own else 0.0,
+            own_split == used, len(own_split - used), len(used - own_split),
+            hub_out, hub_out and not any(g < 0 for g, _ in hub_own),
+            own_low, own_true / own_n if own_n else 0.0))
         full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets),
                                          inside, hub_out, bool(busiest & cuts), max(fan[u] for u in busiest),
                                          len(used - wide), len(wide - used), len(wide), wide == used,
@@ -623,6 +684,14 @@ if __name__ == "__main__":
               f" {sum(g[5] for g in gg)} deciding nodes that split none), an idle hub's all equal distance on"
               f" {sum(g[7] for g in idle):2d} of {len(idle):2d}, none refused-nearer on {sum(g[9] for g in idle):2d}"
               + (f", equal on {sum(g[8] for g in idle) / len(idle):.2f} of its unequal ties" if idle else ""))
+        mm = mines_of[(state, kind)]
+        idle = [g for g in mm if g[6]]
+        print(f"          unequal ties, the bar's own remainder: equal {sum(g[0] for g in mm) / c:.2f}, kept nearer"
+              f" {sum(g[1] for g in mm) / c:.2f}, refused nearer {sum(g[2] for g in mm) / c:.2f}; splits of refused-nearer"
+              f" ties exactly the deciding nodes on {sum(g[3] for g in mm):2d} ({sum(g[4] for g in mm)} extra,"
+              f" {sum(g[5] for g in mm)} deciding nodes that split none), an idle hub's none refused-nearer on"
+              f" {sum(g[7] for g in idle):2d} of {len(idle):2d}; own below the truth {sum(g[8] for g in mm)} (must be 0),"
+              f" own equal to it on {sum(g[9] for g in mm) / c:.2f} of states asked")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")
