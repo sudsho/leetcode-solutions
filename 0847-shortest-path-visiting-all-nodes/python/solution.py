@@ -246,6 +246,66 @@ def count_meets(graph, starts=None, fan=None, meet=None, pair=None, far=None, ga
     return -1
 
 
+def count_flip(graph, starts=None, flip=None):
+    """The count bar with one tie between different masks turned the other way: the counterfactual itself.
+
+    Ties are numbered in the order the run meets them, counting only a push
+    that has the bar's count at equal depth and a different mask from the
+    arrival that set it. With flip = k the k-th such tie goes the other way:
+    the arrival that set the bar is dropped before it is popped (it sits one
+    depth on, so it cannot have been), and the refused push takes its place.
+    Every other decision is the count bar's. Returns (answer, split nodes),
+    the split node of every unequal tie the run met, -1 for two starts, so
+    flip = None gives the list to flip one at a time.
+    """
+    n = len(graph)
+    if n == 1:
+        return 0, []
+    full = (1 << n) - 1
+    best = [0] * n
+    setter = [-1] * n
+    parent, node_of, depth_of, mask_of = [], [], [], []
+    dead = set()
+    splits = []
+    queue = deque()
+    for u in (range(n) if starts is None else starts):
+        best[u] = 1
+        setter[u] = len(parent)
+        parent.append(-1)
+        node_of.append(u)
+        depth_of.append(0)
+        mask_of.append(1 << u)
+        queue.append((u, 1 << u, 0, setter[u]))
+    while queue:
+        u, mask, d, me = queue.popleft()
+        if me in dead:
+            continue
+        for w in graph[u]:
+            nm = mask | 1 << w
+            if nm == full:
+                return d + 1, splits
+            c = popcount(nm)
+            s = setter[w]
+            turn = False
+            if s >= 0 and depth_of[s] == d + 1 and c == best[w] and nm != mask_of[s]:
+                a, b = me, parent[s]
+                while a != b and a >= 0:
+                    a, b = parent[a], parent[b]
+                turn = len(splits) == flip
+                splits.append(node_of[a] if a >= 0 else -1)
+                if turn:
+                    dead.add(s)
+            if c > best[w] or turn:
+                best[w] = c
+                setter[w] = len(parent)
+                parent.append(me)
+                node_of.append(w)
+                depth_of.append(d + 1)
+                mask_of.append(nm)
+                queue.append((w, nm, d + 1, setter[w]))
+    return -1, splits
+
+
 def count_mark(graph, starts=None):
     """One mark per (node, number of nodes visited): n^2 states instead of n 2^n, and two masks of one size are not the same mask."""
     n = len(graph)
@@ -497,7 +557,7 @@ if __name__ == "__main__":
     print("\n== what pins a class: one member under 40 adjacency orders x 40 start orders, n = 6 ==")
     oa = [tuple(range(6))] + random.Random(1).sample(perms, 39)
     ob = [tuple(range(6))] + random.Random(2).sample(perms, 39)
-    split, sym, full, pairs_of, gaps_of, mines_of = {}, {}, {}, {}, {}, {}
+    split, sym, full, pairs_of, gaps_of, mines_of, flips_of = {}, {}, {}, {}, {}, {}, {}
     for canon, (graph, want) in reps.items():
         f = [[int(count_bar(reorder(graph, a), b) != want) for b in ob] for a in oa]
         a_only = all(r[j] == r[0] for r in f for j in range(len(ob)))
@@ -557,6 +617,21 @@ if __name__ == "__main__":
                     own_low += v < far[w][m]
                     own_true += v == far[w][m]
                     own_n += 1
+        # the counterfactual: every unequal tie of every run turned the other
+        # way, one at a time, and the split node of each flip that changes the
+        # answer. a reorder can turn many ties at once, so this is not forced,
+        # but if a tie is where an order acts, the deciding nodes are these splits.
+        movers_at, flips, moved = set(), 0, 0
+        for g2 in by_lists:
+            for b in ob:
+                base, splits = count_flip(g2, b)
+                assert base == count_bar(g2, b), g2
+                for k_, at in enumerate(splits):
+                    flips += 1
+                    if count_flip(g2, b, k_)[0] != base:
+                        moved += 1
+                        if at >= 0:
+                            movers_at.add(at)
         views, all_rows = list(by_lists), list(by_lists.values())
         k = fewest_nodes(views, all_rows, 6)
         deg = sorted((len(adj) for adj in graph), reverse=True)
@@ -626,6 +701,9 @@ if __name__ == "__main__":
             own_split == used, len(own_split - used), len(used - own_split),
             hub_out, hub_out and not any(g < 0 for g, _ in hub_own),
             own_low, own_true / own_n if own_n else 0.0))
+        flips_of.setdefault(key, []).append((movers_at == used, len(movers_at - used), len(used - movers_at),
+                                             moved / flips if flips else 0.0, hub_out,
+                                             hub_out and not (busiest & movers_at), flips))
         full.setdefault(key, []).append((len(views), len(set(all_rows)), k, sum(d >= 2 for d in deg), top, len(sets),
                                          inside, hub_out, bool(busiest & cuts), max(fan[u] for u in busiest),
                                          len(used - wide), len(wide - used), len(wide), wide == used,
@@ -692,6 +770,12 @@ if __name__ == "__main__":
               f" {sum(g[5] for g in mm)} deciding nodes that split none), an idle hub's none refused-nearer on"
               f" {sum(g[7] for g in idle):2d} of {len(idle):2d}; own below the truth {sum(g[8] for g in mm)} (must be 0),"
               f" own equal to it on {sum(g[9] for g in mm) / c:.2f} of states asked")
+        ff = flips_of[(state, kind)]
+        idle = [g for g in ff if g[4]]
+        print(f"          one tie flipped at a time: {sum(g[6] for g in ff)} flips, {sum(g[3] for g in ff) / c:.2f} move the"
+              f" answer; splits of the flips that move it exactly the deciding nodes on {sum(g[0] for g in ff):2d}"
+              f" ({sum(g[1] for g in ff)} extra, {sum(g[2] for g in ff)} deciding nodes that split none),"
+              f" an idle hub's flips never move it on {sum(g[5] for g in idle):2d} of {len(idle):2d}")
 
     print("\n== random connected graphs on 8 nodes, 2000 at each edge count ==")
     print("  edges   count bar   count mark   antichain wrong   pops saved   widest   bound 35")

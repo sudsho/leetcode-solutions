@@ -4125,3 +4125,38 @@ whether the answer moves.
 bounds unchanged, the file is 384 s from 318, smoke 61/61. open: flip each
 tie one at a time and check whether the flips that move the answer split
 exactly at the deciding nodes. still the only thread.
+
+## 2026-11-26
+
+847 again, the counterfactual itself. no new problem tonight. two nights of
+sorting ties by a remainder, the truth's and then the bar's, both came out
+near 4 of 20, so the file now has `count_flip`, the count bar that numbers
+every tie between different masks as it meets them and, given k, turns the
+k-th one the other way: the arrival that set the bar is dropped before it
+is popped (it sits one depth on, so it cannot have been yet) and the
+refused push is queued in its place. every unequal tie of every run, over
+the distinct list orders and the 40 start orders, is flipped one at a time,
+and the split node of each flip that changes the answer is kept. the
+guess, in the comment before the run: if a tie is where an order acts, the
+deciding nodes are exactly those splits.
+
+half. it is the best match yet and still not it. 0.11 of flips move the
+answer on the movers, 0.19 on the pinned interacting classes, and the
+splits of the moving flips are exactly the deciding nodes on 8 of 20 and 26
+of 65, twice what either remainder got. but 27 and 86 extra nodes split a
+moving flip without being in any smallest deciding set, 4 and 3 deciding
+nodes split none, and the idle hub's flips never move the answer on 11 of
+25. the plain count bar still agrees with `count_flip` unflipped on every
+run (the assert held).
+
+the line that says why: 0.02 of flips move the answer on the 15 classes
+whose verdict no list order and no start order changes. so one tie flipped
+alone is a run that no reorder ever makes. putting a node's list in a new
+order turns every tie that list decides at once, and those turns cancel
+where one alone would not. the counterfactual has to be the set of ties a
+list order controls, flipped together, not one at a time.
+
+bounds unchanged. the flip pass is about 50M reruns of a six-node bar, so
+the file is 3012 s from 384, almost all of it here; smoke 61/61. open:
+group each run's ties by the node whose list order they hang on and flip
+a group at a time. still the only thread.

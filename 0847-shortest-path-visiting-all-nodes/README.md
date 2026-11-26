@@ -186,6 +186,16 @@ each edge count. The bound is `C(7, 3) = 35`.
   on 4 and 14, the idle hub refuses no nearer mask on 3 of 25, and the same 8
   mover deciding nodes split none. A fresh bar sees an empty graph; flipping
   the tie in the real run is the yardstick left.
+- **Flipping one tie at a time gets closer and is still not it.** Rerun with
+  one unequal tie turned the other way, the kept arrival dropped and the
+  refused one queued, 0.11 of flips move the answer on the movers and 0.19 on
+  the pinned interacting classes. The splits of the flips that move it are
+  exactly the deciding nodes on 8 of 20 and 26 of 65, twice either sort, with
+  27 and 86 extra nodes, and 4 and 3 deciding nodes split no moving flip. The
+  idle hub's flips never move it on 11 of 25. And 0.02 of flips move the
+  answer on the 15 classes whose verdict no list order and no start order
+  changes, so a single flip is a run no reorder makes: a new list order turns
+  many ties together.
 - **The antichain reaches its bound** at every `n` in the exhaustive table,
   on trees and on dense graphs at 8 nodes, and 462 of 462 at 12 nodes from
   45 edges up.
