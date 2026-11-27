@@ -33,6 +33,12 @@ class Solution:
             balance()
 
         def balance():
+            """Keep len(lo) equal to len(hi) or one more, so sl_lo[-1] is the window's median.
+
+            remove() can take a copy of the median out of lo when an equal
+            value also sits in hi; that is harmless, the sizes are fixed here
+            and every value in lo is still <= every value in hi.
+            """
             nonlocal sum_lo, sum_hi
             while len(sl_lo) > len(sl_hi) + 1:
                 v = sl_lo.pop()
